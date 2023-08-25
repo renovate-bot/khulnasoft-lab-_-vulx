@@ -25,11 +25,11 @@ func TestWithCustomHeaders(t *testing.T) {
 			args: args{
 				ctx: context.Background(),
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"token"},
+					"Vul-Token": []string{"token"},
 				},
 			},
 			want: http.Header{
-				"Trivy-Token": []string{"token"},
+				"Vul-Token": []string{"token"},
 			},
 		},
 		{

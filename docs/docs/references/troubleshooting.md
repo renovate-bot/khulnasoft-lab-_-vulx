@@ -17,10 +17,10 @@ Your scan may time out. Java takes a particularly long time to scan. Try increas
 !!! error
     Error: x509: certificate signed by unknown authority
 
-`TRIVY_INSECURE` can be used to allow insecure connections to a container registry when using SSL.
+`VUL_INSECURE` can be used to allow insecure connections to a container registry when using SSL.
 
 ```
-$ TRIVY_INSECURE=true vul image [YOUR_IMAGE]
+$ VUL_INSECURE=true vul image [YOUR_IMAGE]
 ```
 
 ### GitHub Rate limiting
@@ -65,7 +65,7 @@ Reference : [boltdb: Opening a database][boltdb].
 
 [boltdb]: https://github.com/boltdb/bolt#opening-a-database
 
-### Multiple Trivy servers
+### Multiple Vul servers
 
 !!! error
     ```
@@ -73,7 +73,7 @@ Reference : [boltdb: Opening a database][boltdb].
     ...
     - twirp error internal: failed scan, test-image: failed to apply layers: layer cache missing: sha256:*****
     ```
-To run multiple Trivy servers, you need to use Redis as the cache backend so that those servers can share the cache. 
+To run multiple Vul servers, you need to use Redis as the cache backend so that those servers can share the cache. 
 Follow [this instruction][redis-cache] to do so.
 
 
@@ -82,7 +82,7 @@ Follow [this instruction][redis-cache] to do so.
 !!! error
     FATAL repository scan error: scan error: unable to initialize a scanner: unable to initialize a filesystem scanner: git clone error: write /tmp/fanal-remote...
 
-Trivy clones remote Git repositories under the `/tmp` directory before scanning them. If `/tmp` doesn't work for you, you can change it by setting the `TMPDIR` environment variable.
+Vul clones remote Git repositories under the `/tmp` directory before scanning them. If `/tmp` doesn't work for you, you can change it by setting the `TMPDIR` environment variable.
 
 Try:
 
@@ -99,7 +99,7 @@ $ TMPDIR=/my/custom/path vul repo ...
     write /tmp/fanal-3323732142: no space left on device
     ```
 
-Trivy uses the `/tmp` directory during image scan, if the image is large or `/tmp` is of insufficient size then the scan fails You can set the `TMPDIR` environment variable to use redirect vul to use a directory with adequate storage.
+Vul uses the `/tmp` directory during image scan, if the image is large or `/tmp` is of insufficient size then the scan fails You can set the `TMPDIR` environment variable to use redirect vul to use a directory with adequate storage.
 
 Try:
 
@@ -113,7 +113,7 @@ $ TMPDIR=/my/custom/path vul image ...
 !!! error
     --skip-update cannot be specified with the old DB schema.
 
-Trivy v0.23.0 or later requires Trivy DB v2. Please update your local database or follow [the instruction of air-gapped environment][air-gapped].
+Vul v0.23.0 or later requires Vul DB v2. Please update your local database or follow [the instruction of air-gapped environment][air-gapped].
 
 ### Error downloading vulnerability DB
 

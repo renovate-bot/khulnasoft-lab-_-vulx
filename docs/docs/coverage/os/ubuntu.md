@@ -1,5 +1,5 @@
 # Ubuntu
-Trivy supports these scanners for OS packages.
+Vul supports these scanners for OS packages.
 
 |    Scanner    | Supported |
 | :-----------: | :-------: |
@@ -9,7 +9,7 @@ Trivy supports these scanners for OS packages.
 
 Please see [here](index.md#supported-os) for supported versions.
 
-The following table provides an outline of the features Trivy offers.
+The following table provides an outline of the features Vul offers.
 
 |               Feature                | Supported |
 |:------------------------------------:|:---------:|
@@ -32,14 +32,14 @@ It's essential to recognize that this differs from the upstream fixed version, w
 Typically, only the upstream information gets listed on [NVD][CVE-2023-3269 NVD], so it's important not to get confused.
 
 ### Severity
-Trivy calculates the severity of an issue based on the 'Priority' metric found in the Security Tracker.
+Vul calculates the severity of an issue based on the 'Priority' metric found in the Security Tracker.
 If 'Priority' isn't provided by Ubuntu, the severity from the NVD is taken into account.
 
 Using CVE-2019-15052 as an example, while it is rated as ["Critical" in NVD][CVE-2019-15052 NVD], Ubuntu has marked its "Priority" as ["Medium"][CVE-2019-15052].
-As a result, Trivy will display it as "Medium".
+As a result, Vul will display it as "Medium".
 
 ### Status
-Trivy supports the following [vulnerability statuses] for Ubuntu.
+Vul supports the following [vulnerability statuses] for Ubuntu.
 
 |       Status        | Supported |
 | :-----------------: | :-------: |

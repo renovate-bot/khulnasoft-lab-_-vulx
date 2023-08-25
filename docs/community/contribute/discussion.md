@@ -1,7 +1,7 @@
 # Discussions
-Thank you for taking interest in contributing to Trivy!
+Thank you for taking interest in contributing to Vul!
 
-Trivy uses [GitHub Discussion](https://github.com/khulnasoft-lab/vul/discussions) for bug reports, feature requests, and questions.
+Vul uses [GitHub Discussion](https://github.com/khulnasoft-lab/vul/discussions) for bug reports, feature requests, and questions.
 If maintainers decide to accept a new feature or confirm that it is a bug, they will close the discussion and create a [GitHub Issue](https://github.com/khulnasoft-lab/vul/issues) associated with that discussion.
 
 - Feel free to open discussions for any reason. When you open a new discussion, you'll have to select a discussion category as described below.
@@ -24,15 +24,15 @@ There are 4 categories:
     If you find any false positives or false negatives, please make sure to report them under the "False Detection" category, not "Bugs".
 
 ## False detection
-Trivy depends on [multiple data sources](https://aquasecurity.github.io/vul/latest/docs/vulnerability/detection/data-source/).
+Vul depends on [multiple data sources](https://aquasecurity.github.io/vul/latest/docs/vulnerability/detection/data-source/).
 Sometime these databases contain mistakes.
 
-If Trivy can't detect any CVE-IDs or shows false positive result, at first please follow the next steps:
+If Vul can't detect any CVE-IDs or shows false positive result, at first please follow the next steps:
 
-1. Run Trivy with `-f json` that shows data sources.
+1. Run Vul with `-f json` that shows data sources.
 2. According to the shown data source, make sure that the security advisory in the data source is correct.
 
-If the data source is correct and Trivy shows wrong results, please raise an issue on Trivy.
+If the data source is correct and Vul shows wrong results, please raise an issue on Vul.
 
 ### GitHub Advisory Database
 Visit [here](https://github.com/advisories) and search CVE-ID.

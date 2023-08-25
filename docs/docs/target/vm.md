@@ -88,7 +88,7 @@ $ vul vm --aws-region ap-northeast-1 ami:ami-0123456789abcdefg
 
 
 #### Required Actions
-Some actions on EBS are also necessary since Trivy scans an EBS snapshot tied to the specified AMI under the hood.
+Some actions on EBS are also necessary since Vul scans an EBS snapshot tied to the specified AMI under the hood.
 
 - ec2:DescribeImages
 - ebs:ListSnapshotBlocks
@@ -120,7 +120,7 @@ $ vul vm --aws-region ap-northeast-1 ebs:ebs-0123456789abcdefg
 
 The above command takes a while as it calls EBS API and fetches the EBS blocks.
 If you want to scan the same snapshot several times, you can download the snapshot locally by using [coldsnap][coldsnap] maintained by AWS.
-Then, Trivy can scan the local VM image file.
+Then, Vul can scan the local VM image file.
 
 ```shell
 $ coldsnap download snap-0123456789abcdefg disk.img
@@ -133,7 +133,7 @@ $ vul vm ./disk.img
 - ebs:GetSnapshotBlock
 
 ## Scanners
-Trivy supports VM image scanning for
+Vul supports VM image scanning for
 
 - Vulnerabilities
 - Misconfigurations
@@ -152,7 +152,7 @@ $ vul vm [YOUR_VM_IMAGE]
 
 ### Misconfigurations
 It is supported, but it is not useful in most cases.
-As mentioned [here](../scanner/misconfiguration/index.md), Trivy mainly supports Infrastructure as Code (IaC) files for misconfigurations.
+As mentioned [here](../scanner/misconfiguration/index.md), Vul mainly supports Infrastructure as Code (IaC) files for misconfigurations.
 If your VM image includes IaC files such as Kubernetes YAML files or Terraform files, you should enable this feature with `--scanners config`.
 
 ```
@@ -168,7 +168,7 @@ $ vul vm [YOUR_VM_IMAGE]
 ```
 
 !!! tip
-    The scanning could be faster if you enable only vulnerability scanning (`--scanners vuln`) because Trivy tries to download only necessary blocks for vulnerability detection.
+    The scanning could be faster if you enable only vulnerability scanning (`--scanners vuln`) because Vul tries to download only necessary blocks for vulnerability detection.
 
 ### Licenses
 It is disabled by default.
@@ -179,7 +179,7 @@ $ vul vm --scanners license [YOUR_VM_IMAGE]
 ```
 
 ## SBOM generation
-Trivy can generate SBOM for VM images.
+Vul can generate SBOM for VM images.
 See [here](../supply-chain/sbom.md) for the detail.
 
 ## Supported Architectures

@@ -52,7 +52,7 @@ vul repository [flags] REPO_URL
       --no-progress                       suppress progress bar
       --offline-scan                      do not issue API requests to identify dependencies
   -o, --output string                     output file name
-      --password strings                  password. Comma-separated passwords allowed. TRIVY_PASSWORD should be used for security reasons.
+      --password strings                  password. Comma-separated passwords allowed. VUL_PASSWORD should be used for security reasons.
       --policy-bundle-repository string   OCI registry URL to retrieve policy bundle from (default "ghcr.io/khulnasoft-lab/defsec:0")
       --policy-namespaces strings         Rego namespaces
       --redis-ca string                   redis ca file location, if using redis as cache backend
@@ -79,7 +79,7 @@ vul repository [flags] REPO_URL
       --tf-exclude-downloaded-modules     remove results for downloaded modules in .terraform folder
       --tf-vars strings                   specify paths to override the Terraform tfvars files
       --token string                      for authentication in client/server mode
-      --token-header string               specify a header name for token in client/server mode (default "Trivy-Token")
+      --token-header string               specify a header name for token in client/server mode (default "Vul-Token")
       --trace                             enable more verbose trace output for custom queries
       --username strings                  username. Comma-separated usernames allowed.
       --vuln-type strings                 comma-separated list of vulnerability types (os,library) (default [os,library])

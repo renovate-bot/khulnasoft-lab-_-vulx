@@ -3,9 +3,9 @@
 !!! warning "EXPERIMENTAL"
     This feature might change without preserving backwards compatibility.
 
-Trivy supports filtering detected vulnerabilities using [the Vulnerability Exploitability Exchange (VEX)](https://www.ntia.gov/files/ntia/publications/vex_one-page_summary.pdf), a standardized format for sharing and exchanging information about vulnerabilities.
+Vul supports filtering detected vulnerabilities using [the Vulnerability Exploitability Exchange (VEX)](https://www.ntia.gov/files/ntia/publications/vex_one-page_summary.pdf), a standardized format for sharing and exchanging information about vulnerabilities.
 By providing VEX alongside the Software Bill of Materials (SBOM) during scanning, it is possible to filter vulnerabilities based on their status.
-Currently, Trivy supports the following two formats:
+Currently, Vul supports the following two formats:
 
 - [CycloneDX](https://cyclonedx.org/capabilities/vex/)
 - [OpenVEX](https://github.com/openvex/spec)
@@ -18,7 +18,7 @@ There are [two VEX formats](https://cyclonedx.org/capabilities/vex/) for Cyclone
 - Independent BOM and VEX BOM
 - BOM With Embedded VEX
 
-Trivy only supports the Independent BOM and VEX BOM format, so you need to provide a separate VEX file alongside the SBOM.
+Vul only supports the Independent BOM and VEX BOM format, so you need to provide a separate VEX file alongside the SBOM.
 The input SBOM format must be in CycloneDX format.
 
 The following steps are required:
@@ -28,7 +28,7 @@ The following steps are required:
 3. Provide the VEX when scanning the CycloneDX SBOM
 
 ### Generating the SBOM
-You can generate a CycloneDX SBOM with Trivy as follows:
+You can generate a CycloneDX SBOM with Vul as follows:
 
 ```shell
 $ vul image --format cyclonedx --output debian11.sbom.cdx debian:11
@@ -67,7 +67,7 @@ EOF
 
 This is a VEX document in the CycloneDX format.
 The vulnerability ID, such as a CVE-ID or GHSA-ID, should be placed in `vulnerabilities.id`.
-When the `analysis.state` is set to `not_affected`, Trivy will not detect the vulnerability.
+When the `analysis.state` is set to `not_affected`, Vul will not detect the vulnerability.
 
 BOM-Links must be placed in `affects.ref`.
 The BOM-Link has the following syntax and consists of three elements:
@@ -116,8 +116,8 @@ Total: 1 (UNKNOWN: 0, LOW: 1, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 CVE-2020-8911 is no longer shown as it is filtered out according to the given CycloneDX VEX document.
 
 ## OpenVEX
-Trivy also supports [OpenVEX](https://github.com/openvex/spec) that is designed to be minimal, compliant, interoperable, and embeddable.
-Since OpenVEX aims to be SBOM format agnostic, both CycloneDX and SPDX formats are available for use as input SBOMs in Trivy.
+Vul also supports [OpenVEX](https://github.com/openvex/spec) that is designed to be minimal, compliant, interoperable, and embeddable.
+Since OpenVEX aims to be SBOM format agnostic, both CycloneDX and SPDX formats are available for use as input SBOMs in Vul.
 
 The following steps are required:
 
@@ -126,7 +126,7 @@ The following steps are required:
 3. Provide the VEX when scanning the SBOM
 
 ### Generating the SBOM
-You can generate a CycloneDX or SPDX SBOM with Trivy as follows:
+You can generate a CycloneDX or SPDX SBOM with Vul as follows:
 
 ```shell
 $ vul image --format spdx-json --output debian11.spdx.json debian:11

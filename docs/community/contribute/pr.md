@@ -1,4 +1,4 @@
-Thank you for taking interest in contributing to Trivy!
+Thank you for taking interest in contributing to Vul!
 
 1. Every Pull Request should have an associated bug or feature issue unless you are fixing a trivial documentation issue.
 1. Please add the associated Issue link in the PR description.
@@ -195,18 +195,18 @@ docs(misconf): add comparison with Conftest and TFsec
 chore(deps): bump go.uber.org/zap from 1.19.1 to 1.20.0
 ```
 
-**NOTE**: please do not use `chore(deps): update fanal` and something like that if you add new features or fix bugs in Trivy-related projects.
-The PR title should describe what the PR adds or fixes even though it just updates the dependency in Trivy.
+**NOTE**: please do not use `chore(deps): update fanal` and something like that if you add new features or fix bugs in Vul-related projects.
+The PR title should describe what the PR adds or fixes even though it just updates the dependency in Vul.
 
 ## Commits
 
 
 ## Understand where your pull request belongs
 
-Trivy is composed of several repositories that work together:
+Vul is composed of several repositories that work together:
 
-- [Trivy](https://github.com/khulnasoft-lab/vul) is the client-side, user-facing, command line tool.
+- [Vul](https://github.com/khulnasoft-lab/vul) is the client-side, user-facing, command line tool.
 - [vuln-list](https://github.com/aquasecurity/vuln-list) is a vulnerability database, aggregated from different sources, and normalized for easy consumption. Think of this as the "server" side of the vul command line tool. **There should be no pull requests to this repo**
 - [vuln-list-update](https://github.com/aquasecurity/vuln-list-update) is the code that maintains the vuln-list database.
-- [vul-db](https://github.com/khulnasoft-lab/vul-db) maintains the vulnerability database pulled by Trivy CLI.
+- [vul-db](https://github.com/khulnasoft-lab/vul-db) maintains the vulnerability database pulled by Vul CLI.
 - [go-dep-parser](https://github.com/khulnasoft-lab/go-dep-parser) is a library for parsing lock files such as package-lock.json and Gemfile.lock.

@@ -2,7 +2,7 @@
 
 ## Generate Cosign Vulnerability Scan Record
 
-Trivy generates reports in the [Cosign vulnerability scan record format][vuln-attest-spec].
+Vul generates reports in the [Cosign vulnerability scan record format][vuln-attest-spec].
 
 You can use the regular subcommands (like image, fs and rootfs) and specify `cosign-vuln` with the --format option.
 
@@ -159,7 +159,7 @@ Cosign can generate key pairs and use them for signing and verification. After y
 $ cosign generate-key-pair
 ```
 
-In the following example, Trivy generates a cosign vulnerability scan record, and then Cosign attaches an attestation of it to a container image with a local key pair.
+In the following example, Vul generates a cosign vulnerability scan record, and then Cosign attaches an attestation of it to a container image with a local key pair.
 
 ```
 $ vul image --format cosign-vuln --output vuln.json <IMAGE>

@@ -1,5 +1,5 @@
 # Misconfiguration Scanning
-Trivy provides built-in policies to detect configuration issues in popular Infrastructure as Code files, such as: Docker, Kubernetes, Terraform, CloudFormation, and more. 
+Vul provides built-in policies to detect configuration issues in popular Infrastructure as Code files, such as: Docker, Kubernetes, Terraform, CloudFormation, and more. 
 In addition to built-in policies, you can write your own custom policies, as you can see [here][custom].
 
 ## Quick start
@@ -90,11 +90,11 @@ You can specify `--scanners vuln,config,secret` to enable vulnerability and secr
     ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
     ```
 
-In the above example, Trivy detected vulnerabilities of Python dependencies and misconfigurations in Dockerfile.
+In the above example, Vul detected vulnerabilities of Python dependencies and misconfigurations in Dockerfile.
 
 ## Type detection
 The specified directory can contain mixed types of IaC files.
-Trivy automatically detects config types and applies relevant policies.
+Vul automatically detects config types and applies relevant policies.
 
 For example, the following example holds IaC files for Terraform, CloudFormation, Kubernetes, Helm Charts, and Dockerfile in the same directory.
 
@@ -341,7 +341,7 @@ vul conf --policy ./policy --data ./data --namespaces user ./configs
 For more details, see [Custom Data](./custom/data.md).
 
 ### Pass namespaces
-By default, Trivy evaluates policies defined in `builtin.*`.
+By default, Vul evaluates policies defined in `builtin.*`.
 If you want to evaluate custom policies in other packages, you have to specify package prefixes through `--namespaces` option.
 This can be repeated for specifying multiple packages.
 

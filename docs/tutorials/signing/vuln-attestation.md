@@ -7,7 +7,7 @@ This tutorial details
 
 #### Prerequisites
 
-1. Trivy CLI installed
+1. Vul CLI installed
 2. Cosign installed 
 
 #### Scan Container Image for vulnerabilities

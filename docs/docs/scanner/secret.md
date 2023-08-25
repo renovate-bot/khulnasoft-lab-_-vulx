@@ -1,9 +1,9 @@
 # Secret Scanning
 
-Trivy scans any container image, filesystem and git repository to detect exposed secrets like passwords, api keys, and tokens.
+Vul scans any container image, filesystem and git repository to detect exposed secrets like passwords, api keys, and tokens.
 Secret scanning is enabled by default.
 
-Trivy will scan every plaintext file, according to builtin rules or configuration. There are plenty of builtin rules:
+Vul will scan every plaintext file, according to builtin rules or configuration. There are plenty of builtin rules:
 
 - AWS access key
 - GCP service account
@@ -59,7 +59,7 @@ Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 1)
 
 
 !!! tip
-    Trivy tries to detect a base image and skip those layers for secret scanning.
+    Vul tries to detect a base image and skip those layers for secret scanning.
     A base image usually contains a lot of files and makes secret scanning much slower.
     If a secret is not detected properly, you can see base layers with the `--debug` flag.
 
@@ -90,16 +90,16 @@ Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
 This section describes secret-specific configuration.
 Other common options are documented [here](../configuration/index.md).
 
-Trivy has a set of builtin rules for secret scanning, which can be extended or modified by a configuration file.
-Trivy tries to load `vul-secret.yaml` in the current directory by default.
+Vul has a set of builtin rules for secret scanning, which can be extended or modified by a configuration file.
+Vul tries to load `vul-secret.yaml` in the current directory by default.
 If the file doesn't exist, only built-in rules are used.
 You can customize the config file path via the `--secret-config` flag.
 
 !!! warning
-    Trivy uses [Golang regexp package](https://pkg.go.dev/regexp/syntax#hdr-Syntax). To use `^` and `$` as simbols of begin and end of line use multi-line mode -`(?m)`.
+    Vul uses [Golang regexp package](https://pkg.go.dev/regexp/syntax#hdr-Syntax). To use `^` and `$` as simbols of begin and end of line use multi-line mode -`(?m)`.
 
 ### Custom Rules
-Trivy allows defining custom rules.
+Vul allows defining custom rules.
 
 ``` yaml
 rules:
@@ -190,7 +190,7 @@ allow-rules:
 - `regex` or `path` must be specified.
 
 ### Enable Rules
-Trivy provides plenty of out-of-box rules and allow rules, but you may not need all of them.
+Vul provides plenty of out-of-box rules and allow rules, but you may not need all of them.
 In that case, `enable-builtin-rules` will be helpful.
 If you just need AWS secret detection, you can enable only relevant rules as shown below.
 It specifies AWS-related rule IDs in `enable-builtin-rules`.
@@ -207,7 +207,7 @@ enable-builtin-rules:
 ```
 
 ### Disable Rules
-Trivy offers built-in rules and allow rules, but you may want to disable some of them.
+Vul offers built-in rules and allow rules, but you may want to disable some of them.
 For example, you don't use Slack, so Slack doesn't have to be scanned.
 You can specify the Slack rule IDs, `slack-access-token` and `slack-web-hook` in `disable-rules` so that those rules will be disabled for less false positives.
 
@@ -231,9 +231,9 @@ disable-allow-rules:
 
 ## Recommendation
 We would recommend specifying `--skip-dirs` for faster secret scanning.
-In container image scanning, Trivy walks the file tree rooted  `/` and scans all the files other than [built-in allowed paths][builtin-allow].
-It will take a while if your image contains a lot of files even though Trivy tries to avoid scanning layers from a base image.
-If you want to make scanning faster, `--skip-dirs` and `--skip-files` helps so that Trivy will skip scanning those files and directories.
+In container image scanning, Vul walks the file tree rooted  `/` and scans all the files other than [built-in allowed paths][builtin-allow].
+It will take a while if your image contains a lot of files even though Vul tries to avoid scanning layers from a base image.
+If you want to make scanning faster, `--skip-dirs` and `--skip-files` helps so that Vul will skip scanning those files and directories.
 You can see more options [here](../configuration/others.md).
 
 `allow-rules` is also helpful. See the [allow-rules](#allow-rules) section.

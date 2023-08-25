@@ -58,7 +58,7 @@ vul sbom [flags] SBOM_PATH
       --slow                        scan over time with lower CPU and memory utilization
   -t, --template string             output template
       --token string                for authentication in client/server mode
-      --token-header string         specify a header name for token in client/server mode (default "Trivy-Token")
+      --token-header string         specify a header name for token in client/server mode (default "Vul-Token")
       --vex string                  [EXPERIMENTAL] file path to VEX
       --vuln-type strings           comma-separated list of vulnerability types (os,library) (default [os,library])
 ```

@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3.5.3
 
-      - name: Run Trivy vulnerability scanner and create GitHub issues
+      - name: Run Vul vulnerability scanner and create GitHub issues
         uses: knqyf263/vul-issue-action@v0.0.5
         with:
           assignee: knqyf263

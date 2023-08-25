@@ -25,7 +25,7 @@
             "SchemaVersion": "2018-10-08",
             "Id": "{{ $target }}/{{ .VulnerabilityID }}",
             "ProductArn": "arn:aws:securityhub:{{ env "AWS_REGION" }}::product/aquasecurity/aquasecurity",
-            "GeneratorId": "Trivy/{{ .VulnerabilityID }}",
+            "GeneratorId": "Vul/{{ .VulnerabilityID }}",
             "AwsAccountId": "{{ env "AWS_ACCOUNT_ID" }}",
             "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
             "CreatedAt": "{{ now | date "2006-01-02T15:04:05.999999999Z07:00" }}",
@@ -33,7 +33,7 @@
             "Severity": {
                 "Label": "{{ $severity }}"
             },
-            "Title": "Trivy found a vulnerability to {{ .VulnerabilityID }} in container {{ $target }}, related to {{ .PkgName }}",
+            "Title": "Vul found a vulnerability to {{ .VulnerabilityID }} in container {{ $target }}, related to {{ .PkgName }}",
             "Description": {{ escapeString $description | printf "%q" }},
             {{ if not (empty .PrimaryURL) -}}
             "Remediation": {
@@ -43,7 +43,7 @@
                 }
             },
             {{ end -}}
-            "ProductFields": { "Product Name": "Trivy" },
+            "ProductFields": { "Product Name": "Vul" },
             "Resources": [
                 {
                     "Type": "Container",
@@ -83,7 +83,7 @@
             "SchemaVersion": "2018-10-08",
             "Id": "{{ $target }}/{{ .ID }}",
             "ProductArn": "arn:aws:securityhub:{{ env "AWS_REGION" }}::product/aquasecurity/aquasecurity",
-            "GeneratorId": "Trivy/{{ .ID }}",
+            "GeneratorId": "Vul/{{ .ID }}",
             "AwsAccountId": "{{ env "AWS_ACCOUNT_ID" }}",
             "Types": [ "Software and Configuration Checks" ],
             "CreatedAt": "{{ now | date "2006-01-02T15:04:05.999999999Z07:00" }}",
@@ -91,7 +91,7 @@
             "Severity": {
                 "Label": "{{ $severity }}"
             },
-            "Title": "Trivy found a misconfiguration in {{ $target }}: {{ .Title }}",
+            "Title": "Vul found a misconfiguration in {{ $target }}: {{ .Title }}",
             "Description": {{ escapeString $description | printf "%q" }},
             "Remediation": {
                 "Recommendation": {
@@ -99,7 +99,7 @@
                     "Url": "{{ .PrimaryURL }}"
                 }
             },
-            "ProductFields": { "Product Name": "Trivy" },
+            "ProductFields": { "Product Name": "Vul" },
             "Resources": [
                 {
                     "Type": "Other",
@@ -129,7 +129,7 @@
             "SchemaVersion": "2018-10-08",
             "Id": "{{ $target }}",
             "ProductArn": "arn:aws:securityhub:{{ env "AWS_DEFAULT_REGION" }}::product/aquasecurity/aquasecurity",
-            "GeneratorId": "Trivy",
+            "GeneratorId": "Vul",
             "AwsAccountId": "{{ env "AWS_ACCOUNT_ID" }}",
             "Types": [ "Sensitive Data Identifications" ],
             "CreatedAt": "{{ now | date "2006-01-02T15:04:05.999999999Z07:00" }}",
@@ -137,9 +137,9 @@
             "Severity": {
                 "Label": "{{ $severity }}"
             },
-            "Title": "Trivy found a secret in {{ $target }}: {{ .Title }}",
-            "Description": "Trivy found a secret in {{ $target }}: {{ .Title }}",
-            "ProductFields": { "Product Name": "Trivy" },
+            "Title": "Vul found a secret in {{ $target }}: {{ .Title }}",
+            "Description": "Vul found a secret in {{ $target }}: {{ .Title }}",
+            "ProductFields": { "Product Name": "Vul" },
             "Resources": [
                 {
                     "Type": "Other",

@@ -1,5 +1,5 @@
 # Debian
-Trivy supports the following scanners for OS packages.
+Vul supports the following scanners for OS packages.
 
 |    Scanner    | Supported |
 | :-----------: | :-------: |
@@ -9,7 +9,7 @@ Trivy supports the following scanners for OS packages.
 
 Please see [here](index.md#supported-os) for supported versions.
 
-The table below outlines the features offered by Trivy.
+The table below outlines the features offered by Vul.
 
 |                Feature                | Supported |
 | :-----------------------------------: | :-------: |
@@ -17,7 +17,7 @@ The table below outlines the features offered by Trivy.
 | [Dependency graph][dependency-graph] |     ✓     |
 
 ## SBOM
-Trivy detects packages that have been installed through package managers such as `apt` and `dpkg`.
+Vul detects packages that have been installed through package managers such as `apt` and `dpkg`.
 While there are some exceptions, like Go binaries and JAR files, it's important to note that binaries that have been custom-built using `make` or tools installed via `curl` are generally not detected.
 
 ## Vulnerability
@@ -34,14 +34,14 @@ Note that this is different from the upstream fixed version, which is `6.5`.
 Typically, only the upstream information gets listed on [NVD], so it's important not to get confused.
 
 ### Severity
-Trivy calculates the severity of an issue based on the 'Urgency' metric found in the Security Tracker.
+Vul calculates the severity of an issue based on the 'Urgency' metric found in the Security Tracker.
 If 'Urgency' isn't provided by Debian, the severity from the NVD is taken into account.
 
 Using CVE-2019-15052 as an example, while it is rated as "Critical" in NVD, Debian has marked its "Urgency" as ["Low"][CVE-2019-15052].
-As a result, Trivy will display it as "Low".
+As a result, Vul will display it as "Low".
 
 ### Status
-Trivy supports the following [vulnerability statuses] for Debian.
+Vul supports the following [vulnerability statuses] for Debian.
 
 |       Status        | Supported |
 | :-----------------: | :-------: |
@@ -53,7 +53,7 @@ Trivy supports the following [vulnerability statuses] for Debian.
 |     End of Life     |     ✓     |
 
 ## License
-To identify the license of a package, Trivy checks the copyright file located at `/usr/share/doc/*/copyright`.
+To identify the license of a package, Vul checks the copyright file located at `/usr/share/doc/*/copyright`.
 
 However, this method has its limitations as the file isn't machine-readable, leading to situations where the license isn't detected.
 In such scenarios, the `--license-full` flag can be passed.

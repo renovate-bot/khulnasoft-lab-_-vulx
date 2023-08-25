@@ -73,7 +73,7 @@ vul vm [flags] VM_IMAGE
       --tf-exclude-downloaded-modules     remove results for downloaded modules in .terraform folder
       --tf-vars strings                   specify paths to override the Terraform tfvars files
       --token string                      for authentication in client/server mode
-      --token-header string               specify a header name for token in client/server mode (default "Trivy-Token")
+      --token-header string               specify a header name for token in client/server mode (default "Vul-Token")
       --vuln-type strings                 comma-separated list of vulnerability types (os,library) (default [os,library])
 ```
 

@@ -45,7 +45,7 @@ vul [global flags] command [flags] target
 
 * [vul aws](vul_aws.md)	 - [EXPERIMENTAL] Scan AWS account
 * [vul config](vul_config.md)	 - Scan config files for misconfigurations
-* [vul convert](vul_convert.md)	 - Convert Trivy JSON report into a different format
+* [vul convert](vul_convert.md)	 - Convert Vul JSON report into a different format
 * [vul filesystem](vul_filesystem.md)	 - Scan local filesystem
 * [vul image](vul_image.md)	 - Scan a container image
 * [vul kubernetes](vul_kubernetes.md)	 - [EXPERIMENTAL] Scan kubernetes cluster

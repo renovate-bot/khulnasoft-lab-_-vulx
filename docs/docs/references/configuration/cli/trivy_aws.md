@@ -4,7 +4,7 @@
 
 ### Synopsis
 
-Scan an AWS account for misconfigurations. Trivy uses the same authentication methods as the AWS CLI. See https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
+Scan an AWS account for misconfigurations. Vul uses the same authentication methods as the AWS CLI. See https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
 
 The following services are supported:
 - accessanalyzer

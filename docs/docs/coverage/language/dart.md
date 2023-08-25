@@ -1,6 +1,6 @@
 # Dart
 
-Trivy supports [Dart][dart].
+Vul supports [Dart][dart].
 
 The following scanners are supported.
 
@@ -8,7 +8,7 @@ The following scanners are supported.
 |-------------------------| :---: | :-----------: |:-------:|
 | [Dart][dart-repository] |   ✓   |       ✓       |    -    |
 
-The following table provides an outline of the features Trivy offers.
+The following table provides an outline of the features Vul offers.
 
 
 | Package manager         | File         | Transitive dependencies | Dev dependencies | [Dependency graph][dependency-graph] | Position |
@@ -16,10 +16,10 @@ The following table provides an outline of the features Trivy offers.
 | [Dart][dart-repository] | pubspec.lock |            ✓            |     Included     |                  -                   |    -     |
 
 ## Dart
-In order to detect dependencies, Trivy searches for `pubspec.lock`.
+In order to detect dependencies, Vul searches for `pubspec.lock`.
 
-Trivy marks indirect dependencies, but `pubspec.lock` file doesn't have options to separate root and dev transitive dependencies.
-So Trivy includes all dependencies in report.
+Vul marks indirect dependencies, but `pubspec.lock` file doesn't have options to separate root and dev transitive dependencies.
+So Vul includes all dependencies in report.
 
 [dart]: https://dart.dev/
 [dart-repository]: https://pub.dev/

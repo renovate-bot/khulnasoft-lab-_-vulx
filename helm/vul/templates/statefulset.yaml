@@ -75,16 +75,16 @@ spec:
             - server
           {{- if .Values.vul.registryCredentialsExistingSecret }}
           env:
-            - name: TRIVY_USERNAME
+            - name: VUL_USERNAME
               valueFrom:
                 secretKeyRef:
                   name: {{ .Values.vul.registryCredentialsExistingSecret }}
-                  key: TRIVY_USERNAME
-            - name: TRIVY_PASSWORD
+                  key: VUL_USERNAME
+            - name: VUL_PASSWORD
               valueFrom:
                 secretKeyRef:
                   name: {{ .Values.vul.registryCredentialsExistingSecret }}
-                  key: TRIVY_PASSWORD
+                  key: VUL_PASSWORD
           {{- end }}
           envFrom:
             - configMapRef:

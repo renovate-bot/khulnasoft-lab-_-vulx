@@ -56,7 +56,7 @@ func NewMarshaler(version string) *Marshaler {
 	}
 }
 
-// Marshal converts the Trivy report to the CycloneDX format
+// Marshal converts the Vul report to the CycloneDX format
 func (e *Marshaler) Marshal(report types.Report) (*cdx.BOM, error) {
 	// Convert
 	root, err := e.MarshalReport(report)

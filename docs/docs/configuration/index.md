@@ -1,5 +1,5 @@
 # Configuration
-Trivy can be configured using the following ways. Each item takes precedence over the item below it:
+Vul can be configured using the following ways. Each item takes precedence over the item below it:
 
 - CLI flags
 - Environment variables
@@ -10,22 +10,22 @@ You can view the list of available flags using the `--help` option.
 For more details, please refer to [the CLI reference](../references/configuration/cli/vul.md).
 
 ## Environment Variables
-Trivy can be customized by environment variables.
+Vul can be customized by environment variables.
 The environment variable key is the flag name converted by the following procedure.
 
-- Add `TRIVY_` prefix
+- Add `VUL_` prefix
 - Make it all uppercase
 - Replace `-` with `_`
 
 For example,
 
-- `--debug` => `TRIVY_DEBUG`
-- `--cache-dir` => `TRIVY_CACHE_DIR`
+- `--debug` => `VUL_DEBUG`
+- `--cache-dir` => `VUL_CACHE_DIR`
 
 ```
-$ TRIVY_DEBUG=true TRIVY_SEVERITY=CRITICAL vul image alpine:3.15
+$ VUL_DEBUG=true VUL_SEVERITY=CRITICAL vul image alpine:3.15
 ```
 
 ## Configuration File
-By default, Trivy reads the `vul.yaml` file.
+By default, Vul reads the `vul.yaml` file.
 For more details, please refer to [the page](../references/configuration/config-file.md).

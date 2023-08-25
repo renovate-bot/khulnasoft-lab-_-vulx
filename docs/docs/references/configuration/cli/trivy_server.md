@@ -32,7 +32,7 @@ vul server [flags]
       --listen string               listen address in server mode (default "localhost:4954")
       --module-dir string           specify directory to the wasm modules that will be loaded (default "$HOME/.vul/modules")
       --no-progress                 suppress progress bar
-      --password strings            password. Comma-separated passwords allowed. TRIVY_PASSWORD should be used for security reasons.
+      --password strings            password. Comma-separated passwords allowed. VUL_PASSWORD should be used for security reasons.
       --redis-ca string             redis ca file location, if using redis as cache backend
       --redis-cert string           redis certificate file location, if using redis as cache backend
       --redis-key string            redis key file location, if using redis as cache backend
@@ -42,7 +42,7 @@ vul server [flags]
       --skip-db-update              skip updating vulnerability database
       --skip-java-db-update         skip updating Java index database
       --token string                for authentication in client/server mode
-      --token-header string         specify a header name for token in client/server mode (default "Trivy-Token")
+      --token-header string         specify a header name for token in client/server mode (default "Vul-Token")
       --username strings            username. Comma-separated usernames allowed.
 ```
 

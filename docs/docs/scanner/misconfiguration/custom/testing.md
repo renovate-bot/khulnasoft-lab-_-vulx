@@ -25,7 +25,7 @@ For more details, see [Policy Testing][opa-testing].
 To write tests for custom policies, you can refer to existing tests under [defsec][defsec].
 
 ## Go testing
-[Fanal][fanal] which is a core library of Trivy can be imported as a Go library.
+[Fanal][fanal] which is a core library of Vul can be imported as a Go library.
 You can scan config files in Go and test your custom policies using Go's testing methods, such as [table-driven tests][table].
 This allows you to use the actual configuration file as input, making it easy to prepare test data and ensure that your custom policies work in practice.
 

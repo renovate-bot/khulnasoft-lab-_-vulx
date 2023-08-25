@@ -61,7 +61,7 @@ Use "{{.CommandPath}} [command] --help" for more information about a command.{{e
 	groupPlugin     = "plugin"
 )
 
-// NewApp is the factory method to return Trivy CLI
+// NewApp is the factory method to return Vul CLI
 func NewApp() *cobra.Command {
 	globalFlags := flag.NewGlobalFlagGroup()
 	rootCmd := NewRootCommand(globalFlags)
@@ -170,7 +170,7 @@ func NewRootCommand(globalFlags *flag.GlobalFlagGroup) *cobra.Command {
   $ vul server`,
 		Args: cobra.NoArgs,
 		PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
-			// Set the Trivy version here so that we can override version printer.
+			// Set the Vul version here so that we can override version printer.
 			cmd.Version = version.AppVersion()
 
 			// viper.BindPFlag cannot be called in init().
@@ -484,7 +484,7 @@ func NewConvertCommand(globalFlags *flag.GlobalFlagGroup) *cobra.Command {
 		Use:     "convert [flags] RESULT_JSON",
 		Aliases: []string{"conv"},
 		GroupID: groupUtility,
-		Short:   "Convert Trivy JSON report into a different format",
+		Short:   "Convert Vul JSON report into a different format",
 		Example: `  # report conversion
   $ vul image --format json --output result.json --list-all-pkgs debian:11
   $ vul convert --format cyclonedx --output result.cdx result.json
@@ -973,7 +973,7 @@ func NewAWSCommand(globalFlags *flag.GlobalFlagGroup) *cobra.Command {
 		GroupID: groupScanning,
 		Args:    cobra.ExactArgs(0),
 		Short:   "[EXPERIMENTAL] Scan AWS account",
-		Long: fmt.Sprintf(`Scan an AWS account for misconfigurations. Trivy uses the same authentication methods as the AWS CLI. See https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
+		Long: fmt.Sprintf(`Scan an AWS account for misconfigurations. Vul uses the same authentication methods as the AWS CLI. See https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html
 
 The following services are supported:
 - %s

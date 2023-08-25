@@ -1,7 +1,7 @@
 # OS
 
 ## Scanner
-Trivy supports operating systems for 
+Vul supports operating systems for 
 
 - [SBOM][sbom]
 - [Vulnerabilities][vuln]

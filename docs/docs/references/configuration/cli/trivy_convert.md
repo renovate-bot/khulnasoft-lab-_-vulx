@@ -1,6 +1,6 @@
 ## vul convert
 
-Convert Trivy JSON report into a different format
+Convert Vul JSON report into a different format
 
 ```
 vul convert [flags] RESULT_JSON

@@ -1,6 +1,6 @@
 # Elixir
 
-Trivy supports [Hex][hex] repository for [Elixir][elixir].
+Vul supports [Hex][hex] repository for [Elixir][elixir].
 
 The following scanners are supported.
 
@@ -8,7 +8,7 @@ The following scanners are supported.
 |-----------------| :---: | :-----------: |:-------:|
 | [hex][hex]        |   ✓   |       ✓       |    -    |
 
-The following table provides an outline of the features Trivy offers.
+The following table provides an outline of the features Vul offers.
 
 
 | Package manager | File         | Transitive dependencies | Dev dependencies | [Dependency graph][dependency-graph] | Position |
@@ -16,7 +16,7 @@ The following table provides an outline of the features Trivy offers.
 | [hex][hex]      | mix.lock[^1] |            ✓            |     Excluded     |                  -                   |    ✓     |
 
 ## Hex
-In order to detect dependencies, Trivy searches for `mix.lock`[^1].
+In order to detect dependencies, Vul searches for `mix.lock`[^1].
 
 [Configure](https://hexdocs.pm/mix/Mix.Project.html#module-configuration) your project to use `mix.lock`[^1] file.
 

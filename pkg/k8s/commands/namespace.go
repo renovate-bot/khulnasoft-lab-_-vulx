@@ -16,7 +16,7 @@ func namespaceRun(ctx context.Context, opts flag.Options, cluster k8s.Cluster) e
 	if err := validateReportArguments(opts); err != nil {
 		return err
 	}
-	var vulk vulk8s.TrivyK8S
+	var vulk vulk8s.VulK8S
 	if opts.AllNamespaces {
 		vulk = vulk8s.New(cluster, log.Logger).AllNamespaces()
 	} else {

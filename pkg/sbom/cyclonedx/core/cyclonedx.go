@@ -307,7 +307,7 @@ func (c *CycloneDX) Properties(properties []Property) []cdx.Property {
 	return cdxProps
 }
 
-func IsTrivySBOM(c *cdx.BOM) bool {
+func IsVulSBOM(c *cdx.BOM) bool {
 	if c == nil || c.Metadata == nil || c.Metadata.Tools == nil {
 		return false
 	}
@@ -409,7 +409,7 @@ func cdxRatings(vulnerability types.DetectedVulnerability) *[]cdx.VulnerabilityR
 func cdxRatingV2(sourceID dtypes.SourceID, severity dtypes.Severity, cvss dtypes.CVSS) cdx.VulnerabilityRating {
 	cdxSeverity := toCDXSeverity(severity)
 
-	// Trivy keeps only CVSSv3 severity for NVD.
+	// Vul keeps only CVSSv3 severity for NVD.
 	// The CVSSv2 severity must be calculated according to CVSSv2 score.
 	if sourceID == vulnerability.NVD {
 		cdxSeverity = nvdSeverityV2(cvss.V2Score)

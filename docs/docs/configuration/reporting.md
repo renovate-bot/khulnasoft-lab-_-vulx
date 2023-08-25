@@ -1,7 +1,7 @@
 # Reporting
 
 ## Supported Formats
-Trivy supports the following formats:
+Vul supports the following formats:
 
 - Table
 - JSON
@@ -37,7 +37,7 @@ $ vul image -f table golang:1.12-alpine
 Modern software development relies on the use of third-party libraries.
 Third-party dependencies also depend on others so a list of dependencies can be represented as a dependency graph.
 In some cases, vulnerable dependencies are not linked directly, and it requires analyses of the tree.
-To make this task simpler Trivy can show a dependency origin tree with the `--dependency-tree` flag.
+To make this task simpler Vul can show a dependency origin tree with the `--dependency-tree` flag.
 This flag is only available with the `--format table` flag.
 
 The following packages/languages are currently supported:
@@ -254,7 +254,7 @@ $ vul image -f json -o results.json golang:1.12-alpine
 $ vul image --format sarif -o report.sarif  golang:1.12-alpine
 ```
 
-This SARIF file can be uploaded to GitHub code scanning results, and there is a [Trivy GitHub Action][action] for automating this process.
+This SARIF file can be uploaded to GitHub code scanning results, and there is a [Vul GitHub Action][action] for automating this process.
 
 ### Template
 
@@ -311,7 +311,7 @@ $ vul image --format template --template "@/path/to/template" golang:1.12-alpine
 
 #### Default Templates
 
-If Trivy is installed using rpm then default templates can be found at `/usr/local/share/vul/templates`.
+If Vul is installed using rpm then default templates can be found at `/usr/local/share/vul/templates`.
 
 ##### JUnit
 |     Scanner      | Supported |
@@ -334,7 +334,7 @@ $ vul image --format template --template "@contrib/junit.tpl" -o junit-report.xm
 |      Secret      |     ✓     |
 |     License      |           |
 
-Trivy also supports an [ASFF template for reporting findings to AWS Security Hub][asff]
+Vul also supports an [ASFF template for reporting findings to AWS Security Hub][asff]
 
 ##### HTML
 |     Scanner      | Supported |
@@ -348,7 +348,7 @@ Trivy also supports an [ASFF template for reporting findings to AWS Security Hub
 $ vul image --format template --template "@contrib/html.tpl" -o report.html golang:1.12-alpine
 ```
 
-The following example shows use of default HTML template when Trivy is installed using rpm.
+The following example shows use of default HTML template when Vul is installed using rpm.
 
 ```
 $ vul image --format template --template "@/usr/local/share/vul/templates/html.tpl" -o report.html golang:1.12-alpine

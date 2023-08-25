@@ -1,5 +1,5 @@
 # Amazon Linux
-Trivy supports the following scanners for OS packages.
+Vul supports the following scanners for OS packages.
 
 |    Scanner    | Supported |
 | :-----------: | :-------: |
@@ -9,7 +9,7 @@ Trivy supports the following scanners for OS packages.
 
 Please see [here](index.md#supported-os) for supported versions.
 
-The table below outlines the features offered by Trivy.
+The table below outlines the features offered by Vul.
 
 |               Feature                | Supported |
 |:------------------------------------:|:---------:|
@@ -17,7 +17,7 @@ The table below outlines the features offered by Trivy.
 | [Dependency graph][dependency-graph] |     ✓     |
 
 ## SBOM
-Trivy detects packages that have been installed through package managers such as `dnf` and `yum`.
+Vul detects packages that have been installed through package managers such as `dnf` and `yum`.
 
 ## Vulnerability
 Amazon Linux offers its own security advisories, and these are utilized when scanning Amazon Linux for vulnerabilities.
@@ -32,14 +32,14 @@ Note that this is different from the upstream fixed version, which is `3.0.9`, `
 Typically, only the upstream information gets listed on [NVD], so it's important not to get confused.
 
 ### Severity
-Trivy determines vulnerability severity based on the severity metric provided by Amazon.
+Vul determines vulnerability severity based on the severity metric provided by Amazon.
 For example, the security patch for [CVE-2023-0464] in Amazon Linux 2023 is provided as [ALAS2023-2023-181].
 Its severity is rated as "Medium".
-Thus, even though it's evaluated as "HIGH" in the NVD, Trivy displays it with a severity of "MEDIUM".
+Thus, even though it's evaluated as "HIGH" in the NVD, Vul displays it with a severity of "MEDIUM".
 
-The table below is the mapping of Amazon's severity to Trivy's severity levels.
+The table below is the mapping of Amazon's severity to Vul's severity levels.
 
-|  Amazon   |  Trivy   |
+|  Amazon   |  Vul   |
 | :-------: | :------: |
 |    Low    |   Low    |
 |  Medium   |  Medium  |
@@ -47,7 +47,7 @@ The table below is the mapping of Amazon's severity to Trivy's severity levels.
 | Critical  | Critical |
 
 ### Status
-Trivy supports the following [vulnerability statuses] for Amazon Linux.
+Vul supports the following [vulnerability statuses] for Amazon Linux.
 
 |       Status        | Supported |
 | :-----------------: | :-------: |
@@ -59,7 +59,7 @@ Trivy supports the following [vulnerability statuses] for Amazon Linux.
 |     End of Life     |           |
 
 ## License
-Trivy identifies licenses by examining the metadata of RPM packages.
+Vul identifies licenses by examining the metadata of RPM packages.
 
 
 [dependency-graph]: ../../configuration/reporting.md#show-origins-of-vulnerable-dependencies

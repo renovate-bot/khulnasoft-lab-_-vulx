@@ -1,5 +1,5 @@
 # Helm
-Trivy supports two types of Helm scanning, templates and packaged charts.
+Vul supports two types of Helm scanning, templates and packaged charts.
 The following scanners are supported.
 
 | Format   | [Misconfiguration] | [Secret] |
@@ -8,7 +8,7 @@ The following scanners are supported.
 | Chart    |         ✓          |    -     |
 
 ## Misconfiguration
-Trivy recursively searches directories and scans all found Helm files.
+Vul recursively searches directories and scans all found Helm files.
 
 It evaluates variables, functions, and other elements within Helm templates and resolve the chart to Kubernetes manifests then run the Kubernetes checks.
 See [here](../../scanner/misconfiguration/policy/builtin.md) for more details on the built-in policies.

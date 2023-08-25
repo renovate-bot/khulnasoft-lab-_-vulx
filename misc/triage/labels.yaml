@@ -32,10 +32,10 @@ labels:
   description: Categorizes issue or PR as related to a unit/integration test.
 - name: kind/security
   color: f4dddc
-  description: Categorizes issue or PR as related to Trivy's own security or internal vulnerabilities.
+  description: Categorizes issue or PR as related to Vul's own security or internal vulnerabilities.
 - name: kind/integration
   color: f4dddc
-  description: Categorizes issue or PR as related to a third party integration of Trivy.
+  description: Categorizes issue or PR as related to a third party integration of Vul.
 
 # lifecycle for the stale bot
 - name: lifecycle/frozen

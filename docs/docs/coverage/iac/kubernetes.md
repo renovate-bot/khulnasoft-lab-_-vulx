@@ -1,5 +1,5 @@
 # Kubernetes
-Trivy supports the scanners listed in the table below.
+Vul supports the scanners listed in the table below.
 
 |      Scanner       | Supported |
 | :----------------: | :-------: |
@@ -14,11 +14,11 @@ In addition to raw YAML and JSON, it supports the following templates:
 |    Kustomize    |   ✓[^1]   |
 
 !!! note
-    Trivy does not support Kustomize overlays, so it scans files defined in the base.
+    Vul does not support Kustomize overlays, so it scans files defined in the base.
     Or, you can scan the output of `kustomize build`.
 
 ## Misconfiguration
-Trivy recursively searches directories and scans all found Kubernetes files.
+Vul recursively searches directories and scans all found Kubernetes files.
 
 ## Secret
 The secret scan is performed on plain text files, with no special treatment for Kubernetes.

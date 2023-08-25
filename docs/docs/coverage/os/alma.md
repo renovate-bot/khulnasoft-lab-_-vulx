@@ -1,5 +1,5 @@
 # AlmaLinux
-Trivy supports the following scanners for OS packages.
+Vul supports the following scanners for OS packages.
 
 |    Scanner    | Supported |
 | :-----------: | :-------: |
@@ -9,7 +9,7 @@ Trivy supports the following scanners for OS packages.
 
 Please see [here](index.md#supported-os) for supported versions.
 
-The table below outlines the features offered by Trivy.
+The table below outlines the features offered by Vul.
 
 |               Feature                | Supported |
 |:------------------------------------:|:---------:|
@@ -17,7 +17,7 @@ The table below outlines the features offered by Trivy.
 | [Dependency graph][dependency-graph] |     ✓     |
 
 ## SBOM
-Trivy detects packages that have been installed through package managers such as `dnf` and `yum`.
+Vul detects packages that have been installed through package managers such as `dnf` and `yum`.
 
 ## Vulnerability
 AlmaLinux offers its own security advisories, and these are utilized when scanning AlmaLinux for vulnerabilities.
@@ -32,15 +32,15 @@ Note that this is different from the upstream fixed version, which is `3.0.9`, `
 Typically, only the upstream information gets listed on [NVD], so it's important not to get confused.
 
 ### Severity
-Trivy calculates the severity of an issue based on the severity provided by AlmaLinux.
+Vul calculates the severity of an issue based on the severity provided by AlmaLinux.
 If the severity is not provided or defined yet by AlmaLinux, the severity from the NVD is taken into account.
 
 Using CVE-2023-0464 as an example, while it is rated as "High" in NVD, AlmaLinux has marked as ["moderate"][ALSA-2023:3722].
-As a result, Trivy will display it as "Medium".
+As a result, Vul will display it as "Medium".
 
-The table below is the mapping of AlmaLinux's severity to Trivy's severity levels.
+The table below is the mapping of AlmaLinux's severity to Vul's severity levels.
 
-| AlmaLinux |  Trivy   |
+| AlmaLinux |  Vul   |
 | :-------: | :------: |
 |    Low    |   Low    |
 | Moderate  |  Medium  |
@@ -48,7 +48,7 @@ The table below is the mapping of AlmaLinux's severity to Trivy's severity level
 | Critical  | Critical |
 
 ### Status
-Trivy supports the following [vulnerability statuses] for AlmaLinux.
+Vul supports the following [vulnerability statuses] for AlmaLinux.
 
 |       Status        | Supported |
 | :-----------------: | :-------: |
@@ -61,7 +61,7 @@ Trivy supports the following [vulnerability statuses] for AlmaLinux.
 
 
 ## License
-Trivy identifies licenses by examining the metadata of RPM packages.
+Vul identifies licenses by examining the metadata of RPM packages.
 
 [dependency-graph]: ../../configuration/reporting.md#show-origins-of-vulnerable-dependencies
 

@@ -26,7 +26,7 @@ import (
 
 const updateInterval = 1 * time.Hour
 
-// Server represents Trivy server
+// Server represents Vul server
 type Server struct {
 	appVersion   string
 	addr         string
@@ -52,7 +52,7 @@ func NewServer(appVersion, addr, cacheDir, token, tokenHeader, dbRepository stri
 	}
 }
 
-// ListenAndServe starts Trivy server
+// ListenAndServe starts Vul server
 func (s Server) ListenAndServe(serverCache cache.Cache, skipDBUpdate bool) error {
 	requestWg := &sync.WaitGroup{}
 	dbUpdateWg := &sync.WaitGroup{}

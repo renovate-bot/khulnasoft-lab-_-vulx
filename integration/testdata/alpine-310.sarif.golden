@@ -5,9 +5,9 @@
     {
       "tool": {
         "driver": {
-          "fullName": "Trivy Vulnerability Scanner",
+          "fullName": "Vul Vulnerability Scanner",
           "informationUri": "https://github.com/khulnasoft-lab/vul",
-          "name": "Trivy",
+          "name": "Vul",
           "rules": [
             {
               "id": "CVE-2019-1549",

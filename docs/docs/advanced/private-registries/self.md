@@ -1,9 +1,9 @@
-BasicAuth server needs `TRIVY_USERNAME` and `TRIVY_PASSWORD`.
+BasicAuth server needs `VUL_USERNAME` and `VUL_PASSWORD`.
 
 ```bash
-export TRIVY_USERNAME={USERNAME}
-export TRIVY_PASSWORD={PASSWORD}
+export VUL_USERNAME={USERNAME}
+export VUL_PASSWORD={PASSWORD}
 
 # if you want to use 80 port, use NonSSL
-export TRIVY_NON_SSL=true
+export VUL_NON_SSL=true
 ```

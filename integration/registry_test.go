@@ -51,7 +51,7 @@ func setupRegistry(ctx context.Context, baseDir string, authURL *url.URL) (testc
 			"REGISTRY_AUTH":                      "token",
 			"REGISTRY_AUTH_TOKEN_REALM":          fmt.Sprintf("%s/auth", authURL),
 			"REGISTRY_AUTH_TOKEN_SERVICE":        "registry.docker.io",
-			"REGISTRY_AUTH_TOKEN_ISSUER":         "Trivy auth server",
+			"REGISTRY_AUTH_TOKEN_ISSUER":         "Vul auth server",
 			"REGISTRY_AUTH_TOKEN_ROOTCERTBUNDLE": "/certs/cert.pem",
 			"REGISTRY_AUTH_TOKEN_AUTOREDIRECT":   "false",
 		},
@@ -236,7 +236,7 @@ func scan(t *testing.T, imageRef name.Reference, baseDir, goldenFile string, opt
 	osArgs := []string{"-q", "--cache-dir", cacheDir, "image", "--format", "json", "--skip-update",
 		"--output", outputFile, imageRef.Name()}
 
-	// Run Trivy
+	// Run Vul
 	if err := execute(osArgs); err != nil {
 		return "", err
 	}
@@ -244,7 +244,7 @@ func scan(t *testing.T, imageRef name.Reference, baseDir, goldenFile string, opt
 }
 
 func setupEnv(t *testing.T, imageRef name.Reference, baseDir string, opt registryOption) error {
-	t.Setenv("TRIVY_INSECURE", "true")
+	t.Setenv("VUL_INSECURE", "true")
 
 	if opt.Username != "" && opt.Password != "" {
 		if opt.RegistryToken {
@@ -253,10 +253,10 @@ func setupEnv(t *testing.T, imageRef name.Reference, baseDir string, opt registr
 			if err != nil {
 				return err
 			}
-			t.Setenv("TRIVY_REGISTRY_TOKEN", token)
+			t.Setenv("VUL_REGISTRY_TOKEN", token)
 		} else {
-			t.Setenv("TRIVY_USERNAME", opt.Username)
-			t.Setenv("TRIVY_PASSWORD", opt.Password)
+			t.Setenv("VUL_USERNAME", opt.Username)
+			t.Setenv("VUL_PASSWORD", opt.Password)
 		}
 	}
 	return nil

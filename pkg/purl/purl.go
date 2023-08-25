@@ -87,7 +87,7 @@ func (p *PackageURL) Package() *ftypes.Package {
 	return pkg
 }
 
-// PackageType returns an application type in Trivy
+// PackageType returns an application type in Vul
 func (p *PackageURL) PackageType() string {
 	switch p.Type {
 	case packageurl.TypeComposer:

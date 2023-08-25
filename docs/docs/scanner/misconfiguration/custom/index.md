@@ -11,7 +11,7 @@ vul conf --policy /path/to/policy.rego --policy /path/to/custom_policies --names
 As for `--namespaces` option, the detail is described as below.
 
 ### File formats
-If a file name matches the following file patterns, Trivy will parse the file and pass it as input to your Rego policy.
+If a file name matches the following file patterns, Vul will parse the file and pass it as input to your Rego policy.
 
 | File format   | File pattern                                              |
 | ------------- | --------------------------------------------------------- |
@@ -22,7 +22,7 @@ If a file name matches the following file patterns, Trivy will parse the file an
 | Terraform     | `*.tf` and `*.tf.json`                                    |
 
 ### Configuration languages
-In the above general file formats, Trivy automatically identifies the following types of configuration files:
+In the above general file formats, Vul automatically identifies the following types of configuration files:
 
 - CloudFormation (JSON/YAML)
 - Kubernetes (JSON/YAML)
@@ -76,7 +76,7 @@ If you add a new custom policy, it must be defined under a new package like `use
 :   - SHOULD be `deny` or start with `deny_`
         - Although `warn`, `warn_*`, `violation`, `violation_` also work for compatibility, `deny` is recommended as severity can be defined in `__rego_metadata__`.
     - SHOULD return ONE OF:
-        - The result of a call to `result.new(msg, cause)`. The `msg` is a `string` describing the issue occurrence, and the `cause` is the property/object where the issue occurred. Providing this allows Trivy to ascertain line numbers and highlight code in the output. 
+        - The result of a call to `result.new(msg, cause)`. The `msg` is a `string` describing the issue occurrence, and the `cause` is the property/object where the issue occurred. Providing this allows Vul to ascertain line numbers and highlight code in the output. 
         - A `string` denoting the detected issue
             - Although `object` with `msg` field is accepted, other fields are dropped and `string` is recommended if `result.new()` is not utilised.
             - e.g. `{"msg": "deny message", "details": "something"}`
@@ -101,11 +101,11 @@ In this case, `user.*` will be evaluated.
 Any package prefixes such as `main` and `user` are allowed.
 
 ### Metadata
-Metadata helps enrich Trivy's scan results with useful information.
+Metadata helps enrich Vul's scan results with useful information.
 
 The annotation format is described in the [OPA documentation](https://www.openpolicyagent.org/docs/latest/annotations/).
 
-Trivy supports extra fields in the `custom` section as described below.
+Vul supports extra fields in the `custom` section as described below.
 
 !!!example
     ``` rego
@@ -174,7 +174,7 @@ You can specify input format via the `custom.input` annotation.
 
 `selector` (array)
 :   This option filters the input by file format or configuration language. 
-    In the above example, Trivy passes only Kubernetes files to this policy.
+    In the above example, Vul passes only Kubernetes files to this policy.
     Even if a Dockerfile exists in the specified directory, it will not be passed to the policy as input.
 
     Possible values for input types are:

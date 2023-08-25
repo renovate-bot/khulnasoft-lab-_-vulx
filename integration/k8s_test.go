@@ -43,7 +43,7 @@ func TestK8s(t *testing.T) {
 			outputFile,
 		}
 
-		// Run Trivy
+		// Run Vul
 		err := execute(osArgs)
 		require.NoError(t, err)
 
@@ -85,7 +85,7 @@ func TestK8s(t *testing.T) {
 			outputFile,
 		}
 
-		// Run Trivy
+		// Run Vul
 		err := execute(osArgs)
 		require.NoError(t, err)
 

@@ -1,6 +1,6 @@
 # Embed in Dockerfile
 
-Scan your image as part of the build process by embedding Trivy in the
+Scan your image as part of the build process by embedding Vul in the
 Dockerfile. This approach can be used to update Dockerfiles currently using
 Aqua’s [Microscanner][microscanner].
 
@@ -14,7 +14,7 @@ RUN apk add curl \
 
 $ docker build -t vulnerable-image .
 ```
-Alternatively you can use Trivy in a multistage build. Thus avoiding the
+Alternatively you can use Vul in a multistage build. Thus avoiding the
 insecure `curl | sh`. Also the image is not changed.
 ```bash
 [...]

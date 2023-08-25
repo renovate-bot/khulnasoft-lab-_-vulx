@@ -138,8 +138,8 @@ func (f *GlobalFlagGroup) Bind(cmd *cobra.Command) error {
 }
 
 func (f *GlobalFlagGroup) ToOptions() GlobalOptions {
-	// Keep TRIVY_NON_SSL for backward compatibility
-	insecure := getBool(f.Insecure) || os.Getenv("TRIVY_NON_SSL") != ""
+	// Keep VUL_NON_SSL for backward compatibility
+	insecure := getBool(f.Insecure) || os.Getenv("VUL_NON_SSL") != ""
 
 	return GlobalOptions{
 		ConfigFile:            getString(f.ConfigFile),

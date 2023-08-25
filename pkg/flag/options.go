@@ -109,7 +109,7 @@ type Options struct {
 	SecretOptions
 	VulnerabilityOptions
 
-	// Trivy's version, not populated via CLI flags
+	// Vul's version, not populated via CLI flags
 	AppVersion string
 
 	// We don't want to allow disabled analyzers to be passed by users, but it is necessary for internal use.

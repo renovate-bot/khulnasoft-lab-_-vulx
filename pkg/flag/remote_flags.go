@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	DefaultTokenHeader = "Trivy-Token"
+	DefaultTokenHeader = "Vul-Token"
 )
 
 var (

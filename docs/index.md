@@ -4,21 +4,21 @@ hide:
 ---
 ![logo](imgs/logo.png){ align=right }
 
-# Trivy Documentation
+# Vul Documentation
 
-👋 Welcome to Trivy Documentation! To help you get around, please notice the different sections at the top global menu:
+👋 Welcome to Vul Documentation! To help you get around, please notice the different sections at the top global menu:
 
 - You are currently in the [Getting Started] section where you can find general information and help with first steps.
 - In the [Tutorials] section you can find step-by-step guides that help you accomplish specific tasks.
-- In the [Docs] section you can find the complete reference documentation for all of the different features and settings that Trivy has to offer.
-- In the [Ecosystem] section you can find how Trivy works together with other tools and applications that you might already use.
+- In the [Docs] section you can find the complete reference documentation for all of the different features and settings that Vul has to offer.
+- In the [Ecosystem] section you can find how Vul works together with other tools and applications that you might already use.
 - In the [Contributing] section you can find technical developer documentation and contribution guidelines.
 
-# About Trivy
+# About Vul
 
-Trivy ([pronunciation][pronunciation]) is a comprehensive and versatile security scanner. Trivy has *scanners* that look for security issues, and *targets* where it can find those issues.
+Vul ([pronunciation][pronunciation]) is a comprehensive and versatile security scanner. Vul has *scanners* that look for security issues, and *targets* where it can find those issues.
 
-Targets (what Trivy can scan):
+Targets (what Vul can scan):
 
 - Container Image
 - Filesystem
@@ -27,7 +27,7 @@ Targets (what Trivy can scan):
 - Kubernetes
 - AWS
 
-Scanners (what Trivy can find there):
+Scanners (what Vul can find there):
 
 - OS packages and software dependencies in use (SBOM)
 - Known vulnerabilities (CVEs)
@@ -35,22 +35,22 @@ Scanners (what Trivy can find there):
 - Sensitive information and secrets
 - Software licenses
 
-Trivy supports most popular programming languages, operating systems, and platforms. For a complete list, see the [Scanning Coverage] page.
+Vul supports most popular programming languages, operating systems, and platforms. For a complete list, see the [Scanning Coverage] page.
 
-To learn more, go to the [Trivy homepage][homepage] for feature highlights, or to the [Documentation site][Docs] for detailed information.
+To learn more, go to the [Vul homepage][homepage] for feature highlights, or to the [Documentation site][Docs] for detailed information.
 
 ## Quick Start
 
-### Get Trivy
+### Get Vul
 
-Trivy is available in most common distribution channels. The complete list of installation options is available in the [Installation] page. Here are a few popular examples:
+Vul is available in most common distribution channels. The complete list of installation options is available in the [Installation] page. Here are a few popular examples:
 
 - `brew install vul`
 - `docker run aquasec/vul`
 - Download binary from <https://github.com/khulnasoft-lab/vul/releases/latest/>
 - See [Installation] for more
 
-Trivy is integrated with many popular platforms and applications. The complete list of integrations is available in the [Ecosystem] page. Here are a few popular options examples:
+Vul is integrated with many popular platforms and applications. The complete list of integrations is available in the [Ecosystem] page. Here are a few popular options examples:
 
 - [GitHub Actions](https://github.com/khulnasoft-lab/vul-action)
 - [Kubernetes operator](https://github.com/khulnasoft-lab/vul-operator)
@@ -113,14 +113,14 @@ vul k8s --report summary cluster
 
 # Want more? Check out Aqua
 
-If you liked Trivy, you will love Aqua which builds on top of Trivy to provide even more enhanced capabilities for a complete security management offering.  
-You can find a high level comparison table specific to Trivy users [here](https://github.com/aquasecurity/resources/blob/main/vul-aqua.md).  
+If you liked Vul, you will love Aqua which builds on top of Vul to provide even more enhanced capabilities for a complete security management offering.  
+You can find a high level comparison table specific to Vul users [here](https://github.com/aquasecurity/resources/blob/main/vul-aqua.md).  
 In addition check out the <https://aquasec.com> website for more information about our products and services.
 If you'd like to contact Aqua or request a demo, please use this form: <https://www.aquasec.com/demo>
 
 ---
 
-Trivy is an [Aqua Security][aquasec] open source project.  
+Vul is an [Aqua Security][aquasec] open source project.  
 Learn about our open source work and portfolio [here][oss].  
 Contact us about any matter by opening a GitHub Discussion [here][discussions]
 

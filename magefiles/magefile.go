@@ -127,7 +127,7 @@ func Mock(dir string) error {
 // Protoc parses PROTO_FILES and generates the Go code for client/server mode
 func Protoc() error {
 	// It is called in the protoc container
-	if _, ok := os.LookupEnv("TRIVY_PROTOC_CONTAINER"); ok {
+	if _, ok := os.LookupEnv("VUL_PROTOC_CONTAINER"); ok {
 		protoFiles, err := findProtoFiles()
 		if err != nil {
 			return err
@@ -310,7 +310,7 @@ func Tidy() error {
 	return sh.RunV("go", "mod", "tidy")
 }
 
-// Build builds Trivy
+// Build builds Vul
 func Build() error {
 	if updated, err := target.Dir("vul", "pkg", "cmd"); err != nil {
 		return err
@@ -329,7 +329,7 @@ func Build() error {
 	return sh.RunWith(ENV, "go", "build", "-ldflags", ldflags, filepath.Join(wd, "cmd", "vul"))
 }
 
-// Install installs Trivy
+// Install installs Vul
 func Install() error {
 	ldflags, err := buildLdflags()
 	if err != nil {

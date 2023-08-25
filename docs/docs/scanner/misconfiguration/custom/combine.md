@@ -1,7 +1,7 @@
 # Combined input
 
 ## Overview
-Trivy usually scans each configuration file individually. 
+Vul usually scans each configuration file individually. 
 Sometimes it might be useful to compare values from different configuration files simultaneously.
 
 When `combine` is set to true, all config files under the specified directory are combined into one input data structure.

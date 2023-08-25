@@ -274,7 +274,7 @@ func TestDockerEngine(t *testing.T) {
 			}
 			osArgs = append(osArgs, tt.input)
 
-			// Run Trivy
+			// Run Vul
 			err = execute(osArgs)
 			if tt.wantErr != "" {
 				require.Error(t, err)

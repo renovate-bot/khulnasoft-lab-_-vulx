@@ -62,8 +62,8 @@ func NewSecretAnalyzer(s secret.Scanner, configPath string) *SecretAnalyzer {
 // Init initializes and sets a secret scanner
 func (a *SecretAnalyzer) Init(opt analyzer.AnalyzerOptions) error {
 	if opt.SecretScannerOption.ConfigPath == a.configPath && !lo.IsEmpty(a.scanner) {
-		// This check is for tools importing Trivy and customize analyzers
-		// Never reach here in Trivy OSS
+		// This check is for tools importing Vul and customize analyzers
+		// Never reach here in Vul OSS
 		return nil
 	}
 	configPath := opt.SecretScannerOption.ConfigPath

@@ -1,6 +1,6 @@
 # Rust
 
-Trivy supports [Cargo](https://doc.rust-lang.org/stable/cargo/), which is the Rust package manager.
+Vul supports [Cargo](https://doc.rust-lang.org/stable/cargo/), which is the Rust package manager.
 The following scanners are supported for Cargo.
 
 | Package manager | SBOM  | Vulnerability | License |
@@ -14,7 +14,7 @@ In addition, it supports binaries built with [cargo-auditable](https://github.co
 | Binaries |   ✓   |       ✓       |    -    |
 
 ## Features
-The following table provides an outline of the features Trivy offers.
+The following table provides an outline of the features Vul offers.
 
 | Package manager | File       | Transitive dependencies | Dev dependencies | [Dependency graph][dependency-graph] | Position |
 |-----------------|------------|:-----------------------:|:-----------------|:------------------------------------:|:--------:|
@@ -27,17 +27,17 @@ The following table provides an outline of the features Trivy offers.
 
 
 ### Cargo
-Trivy searches for `Cargo.lock` to detect dependencies.
+Vul searches for `Cargo.lock` to detect dependencies.
 
-Trivy also supports dependency trees; however, to display an accurate tree, it needs to know whether each package is a direct dependency of the project.
-Since this information is not included in `Cargo.lock`, Trivy parses `Cargo.toml`, which should be located next to `Cargo.lock`.
+Vul also supports dependency trees; however, to display an accurate tree, it needs to know whether each package is a direct dependency of the project.
+Since this information is not included in `Cargo.lock`, Vul parses `Cargo.toml`, which should be located next to `Cargo.lock`.
 If you want to see the dependency tree, please ensure that `Cargo.toml` is present.
 
 Scan `Cargo.lock` and `Cargo.toml` together also removes developer dependencies.
 
 ### Binaries
-Trivy scans binaries built with [cargo-auditable](https://github.com/rust-secure-code/cargo-auditable).
-If such a binary exists, Trivy will identify it as being built with cargo-audit and scan it.
+Vul scans binaries built with [cargo-auditable](https://github.com/rust-secure-code/cargo-auditable).
+If such a binary exists, Vul will identify it as being built with cargo-audit and scan it.
 
 [^1]: When you scan Cargo.lock and Cargo.toml together.
 

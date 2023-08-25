@@ -3,7 +3,7 @@
 Custom policies may require additional data in order to determine an answer.
 
 For example, an allowed list of resources that can be created. 
-Instead of hardcoding this information inside your policy, Trivy allows passing paths to data files with the `--data` flag.
+Instead of hardcoding this information inside your policy, Vul allows passing paths to data files with the `--data` flag.
 
 Given the following yaml file:
 
@@ -28,7 +28,7 @@ ports := services.ports
 ```
 
 Then, you need to pass data paths through `--data` option.
-Trivy recursively searches the specified paths for JSON (`*.json`) and YAML (`*.yaml`) files.
+Vul recursively searches the specified paths for JSON (`*.json`) and YAML (`*.yaml`) files.
 
 ```bash
 $ vul conf --policy ./policy --data data --namespaces user ./configs

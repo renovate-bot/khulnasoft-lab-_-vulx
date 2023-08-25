@@ -62,7 +62,7 @@ var (
 
 	// AllImageConfigScanners has a list of available scanners on container image config.
 	// The container image in container registries consists of manifest, config and layers.
-	// Trivy is also able to detect security issues on the image config.
+	// Vul is also able to detect security issues on the image config.
 	AllImageConfigScanners = Scanners{
 		MisconfigScanner,
 		SecretScanner,

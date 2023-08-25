@@ -48,7 +48,7 @@ var (
 	}
 )
 
-// RegisterDriver is defined for extensibility and not supposed to be used in Trivy.
+// RegisterDriver is defined for extensibility and not supposed to be used in Vul.
 func RegisterDriver(name string, driver Driver) {
 	drivers[name] = driver
 }

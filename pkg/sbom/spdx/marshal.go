@@ -78,7 +78,7 @@ var (
 type Marshaler struct {
 	format     spdx.Document
 	hasher     Hash
-	appVersion string // Trivy version. It needed for `creator` field
+	appVersion string // Vul version. It needed for `creator` field
 }
 
 type Hash func(v interface{}, format hashstructure.Format, opts *hashstructure.HashOptions) (uint64, error)
@@ -480,7 +480,7 @@ func getPackageDownloadLocation(t ftypes.ArtifactType, artifactName string) stri
 	// this field is used for git/mercurial/subversion/bazaar:
 	// https://spdx.github.io/spdx-spec/v2.2.2/package-information/#77-package-download-location-field
 	if t == ftypes.ArtifactRepository {
-		// Trivy currently only supports git repositories. Format examples:
+		// Vul currently only supports git repositories. Format examples:
 		// git+https://git.myproject.org/MyProject.git
 		// git+http://git.myproject.org/MyProject
 		location = fmt.Sprintf("git+%s", artifactName)

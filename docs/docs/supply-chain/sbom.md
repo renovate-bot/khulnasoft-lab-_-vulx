@@ -2,7 +2,7 @@
 
 ## Generating
 
-Trivy can generate the following SBOM formats.
+Vul can generate the following SBOM formats.
 
 - [CycloneDX](#cyclonedx)
 - [SPDX](#spdx)
@@ -180,7 +180,7 @@ $ vul fs --format cyclonedx --output result.json /app/myproject
 </details>
 
 ### Supported packages
-Trivy supports the following packages.
+Vul supports the following packages.
 
 - [OS packages][os_packages]
 - [Language-specific packages][language_packages]
@@ -188,7 +188,7 @@ Trivy supports the following packages.
 
 ### Formats
 #### CycloneDX
-Trivy can generate SBOM in the [CycloneDX][cyclonedx] format.
+Vul can generate SBOM in the [CycloneDX][cyclonedx] format.
 Note that XML format is not supported at the moment.
 
 You can use the regular subcommands (like `image`, `fs` and `rootfs`) and specify `cyclonedx` with the `--format` option.
@@ -433,7 +433,7 @@ $ vul image --scanners vuln --format cyclonedx --output result.json alpine:3.15
 ```
 
 #### SPDX
-Trivy can generate SBOM in the [SPDX][spdx] format.
+Vul can generate SBOM in the [SPDX][spdx] format.
 
 You can use the regular subcommands (like `image`, `fs` and `rootfs`) and specify `spdx` with the `--format` option.
 
@@ -728,17 +728,17 @@ $ cat result.spdx.json | jq .
 </details>
 
 ## Scanning
-Trivy can take SBOM documents as input for scanning.
+Vul can take SBOM documents as input for scanning.
 See [here](../target/sbom.md) for more details.
 
-Also, Trivy searches for SBOM files in container images.
+Also, Vul searches for SBOM files in container images.
 
 ```bash
 $ vul image bitnami/elasticsearch:8.7.1
 ```
 
 For example, [Bitnami images](https://github.com/bitnami/containers) contain SBOM files in `/opt/bitnami` directory.
-Trivy automatically detects the SBOM files and uses them for scanning.
+Vul automatically detects the SBOM files and uses them for scanning.
 It is enabled in the following targets.
 
 |     Target      | Enabled |

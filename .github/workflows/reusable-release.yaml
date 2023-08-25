@@ -120,7 +120,7 @@ jobs:
             ghcr.io/khulnasoft-lab/vul:canary
             public.ecr.aws/khulnasoft-lab/vul:canary
 
-      - name: Cache Trivy binaries
+      - name: Cache Vul binaries
         uses: actions/cache@v3.3.1
         with:
           path: dist/

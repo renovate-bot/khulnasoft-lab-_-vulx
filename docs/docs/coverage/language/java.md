@@ -1,5 +1,5 @@
 # Java
-Trivy supports three types of Java scanning: `JAR/WAR/PAR/EAR`, `pom.xml` and `*gradle.lockfile` files.
+Vul supports three types of Java scanning: `JAR/WAR/PAR/EAR`, `pom.xml` and `*gradle.lockfile` files.
 
 Each artifact supports the following scanners:
 
@@ -9,11 +9,11 @@ Each artifact supports the following scanners:
 | pom.xml          |   ✓   |       ✓       |    ✓    |
 | *gradle.lockfile |   ✓   |       ✓       |    -    |
 
-The following table provides an outline of the features Trivy offers.
+The following table provides an outline of the features Vul offers.
 
 | Artifact         |    Internet access    | Dev dependencies | [Dependency graph][dependency-graph] |
 |------------------|:---------------------:|:----------------:|:------------------------------------:|
-| JAR/WAR/PAR/EAR  |     Trivy Java DB     |     Include      |                  -                   |
+| JAR/WAR/PAR/EAR  |     Vul Java DB     |     Include      |                  -                   |
 | pom.xml          | Maven repository [^1] |     Exclude      |                  -                   |
 | *gradle.lockfile |           -           |     Exclude      |                  -                   |
 
@@ -21,9 +21,9 @@ These may be enabled or disabled depending on the target.
 See [here](./index.md) for the detail.
 
 ## JAR/WAR/PAR/EAR
-To find information about your JAR[^2] file, Trivy parses `pom.properties` and `MANIFEST.MF` files in your JAR[^2] file and takes required properties[^3].
+To find information about your JAR[^2] file, Vul parses `pom.properties` and `MANIFEST.MF` files in your JAR[^2] file and takes required properties[^3].
 
-If those files don't exist or don't contain enough information - Trivy will try to find this JAR[^2] file in [vul-java-db](https://github.com/khulnasoft-lab/vul-java-db).
+If those files don't exist or don't contain enough information - Vul will try to find this JAR[^2] file in [vul-java-db](https://github.com/khulnasoft-lab/vul-java-db).
 The Java DB will be automatically downloaded/updated when any JAR[^2] file is found.
 It is stored in [the cache directory](../../configuration/cache.md#cache-directory).
 
@@ -36,28 +36,28 @@ To find information about these JARs[^2], the same logic is used as for the base
 `table` format only contains the name of root JAR[^2] . To get the full path to inner JARs[^2] use the `json` format.
 
 ## pom.xml
-Trivy parses your `pom.xml` file and tries to find files with dependencies from these local locations.
+Vul parses your `pom.xml` file and tries to find files with dependencies from these local locations.
 
 - project directory[^4]
 - relativePath field[^5]
 - local repository directory[^6].
 
-If your machine doesn't have the necessary files - Trivy tries to find the information about these dependencies in the [maven repository](https://repo.maven.apache.org/maven2/).
+If your machine doesn't have the necessary files - Vul tries to find the information about these dependencies in the [maven repository](https://repo.maven.apache.org/maven2/).
 
 !!! Note
-    Trivy only takes information about packages. We don't take a list of vulnerabilities for packages from the `maven repository`.
+    Vul only takes information about packages. We don't take a list of vulnerabilities for packages from the `maven repository`.
     Information about data sources for Java you can see [here](../../scanner/vulnerability.md#data-sources_1).
 
 You can disable connecting to the maven repository with the `--offline-scan` flag.
-The `--offline-scan` flag does not affect the Trivy database.
+The `--offline-scan` flag does not affect the Vul database.
 The vulnerability database will be downloaded anyway.
 
 !!! Warning
-    Trivy may skip some dependencies (that were not found on your local machine) when the `--offline-scan` flag is passed.
+    Vul may skip some dependencies (that were not found on your local machine) when the `--offline-scan` flag is passed.
 
 ## Gradle.lock
 `gradle.lock` files contain all necessary information about used dependencies.
-Trivy simply parses the file, extract dependencies, and finds vulnerabilities for them.
+Vul simply parses the file, extract dependencies, and finds vulnerabilities for them.
 It doesn't require the internet access.
 
 [^1]: https://github.com/khulnasoft-lab/vul-java-db

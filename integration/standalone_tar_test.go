@@ -413,7 +413,7 @@ func TestTar(t *testing.T) {
 				outputFile,
 			}...)
 
-			// Run Trivy
+			// Run Vul
 			err := execute(osArgs)
 			require.NoError(t, err)
 
@@ -481,23 +481,23 @@ func TestTarWithEnv(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			osArgs := []string{"image"}
 
-			t.Setenv("TRIVY_FORMAT", tt.testArgs.Format)
-			t.Setenv("TRIVY_CACHE_DIR", cacheDir)
-			t.Setenv("TRIVY_QUIET", "true")
-			t.Setenv("TRIVY_SKIP_UPDATE", "true")
+			t.Setenv("VUL_FORMAT", tt.testArgs.Format)
+			t.Setenv("VUL_CACHE_DIR", cacheDir)
+			t.Setenv("VUL_QUIET", "true")
+			t.Setenv("VUL_SKIP_UPDATE", "true")
 
 			if tt.testArgs.IgnoreUnfixed {
-				t.Setenv("TRIVY_IGNORE_UNFIXED", "true")
+				t.Setenv("VUL_IGNORE_UNFIXED", "true")
 			}
 			if len(tt.testArgs.Severity) != 0 {
-				t.Setenv("TRIVY_SEVERITY", strings.Join(tt.testArgs.Severity, ","))
+				t.Setenv("VUL_SEVERITY", strings.Join(tt.testArgs.Severity, ","))
 			}
 			if tt.testArgs.Input != "" {
 				osArgs = append(osArgs, "--input", tt.testArgs.Input)
 			}
 
 			if len(tt.testArgs.SkipDirs) != 0 {
-				t.Setenv("TRIVY_SKIP_DIRS", strings.Join(tt.testArgs.SkipDirs, ","))
+				t.Setenv("VUL_SKIP_DIRS", strings.Join(tt.testArgs.SkipDirs, ","))
 			}
 
 			// Set up the output file
@@ -508,7 +508,7 @@ func TestTarWithEnv(t *testing.T) {
 				outputFile,
 			}...)
 
-			// Run Trivy
+			// Run Vul
 			err := execute(osArgs)
 			require.NoError(t, err)
 
@@ -583,7 +583,7 @@ cache:
 				outputFile,
 			}
 
-			// Run Trivy
+			// Run Vul
 			err = execute(osArgs)
 			require.NoError(t, err)
 

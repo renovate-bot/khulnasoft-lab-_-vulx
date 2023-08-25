@@ -2,9 +2,9 @@
 
 ## Overview
 Policies can be defined with custom schemas that allow inputs to be verified against them. Adding a policy schema
-enables Trivy to show more detailed error messages when an invalid input is encountered.
+enables Vul to show more detailed error messages when an invalid input is encountered.
 
-In Trivy we have been able to define a schema for a [Dockerfile](https://github.com/khulnasoft-lab/defsec/blob/master/pkg/rego/schemas/dockerfile.json).
+In Vul we have been able to define a schema for a [Dockerfile](https://github.com/khulnasoft-lab/defsec/blob/master/pkg/rego/schemas/dockerfile.json).
 Without input schemas, a policy would be as follows:
 
 !!! example
@@ -83,7 +83,7 @@ The policies can be placed in a structure as follows
         └── barschema.json
     ```
 
-To use such a policy with Trivy, use the `--config-policy` flag that points to the policy file or to the directory where the schemas and policies are contained.
+To use such a policy with Vul, use the `--config-policy` flag that points to the policy file or to the directory where the schemas and policies are contained.
 
 ```bash
 $ vul --config-policy=/Users/user/my-custom-policies <path/to/iac>

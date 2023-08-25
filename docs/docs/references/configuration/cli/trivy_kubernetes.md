@@ -65,7 +65,7 @@ vul kubernetes [flags] { cluster | all | specific resources like kubectl. eg: po
       --offline-scan                      do not issue API requests to identify dependencies
   -o, --output string                     output file name
       --parallel int                      number (between 1-20) of goroutines enabled for parallel scanning (default 5)
-      --password strings                  password. Comma-separated passwords allowed. TRIVY_PASSWORD should be used for security reasons.
+      --password strings                  password. Comma-separated passwords allowed. VUL_PASSWORD should be used for security reasons.
       --policy-bundle-repository string   OCI registry URL to retrieve policy bundle from (default "ghcr.io/khulnasoft-lab/defsec:0")
       --policy-namespaces strings         Rego namespaces
       --redis-ca string                   redis ca file location, if using redis as cache backend

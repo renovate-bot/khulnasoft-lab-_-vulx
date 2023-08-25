@@ -99,7 +99,7 @@ body:
   - type: input
     attributes:
       label: Operating System
-      description: On what operating system are you running Trivy?
+      description: On what operating system are you running Vul?
       placeholder: "e.g. macOS Big Sur"
     validations:
       required: true
@@ -121,4 +121,4 @@ body:
   - type: markdown
     attributes:
       value: |
-        We would be happy if you could share how you are using Trivy [here](https://github.com/khulnasoft-lab/vul/discussions/new?category=show-and-tell).
+        We would be happy if you could share how you are using Vul [here](https://github.com/khulnasoft-lab/vul/discussions/new?category=show-and-tell).

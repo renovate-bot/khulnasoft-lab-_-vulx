@@ -1,5 +1,5 @@
 # Azure ARM Template
-Trivy supports the scanners listed in the table below.
+Vul supports the scanners listed in the table below.
 
 |      Scanner       | Supported |
 | :----------------: | :-------: |
@@ -22,7 +22,7 @@ bicep build main.bicep
 ```
 
 ## Misconfiguration
-Trivy recursively searches directories and scans all found Azure ARM templates.
+Vul recursively searches directories and scans all found Azure ARM templates.
 
 ## Secret
 The secret scan is performed on plain text files, with no special treatment for Azure ARM templates.

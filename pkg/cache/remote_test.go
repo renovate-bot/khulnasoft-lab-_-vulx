@@ -73,7 +73,7 @@ func withToken(base http.Handler, token, tokenHeader string) http.Handler {
 func TestRemoteCache_PutArtifact(t *testing.T) {
 	mux := http.NewServeMux()
 	layerHandler := rpcCache.NewCacheServer(new(mockCacheServer), nil)
-	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Trivy-Token"))
+	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Vul-Token"))
 	ts := httptest.NewServer(mux)
 
 	type args struct {
@@ -104,7 +104,7 @@ func TestRemoteCache_PutArtifact(t *testing.T) {
 					},
 				},
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 		},
@@ -126,7 +126,7 @@ func TestRemoteCache_PutArtifact(t *testing.T) {
 					},
 				},
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 			wantErr: "twirp error internal",
@@ -136,7 +136,7 @@ func TestRemoteCache_PutArtifact(t *testing.T) {
 			args: args{
 				imageID: "sha256:invalid",
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"invalid-token"},
+					"Vul-Token": []string{"invalid-token"},
 				},
 			},
 			wantErr: "twirp error unauthenticated",
@@ -160,7 +160,7 @@ func TestRemoteCache_PutArtifact(t *testing.T) {
 func TestRemoteCache_PutBlob(t *testing.T) {
 	mux := http.NewServeMux()
 	layerHandler := rpcCache.NewCacheServer(new(mockCacheServer), nil)
-	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Trivy-Token"))
+	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Vul-Token"))
 	ts := httptest.NewServer(mux)
 
 	type args struct {
@@ -178,7 +178,7 @@ func TestRemoteCache_PutBlob(t *testing.T) {
 			args: args{
 				diffID: "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 		},
@@ -187,7 +187,7 @@ func TestRemoteCache_PutBlob(t *testing.T) {
 			args: args{
 				diffID: "sha256:invalid",
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 			wantErr: "twirp error internal",
@@ -197,7 +197,7 @@ func TestRemoteCache_PutBlob(t *testing.T) {
 			args: args{
 				diffID: "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"invalid-token"},
+					"Vul-Token": []string{"invalid-token"},
 				},
 			},
 			wantErr: "twirp error unauthenticated",
@@ -221,7 +221,7 @@ func TestRemoteCache_PutBlob(t *testing.T) {
 func TestRemoteCache_MissingBlobs(t *testing.T) {
 	mux := http.NewServeMux()
 	layerHandler := rpcCache.NewCacheServer(new(mockCacheServer), nil)
-	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Trivy-Token"))
+	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Vul-Token"))
 	ts := httptest.NewServer(mux)
 
 	type args struct {
@@ -245,7 +245,7 @@ func TestRemoteCache_MissingBlobs(t *testing.T) {
 					"sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				},
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 			wantMissingImage: true,
@@ -262,7 +262,7 @@ func TestRemoteCache_MissingBlobs(t *testing.T) {
 					"sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				},
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 			wantErr: "twirp error internal",
@@ -275,7 +275,7 @@ func TestRemoteCache_MissingBlobs(t *testing.T) {
 					"sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				},
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"invalid-token"},
+					"Vul-Token": []string{"invalid-token"},
 				},
 			},
 			wantErr: "twirp error unauthenticated",

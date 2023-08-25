@@ -38,7 +38,7 @@ $ vul --cache-dir /tmp/vul/ image python:3.4-alpine3.9
 !!! warning "EXPERIMENTAL"
     This feature might change without preserving backwards compatibility.
 
-Trivy supports local filesystem and Redis as the cache backend. This option is useful especially for client/server mode.
+Vul supports local filesystem and Redis as the cache backend. This option is useful especially for client/server mode.
 
 Two options:
 
@@ -58,7 +58,7 @@ If you want to use TLS with Redis, you can enable it by specifying the `--redis-
 $ vul server --cache-backend redis://localhost:6379 --redis-tls
 ```
 
-Trivy also supports for connecting to Redis with your certificates.
+Vul also supports for connecting to Redis with your certificates.
 You need to specify `--redis-ca` , `--redis-cert` , and `--redis-key` options.
 
 ```

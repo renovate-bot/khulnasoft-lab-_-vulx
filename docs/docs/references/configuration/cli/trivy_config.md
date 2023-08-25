@@ -29,7 +29,7 @@ vul config [flags] DIR
       --k8s-version string                specify k8s version to validate outdated api by it (example: 1.21.0)
       --module-dir string                 specify directory to the wasm modules that will be loaded (default "$HOME/.vul/modules")
   -o, --output string                     output file name
-      --password strings                  password. Comma-separated passwords allowed. TRIVY_PASSWORD should be used for security reasons.
+      --password strings                  password. Comma-separated passwords allowed. VUL_PASSWORD should be used for security reasons.
       --policy-bundle-repository string   OCI registry URL to retrieve policy bundle from (default "ghcr.io/khulnasoft-lab/defsec:0")
       --policy-namespaces strings         Rego namespaces
       --redis-ca string                   redis ca file location, if using redis as cache backend

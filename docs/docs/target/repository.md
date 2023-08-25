@@ -39,7 +39,7 @@ See [here](../scanner/vulnerability.md#language-specific-packages) for the detai
 ## Scanners
 ### Vulnerabilities
 It is enabled by default.
-Trivy will look for vulnerabilities based on lock files such as Gemfile.lock and package-lock.json.
+Vul will look for vulnerabilities based on lock files such as Gemfile.lock and package-lock.json.
 See [here](../scanner/vulnerability.md) for the detail.
 
 ```
@@ -106,7 +106,7 @@ $ vul repo --scanners license [YOUR_REPO_URL]
 ```
 
 ## SBOM generation
-Trivy can generate SBOM for code repositories.
+Vul can generate SBOM for code repositories.
 See [here](../supply-chain/sbom.md) for the detail.
 
 ## References

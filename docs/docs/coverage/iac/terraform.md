@@ -1,5 +1,5 @@
 # Terraform
-Trivy supports the scanners listed in the table below.
+Vul supports the scanners listed in the table below.
 
 |     Scanner      | Supported |
 | :--------------: | :-------: |
@@ -14,8 +14,8 @@ It supports the following formats:
 |    HCL    |     ✓     |
 | Plan JSON |     ✓     |
 
-Trivy can scan the results of `terraform plan`.
-You can scan by passing the file generated as shown below to Trivy:
+Vul can scan the results of `terraform plan`.
+You can scan by passing the file generated as shown below to Vul:
 
 ```
 $ terraform plan --out tfplan.binary
@@ -23,11 +23,11 @@ $ terraform show -json tfplan.binary > tfplan.json
 ```
 
 ## Misconfiguration
-Trivy recursively searches directories and scans all found Terraform files.
+Vul recursively searches directories and scans all found Terraform files.
 It also evaluates variables, imports, and other elements within Terraform files to detect misconfigurations.
 
 ### Value Overrides
-You can provide `tf-vars` files to Trivy to override default values specified in the Terraform HCL code.
+You can provide `tf-vars` files to Vul to override default values specified in the Terraform HCL code.
 
 ```bash
 vul conf --tf-vars dev.terraform.tfvars ./infrastructure/tf

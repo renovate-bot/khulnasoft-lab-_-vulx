@@ -5,16 +5,16 @@ metadata:
   labels:
 {{ include "vul.labels" . | indent 4 }}
 data:
-  TRIVY_LISTEN: "0.0.0.0:{{ .Values.service.port }}"
-  TRIVY_CACHE_DIR: "/home/scanner/.cache/vul"
+  VUL_LISTEN: "0.0.0.0:{{ .Values.service.port }}"
+  VUL_CACHE_DIR: "/home/scanner/.cache/vul"
 {{- if .Values.vul.cache.redis.enabled }}
-  TRIVY_CACHE_BACKEND: {{ .Values.vul.cache.redis.url | quote }}
-  TRIVY_CACHE_TTL: {{ .Values.vul.cache.redis.ttl | quote }}
-  TRIVY_REDIS_TLS: {{ .Values.vul.cache.redis.tls | quote }}
+  VUL_CACHE_BACKEND: {{ .Values.vul.cache.redis.url | quote }}
+  VUL_CACHE_TTL: {{ .Values.vul.cache.redis.ttl | quote }}
+  VUL_REDIS_TLS: {{ .Values.vul.cache.redis.tls | quote }}
 {{- end }}
-  TRIVY_DEBUG: {{ .Values.vul.debugMode | quote }}
-  TRIVY_SKIP_DB_UPDATE: {{ .Values.vul.skipDBUpdate | quote }}
-  TRIVY_DB_REPOSITORY: {{ .Values.vul.dbRepository | quote }}
+  VUL_DEBUG: {{ .Values.vul.debugMode | quote }}
+  VUL_SKIP_DB_UPDATE: {{ .Values.vul.skipDBUpdate | quote }}
+  VUL_DB_REPOSITORY: {{ .Values.vul.dbRepository | quote }}
 {{- if .Values.httpProxy }}
   HTTP_PROXY: {{ .Values.httpProxy | quote }}
 {{- end }}

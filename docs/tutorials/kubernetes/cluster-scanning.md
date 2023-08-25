@@ -8,9 +8,9 @@ Pro tip: The output of the commands will be even more interesting if you have so
 
 ## Cluster Scanning
 
-Trivy K8s is great to get an overview of all the vulnerabilities and misconfiguration issues or to scan specific workloads that are running in your cluster. You would want to use the Trivy K8s command either on your own local cluster or in your CI/CD pipeline post deployments.  
+Vul K8s is great to get an overview of all the vulnerabilities and misconfiguration issues or to scan specific workloads that are running in your cluster. You would want to use the Vul K8s command either on your own local cluster or in your CI/CD pipeline post deployments.  
 
-The `vul k8s` command is part of the Trivy CLI. 
+The `vul k8s` command is part of the Vul CLI. 
 
 With the following command, we can scan our entire Kubernetes cluster for vulnerabilities and get a summary of the scan: 
 
@@ -26,7 +26,7 @@ vul k8s --report=all cluster
 
 However, we recommend displaying all information only in case you scan a specific namespace or resource since you can get overwhelmed with additional details. 
 
-Furthermore, we can specify the namespace that Trivy is supposed to scan to focus on specific resources in the scan result: 
+Furthermore, we can specify the namespace that Vul is supposed to scan to focus on specific resources in the scan result: 
 
 ```
 vul k8s -n kube-system --report=summary cluster
@@ -44,34 +44,34 @@ Like with scanning for vulnerabilities, we can also filter in-cluster security i
 vul k8s --severity=CRITICAL --report=summary cluster
 ```
 
-Note that you can use any of the Trivy flags on the Trivy K8s command. 
+Note that you can use any of the Vul flags on the Vul K8s command. 
 
-With the Trivy K8s command, you can also scan specific workloads that are running within your cluster, such as our deployment: 
+With the Vul K8s command, you can also scan specific workloads that are running within your cluster, such as our deployment: 
 
 ```
 vul k8s --namespace  app --report=summary deployments/react-application
 ```
 
-## Trivy Operator 
+## Vul Operator 
 
-The Trivy K8s command is an imperative model to scan resources. We wouldn’t want to manually scan each resource across different environments. The larger the cluster and the more workloads are running in it, the more error-prone this process would become. With the Trivy Operator, we can automate the scanning process after the deployment.  
+The Vul K8s command is an imperative model to scan resources. We wouldn’t want to manually scan each resource across different environments. The larger the cluster and the more workloads are running in it, the more error-prone this process would become. With the Vul Operator, we can automate the scanning process after the deployment.  
 
-The Trivy Operator follows the Kubernetes Operator Model. Operators automate human actions, and the result of the task is saved as custom resource definitions (CRDs) within your cluster. 
+The Vul Operator follows the Kubernetes Operator Model. Operators automate human actions, and the result of the task is saved as custom resource definitions (CRDs) within your cluster. 
 
 This has several benefits: 
 
-- Trivy Operator is installed CRDs in our cluster. As a result, all our resources, including our security scanner and its scan results, are Kubernetes resources. This makes it much easier to integrate the Trivy Operator directly into our existing processes, such as connecting Trivy with Prometheus, a monitoring system. 
+- Vul Operator is installed CRDs in our cluster. As a result, all our resources, including our security scanner and its scan results, are Kubernetes resources. This makes it much easier to integrate the Vul Operator directly into our existing processes, such as connecting Vul with Prometheus, a monitoring system. 
 
-- The Trivy Operator will automatically scan your resources every six hours. You can set up automatic alerting in case new critical security issues are discovered. 
+- The Vul Operator will automatically scan your resources every six hours. You can set up automatic alerting in case new critical security issues are discovered. 
 
-- The CRDs can be both machine and human-readable depending on which applications consume the CRDs. This allows for more versatile applications of the Trivy operator. 
+- The CRDs can be both machine and human-readable depending on which applications consume the CRDs. This allows for more versatile applications of the Vul operator. 
 
  
-There are several ways that you can install the Trivy Operator in your cluster. In this guide, we’re going to use the Helm installation based on the [following documentation.](../../docs/target/kubernetes.md#vul-operator)
+There are several ways that you can install the Vul Operator in your cluster. In this guide, we’re going to use the Helm installation based on the [following documentation.](../../docs/target/kubernetes.md#vul-operator)
 
-Please follow the Trivy Operator documentation for further information on:
+Please follow the Vul Operator documentation for further information on:
 
-- [Installation of the Trivy Operator](https://aquasecurity.github.io/vul-operator/latest/getting-started/installation/)
+- [Installation of the Vul Operator](https://aquasecurity.github.io/vul-operator/latest/getting-started/installation/)
 - [Getting started guide](https://aquasecurity.github.io/vul-operator/latest/getting-started/quick-start/)
 
 

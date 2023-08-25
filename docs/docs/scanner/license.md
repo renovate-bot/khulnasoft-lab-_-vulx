@@ -1,6 +1,6 @@
 # License Scanning
 
-Trivy scans any container image for license files and offers an opinionated view on the risk associated with the license.
+Vul scans any container image for license files and offers an opinionated view on the risk associated with the license.
 
 License are classified using the [Google License Classification][google-license-classification] -
 
@@ -13,16 +13,16 @@ License are classified using the [Google License Classification][google-license-
  - Unknown
 
 !!! tip
-    Licenses that Trivy fails to recognize are classified as UNKNOWN.
+    Licenses that Vul fails to recognize are classified as UNKNOWN.
     As those licenses may be in violation, it is recommended to check those unknown licenses as well.    
 
-By default, Trivy scans licenses for packages installed by `apk`, `apt-get`, `dnf`, `npm`, `pip`, `gem`, etc.
+By default, Vul scans licenses for packages installed by `apk`, `apt-get`, `dnf`, `npm`, `pip`, `gem`, etc.
 Check out [the coverage document][coverage] for details.
 
 To enable extended license scanning, you can use `--license-full`.
-In addition to package licenses, Trivy scans source code files, Markdown documents, text files and `LICENSE` documents to identify license usage within the image or filesystem.
+In addition to package licenses, Vul scans source code files, Markdown documents, text files and `LICENSE` documents to identify license usage within the image or filesystem.
 
-By default, Trivy only classifies licenses that are matched with a confidence level of 0.9 or more by the classifer.
+By default, Vul only classifies licenses that are matched with a confidence level of 0.9 or more by the classifer.
 To configure the confidence level, you can use `--license-confidence-level`. This enables us to classify licenses that might be matched with a lower confidence level by the classifer. 
 
 !!! note
@@ -138,11 +138,11 @@ Total: 6 (UNKNOWN: 4, HIGH: 0, CRITICAL: 2)
 
 ## Configuration
 
-Trivy has number of configuration flags for use with license scanning;
+Vul has number of configuration flags for use with license scanning;
                                  
 ### Ignored Licenses
 
-Trivy license scanning can ignore licenses that are identified to explicitly remove them from the results using the `--ignored-licenses` flag;
+Vul license scanning can ignore licenses that are identified to explicitly remove them from the results using the `--ignored-licenses` flag;
 
 ```shell
 $ vul image --scanners license --ignored-licenses MPL-2.0,MIT --severity HIGH grafana/grafana:latest

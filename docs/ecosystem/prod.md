@@ -4,16 +4,16 @@
 
 [Kubernetes](https://kubernetes.io/) is an open-source system for automating deployment, scaling, and management of containerized applications.
 
-### Trivy Operator (Official)
+### Vul Operator (Official)
 
-Using the Trivy Operator you can install Trivy into a Kubernetes cluster so that it automatically and continuously scan your workloads and cluster for security issues.
+Using the Vul Operator you can install Vul into a Kubernetes cluster so that it automatically and continuously scan your workloads and cluster for security issues.
 
 👉 Get it at: <https://github.com/khulnasoft-lab/vul-operator>
 
 ## Harbor (Official)
 [Harbor](https://goharbor.io/) is an open source cloud native container and artifact registry.
 
-Trivy is natively integrated into Harbor, no installation is needed. More info in Harbor documentation: <https://goharbor.io/docs/2.6.0/administration/vulnerability-scanning>
+Vul is natively integrated into Harbor, no installation is needed. More info in Harbor documentation: <https://goharbor.io/docs/2.6.0/administration/vulnerability-scanning>
 
 ## Kyverno (Community)
 [Kyverno](https://kyverno.io/) is a policy management tool for Kubernetes.

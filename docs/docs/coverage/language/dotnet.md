@@ -1,6 +1,6 @@
 # .NET
 
-Trivy supports `.NET core` and `NuGet` package managers.
+Vul supports `.NET core` and `NuGet` package managers.
 
 The following scanners are supported.
 
@@ -9,7 +9,7 @@ The following scanners are supported.
 | .Net Core |  ✓   |       ✓       |    -    |
 | NuGet     |  ✓   |       ✓       |    -    |
 
-The following table provides an outline of the features Trivy offers.
+The following table provides an outline of the features Vul offers.
 
 | Package manager | File               | Transitive dependencies | Dev dependencies | [Dependency graph][dependency-graph] | Position |
 |:---------------:|--------------------|:-----------------------:|:----------------:|:------------------------------------:|:--------:|
@@ -18,10 +18,10 @@ The following table provides an outline of the features Trivy offers.
 |      NuGet      | packages.lock.json |            ✓            |     Included     |                  ✓                   |    ✓     |
 
 ### *.deps.json
-Trivy parses `*.deps.json` files. Trivy currently excludes dev dependencies from the report.
+Vul parses `*.deps.json` files. Vul currently excludes dev dependencies from the report.
 
 ### packages.config
-Trivy only finds dependency names and versions from `packages.config` files. To build dependency graph, it is better to use `packages.lock.json` files.
+Vul only finds dependency names and versions from `packages.config` files. To build dependency graph, it is better to use `packages.lock.json` files.
 
 ### packages.lock.json
 Don't forgot to [enable][enable-lock] lock files in your project.

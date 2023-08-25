@@ -1,5 +1,5 @@
 # CloudFormation
-Trivy supports the scanners listed in the table below.
+Vul supports the scanners listed in the table below.
 
 |      Scanner       | Supported |
 | :----------------: | :-------: |
@@ -14,7 +14,7 @@ It supports the following formats.
 |  YAML  |     ✓     |
 
 ## Misconfiguration
-Trivy recursively searches directories and scans all found CloudFormation files.
+Vul recursively searches directories and scans all found CloudFormation files.
 It evaluates properties, functions, and other elements within CloudFormation files to detect misconfigurations.
 
 ## Secret

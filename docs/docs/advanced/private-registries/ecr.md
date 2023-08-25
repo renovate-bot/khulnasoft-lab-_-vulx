@@ -1,11 +1,11 @@
-Trivy uses AWS SDK. You don't need to install `aws` CLI tool.
+Vul uses AWS SDK. You don't need to install `aws` CLI tool.
 You can use [AWS CLI's ENV Vars][env-var].
 
 [env-var]: https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
 
 ### AWS private registry permissions
 
-You may need to grant permissions to allow Trivy to pull images from private ECR.
+You may need to grant permissions to allow Vul to pull images from private ECR.
 
 It depends on how you want to provide AWS Role to vul.
 

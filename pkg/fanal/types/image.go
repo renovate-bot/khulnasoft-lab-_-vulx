@@ -31,7 +31,7 @@ type Platform struct {
 	*v1.Platform
 
 	// Force returns an error if the specified platform is not found.
-	// This option is for Aqua, and cannot be configured via Trivy CLI.
+	// This option is for Aqua, and cannot be configured via Vul CLI.
 	Force bool
 }
 

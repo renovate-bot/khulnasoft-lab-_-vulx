@@ -12,4 +12,4 @@ RUN go install github.com/twitchtv/twirp/protoc-gen-twirp@v8.1.0
 RUN go install google.golang.org/protobuf/cmd/protoc-gen-go@v1.27.1
 RUN go install github.com/magefile/mage@v1.14.0
 
-ENV TRIVY_PROTOC_CONTAINER=true
+ENV VUL_PROTOC_CONTAINER=true

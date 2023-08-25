@@ -1,8 +1,8 @@
 # GitLab CI
 
-GitLab 15.0 includes [free](https://gitlab.com/groups/gitlab-org/-/epics/2233) integration with Trivy.
+GitLab 15.0 includes [free](https://gitlab.com/groups/gitlab-org/-/epics/2233) integration with Vul.
 
-To [configure container scanning with Trivy in GitLab](https://docs.gitlab.com/ee/user/application_security/container_scanning/#configuration), simply include the CI template in your `.gitlab-ci.yml` file:
+To [configure container scanning with Vul in GitLab](https://docs.gitlab.com/ee/user/application_security/container_scanning/#configuration), simply include the CI template in your `.gitlab-ci.yml` file:
 
 ```yaml
 include:
@@ -30,12 +30,12 @@ vul:
     # See https://github.com/docker-library/docker/pull/166
     DOCKER_TLS_CERTDIR: ""
     IMAGE: vul-ci-test:$CI_COMMIT_SHA
-    TRIVY_NO_PROGRESS: "true"
-    TRIVY_CACHE_DIR: ".vulcache/"
+    VUL_NO_PROGRESS: "true"
+    VUL_CACHE_DIR: ".vulcache/"
   before_script:
-    - export TRIVY_VERSION=$(wget -qO - "https://api.github.com/repos/khulnasoft-lab/vul/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
-    - echo $TRIVY_VERSION
-    - wget --no-verbose https://github.com/khulnasoft-lab/vul/releases/download/v${TRIVY_VERSION}/vul_${TRIVY_VERSION}_Linux-64bit.tar.gz -O - | tar -zxvf -
+    - export VUL_VERSION=$(wget -qO - "https://api.github.com/repos/khulnasoft-lab/vul/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
+    - echo $VUL_VERSION
+    - wget --no-verbose https://github.com/khulnasoft-lab/vul/releases/download/v${VUL_VERSION}/vul_${VUL_VERSION}_Linux-64bit.tar.gz -O - | tar -zxvf -
   allow_failure: true
   script:
     # Build image
@@ -58,12 +58,12 @@ vul:
 [Example][example]
 [Repository][repository]
 
-### GitLab CI using Trivy container
+### GitLab CI using Vul container
 
 To scan a previously built image that has already been pushed into the
 GitLab container registry the following CI job manifest can be used.
 Note that `entrypoint` needs to be unset for the `script` section to work.
-In case of a non-public GitLab project Trivy additionally needs to
+In case of a non-public GitLab project Vul additionally needs to
 authenticate to the registry to be able to pull your application image.
 Finally, it is not necessary to clone the project repo as we only work
 with the container image.
@@ -77,11 +77,11 @@ container_scanning:
     # No need to clone the repo, we exclusively work on artifacts. See
     # https://docs.gitlab.com/ee/ci/runners/configure_runners.html#git-strategy
     GIT_STRATEGY: none
-    TRIVY_USERNAME: "$CI_REGISTRY_USER"
-    TRIVY_PASSWORD: "$CI_REGISTRY_PASSWORD"
-    TRIVY_AUTH_URL: "$CI_REGISTRY"
-    TRIVY_NO_PROGRESS: "true"
-    TRIVY_CACHE_DIR: ".vulcache/"
+    VUL_USERNAME: "$CI_REGISTRY_USER"
+    VUL_PASSWORD: "$CI_REGISTRY_PASSWORD"
+    VUL_AUTH_URL: "$CI_REGISTRY"
+    VUL_NO_PROGRESS: "true"
+    VUL_CACHE_DIR: ".vulcache/"
     FULL_IMAGE_NAME: $CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG
   script:
     - vul --version
@@ -137,12 +137,12 @@ vul:
     # See https://github.com/docker-library/docker/pull/166
     DOCKER_TLS_CERTDIR: ""
     IMAGE: vul-ci-test:$CI_COMMIT_SHA
-    TRIVY_NO_PROGRESS: "true"
-    TRIVY_CACHE_DIR: ".vulcache/"
+    VUL_NO_PROGRESS: "true"
+    VUL_CACHE_DIR: ".vulcache/"
   before_script:
-    - export TRIVY_VERSION=$(wget -qO - "https://api.github.com/repos/khulnasoft-lab/vul/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
-    - echo $TRIVY_VERSION
-    - wget --no-verbose https://github.com/khulnasoft-lab/vul/releases/download/v${TRIVY_VERSION}/vul_${TRIVY_VERSION}_Linux-64bit.tar.gz -O - | tar -zxvf -
+    - export VUL_VERSION=$(wget -qO - "https://api.github.com/repos/khulnasoft-lab/vul/releases/latest" | grep '"tag_name":' | sed -E 's/.*"v([^"]+)".*/\1/')
+    - echo $VUL_VERSION
+    - wget --no-verbose https://github.com/khulnasoft-lab/vul/releases/download/v${VUL_VERSION}/vul_${VUL_VERSION}_Linux-64bit.tar.gz -O - | tar -zxvf -
   allow_failure: true
   script:
     # Build image

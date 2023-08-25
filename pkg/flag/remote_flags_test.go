@@ -35,17 +35,17 @@ func TestRemoteFlagGroup_ToOptions(t *testing.T) {
 					"Authorization:user:password",
 				},
 				Token:       "token",
-				TokenHeader: "Trivy-Token",
+				TokenHeader: "Vul-Token",
 			},
 			want: flag.RemoteOptions{
 				ServerAddr: "http://localhost:4954",
 				CustomHeaders: http.Header{
 					"X-Api-Token":   []string{"foo bar"},
 					"Authorization": []string{"user:password"},
-					"Trivy-Token":   []string{"token"},
+					"Vul-Token":     []string{"token"},
 				},
 				Token:       "token",
-				TokenHeader: "Trivy-Token",
+				TokenHeader: "Vul-Token",
 			},
 		},
 		{
@@ -54,13 +54,13 @@ func TestRemoteFlagGroup_ToOptions(t *testing.T) {
 				CustomHeaders: []string{
 					"Authorization:user:password",
 				},
-				TokenHeader: "Trivy-Token",
+				TokenHeader: "Vul-Token",
 			},
 			want: flag.RemoteOptions{
 				CustomHeaders: http.Header{
 					"Authorization": []string{"user:password"},
 				},
-				TokenHeader: "Trivy-Token",
+				TokenHeader: "Vul-Token",
 			},
 			wantLogs: []string{
 				`"--custom-header" can be used only with "--server"`,

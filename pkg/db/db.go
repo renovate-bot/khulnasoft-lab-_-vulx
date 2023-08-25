@@ -99,7 +99,7 @@ func (c *Client) NeedsUpdate(cliVersion string, skip bool) (bool, error) {
 	}
 
 	if db.SchemaVersion < meta.Version {
-		log.Logger.Errorf("Trivy version (%s) is old. Update to the latest version.", cliVersion)
+		log.Logger.Errorf("Vul version (%s) is old. Update to the latest version.", cliVersion)
 		return false, xerrors.Errorf("the version of DB schema doesn't match. Local DB: %d, Expected: %d",
 			meta.Version, db.SchemaVersion)
 	}
@@ -122,7 +122,7 @@ func (c *Client) NeedsUpdate(cliVersion string, skip bool) (bool, error) {
 
 func (c *Client) validate(meta metadata.Metadata) error {
 	if db.SchemaVersion != meta.Version {
-		log.Logger.Error("The local DB has an old schema version which is not supported by the current version of Trivy CLI. DB needs to be updated.")
+		log.Logger.Error("The local DB has an old schema version which is not supported by the current version of Vul CLI. DB needs to be updated.")
 		return xerrors.Errorf("--skip-update cannot be specified with the old DB schema. Local DB: %d, Expected: %d",
 			meta.Version, db.SchemaVersion)
 	}

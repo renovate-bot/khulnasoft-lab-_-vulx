@@ -4,18 +4,18 @@
     This feature might change without preserving backwards compatibility.
 
 ## CLI
-The Trivy K8s CLI allows you to scan your Kubernetes cluster for 
+The Vul K8s CLI allows you to scan your Kubernetes cluster for 
 
 - Vulnerabilities
 - Misconfigurations
 - Secrets
  
 You can either run the CLI locally or integrate it into your CI/CD pipeline.
-The difference to the Trivy CLI is that the Trivy K8s CLI allows you to scan running workloads directly within your cluster.
+The difference to the Vul CLI is that the Vul K8s CLI allows you to scan running workloads directly within your cluster.
 
-If you are looking for continuous cluster audit scanning, have a look at the Trivy K8s operator below.
+If you are looking for continuous cluster audit scanning, have a look at the Vul K8s operator below.
 
-Trivy uses your local kubectl configuration to access the API server to list artifacts.
+Vul uses your local kubectl configuration to access the API server to list artifacts.
 
 ### Commands
 
@@ -74,7 +74,7 @@ For example, scanning a deployment in the app namespace of your Kubernetes clust
 ```
 $ vul k8s -n app --severity=CRITICAL deployment/appname
 ```
-This is specific to all Trivy CLI commands.
+This is specific to all Vul CLI commands.
 
 The supported formats are `table`, which is the default, and `json`.
 To get a JSON output on a full cluster scan:
@@ -243,7 +243,7 @@ $ vul k8s --format json -o results.json cluster
 
 ### Infra checks
 
-Trivy by default scans kubernetes infra components (apiserver, controller-manager, scheduler and etcd)
+Vul by default scans kubernetes infra components (apiserver, controller-manager, scheduler and etcd)
 if they exist under the `kube-system` namespace. For example, if you run a full cluster scan, or scan all
 components under `kube-system` with commands:
 
@@ -291,7 +291,7 @@ vul k8s cluster --report summary --exclude-nodes kubernetes.io/arch:arm6
 
 ### Compliance
 This section describes Kubernetes specific compliance reports.
-For an overview of Trivy's Compliance feature, including working with custom compliance, check out the [Compliance documentation](../compliance/compliance.md).
+For an overview of Vul's Compliance feature, including working with custom compliance, check out the [Compliance documentation](../compliance/compliance.md).
 
 #### Built in reports
 
@@ -332,7 +332,7 @@ vul k8s cluster --compliance=<compliance_id> --report all --format json
 ```
 
 ## Operator
-Trivy has a native [Kubernetes Operator][operator] which continuously scans your Kubernetes cluster for security issues, and generates security reports as Kubernetes [Custom Resources][crd]. It does it by watching Kubernetes for state changes and automatically triggering scans in response to changes, for example initiating a vulnerability scan when a new Pod is created.
+Vul has a native [Kubernetes Operator][operator] which continuously scans your Kubernetes cluster for security issues, and generates security reports as Kubernetes [Custom Resources][crd]. It does it by watching Kubernetes for state changes and automatically triggering scans in response to changes, for example initiating a vulnerability scan when a new Pod is created.
 
 > Kubernetes-native security toolkit. ([Documentation][vul-operator]).
 
@@ -346,12 +346,12 @@ Trivy has a native [Kubernetes Operator][operator] which continuously scans your
 
 ## SBOM
 
-Trivy supports the generation of Kubernetes Bill of Materials (KBOM) for kubernetes cluster control plane components, node components and addons.
+Vul supports the generation of Kubernetes Bill of Materials (KBOM) for kubernetes cluster control plane components, node components and addons.
 
 ## KBOM
 
 KBOM, Kubernetes Bill of Materials, is a manifest of all the important components that make up your Kubernetes cluster – Control plane components, Node Components, and Addons, including their versions and images. Which “api-server” version are you currently running? Which flavor of “kubelet” is running on each node? What kind of etcd or storage are you currently using? And most importantly – are there any vulnerabilities known to affect these components? These are all questions that KBOM can help you answer.
-Trivy can generate KBOM in CycloneDX format:
+Vul can generate KBOM in CycloneDX format:
 
 ```sh
 vul k8s cluster --format cyclonedx

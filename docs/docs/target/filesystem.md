@@ -22,7 +22,7 @@ $ vul fs ~/src/github.com/khulnasoft-lab/vul-ci-test/Pipfile.lock
 ## Scanners
 ### Vulnerabilities
 It is enabled by default.
-Trivy will look for vulnerabilities based on lock files such as Gemfile.lock and package-lock.json.
+Vul will look for vulnerabilities based on lock files such as Gemfile.lock and package-lock.json.
 See [here](../scanner/vulnerability.md) for the detail.
 
 ```
@@ -89,5 +89,5 @@ $ vul fs --scanners license /path/to/project
 ```
 
 ## SBOM generation
-Trivy can generate SBOM for local projects.
+Vul can generate SBOM for local projects.
 See [here](../supply-chain/sbom.md) for the detail.

@@ -62,7 +62,7 @@ func TestModule(t *testing.T) {
 				outputFile,
 			}...)
 
-			// Run Trivy
+			// Run Vul
 			err := execute(osArgs)
 			require.NoError(t, err)
 			defer func() {

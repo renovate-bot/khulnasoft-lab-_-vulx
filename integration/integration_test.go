@@ -187,7 +187,7 @@ func execute(osArgs []string) error {
 	app := commands.NewApp()
 	app.SetOut(io.Discard)
 
-	// Run Trivy
+	// Run Vul
 	app.SetArgs(osArgs)
 	return app.Execute()
 }

@@ -1,19 +1,19 @@
 # Air-Gapped Environment
 
-Trivy can be used in air-gapped environments. Note that an allowlist is [here][allowlist].
+Vul can be used in air-gapped environments. Note that an allowlist is [here][allowlist].
 
 ## Air-Gapped Environment for vulnerabilities
 
 ### Download the vulnerability database
 At first, you need to download the vulnerability database for use in air-gapped environments.
 
-=== "Trivy"
+=== "Vul"
 
     ```
-    TRIVY_TEMP_DIR=$(mktemp -d)
-    vul --cache-dir $TRIVY_TEMP_DIR image --download-db-only
-    tar -cf ./db.tar.gz -C $TRIVY_TEMP_DIR/db metadata.json vul.db
-    rm -rf $TRIVY_TEMP_DIR
+    VUL_TEMP_DIR=$(mktemp -d)
+    vul --cache-dir $VUL_TEMP_DIR image --download-db-only
+    tar -cf ./db.tar.gz -C $VUL_TEMP_DIR/db metadata.json vul.db
+    rm -rf $VUL_TEMP_DIR
     ```
 
 === "oras >= v0.13.0"
@@ -41,13 +41,13 @@ Java users also need to download the Java index database for use in air-gapped e
     You container image may contain JAR files even though you don't use Java directly.
     In that case, you also need to download the Java index database.
 
-=== "Trivy"
+=== "Vul"
 
     ```
-    TRIVY_TEMP_DIR=$(mktemp -d)
-    vul --cache-dir $TRIVY_TEMP_DIR image --download-java-db-only
-    tar -cf ./javadb.tar.gz -C $TRIVY_TEMP_DIR/java-db metadata.json vul-java.db
-    rm -rf $TRIVY_TEMP_DIR
+    VUL_TEMP_DIR=$(mktemp -d)
+    vul --cache-dir $VUL_TEMP_DIR image --download-java-db-only
+    tar -cf ./javadb.tar.gz -C $VUL_TEMP_DIR/java-db metadata.json vul-java.db
+    rm -rf $VUL_TEMP_DIR
     ```
 === "oras >= v0.13.0"
     Please follow [oras installation instruction][oras].
@@ -81,13 +81,13 @@ The way of transfer depends on the environment.
     $ rsync -av -e ssh /path/to/javadb.tar.gz [user]@[host]:dst
     ```
 
-### Put the DB files in Trivy's cache directory
+### Put the DB files in Vul's cache directory
 You have to know where to put the DB files. The following command shows the default cache directory.
 
 ```
 $ ssh user@host
 $ vul -h | grep cache
-   --cache-dir value  cache directory (default: "/home/myuser/.cache/vul") [$TRIVY_CACHE_DIR]
+   --cache-dir value  cache directory (default: "/home/myuser/.cache/vul") [$VUL_CACHE_DIR]
 ```
 === "Vulnerability db"
     Put the DB file in the cache directory + `/db`.
@@ -115,11 +115,11 @@ $ vul -h | grep cache
 
 
 
-In an air-gapped environment it is your responsibility to update the Trivy databases on a regular basis, so that the scanner can detect recently-identified vulnerabilities. 
+In an air-gapped environment it is your responsibility to update the Vul databases on a regular basis, so that the scanner can detect recently-identified vulnerabilities. 
 
-### Run Trivy with the specific flags.
-In an air-gapped environment, you have to specify `--skip-db-update` and `--skip-java-db-update`[^1] so that Trivy doesn't attempt to download the latest database files.
-In addition, if you want to scan `pom.xml` dependencies, you need to specify `--offline-scan` since Trivy tries to issue API requests for scanning Java applications by default.
+### Run Vul with the specific flags.
+In an air-gapped environment, you have to specify `--skip-db-update` and `--skip-java-db-update`[^1] so that Vul doesn't attempt to download the latest database files.
+In addition, if you want to scan `pom.xml` dependencies, you need to specify `--offline-scan` since Vul tries to issue API requests for scanning Java applications by default.
 
 ```
 $ vul image --skip-db-update --skip-java-db-update --offline-scan alpine:3.12
@@ -129,8 +129,8 @@ $ vul image --skip-db-update --skip-java-db-update --offline-scan alpine:3.12
 
 No special measures are required to detect misconfigurations in an air-gapped environment.
 
-### Run Trivy with `--skip-policy-update` option
-In an air-gapped environment, specify `--skip-policy-update` so that Trivy doesn't attempt to download the latest misconfiguration policies.
+### Run Vul with `--skip-policy-update` option
+In an air-gapped environment, specify `--skip-policy-update` so that Vul doesn't attempt to download the latest misconfiguration policies.
 
 ```
 $ vul conf --skip-policy-update /path/to/conf

@@ -154,7 +154,7 @@ func validateReportArguments(opts flag.Options) error {
 		!viper.IsSet("report") &&
 		opts.Format == "table" {
 
-		m := "All the results in the table format can mess up your terminal. Use \"--report all\" to tell Trivy to output it to your terminal anyway, or consider \"--report summary\" to show the summary output."
+		m := "All the results in the table format can mess up your terminal. Use \"--report all\" to tell Vul to output it to your terminal anyway, or consider \"--report summary\" to show the summary output."
 
 		return xerrors.New(m)
 	}

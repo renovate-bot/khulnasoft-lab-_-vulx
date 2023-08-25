@@ -1,5 +1,5 @@
 # Oracle Linux
-Trivy supports the following scanners for OS packages.
+Vul supports the following scanners for OS packages.
 
 |    Scanner    | Supported |
 | :-----------: | :-------: |
@@ -9,7 +9,7 @@ Trivy supports the following scanners for OS packages.
 
 Please see [here](index.md#supported-os) for supported versions.
 
-The table below outlines the features offered by Trivy.
+The table below outlines the features offered by Vul.
 
 |                Feature                | Supported |
 | :-----------------------------------: | :-------: |
@@ -17,7 +17,7 @@ The table below outlines the features offered by Trivy.
 | [Dependency graph][dependency-graph] |     ✓     |
 
 ## SBOM
-Trivy detects packages that have been installed through package managers such as `dnf` and `yum`.
+Vul detects packages that have been installed through package managers such as `dnf` and `yum`.
 
 ## Vulnerability
 Oracle Linux offers its own security advisories, and these are utilized when scanning Oracle Linux for vulnerabilities.
@@ -26,17 +26,17 @@ Oracle Linux offers its own security advisories, and these are utilized when sca
 See [here](../../scanner/vulnerability.md#data-sources).
 
 ### Fixed Version
-Trivy takes fixed versions from [Oracle security advisories][alerts].
+Vul takes fixed versions from [Oracle security advisories][alerts].
 
 ### Severity
-Trivy determines vulnerability severity based on the severity metric provided in [Oracle security advisories][alerts].
+Vul determines vulnerability severity based on the severity metric provided in [Oracle security advisories][alerts].
 For example, the security patch for [CVE-2023-0464][CVE-2023-0464] is provided as [ELSA-2023-2645][ELSA-2023-2645].
 Its severity is rated as "MODERATE".
-Thus, even though it's evaluated as "HIGH" in the NVD, Trivy displays it with a severity of "MEDIUM".
+Thus, even though it's evaluated as "HIGH" in the NVD, Vul displays it with a severity of "MEDIUM".
 
-The table below is the mapping of Oracle's threat to Trivy's severity levels.
+The table below is the mapping of Oracle's threat to Vul's severity levels.
 
-|  Oracle   |  Trivy   |
+|  Oracle   |  Vul   |
 | :-------: | :------: |
 |    Low    |   Low    |
 | Moderate  |  Medium  |
@@ -44,7 +44,7 @@ The table below is the mapping of Oracle's threat to Trivy's severity levels.
 | Critical  | Critical |
 
 ### Status
-Trivy supports the following [vulnerability statuses] for Oracle Linux.
+Vul supports the following [vulnerability statuses] for Oracle Linux.
 
 |       Status        | Supported |
 | :-----------------: | :-------: |
@@ -56,7 +56,7 @@ Trivy supports the following [vulnerability statuses] for Oracle Linux.
 |     End of Life     |           |
 
 ## License
-Trivy identifies licenses by examining the metadata of RPM packages.
+Vul identifies licenses by examining the metadata of RPM packages.
 
 [dependency-graph]: ../../configuration/reporting.md#show-origins-of-vulnerable-dependencies
 

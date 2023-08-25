@@ -19,7 +19,7 @@ var (
 		Name:       "password",
 		ConfigName: "registry.password",
 		Default:    []string{},
-		Usage:      "password. Comma-separated passwords allowed. TRIVY_PASSWORD should be used for security reasons.",
+		Usage:      "password. Comma-separated passwords allowed. VUL_PASSWORD should be used for security reasons.",
 	}
 	RegistryTokenFlag = Flag{
 		Name:       "registry-token",

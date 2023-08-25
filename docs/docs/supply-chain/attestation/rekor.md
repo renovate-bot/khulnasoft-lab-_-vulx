@@ -4,7 +4,7 @@
     This feature might change without preserving backwards compatibility.
 
 ## Container images
-Trivy can retrieve SBOM attestation of the specified container image in the [Rekor][rekor] instance and scan it for vulnerabilities.
+Vul can retrieve SBOM attestation of the specified container image in the [Rekor][rekor] instance and scan it for vulnerabilities.
 
 ### Prerequisites
 1. SBOM attestation stored in Rekor
@@ -12,7 +12,7 @@ Trivy can retrieve SBOM attestation of the specified container image in the [Rek
  
 
 ### Scanning
-You need to pass `--sbom-sources rekor` so that Trivy will look for SBOM attestation in Rekor.
+You need to pass `--sbom-sources rekor` so that Vul will look for SBOM attestation in Rekor.
 
 !!! note
     `--sbom-sources` can be used only with `vul image` at the moment.
@@ -56,7 +56,7 @@ $ vul image --sbom-sources rekor --rekor-url https://my-rekor.dev otms61/alpine:
 ```
 
 ## Non-packaged binaries
-Trivy can retrieve SBOM attestation of non-packaged binaries in the [Rekor][rekor] instance and scan it for vulnerabilities.
+Vul can retrieve SBOM attestation of non-packaged binaries in the [Rekor][rekor] instance and scan it for vulnerabilities.
 
 ### Prerequisites
 1. SBOM attestation stored in Rekor
@@ -86,8 +86,8 @@ $ vul attest --predicate ./bat.cdx --type cyclonedx ./bat-v0.20.0-x86_64-apple-d
     To get more detail, please refer to the Rekor project's [documentation](https://github.com/sigstore/rekor#public-instance).
 
 ### Scan a non-packaged binary
-Trivy calculates the digest of the `bat` binary and searches for the SBOM attestation by the digest in Rekor.
-If it is found, Trivy uses that for vulnerability scanning.
+Vul calculates the digest of the `bat` binary and searches for the SBOM attestation by the digest in Rekor.
+If it is found, Vul uses that for vulnerability scanning.
 
 ```bash
 $ vul fs --sbom-sources rekor ./bat-v0.20.0-x86_64-apple-darwin/bat

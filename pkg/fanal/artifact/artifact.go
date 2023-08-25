@@ -45,7 +45,7 @@ type Option struct {
 }
 
 // WalkOption is a struct that allows users to define a custom walking behavior.
-// This option is only available when using Trivy as an imported library and not through CLI flags.
+// This option is only available when using Vul as an imported library and not through CLI flags.
 type WalkOption struct {
 	ErrorCallback walker.ErrorCallback
 }

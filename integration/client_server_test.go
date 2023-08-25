@@ -384,7 +384,7 @@ func TestClientServerWithFormat(t *testing.T) {
 			t.Setenv("AWS_ACCOUNT_ID", "123456789012")
 			osArgs, outputFile := setupClient(t, tt.args, addr, cacheDir, tt.golden)
 
-			// Run Trivy client
+			// Run Vul client
 			err := execute(osArgs)
 			require.NoError(t, err)
 
@@ -423,7 +423,7 @@ func TestClientServerWithCycloneDX(t *testing.T) {
 
 			osArgs, outputFile := setupClient(t, tt.args, addr, cacheDir, tt.golden)
 
-			// Run Trivy client
+			// Run Vul client
 			err := execute(osArgs)
 			require.NoError(t, err)
 
@@ -444,7 +444,7 @@ func TestClientServerWithToken(t *testing.T) {
 			args: csArgs{
 				Input:             "testdata/fixtures/images/alpine-39.tar.gz",
 				ClientToken:       "token",
-				ClientTokenHeader: "Trivy-Token",
+				ClientTokenHeader: "Vul-Token",
 			},
 			golden: "testdata/alpine-39.json.golden",
 		},
@@ -453,7 +453,7 @@ func TestClientServerWithToken(t *testing.T) {
 			args: csArgs{
 				Input:             "testdata/fixtures/images/distroless-base.tar.gz",
 				ClientToken:       "invalidtoken",
-				ClientTokenHeader: "Trivy-Token",
+				ClientTokenHeader: "Vul-Token",
 			},
 			wantErr: "twirp error unauthenticated: invalid token",
 		},
@@ -469,7 +469,7 @@ func TestClientServerWithToken(t *testing.T) {
 	}
 
 	serverToken := "token"
-	serverTokenHeader := "Trivy-Token"
+	serverTokenHeader := "Vul-Token"
 	addr, cacheDir := setup(t, setupOptions{
 		token:       serverToken,
 		tokenHeader: serverTokenHeader,
@@ -479,7 +479,7 @@ func TestClientServerWithToken(t *testing.T) {
 		t.Run(c.name, func(t *testing.T) {
 			osArgs, outputFile := setupClient(t, c.args, addr, cacheDir, c.golden)
 
-			// Run Trivy client
+			// Run Vul client
 			err := execute(osArgs)
 			if c.wantErr != "" {
 				require.Error(t, err, c.name)
@@ -498,7 +498,7 @@ func TestClientServerWithRedis(t *testing.T) {
 	ctx := context.Background()
 	redisC, addr := setupRedis(t, ctx)
 
-	// Set up Trivy server
+	// Set up Vul server
 	addr, cacheDir := setup(t, setupOptions{cacheBackend: addr})
 	t.Cleanup(func() { os.RemoveAll(cacheDir) })
 
@@ -511,7 +511,7 @@ func TestClientServerWithRedis(t *testing.T) {
 	t.Run("alpine 3.9", func(t *testing.T) {
 		osArgs, outputFile := setupClient(t, testArgs, addr, cacheDir, golden)
 
-		// Run Trivy client
+		// Run Vul client
 		err := execute(osArgs)
 		require.NoError(t, err)
 
@@ -524,7 +524,7 @@ func TestClientServerWithRedis(t *testing.T) {
 	t.Run("sad path", func(t *testing.T) {
 		osArgs, _ := setupClient(t, testArgs, addr, cacheDir, golden)
 
-		// Run Trivy client
+		// Run Vul client
 		err := execute(osArgs)
 		require.Error(t, err)
 		assert.Contains(t, err.Error(), "connect: connection refused")
@@ -553,7 +553,7 @@ func setup(t *testing.T, options setupOptions) (string, string) {
 	go func() {
 		osArgs := setupServer(addr, options.token, options.tokenHeader, cacheDir, options.cacheBackend)
 
-		// Run Trivy server
+		// Run Vul server
 		require.NoError(t, execute(osArgs))
 	}()
 

@@ -1,5 +1,5 @@
 # Chainguard
-Trivy supports the following scanners for OS packages.
+Vul supports the following scanners for OS packages.
 
 |    Scanner    | Supported |
 | :-----------: | :-------: |
@@ -7,7 +7,7 @@ Trivy supports the following scanners for OS packages.
 | Vulnerability |     ✓     |
 |    License    |     ✓     |
 
-The table below outlines the features offered by Trivy.
+The table below outlines the features offered by Vul.
 
 |                Feature                | Supported |
 | :-----------------------------------: | :-------: |

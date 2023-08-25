@@ -61,7 +61,7 @@ func (r *Rekor) RetrieveSBOM(ctx context.Context, digest string) ([]byte, error)
 }
 
 func (r *Rekor) inspectRecord(entry rekor.Entry) ([]byte, error) {
-	// TODO: Trivy SBOM should take precedence
+	// TODO: Vul SBOM should take precedence
 	raw, err := r.parseStatement(entry)
 	if err != nil {
 		return nil, err

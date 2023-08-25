@@ -3,7 +3,7 @@
 !!! warning "EXPERIMENTAL"
     This feature might change without preserving backwards compatibility.
 
-Trivy’s compliance flag lets you curate a specific set of checks into a report. In a typical Trivy scan, there are hundreds of different checks for many different components and configurations, but sometimes you already know which specific checks you are interested in. Often this would be an industry accepted set of checks such as CIS, or some vendor specific guideline, or your own organization policy that you want to comply with. These are all possible using the flexible compliance infrastructure that's built into Trivy. Compliance reports are defined as simple YAML documents that select checks to include in the report.
+Vul’s compliance flag lets you curate a specific set of checks into a report. In a typical Vul scan, there are hundreds of different checks for many different components and configurations, but sometimes you already know which specific checks you are interested in. Often this would be an industry accepted set of checks such as CIS, or some vendor specific guideline, or your own organization policy that you want to comply with. These are all possible using the flexible compliance infrastructure that's built into Vul. Compliance reports are defined as simple YAML documents that select checks to include in the report.
 
 ## Usage
 
@@ -29,7 +29,7 @@ The following flags are compatible with `--compliance` flag and allows customizi
 
 ## Built-in compliance
 
-Trivy has a number of built-in compliance reports that you can asses right out of the box.
+Vul has a number of built-in compliance reports that you can asses right out of the box.
 to specify a built-in compliance report, select it by ID like `vul --compliance <compliance_id>`.
 
 For the list of built-in compliance reports, please see the relevant section:
@@ -54,7 +54,7 @@ spec:
     - name: "Non-root containers" # Name for the control (appears in the report as is). Any one-line name.
       description: 'Check that container is not running as root' # Description (appears in the report as is). Any text.
       id: "1.0" # control identifier (string)
-      checks:   # list of existing Trivy checks that define the control
+      checks:   # list of existing Vul checks that define the control
         - id: AVD-KSV-0012 # check ID. Must start with `AVD-` or `CVE-` 
       severity: "MEDIUM" # Severity for the control (note that checks severity isn't used)
     - name: "Immutable container file systems"

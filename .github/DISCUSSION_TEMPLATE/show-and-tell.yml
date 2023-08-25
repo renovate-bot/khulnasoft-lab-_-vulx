@@ -46,7 +46,7 @@ body:
     id: info
     attributes:
       label: "Additional Information"
-      description: "Please tell us more about your use case of Trivy -- anything that you would like to share 🎉"
+      description: "Please tell us more about your use case of Vul -- anything that you would like to share 🎉"
       value: |
         ...
     validations:

@@ -1,6 +1,6 @@
 # Config file
 
-Trivy can be customized by tweaking a `vul.yaml` file.
+Vul can be customized by tweaking a `vul.yaml` file.
 The config path can be overridden by the `--config` flag.
 
 An example is [here][example].
@@ -345,7 +345,7 @@ server:
   token: "something-secret"
 
   # Same as '--token-header'
-  # Default is 'Trivy-Token'
+  # Default is 'Vul-Token'
   token-header: 'My-Token-Header'
 
   # Same as '--custom-headers'

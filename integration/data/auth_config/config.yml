@@ -4,7 +4,7 @@ server:
   key: "/certs/key.pem"
 
 token:
-  issuer: "Trivy auth server"  # Must match issuer in the Registry config.
+  issuer: "Vul auth server"  # Must match issuer in the Registry config.
   expiration: 900
 
 users:

@@ -1,5 +1,5 @@
 # Filtering
-Trivy provides various methods for filtering the results.
+Vul provides various methods for filtering the results.
 
 
 ## By Status
@@ -11,7 +11,7 @@ Trivy provides various methods for filtering the results.
 |      Secret      |           |
 |     License      |           |
 
-Trivy supports the following vulnerability statuses:
+Vul supports the following vulnerability statuses:
 
 - `unknown`
 - `not_affected`: this package is not affected by this vulnerability on this platform
@@ -331,10 +331,10 @@ Total: 7 (UNKNOWN: 0, LOW: 1, MEDIUM: 1, HIGH: 3, CRITICAL: 2)
 !!! warning "EXPERIMENTAL"
     This feature might change without preserving backwards compatibility.
 
-Trivy supports Open Policy Agent (OPA) to filter vulnerabilities.
+Vul supports Open Policy Agent (OPA) to filter vulnerabilities.
 You can specify a Rego file with `--ignore-policy` option.
 
-The Rego package name must be `vul` and it must include a rule called `ignore` which determines if each individual vulnerability should be excluded (ignore=true) or not (ignore=false). In the policy, each vulnerability will be available for inspection as the `input` variable. The structure of each vulnerability input is the same as for the Trivy JSON output.  
+The Rego package name must be `vul` and it must include a rule called `ignore` which determines if each individual vulnerability should be excluded (ignore=true) or not (ignore=false). In the policy, each vulnerability will be available for inspection as the `input` variable. The structure of each vulnerability input is the same as for the Vul JSON output.  
 There is a built-in Rego library with helper functions that you can import into your policy using: `import data.lib.vul`. For more info about the helper functions, look at the library [here][helper]
 
 To get started, see the [example policy][policy].

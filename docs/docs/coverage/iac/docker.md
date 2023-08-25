@@ -1,5 +1,5 @@
 # Docker
-Trivy supports the scanners listed in the table below.
+Vul supports the scanners listed in the table below.
 
 |      Scanner       | Supported |
 | :----------------: | :-------: |
@@ -15,7 +15,7 @@ It supports the following configurations.
 |    Compose    |     -     |
 
 ## Misconfiguration
-Trivy recursively searches directories and scans all found Docker files.
+Vul recursively searches directories and scans all found Docker files.
 
 ## Secret
 The secret scan is performed on plain text files, with no special treatment for Dockerfile.

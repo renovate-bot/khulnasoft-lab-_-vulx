@@ -1,6 +1,6 @@
 # Programming Language
 
-Trivy supports programming languages for 
+Vul supports programming languages for 
 
 - [SBOM][sbom]
 - [Vulnerabilities][vuln]
@@ -8,13 +8,13 @@ Trivy supports programming languages for
 
 ## Supported languages
 The files analyzed vary depending on the target.
-This is because Trivy primarily categorizes targets into two groups:
+This is because Vul primarily categorizes targets into two groups:
 
 - Pre-build
 - Post-build
 
-If the target is a pre-build project, like a code repository, Trivy will analyze files used for building, such as lock files.
-On the other hand, when the target is a post-build artifact, like a container image, Trivy will analyze installed package metadata like `.gemspec`, binary files, and so on.
+If the target is a pre-build project, like a code repository, Vul will analyze files used for building, such as lock files.
+On the other hand, when the target is a post-build artifact, like a container image, Vul will analyze installed package metadata like `.gemspec`, binary files, and so on.
 
 | Language             | File                                                                                       | Image[^5] | Rootfs[^6] | Filesystem[^7] | Repository[^8] |
 | -------------------- | ------------------------------------------------------------------------------------------ | :-------: | :--------: | :------------: | :------------: |
@@ -62,5 +62,5 @@ Example: [Dockerfile](https://github.com/khulnasoft-lab/vul-ci-test/blob/main/Do
 [^6]: ✅ means "enabled" and `-` means "disabled" in the rootfs scanning
 [^7]: ✅ means "enabled" and `-` means "disabled" in the filesystem scanning
 [^8]: ✅ means "enabled" and `-` means "disabled" in the git repository scanning
-[^9]: ✅ means that Trivy detects line numbers where each dependency is declared in the scanned file. Only supported in [json](../../configuration/reporting.md#json) and [sarif](../../configuration/reporting.md#sarif) formats. SARIF uses `startline == 1 and endline == 1` for unsupported file types
+[^9]: ✅ means that Vul detects line numbers where each dependency is declared in the scanned file. Only supported in [json](../../configuration/reporting.md#json) and [sarif](../../configuration/reporting.md#sarif) formats. SARIF uses `startline == 1 and endline == 1` for unsupported file types
 [^10]: To scan a filename other than the default filename use [file-patterns](../../configuration/skipping.md#file-patterns)

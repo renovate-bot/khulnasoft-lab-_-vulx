@@ -1,6 +1,6 @@
 # Ruby
 
-Trivy supports [Bundler][bundler] and [RubyGems][rubygems].
+Vul supports [Bundler][bundler] and [RubyGems][rubygems].
 The following scanners are supported for Cargo.
 
 | Package manager | SBOM | Vulnerability | License |
@@ -9,7 +9,7 @@ The following scanners are supported for Cargo.
 | RubyGems        |  ✓   |       ✓       |    ✓    |
 
 
-The following table provides an outline of the features Trivy offers.
+The following table provides an outline of the features Vul offers.
 
 | Package manager | File         | Transitive dependencies | Dev dependencies | [Dependency graph][dependency-graph] | Position |
 |-----------------|--------------|:-----------------------:|:-----------------|:------------------------------------:|:--------:|
@@ -18,7 +18,7 @@ The following table provides an outline of the features Trivy offers.
 
 
 ### Bundler
-Trivy searches for `Gemfile.lock` to detect dependencies. 
+Vul searches for `Gemfile.lock` to detect dependencies. 
 
 
 ### RubyGems

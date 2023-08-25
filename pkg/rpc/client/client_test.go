@@ -43,7 +43,7 @@ func TestScanner_Scan(t *testing.T) {
 		{
 			name: "happy path",
 			customHeaders: http.Header{
-				"Trivy-Token": []string{"foo"},
+				"Vul-Token": []string{"foo"},
 			},
 			args: args{
 				target:   "alpine:3.11",
@@ -159,7 +159,7 @@ func TestScanner_Scan(t *testing.T) {
 		{
 			name: "sad path: Scan returns an error",
 			customHeaders: http.Header{
-				"Trivy-Token": []string{"foo"},
+				"Vul-Token": []string{"foo"},
 			},
 			args: args{
 				target:   "alpine:3.11",

@@ -40,7 +40,7 @@ Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 1, HIGH: 0, CRITICAL: 0)
 </details>
 
 ### Only download vulnerability database
-You can also ask `Trivy` to simply retrieve the vulnerability database.
+You can also ask `Vul` to simply retrieve the vulnerability database.
 This is useful to initialize workers in Continuous Integration systems.
 
 ```
@@ -48,7 +48,7 @@ $ vul image --download-db-only
 ```
 
 ### DB Repository
-`Trivy` could also download the vulnerability database from an external OCI registry by using `--db-repository` option.
+`Vul` could also download the vulnerability database from an external OCI registry by using `--db-repository` option.
 
 ```
 $ vul image --db-repository registry.gitlab.com/gitlab-org/security-products/dependencies/vul-db

@@ -1,5 +1,5 @@
 # Alpine Linux
-Trivy supports the following scanners for OS packages.
+Vul supports the following scanners for OS packages.
 
 |    Scanner    | Supported |
 | :-----------: | :-------: |
@@ -9,7 +9,7 @@ Trivy supports the following scanners for OS packages.
 
 Please see [here](index.md#supported-os) for supported versions.
 
-The table below outlines the features offered by Trivy.
+The table below outlines the features offered by Vul.
 
 |               Feature                | Supported |
 |:------------------------------------:|:---------:|
@@ -17,7 +17,7 @@ The table below outlines the features offered by Trivy.
 | [Dependency graph][dependency-graph] |     ✓     |
 
 ## SBOM
-Trivy detects packages that have been installed through `apk`.
+Vul detects packages that have been installed through `apk`.
 
 ## Vulnerability
 Alpine Linux offers its own security advisories, and these are utilized when scanning Alpine for vulnerabilities.
@@ -35,7 +35,7 @@ Typically, only the upstream information gets listed on [NVD], so it's important
 For Alpine vulnerabilities, the severity is determined using the values set by NVD.
 
 ### Status
-Trivy supports the following [vulnerability statuses] for Alpine.
+Vul supports the following [vulnerability statuses] for Alpine.
 
 |       Status        | Supported |
 | :-----------------: | :-------: |
@@ -47,7 +47,7 @@ Trivy supports the following [vulnerability statuses] for Alpine.
 |     End of Life     |           |
 
 ## License
-Trivy identifies licenses by examining the metadata of APK packages.
+Vul identifies licenses by examining the metadata of APK packages.
 
 
 [dependency-graph]: ../../configuration/reporting.md#show-origins-of-vulnerable-dependencies

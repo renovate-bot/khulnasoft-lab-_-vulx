@@ -1,4 +1,4 @@
 # Issues
-Thank you for taking interest in contributing to Trivy!
+Thank you for taking interest in contributing to Vul!
 
-Trivy uses [GitHub Discussion](./discussion.md) for bug reports, feature requests, and questions.
+Vul uses [GitHub Discussion](./discussion.md) for bug reports, feature requests, and questions.

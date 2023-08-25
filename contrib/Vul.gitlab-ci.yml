@@ -1,4 +1,4 @@
-Trivy_container_scanning:
+Vul_container_scanning:
   stage: test
   image:
     name: alpine:3.11
@@ -10,11 +10,11 @@ Trivy_container_scanning:
     IMAGE: "$CI_REGISTRY_IMAGE:$CI_COMMIT_SHA"
   allow_failure: true
   before_script:
-    - export TRIVY_VERSION=${TRIVY_VERSION:-v0.19.2}
+    - export VUL_VERSION=${VUL_VERSION:-v0.19.2}
     - apk add --no-cache curl docker-cli
     - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
-    - curl -sfL https://raw.githubusercontent.com/khulnasoft-lab/vul/main/contrib/install.sh | sh -s -- -b /usr/local/bin ${TRIVY_VERSION}
-    - curl -sSL -o /tmp/vul-gitlab.tpl https://github.com/khulnasoft-lab/vul/raw/${TRIVY_VERSION}/contrib/gitlab.tpl
+    - curl -sfL https://raw.githubusercontent.com/khulnasoft-lab/vul/main/contrib/install.sh | sh -s -- -b /usr/local/bin ${VUL_VERSION}
+    - curl -sSL -o /tmp/vul-gitlab.tpl https://github.com/khulnasoft-lab/vul/raw/${VUL_VERSION}/contrib/gitlab.tpl
   script:
     - vul --exit-code 0 --cache-dir .vulcache/ --no-progress --format template --template "@/tmp/vul-gitlab.tpl" -o gl-container-scanning-report.json $IMAGE
   cache:

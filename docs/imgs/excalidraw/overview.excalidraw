@@ -56,12 +56,12 @@
       "locked": false,
       "fontSize": 36,
       "fontFamily": 1,
-      "text": "Trivy",
+      "text": "Vul",
       "baseline": 32,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "Trivy"
+      "originalText": "Vul"
     },
     {
       "type": "text",

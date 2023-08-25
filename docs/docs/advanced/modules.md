@@ -3,14 +3,14 @@
 !!! warning "EXPERIMENTAL"
     This feature might change without preserving backwards compatibility.
 
-Trivy provides a module feature to allow others to extend the Trivy CLI without the need to change the Trivy code base.
+Vul provides a module feature to allow others to extend the Vul CLI without the need to change the Vul code base.
 It changes the behavior during scanning by WebAssembly.
 
 ## Overview
-Trivy modules are add-on tools that integrate seamlessly with Trivy.
-They provide a way to extend the core feature set of Trivy, but without updating the Trivy binary.
+Vul modules are add-on tools that integrate seamlessly with Vul.
+They provide a way to extend the core feature set of Vul, but without updating the Vul binary.
 
-- They can be added and removed from a Trivy installation without impacting the core Trivy tool.
+- They can be added and removed from a Vul installation without impacting the core Vul tool.
 - They can be written in any programming language supporting WebAssembly.
   - It supports only [TinyGo][tinygo] at the moment.
 
@@ -34,17 +34,17 @@ Modules should be distributed in OCI registries like GitHub Container Registry.
 !!! warning
     WebAssembly doesn't allow file access and network access by default.
     Modules can read required files only, but cannot overwrite them.
-    WebAssembly is sandboxed and secure by design, but Trivy modules available in public are not audited for security.
+    WebAssembly is sandboxed and secure by design, but Vul modules available in public are not audited for security.
     You should install and run third-party modules at your own risk even though 
 
-Under the hood Trivy leverages [wazero][wazero] to run WebAssembly modules without CGO.
+Under the hood Vul leverages [wazero][wazero] to run WebAssembly modules without CGO.
 
 ## Installing a Module
 A module can be installed using the `vul module install` command.
 This command takes an url. It will download the module and install it in the module cache.
 
-Trivy adheres to the XDG specification, so the location depends on whether XDG_DATA_HOME is set.
-Trivy will now search XDG_DATA_HOME for the location of the Trivy modules cache.
+Vul adheres to the XDG specification, so the location depends on whether XDG_DATA_HOME is set.
+Vul will now search XDG_DATA_HOME for the location of the Vul modules cache.
 The preference order is as follows:
 
 - XDG_DATA_HOME if set and .vul/plugins exists within the XDG_DATA_HOME dir
@@ -57,9 +57,9 @@ $ vul module install ghcr.io/khulnasoft-lab/vul-module-spring4shell
 ```
 
 ## Using Modules
-Once the module is installed, Trivy will load all available modules in the cache on the start of the next Trivy execution.
+Once the module is installed, Vul will load all available modules in the cache on the start of the next Vul execution.
 The modules may inject custom logic into scanning and change the result.
-You can run Trivy as usual and modules are loaded automatically.
+You can run Vul as usual and modules are loaded automatically.
 
 You will see the log messages about WASM modules.
 
@@ -97,7 +97,7 @@ $ vul module uninstall ghcr.io/khulnasoft-lab/vul-module-spring4shell
 It supports TinyGo only at the moment.
 
 ### TinyGo
-Trivy provides Go SDK including three interfaces.
+Vul provides Go SDK including three interfaces.
 Your own module needs to implement either or both `Analyzer` and `PostScanner` in addition to `Module`.
 
 ```go
@@ -215,12 +215,12 @@ func (WordpressModule) Analyze(filePath string) (*serialize.AnalysisResult, erro
 ```
 
 !!! tips
-    Trivy caches analysis results according to the module version.
+    Vul caches analysis results according to the module version.
     We'd recommend cleaning the cache or changing the module version every time you update `Analyzer`.
 
 
 #### PostScanner interface
-`PostScan` is called after scanning and takes the scan result as an argument from Trivy.
+`PostScan` is called after scanning and takes the scan result as an argument from Vul.
 In post scanning, your module can perform one of three actions:
 
 - Insert
@@ -315,7 +315,7 @@ This example shows how the module inserts a new finding.
 If you are interested in `Update`, you can see an example of [Spring4Shell][vul-module-spring4shell].
 
 In the `Delete` action, `PostScan` needs to return results you want to delete.
-If `PostScan` returns an empty, Trivy will not delete anything.
+If `PostScan` returns an empty, Vul will not delete anything.
 
 #### Build
 Follow [the install guide][tinygo-installation] and install TinyGo.

@@ -1,7 +1,7 @@
 # SBOM attestation
 
 [Cosign](https://github.com/sigstore/cosign) supports generating and verifying [in-toto attestations](https://github.com/in-toto/attestation). This tool enables you to sign and verify SBOM attestation.
-And, Trivy can take an SBOM attestation as input and scan for vulnerabilities
+And, Vul can take an SBOM attestation as input and scan for vulnerabilities
 
 !!! note
     In the following examples, the `cosign` command will write an attestation to a target OCI registry, so you must have permission to write.
@@ -15,7 +15,7 @@ Cosign can generate key pairs and use them for signing and verification. After y
 $ cosign generate-key-pair
 ```
 
-In the following example, Trivy generates an SBOM in the CycloneDX format, and then Cosign attaches an attestation of the SBOM to a container image with a local key pair.
+In the following example, Vul generates an SBOM in the CycloneDX format, and then Cosign attaches an attestation of the SBOM to a container image with a local key pair.
 
 ```bash
 # The cyclonedx type is supported in Cosign v1.10.0 or later.
@@ -59,7 +59,7 @@ $ COSIGN_EXPERIMENTAL=1 cosign verify-attestation --type cyclonedx <IMAGE>
 
 ## Scanning
 
-Trivy can take an SBOM attestation as input and scan for vulnerabilities. Currently, Trivy supports CycloneDX-type attestation.
+Vul can take an SBOM attestation as input and scan for vulnerabilities. Currently, Vul supports CycloneDX-type attestation.
 
 In the following example, Cosign can get an CycloneDX-type attestation and vul scan it.
 You must create CycloneDX-type attestation before trying the example.

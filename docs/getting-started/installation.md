@@ -1,6 +1,6 @@
-# Installing Trivy
+# Installing Vul
 
-In this section you will find an aggregation of the different ways to install Trivy. installations are listed as either "official" or "community". Official integrations are developed by the core Trivy team and supported by it. Community integrations are integrations developed by the community, and collected here for your convenience. For support or questions about community integrations, please contact the original developers.
+In this section you will find an aggregation of the different ways to install Vul. installations are listed as either "official" or "community". Official integrations are developed by the core Vul team and supported by it. Community integrations are integrations developed by the community, and collected here for your convenience. For support or questions about community integrations, please contact the original developers.
 
 ## Install using Package Manager
 
@@ -13,7 +13,7 @@ In this section you will find an aggregation of the different ways to install Tr
     RELEASE_VERSION=$(grep -Po '(?<=VERSION_ID=")[0-9]' /etc/os-release)
     cat << EOF | sudo tee -a /etc/yum.repos.d/vul.repo
     [vul]
-    name=Trivy repository
+    name=Vul repository
     baseurl=https://aquasecurity.github.io/vul-repo/rpm/releases/$RELEASE_VERSION/\$basearch/
     gpgcheck=1
     enabled=1
@@ -139,9 +139,9 @@ go install ./cmd/vul
 
 ## Use container image
 
-1. Pull Trivy image (`docker pull aquasec/vul:{{ git.tag[1:] }}`)
-   2. It is advisable to mount a consistent [cache dir](../docs/configuration/cache.md) on the host into the Trivy container.
-3. For scanning container images with Trivy, mount `docker.sock` from the host into the Trivy container.
+1. Pull Vul image (`docker pull aquasec/vul:{{ git.tag[1:] }}`)
+   2. It is advisable to mount a consistent [cache dir](../docs/configuration/cache.md) on the host into the Vul container.
+3. For scanning container images with Vul, mount `docker.sock` from the host into the Vul container.
 
 Example:
 
@@ -154,6 +154,6 @@ Docker Hub | `docker.io/aquasec/vul` | https://hub.docker.com/r/aquasec/vul | Of
 GitHub Container Registry (GHCR) | `ghcr.io/khulnasoft-lab/vul` | https://github.com/orgs/aquasecurity/packages/container/package/vul | Official
 AWS Elastic Container Registry (ECR) | `public.ecr.aws/khulnasoft-lab/vul` | https://gallery.ecr.aws/khulnasoft-lab/vul | Official
 
-## Other Tools to use and deploy Trivy
+## Other Tools to use and deploy Vul
 
-For additional tools and ways to install and use Trivy in different environments such as in IDE, Kubernetes or CI/CD, see [Ecosystem section](../ecosystem/index.md).
+For additional tools and ways to install and use Vul in different environments such as in IDE, Kubernetes or CI/CD, see [Ecosystem section](../ecosystem/index.md).

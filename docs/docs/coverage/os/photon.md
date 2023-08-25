@@ -1,5 +1,5 @@
 # Photon OS
-Trivy supports the following scanners for OS packages.
+Vul supports the following scanners for OS packages.
 
 |    Scanner    | Supported |
 | :-----------: | :-------: |
@@ -9,7 +9,7 @@ Trivy supports the following scanners for OS packages.
 
 Please see [here](index.md#supported-os) for supported versions.
 
-The table below outlines the features offered by Trivy.
+The table below outlines the features offered by Vul.
 
 |               Feature                | Supported |
 |:------------------------------------:|:---------:|
@@ -17,7 +17,7 @@ The table below outlines the features offered by Trivy.
 | [Dependency graph][dependency-graph] |     ✓     |
 
 ## SBOM
-Trivy detects packages that have been installed through package managers such as `tdnf` and `yum`.
+Vul detects packages that have been installed through package managers such as `tdnf` and `yum`.
 
 ## Vulnerability
 Photon OS offers its own security advisories, and these are utilized when scanning Photon OS for vulnerabilities.
@@ -26,14 +26,14 @@ Photon OS offers its own security advisories, and these are utilized when scanni
 See [here](../../scanner/vulnerability.md#data-sources).
 
 ### Fixed Version
-Trivy takes fixed versions from [Photon CVE metadata][metadata].
+Vul takes fixed versions from [Photon CVE metadata][metadata].
 
 ### Severity
-Trivy determines the severity of vulnerabilities based on the CVSSv3 score provided by Photon OS.
+Vul determines the severity of vulnerabilities based on the CVSSv3 score provided by Photon OS.
 See [here](../../scanner/vulnerability.md#severity-selection) for the conversion table from CVSS score to severity.
 
 ### Status
-Trivy supports the following [vulnerability statuses] for Photon OS.
+Vul supports the following [vulnerability statuses] for Photon OS.
 
 |       Status        | Supported |
 | :-----------------: | :-------: |
@@ -45,7 +45,7 @@ Trivy supports the following [vulnerability statuses] for Photon OS.
 |     End of Life     |           |
 
 ## License
-Trivy identifies licenses by examining the metadata of RPM packages.
+Vul identifies licenses by examining the metadata of RPM packages.
 
 [dependency-graph]: ../../configuration/reporting.md#show-origins-of-vulnerable-dependencies
 

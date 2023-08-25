@@ -1,7 +1,7 @@
 # Go
 
 ## Features
-Trivy supports two types of Go scanning, Go Modules and binaries built by Go.
+Vul supports two types of Go scanning, Go Modules and binaries built by Go.
 
 The following scanners are supported.
 
@@ -10,7 +10,7 @@ The following scanners are supported.
 | Modules  |   ✓   |       ✓       |  ✓[^2]  |
 | Binaries |   ✓   |       ✓       |    -    |
 
-The table below provides an outline of the features Trivy offers.
+The table below provides an outline of the features Vul offers.
 
 | Artifact | Offline[^1] | Dev dependencies | [Dependency graph][dependency-graph] |
 |----------|:-----------:|:-----------------|:----------------------------------:|
@@ -18,8 +18,8 @@ The table below provides an outline of the features Trivy offers.
 | Binaries |      ✅      | Exclude          |                 -                  |
 
 !!! note
-    Trivy scans only dependencies of the Go project.
-    Let's say you scan the Docker binary, Trivy doesn't detect vulnerabilities of Docker itself.
+    Vul scans only dependencies of the Go project.
+    Let's say you scan the Docker binary, Vul doesn't detect vulnerabilities of Docker itself.
     Also, when you scan go.mod in Kubernetes, the Kubernetes vulnerabilities will not be found.
 
 ### Go Modules
@@ -30,7 +30,7 @@ Depending on Go versions, the required files are different.
 | \>=1.17 |     go.mod     |    ✅    |
 | <1.17   | go.mod, go.sum |    ✅    |
 
-In Go 1.17+ projects, Trivy uses `go.mod` for direct/indirect dependencies.
+In Go 1.17+ projects, Vul uses `go.mod` for direct/indirect dependencies.
 On the other hand, it uses `go.mod` for direct dependencies and `go.sum` for indirect dependencies in Go 1.16 or less.
 
 Go 1.17+ holds actually needed indirect dependencies in `go.mod`, and it reduces false detection.
@@ -59,11 +59,11 @@ If you want to have better detection, please consider updating the Go version in
 
 To identify licenses and dependency relationships, you need to download modules to local cache beforehand,
 such as `go mod download`, `go mod tidy`, etc.
-Trivy traverses `$GOPATH/pkg/mod` and collects those extra information.
+Vul traverses `$GOPATH/pkg/mod` and collects those extra information.
 
 ### Go binaries
-Trivy scans binaries built by Go.
-If there is a Go binary in your container image, Trivy automatically finds and scans it.
+Vul scans binaries built by Go.
+If there is a Go binary in your container image, Vul automatically finds and scans it.
 
 Also, you can scan your local binaries.
 

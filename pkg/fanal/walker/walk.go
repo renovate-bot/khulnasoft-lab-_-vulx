@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	// These variables are exported so that a tool importing Trivy as a library can override these values.
+	// These variables are exported so that a tool importing Vul as a library can override these values.
 	AppDirs    = []string{".git"}
 	SystemDirs = []string{"proc", "sys", "dev"}
 )

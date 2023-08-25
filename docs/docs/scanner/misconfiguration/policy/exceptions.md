@@ -1,6 +1,6 @@
 # Exceptions
 Exceptions let you specify cases where you allow policy violations.
-Trivy supports two types of exceptions.
+Vul supports two types of exceptions.
 
 !!! info
     Exceptions can be applied to built-in policies as well as custom policies.
@@ -88,7 +88,7 @@ If you want to apply rule-based exceptions to built-in policies, you have to def
     ```
 
 This exception is applied to [KSV012][ksv012] in defsec.
-You can get the package names in the [defsec repository][defsec] or the JSON output from Trivy.
+You can get the package names in the [defsec repository][defsec] or the JSON output from Vul.
 
 For more details, see [an example][rule-example].
 

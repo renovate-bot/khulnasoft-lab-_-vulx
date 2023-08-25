@@ -1,6 +1,6 @@
 # Container Image
 
-Trivy supports two targets for container images.
+Vul supports two targets for container images.
 
 - Files inside container images
 - Container image metadata
@@ -9,7 +9,7 @@ Trivy supports two targets for container images.
 Container images consist of files.
 For instance, new files will be installed if you install a package.
 
-Trivy scans the files inside container images for
+Vul scans the files inside container images for
 
 - Vulnerabilities
 - Misconfigurations
@@ -63,7 +63,7 @@ $ vul image --scanners vuln [YOUR_IMAGE_NAME]
 
 ### Misconfigurations
 It is supported, but it is not useful in most cases.
-As mentioned [here](../scanner/misconfiguration/index.md), Trivy mainly supports Infrastructure as Code (IaC) files for misconfigurations.
+As mentioned [here](../scanner/misconfiguration/index.md), Vul mainly supports Infrastructure as Code (IaC) files for misconfigurations.
 If your container image includes IaC files such as Kubernetes YAML files or Terraform files, you should enable this feature with `--scanners config`.
 
 ```
@@ -90,7 +90,7 @@ $ vul image --scanners license [YOUR_IMAGE_NAME]
 Container images have [configuration](https://github.com/opencontainers/image-spec/blob/2fb996805b3734779bf9a3a84dc9a9691ad7efdd/config.md).
 `docker inspect` and `docker history` show the information according to the configuration.
 
-Trivy scans the configuration of container images for
+Vul scans the configuration of container images for
 
 - Misconfigurations
 - Secrets
@@ -102,8 +102,8 @@ You can enable them with `--image-config-scanners`.
     The configuration can be exported as the JSON file by `docker save`.
 
 ### Misconfigurations
-Trivy detects misconfigurations on the configuration of container images.
-The image config is converted into Dockerfile and Trivy handles it as Dockerfile.
+Vul detects misconfigurations on the configuration of container images.
+The image config is converted into Dockerfile and Vul handles it as Dockerfile.
 See [here](../scanner/misconfiguration/index.md) for the detail of Dockerfile scanning.
 
 It is disabled by default.
@@ -162,8 +162,8 @@ See https://avd.aquasec.com/misconfig/ds026
     You can see how each layer is created with `docker history`.
 
 ### Secrets
-Trivy detects secrets on the configuration of container images.
-The image config is converted into JSON and Trivy scans the file for secrets.
+Vul detects secrets on the configuration of container images.
+The image config is converted into JSON and Vul scans the file for secrets.
 It is especially useful for environment variables that are likely to have credentials by accident.
 See [here](../scanner/secret.md) for the detail.
 
@@ -225,7 +225,7 @@ GitHub Personal Access Token
 
 ## Supported
 
-Trivy will look for the specified image in a series of locations. By default, it
+Vul will look for the specified image in a series of locations. By default, it
 will first look in the local Docker Engine, then Containerd, Podman, and
 finally container registry.
 
@@ -237,12 +237,12 @@ vul image --image-src podman,containerd alpine:3.7.3
 ```
 
 Will first search in Podman. If the image is found there, it will be scanned
-and the results returned. If the image is not found in Podman, then Trivy will
+and the results returned. If the image is not found in Podman, then Vul will
 search in Containerd. If the image is not found there either, the scan will
 fail and no more image sources will be searched.
 
 ### Docker Engine
-Trivy tries to looks for the specified image in your local Docker Engine.
+Vul tries to looks for the specified image in your local Docker Engine.
 It will be skipped if Docker Engine is not running locally.
 
 If your docker socket is not the default path, you can override it via `DOCKER_HOST`.
@@ -252,7 +252,7 @@ If your docker socket is not the default path, you can override it via `DOCKER_H
 !!! warning "EXPERIMENTAL"
     This feature might change without preserving backwards compatibility.
     
-Trivy tries to looks for the specified image in your local [containerd](https://containerd.io/).
+Vul tries to looks for the specified image in your local [containerd](https://containerd.io/).
 It will be skipped if containerd is not running locally.
 
 Specify your image name in containerd running locally.
@@ -284,7 +284,7 @@ $ vul image aquasec/nginx
     This feature might change without preserving backwards compatibility.
 
 Scan your image in Podman (>=2.0) running locally. The remote Podman is not supported.
-Before performing Trivy commands, you must enable the podman.sock systemd service on your machine.
+Before performing Vul commands, you must enable the podman.sock systemd service on your machine.
 For more details, see [here](https://github.com/containers/podman/blob/master/docs/tutorials/remote_client.md#enable-the-podman-service-on-the-server-machine).
 
 
@@ -306,7 +306,7 @@ $ vul image test
 ```
 
 ### Container Registry
-Trivy supports registries that comply with the following specifications.
+Vul supports registries that comply with the following specifications.
 
 - [Docker Registry HTTP API V2](https://docs.docker.com/registry/spec/api/)
 - [OCI Distribution Specification](https://github.com/opencontainers/distribution-spec)
@@ -315,7 +315,7 @@ You can configure credentials with `docker login`.
 See [here](../advanced/private-registries/index.md) for the detail.
 
 ### Tar Files
-Trivy supports image tar files generated by the following tools.
+Vul supports image tar files generated by the following tools.
 
 - [Docker Image Specification](https://github.com/moby/moby/tree/master/image/spec)
     - [Moby Project](https://github.com/moby/moby/)
@@ -376,7 +376,7 @@ Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 </details>
 
 ### OCI Layout
-Trivy supports image directories compliant with [Open Container Image Layout Specification](https://github.com/opencontainers/image-spec/blob/master/spec.md).
+Vul supports image directories compliant with [Open Container Image Layout Specification](https://github.com/opencontainers/image-spec/blob/master/spec.md).
 
 Buildah:
 
@@ -402,14 +402,14 @@ $ vul image --input /path/to/alpine@sha256:82389ea44e50c696aba18393b168a83392950
 ```
 
 ## SBOM
-Trivy supports the generation of Software Bill of Materials (SBOM) for container images and the search for SBOMs during vulnerability scanning.
+Vul supports the generation of Software Bill of Materials (SBOM) for container images and the search for SBOMs during vulnerability scanning.
 
 ### Generation
-Trivy can generate SBOM for container images.
+Vul can generate SBOM for container images.
 See [here](../supply-chain/sbom.md) for the detail.
 
 ### Discovery
-Trivy can search for Software Bill of Materials (SBOMs) that reference container images.
+Vul can search for Software Bill of Materials (SBOMs) that reference container images.
 If an SBOM is found, the vulnerability scan is performed using the SBOM instead of the container image.
 By using the SBOM, you can perform a vulnerability scan more quickly, as it allows you to skip pulling the container image and analyzing its layers.
 
@@ -442,7 +442,7 @@ For more information about Rekor, please refer to [its documentation](../supply-
     This feature might change without preserving backwards compatibility.
 
 This section describes container image specific compliance reports.
-For an overview of Trivy's Compliance feature, including working with custom compliance, check out the [Compliance documentation](../compliance/compliance.md).
+For an overview of Vul's Compliance feature, including working with custom compliance, check out the [Compliance documentation](../compliance/compliance.md).
 
 ### Built in reports
 
@@ -468,7 +468,7 @@ Please reference [this page](../advanced/private-registries/index.md).
 
 ## Options
 ### Scan Image on a specific Architecture and OS
-By default, Trivy loads an image on a "linux/amd64" machine.
+By default, Vul loads an image on a "linux/amd64" machine.
 To customise this, pass a `--platform` argument in the format OS/Architecture for the image:
 
 ```

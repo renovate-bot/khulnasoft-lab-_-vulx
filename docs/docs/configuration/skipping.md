@@ -1,6 +1,6 @@
 # Skipping Files and Directories
 
-This section details ways to specify the files and directories that Trivy should not scan.
+This section details ways to specify the files and directories that Vul should not scan.
 
 ## Skip Files
 |     Scanner      | Supported |
@@ -10,15 +10,15 @@ This section details ways to specify the files and directories that Trivy should
 |      Secret      |     ✓     |
 |     License      |     ✓     |
 
-By default, Trivy traverses directories and searches for all necessary files for scanning.
-You can skip files that you don't maintain using the `--skip-files` flag, or the equivalent Trivy YAML config option.
+By default, Vul traverses directories and searches for all necessary files for scanning.
+You can skip files that you don't maintain using the `--skip-files` flag, or the equivalent Vul YAML config option.
 
 Using the `--skip-files` flag:
 ```bash
 $ vul image --skip-files "/Gemfile.lock" --skip-files "/var/lib/gems/2.5.0/gems/http_parser.rb-0.6.0/Gemfile.lock" quay.io/fluentd_elasticsearch/fluentd:v2.9.0
 ```
 
-Using the Trivy YAML configuration:
+Using the Vul YAML configuration:
 ```yaml
 image:
   skip-files:
@@ -48,15 +48,15 @@ This will skip any files with the extension `.tf` in subdirectories of foo at an
 |      Secret      |     ✓     |
 |     License      |     ✓     |
 
-By default, Trivy traverses directories and searches for all necessary files for scanning.
-You can skip directories that you don't maintain using the `--skip-dirs` flag, or the equivalent Trivy YAML config option.
+By default, Vul traverses directories and searches for all necessary files for scanning.
+You can skip directories that you don't maintain using the `--skip-dirs` flag, or the equivalent Vul YAML config option.
 
 Using the `--skip-dirs` flag:
 ```bash
 $ vul image --skip-dirs /var/lib/gems/2.5.0/gems/fluent-plugin-detect-exceptions-0.0.13 --skip-dirs "/var/lib/gems/2.5.0/gems/http_parser.rb-0.6.0" quay.io/fluentd_elasticsearch/fluentd:v2.9.0
 ```
 
-Using the Trivy YAML configuration:
+Using the Vul YAML configuration:
 ```yaml
 image:
   skip-dirs:
@@ -84,7 +84,7 @@ This will skip subdirectories at any depth named `.terraform/`. (Note: this will
 
 
 ### Advanced globbing
-Trivy also supports bash style [extended](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Pattern-Matching) glob pattern matching.
+Vul also supports bash style [extended](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Pattern-Matching) glob pattern matching.
 
 ```bash
 $ vul image --skip-files "**/foo" image:tag
@@ -100,7 +100,7 @@ This will skip the file `foo` that happens to be nested under any parent(s).
 |      Secret      |           |
 |     License      |           |
 
-When a directory is given as an input, Trivy will recursively look for and test all files based on file patterns.
+When a directory is given as an input, Vul will recursively look for and test all files based on file patterns.
 The default file patterns are [here](../scanner/misconfiguration/custom/index.md).
 
 In addition to the default file patterns, the `--file-patterns` option takes regexp patterns to look for your files.

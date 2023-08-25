@@ -4,11 +4,11 @@ The [Certified Kubernetes Security Specialist (CKS) Exam](https://training.linux
 
 ### Community Resources
 
-- [Trivy Video overview (short)][overview]
+- [Vul Video overview (short)][overview]
 - [Example questions from the exam][exam]
 - [More example questions][questions]
 - [CKS exam study guide][study-guide]
-- [Docker Image Vulnerabilities & Trivy Image Scanning Demo | K21Academy](https://youtu.be/gHz10UsEdys)
+- [Docker Image Vulnerabilities & Vul Image Scanning Demo | K21Academy](https://youtu.be/gHz10UsEdys)
 
 ### Aqua Security Blog posts to learn more
 
@@ -19,7 +19,7 @@ If you know of interesting resources, please start a PR to add those to the list
 
 [overview]: https://youtu.be/2cjH6Zkieys
 [exam]: https://jonathan18186.medium.com/certified-kubernetes-security-specialist-cks-preparation-part-7-supply-chain-security-9cf62c34cf6a
-[questions]: https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course/blob/main/docs/06-Supply-Chain-Security/09-Scan-images-for-known-vulnerabilities-(Trivy).md
+[questions]: https://github.com/kodekloudhub/certified-kubernetes-security-specialist-cks-course/blob/main/docs/06-Supply-Chain-Security/09-Scan-images-for-known-vulnerabilities-(Vul).md
 [study-guide]: https://devopscube.com/cks-exam-guide-tips/
 
 [supply-chain-best-practices]: https://blog.aquasec.com/supply-chain-security-best-practices

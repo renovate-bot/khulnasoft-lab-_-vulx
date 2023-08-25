@@ -1,5 +1,5 @@
 # Red Hat Enterprise Linux
-Trivy supports the following scanners for OS packages.
+Vul supports the following scanners for OS packages.
 
 |    Scanner    | Supported |
 | :-----------: | :-------: |
@@ -9,7 +9,7 @@ Trivy supports the following scanners for OS packages.
 
 Please see [here](index.md#supported-os) for supported versions.
 
-The table below outlines the features offered by Trivy.
+The table below outlines the features offered by Vul.
 
 |               Feature                | Supported |
 | :----------------------------------: | :-------: |
@@ -17,7 +17,7 @@ The table below outlines the features offered by Trivy.
 | [Dependency graph][dependency-graph] |     ✓     |
 
 ## SBOM
-Trivy detects packages that have been installed through package managers such as `dnf` and `yum`.
+Vul detects packages that have been installed through package managers such as `dnf` and `yum`.
 
 ## Vulnerability
 Red Hat offers its own security advisories, and these are utilized when scanning Red Hat Enterprise Linux (RHEL) for vulnerabilities.
@@ -33,15 +33,15 @@ Note that this is different from the upstream fixed version, which is `3.0.9`, `
 Typically, only the upstream information gets listed on [NVD], so it's important not to get confused.
 
 ### Severity
-Trivy calculates the severity of a vulnerability based on the 'Impact' metric provided by Red Hat.
+Vul calculates the severity of a vulnerability based on the 'Impact' metric provided by Red Hat.
 If the impact is not provided or defined yet by Red Hat, the severity from the NVD is taken into account.
 
 Using CVE-2023-0464 as an example, while it is rated as "HIGH" in NVD, Red Hat has marked its 'Impact' as ["Low"][CVE-2023-0464].
-As a result, Trivy will display it as "Low".
+As a result, Vul will display it as "Low".
 
-The table below is the mapping of Red Hat's impact to Trivy's severity levels.
+The table below is the mapping of Red Hat's impact to Vul's severity levels.
 
-|  Red Hat  |  Trivy   |
+|  Red Hat  |  Vul   |
 | :-------: | :------: |
 |    Low    |   Low    |
 | Moderate  |  Medium  |
@@ -49,7 +49,7 @@ The table below is the mapping of Red Hat's impact to Trivy's severity levels.
 | Critical  | Critical |
 
 ### Status
-Trivy supports the following [vulnerability statuses] for RHEL.
+Vul supports the following [vulnerability statuses] for RHEL.
 
 |       Status        | Supported |
 | :-----------------: | :-------: |
@@ -63,15 +63,15 @@ Trivy supports the following [vulnerability statuses] for RHEL.
 When a vulnerability status is listed as "End of Life", it means a vulnerability with the impact level assigned to this CVE is no longer covered by its current support lifecycle phase.
 The product has been identified to contain the impacted component, but analysis to determine whether it is affected or not by this vulnerability was not performed.
 Red Hat advises that the product should be assumed to be affected.
-Therefore, Trivy detects vulnerabilities with this status as "End of Life".
+Therefore, Vul detects vulnerabilities with this status as "End of Life".
 
-On the other hand, for those marked "Under Investigation," the impact is unclear as they are still being examined, so Trivy does not detect them. Once the investigation is completed, the status should be updated.
+On the other hand, for those marked "Under Investigation," the impact is unclear as they are still being examined, so Vul does not detect them. Once the investigation is completed, the status should be updated.
 
 !!! abstract
-    Vulnerabilities with a status of "End of Life", where the presence or absence of impact is unclear, are detected by Trivy. However, those with a status of "Under Investigation" are not detected.
+    Vulnerabilities with a status of "End of Life", where the presence or absence of impact is unclear, are detected by Vul. However, those with a status of "Under Investigation" are not detected.
 
 ## License
-Trivy identifies licenses by examining the metadata of RPM packages.
+Vul identifies licenses by examining the metadata of RPM packages.
 
 [dependency-graph]: ../../configuration/reporting.md#show-origins-of-vulnerable-dependencies
 [oval]: https://www.redhat.com/security/data/oval/v2/

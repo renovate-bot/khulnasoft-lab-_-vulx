@@ -1,6 +1,6 @@
 # C/C++
 
-Trivy supports [Conan][conan] C/C++ Package Manager.
+Vul supports [Conan][conan] C/C++ Package Manager.
 
 The following scanners are supported.
 
@@ -8,14 +8,14 @@ The following scanners are supported.
 | --------------- | :---: | :-----------: | :-----: |
 | Conan           |   ✓   |       ✓       |    -    |
 
-The following table provides an outline of the features Trivy offers.
+The following table provides an outline of the features Vul offers.
 
 | Package manager | File           | Transitive dependencies | Dev dependencies | [Dependency graph][dependency-graph] | Position |
 | --------------- | -------------- | :---------------------: | :--------------: | :----------------------------------: | :------: |
 | Conan           | conan.lock[^1] |            ✓            |     Excluded     |                  ✓                   |    ✓     |
 
 ## Conan
-In order to detect dependencies, Trivy searches for `conan.lock`[^1].
+In order to detect dependencies, Vul searches for `conan.lock`[^1].
 
 [conan]: https://docs.conan.io/1/index.html
 [dependency-graph]: ../../configuration/reporting.md#show-origins-of-vulnerable-dependencies

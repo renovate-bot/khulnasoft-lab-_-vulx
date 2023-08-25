@@ -94,8 +94,8 @@ func TestReportWriter_Sarif(t *testing.T) {
 					{
 						Tool: sarif.Tool{
 							Driver: &sarif.ToolComponent{
-								FullName:       lo.ToPtr("Trivy Vulnerability Scanner"),
-								Name:           "Trivy",
+								FullName:       lo.ToPtr("Vul Vulnerability Scanner"),
+								Name:           "Vul",
 								Version:        lo.ToPtr(""),
 								InformationURI: lo.ToPtr("https://github.com/khulnasoft-lab/vul"),
 								Rules: []*sarif.ReportingDescriptor{
@@ -219,8 +219,8 @@ func TestReportWriter_Sarif(t *testing.T) {
 					{
 						Tool: sarif.Tool{
 							Driver: &sarif.ToolComponent{
-								FullName:       lo.ToPtr("Trivy Vulnerability Scanner"),
-								Name:           "Trivy",
+								FullName:       lo.ToPtr("Vul Vulnerability Scanner"),
+								Name:           "Vul",
 								Version:        lo.ToPtr(""),
 								InformationURI: lo.ToPtr("https://github.com/khulnasoft-lab/vul"),
 								Rules: []*sarif.ReportingDescriptor{
@@ -359,8 +359,8 @@ func TestReportWriter_Sarif(t *testing.T) {
 					{
 						Tool: sarif.Tool{
 							Driver: &sarif.ToolComponent{
-								FullName:       lo.ToPtr("Trivy Vulnerability Scanner"),
-								Name:           "Trivy",
+								FullName:       lo.ToPtr("Vul Vulnerability Scanner"),
+								Name:           "Vul",
 								Version:        lo.ToPtr(""),
 								InformationURI: lo.ToPtr("https://github.com/khulnasoft-lab/vul"),
 								Rules: []*sarif.ReportingDescriptor{
@@ -453,8 +453,8 @@ func TestReportWriter_Sarif(t *testing.T) {
 					{
 						Tool: sarif.Tool{
 							Driver: &sarif.ToolComponent{
-								FullName:       lo.ToPtr("Trivy Vulnerability Scanner"),
-								Name:           "Trivy",
+								FullName:       lo.ToPtr("Vul Vulnerability Scanner"),
+								Name:           "Vul",
 								Version:        lo.ToPtr(""),
 								InformationURI: lo.ToPtr("https://github.com/khulnasoft-lab/vul"),
 								Rules: []*sarif.ReportingDescriptor{
@@ -523,8 +523,8 @@ func TestReportWriter_Sarif(t *testing.T) {
 					{
 						Tool: sarif.Tool{
 							Driver: &sarif.ToolComponent{
-								FullName:       lo.ToPtr("Trivy Vulnerability Scanner"),
-								Name:           "Trivy",
+								FullName:       lo.ToPtr("Vul Vulnerability Scanner"),
+								Name:           "Vul",
 								Version:        lo.ToPtr(""),
 								InformationURI: lo.ToPtr("https://github.com/khulnasoft-lab/vul"),
 								Rules:          []*sarif.ReportingDescriptor{},

@@ -2,7 +2,7 @@
 
 Scan an unpacked container image filesystem.
 
-In this case, Trivy works the same way when scanning containers
+In this case, Vul works the same way when scanning containers
 
 ```bash
 $ docker export $(docker create alpine:3.10.2) | tar -C /tmp/rootfs -xvf -

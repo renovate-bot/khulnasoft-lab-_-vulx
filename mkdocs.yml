@@ -1,4 +1,4 @@
-site_name: Trivy
+site_name: Vul
 site_url: https://aquasecurity.github.io/vul/
 site_description: A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifacts, Suitable for CI
 docs_dir: docs/
@@ -217,7 +217,7 @@ extra:
     default: latest
   social:
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/AquaTrivy
+      link: https://twitter.com/AquaVul
     - icon: fontawesome/brands/github
       link: https://github.com/khulnasoft-lab/vul
     - icon: fontawesome/brands/slack

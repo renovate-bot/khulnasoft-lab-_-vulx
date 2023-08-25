@@ -1,17 +1,17 @@
 # Plugins
-Trivy provides a plugin feature to allow others to extend the Trivy CLI without the need to change the Trivycode base.
+Vul provides a plugin feature to allow others to extend the Vul CLI without the need to change the Vulcode base.
 This plugin system was inspired by the plugin system used in [kubectl][kubectl], [Helm][helm], and [Conftest][conftest].
 
 ## Overview
-Trivy plugins are add-on tools that integrate seamlessly with Trivy.
-They provide a way to extend the core feature set of Trivy, but without requiring every new feature to be written in Go and added to the core tool.
+Vul plugins are add-on tools that integrate seamlessly with Vul.
+They provide a way to extend the core feature set of Vul, but without requiring every new feature to be written in Go and added to the core tool.
 
-- They can be added and removed from a Trivy installation without impacting the core Trivy tool.
+- They can be added and removed from a Vul installation without impacting the core Vul tool.
 - They can be written in any programming language.
-- They integrate with Trivy, and will show up in Trivy help and subcommands.
+- They integrate with Vul, and will show up in Vul help and subcommands.
 
 !!! warning
-    Trivy plugins available in public are not audited for security.
+    Vul plugins available in public are not audited for security.
     You should install and run third-party plugins at your own risk, since they are arbitrary programs running on your machine.
 
 
@@ -19,14 +19,14 @@ They provide a way to extend the core feature set of Trivy, but without requirin
 A plugin can be installed using the `vul plugin install` command.
 This command takes a url and will download the plugin and install it in the plugin cache.
 
-Trivy adheres to the XDG specification, so the location depends on whether XDG_DATA_HOME is set.
-Trivy will now search XDG_DATA_HOME for the location of the Trivy plugins cache.
+Vul adheres to the XDG specification, so the location depends on whether XDG_DATA_HOME is set.
+Vul will now search XDG_DATA_HOME for the location of the Vul plugins cache.
 The preference order is as follows:
 
 - XDG_DATA_HOME if set and .vul/plugins exists within the XDG_DATA_HOME dir
 - ~/.vul/plugins
 
-Under the hood Trivy leverages [go-getter][go-getter] to download plugins.
+Under the hood Vul leverages [go-getter][go-getter] to download plugins.
 This means the following protocols are supported for downloading plugins:
 
 - OCI Registries
@@ -37,19 +37,19 @@ This means the following protocols are supported for downloading plugins:
 - Amazon S3
 - Google Cloud Storage
 
-For example, to download the Kubernetes Trivy plugin you can execute the following command:
+For example, to download the Kubernetes Vul plugin you can execute the following command:
 
 ```bash
 $ vul plugin install github.com/khulnasoft-lab/vul-plugin-kubectl
 ```
-Also, Trivy plugin can be installed from a local archive:
+Also, Vul plugin can be installed from a local archive:
 ```bash
 $ vul plugin install myplugin.tar.gz
 ```
 
 ## Using Plugins
-Once the plugin is installed, Trivy will load all available plugins in the cache on the start of the next Trivy execution.
-A plugin will be made in the Trivy CLI based on the plugin name.
+Once the plugin is installed, Vul will load all available plugins in the cache on the start of the next Vul execution.
+A plugin will be made in the Vul CLI based on the plugin name.
 To display all plugins, you can list them by `vul --help`
 
 ```bash
@@ -81,13 +81,13 @@ To call the kubectl plugin and scan existing Kubernetes deployments, you can exe
 $ vul kubectl deployment <deployment-id> -- --ignore-unfixed --severity CRITICAL
 ```
 
-Internally the kubectl plugin calls the kubectl binary to fetch information about that deployment and passes the using images to Trivy.
+Internally the kubectl plugin calls the kubectl binary to fetch information about that deployment and passes the using images to Vul.
 You can see the detail [here][vul-plugin-kubectl].
 
-If you want to omit even the subcommand, you can use `TRIVY_RUN_AS_PLUGIN` environment variable.
+If you want to omit even the subcommand, you can use `VUL_RUN_AS_PLUGIN` environment variable.
 
 ```bash
-$ TRIVY_RUN_AS_PLUGIN=kubectl vul job your-job -- --format json
+$ VUL_RUN_AS_PLUGIN=kubectl vul job your-job -- --format json
 ```
 
 ## Installing and Running Plugins on the fly
@@ -127,7 +127,7 @@ repository: github.com/khulnasoft-lab/vul-plugin-kubectl
 version: "0.1.0"
 usage: scan kubectl resources
 description: |-
-  A Trivy plugin that scans the images of a kubernetes resource.
+  A Vul plugin that scans the images of a kubernetes resource.
   Usage: vul kubectl TYPE[.VERSION][.GROUP] NAME
 platforms:
   - selector: # optional
@@ -144,7 +144,7 @@ platforms:
 
 The `plugin.yaml` field should contain the following information:
 
-- name: The name of the plugin. This also determines how the plugin will be made available in the Trivy CLI. For example, if the plugin is named kubectl, you can call the plugin with `vul kubectl`. (required)
+- name: The name of the plugin. This also determines how the plugin will be made available in the Vul CLI. For example, if the plugin is named kubectl, you can call the plugin with `vul kubectl`. (required)
 - version: The version of the plugin. (required)
 - usage: A short usage description. (required)
 - description: A long description of the plugin. This is where you could provide a helpful documentation of your plugin. (required)
@@ -160,10 +160,10 @@ The following rules will apply in deciding which platform to select:
 - If both `os` and `arch` under `selector` match the current platform, search will stop and the platform will be used.
 - If `selector` is not present, the platform will be used.
 - If `os` matches and there is no more specific `arch` match, the platform will be used.
-- If no `platform` match is found, Trivy will exit with an error.
+- If no `platform` match is found, Vul will exit with an error.
 
-After determining platform, Trivy will download the execution file from `uri` and store it in the plugin cache.
-When the plugin is called via Trivy CLI, `bin` command will be executed.
+After determining platform, Vul will download the execution file from `uri` and store it in the plugin cache.
+When the plugin is called via Vul CLI, `bin` command will be executed.
 
 The plugin is responsible for handling flags and arguments. Any arguments are passed to the plugin from the `vul` command.
 
@@ -179,7 +179,7 @@ $ vul plugin install myplugin.tar.gz
 2023-03-03T19:04:42.026+0600	INFO	Loading the plugin metadata...
 
 $ vul myplugin
-Hello from Trivy demo plugin!
+Hello from Vul demo plugin!
 ```
 
 ## Example

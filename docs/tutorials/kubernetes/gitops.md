@@ -1,12 +1,12 @@
-# Installing the Trivy-Operator through GitOps
+# Installing the Vul-Operator through GitOps
 
-This tutorial shows you how to install the Trivy Operator through GitOps platforms, namely ArgoCD and FluxCD.
+This tutorial shows you how to install the Vul Operator through GitOps platforms, namely ArgoCD and FluxCD.
 
 ## ArgoCD
 
 Make sure to have [ArgoCD installed](https://argo-cd.readthedocs.io/en/stable/getting_started/) and running in your Kubernetes cluster.
 
-You can either deploy the Trivy Operator through the argocd CLI or by applying a Kubernetes manifest.
+You can either deploy the Vul Operator through the argocd CLI or by applying a Kubernetes manifest.
 
 ArgoCD command:
 ```
@@ -61,16 +61,16 @@ argocd app sync vul-operator
 
 Now you can see the deployment in the ArgoCD UI. Have a look at the ArgoCD documentation to know how to access the UI.
 
-![ArgoCD UI after deploying the Trivy Operator](../../imgs/argocd-ui.png)
+![ArgoCD UI after deploying the Vul Operator](../../imgs/argocd-ui.png)
 
-Note that ArgoCD is unable to show the Trivy CRDs as synced.
+Note that ArgoCD is unable to show the Vul CRDs as synced.
 
 
 ## FluxCD
 
 Make sure to have [FluxCD installed](https://fluxcd.io/docs/installation/#install-the-flux-cli) and running in your Kubernetes cluster.
 
-You can either deploy the Trivy Operator through the Flux CLI or by applying a Kubernetes manifest.
+You can either deploy the Vul Operator through the Flux CLI or by applying a Kubernetes manifest.
 
 Flux command:
 ```
@@ -124,7 +124,7 @@ kubectl apply -f vul-operator.yaml
 
 ## After the installation
 
-After the install, you want to check that the Trivy operator is running in the vul-system namespace:
+After the install, you want to check that the Vul operator is running in the vul-system namespace:
 ```
 kubectl get deployment -n vul-system
 ```

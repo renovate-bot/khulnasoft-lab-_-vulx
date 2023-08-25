@@ -2,7 +2,7 @@
 name = "example"
 version = "0.1.0"
 description = "My Hello World Example"
-authors = ["Trivy"]
+authors = ["Vul"]
 
 [tool.poetry.dependencies]
 python = "^3.9"

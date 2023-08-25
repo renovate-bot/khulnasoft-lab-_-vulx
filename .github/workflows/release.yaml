@@ -23,7 +23,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Restore Trivy binaries from cache
+      - name: Restore Vul binaries from cache
         uses: actions/cache@v3.3.1
         with:
           path: dist/

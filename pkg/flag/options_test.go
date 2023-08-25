@@ -52,7 +52,7 @@ func Test_getStringSlice(t *testing.T) {
 			name: "happy path. Env value",
 			flag: &ScannersFlag,
 			env: env{
-				key:   "TRIVY_SECURITY_CHECKS",
+				key:   "VUL_SECURITY_CHECKS",
 				value: "rbac,config",
 			},
 			want: []string{

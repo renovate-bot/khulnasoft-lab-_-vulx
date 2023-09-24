@@ -133,7 +133,7 @@ func (c Client) getVendorSeverity(vuln *dbTypes.Vulnerability, source string) (s
 func (c Client) getPrimaryURL(vulnID string, refs []string, source string) string {
 	switch {
 	case strings.HasPrefix(vulnID, "CVE-"):
-		return "https://avd.aquasec.com/nvd/" + strings.ToLower(vulnID)
+		return "https://avd.khulnasoft.com/nvd/" + strings.ToLower(vulnID)
 	case strings.HasPrefix(vulnID, "RUSTSEC-"):
 		return "https://rustsec.org/advisories/" + vulnID
 	case strings.HasPrefix(vulnID, "GHSA-"):

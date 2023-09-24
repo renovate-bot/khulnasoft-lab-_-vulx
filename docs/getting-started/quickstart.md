@@ -71,7 +71,7 @@ Failures: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
 +---------------------------+------------+----------------------+----------+------------------------------------------+
 | Dockerfile Security Check |   DS002    | Image user is 'root' |   HIGH   | Last USER command in                     |
 |                           |            |                      |          | Dockerfile should not be 'root'          |
-|                           |            |                      |          | -->avd.aquasec.com/appshield/ds002       |
+|                           |            |                      |          | -->avd.khulnasoft.com/appshield/ds002       |
 +---------------------------+------------+----------------------+----------+------------------------------------------+
 ```
 

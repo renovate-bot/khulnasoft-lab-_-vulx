@@ -26,7 +26,7 @@ func TestReportWriter_JSON(t *testing.T) {
 					PkgName:          "foo",
 					InstalledVersion: "1.2.3",
 					FixedVersion:     "3.4.5",
-					PrimaryURL:       "https://avd.aquasec.com/nvd/cve-2020-0001",
+					PrimaryURL:       "https://avd.khulnasoft.com/nvd/cve-2020-0001",
 					Vulnerability: dbTypes.Vulnerability{
 						Title:       "foobar",
 						Description: "baz",
@@ -46,7 +46,7 @@ func TestReportWriter_JSON(t *testing.T) {
 								PkgName:          "foo",
 								InstalledVersion: "1.2.3",
 								FixedVersion:     "3.4.5",
-								PrimaryURL:       "https://avd.aquasec.com/nvd/cve-2020-0001",
+								PrimaryURL:       "https://avd.khulnasoft.com/nvd/cve-2020-0001",
 								Vulnerability: dbTypes.Vulnerability{
 									Title:       "foobar",
 									Description: "baz",

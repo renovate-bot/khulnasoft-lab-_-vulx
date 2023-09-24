@@ -107,7 +107,7 @@ func TestScanServer_Scan(t *testing.T) {
 								SeveritySource:   "nvd",
 								Layer:            &common.Layer{},
 								Cvss:             map[string]*common.CVSS{},
-								PrimaryUrl:       "https://avd.aquasec.com/nvd/cve-2019-0001",
+								PrimaryUrl:       "https://avd.khulnasoft.com/nvd/cve-2019-0001",
 								Title:            "dos",
 								Description:      "dos vulnerability",
 								References:       []string{"http://example.com"},

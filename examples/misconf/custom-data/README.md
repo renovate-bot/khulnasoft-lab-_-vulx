@@ -19,7 +19,7 @@ Failures: 2 (HIGH: 2, CRITICAL: 0)
 | Dockerfile Security Check |   DS002    | Image user is 'root'     |          | Specify at least 1 USER                  |
 |                           |            |                          |          | command in Dockerfile with               |
 |                           |            |                          |          | non-root user as argument                |
-|                           |            |                          |          | -->avd.aquasec.com/appshield/ds002       |
+|                           |            |                          |          | -->avd.khulnasoft.com/appshield/ds002       |
 +---------------------------+------------+--------------------------+----------+------------------------------------------+
 
 ```

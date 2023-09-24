@@ -5,7 +5,7 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/khulnasoft-lab/goversion /pkg/version"
+	"github.com/khulnasoft-lab/goversion/pkg/version"
 	dbTypes "github.com/khulnasoft-lab/vul-db/pkg/types"
 	"github.com/khulnasoft-lab/vul/pkg/log"
 )

@@ -6,4 +6,4 @@
 
 [action]: https://github.com/khulnasoft-lab/vul-action
 [azure]: https://github.com/Azure/container-scan
-[blog]: https://blog.aquasec.com/devsecops-with-vul-github-actions
+[blog]: https://blog.khulnasoft.com/devsecops-with-vul-github-actions

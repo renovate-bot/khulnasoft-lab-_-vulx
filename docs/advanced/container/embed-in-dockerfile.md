@@ -2,7 +2,7 @@
 
 Scan your image as part of the build process by embedding Vul in the
 Dockerfile. This approach can be used to update Dockerfiles currently using
-Aqua’s [Microscanner][microscanner].
+Khulnasoft’s [Microscanner][microscanner].
 
 ```bash
 $ cat Dockerfile
@@ -20,7 +20,7 @@ insecure `curl | sh`. Also the image is not changed.
 [...]
 # Run vulnerability scan on build image
 FROM build AS vulnscan
-COPY --from=aquasec/vul:latest /usr/local/bin/vul /usr/local/bin/vul
+COPY --from=khulnasoft/vul:latest /usr/local/bin/vul /usr/local/bin/vul
 RUN vul rootfs --exit-code 1 --no-progress /
 [...]
 ```

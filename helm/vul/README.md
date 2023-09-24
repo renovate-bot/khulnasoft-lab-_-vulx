@@ -18,7 +18,7 @@ This chart bootstraps a Vul deployment on a [Kubernetes](http://kubernetes.io) c
 - Kubernetes 1.12+
 - Helm 3+
 
-## Installing from the the Aqua Chart Repository
+## Installing from the the Khulnasoft Chart Repository
 
 ```
 helm repo add khulnasoft-lab https://khulnasoft-lab.github.io/helm-charts/
@@ -57,7 +57,7 @@ The following table lists the configurable parameters of the Vul chart and their
 |                 Parameter             |                                Description                              |    Default     |
 |---------------------------------------|-------------------------------------------------------------------------|----------------|
 | `image.registry`                      | Image registry                                                          | `docker.io`    |
-| `image.repository`                    | Image name                                                              | `aquasec/vul` |
+| `image.repository`                    | Image name                                                              | `khulnasoft/vul` |
 | `image.tag`                           | Image tag                                                               | `{TAG_NAME}`   |
 | `image.pullPolicy`                    | Image pull policy                                                       | `IfNotPresent` |
 | `image.pullSecret`                    | The name of an imagePullSecret used to pull vul image from e.g. Docker Hub or a private registry  | |

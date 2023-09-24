@@ -36,7 +36,7 @@ Total: 1 (HIGH: 1, CRITICAL: 0)
 | httplib2 | CVE-2021-21240   | HIGH     | 0.12.1            | 0.19.0        | python-httplib2: Regular              |
 |          |                  |          |                   |               | expression denial of                  |
 |          |                  |          |                   |               | service via malicious header          |
-|          |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2021-21240 |
+|          |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2021-21240 |
 +----------+------------------+----------+-------------------+---------------+---------------------------------------+
 
 Dockerfile (dockerfile)
@@ -49,7 +49,7 @@ Failures: 1 (HIGH: 1, CRITICAL: 0)
 +---------------------------+------------+----------------------+----------+------------------------------------------+
 | Dockerfile Security Check |   DS002    | Image user is 'root' |   HIGH   | Last USER command in                     |
 |                           |            |                      |          | Dockerfile should not be 'root'          |
-|                           |            |                      |          | -->avd.aquasec.com/appshield/ds002       |
+|                           |            |                      |          | -->avd.khulnasoft.com/appshield/ds002       |
 +---------------------------+------------+----------------------+----------+------------------------------------------+
 ```
 

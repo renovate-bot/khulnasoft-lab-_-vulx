@@ -35,10 +35,10 @@
           "Query": "data.appshield.dockerfile.DS002.deny",
           "Resolution": "Add 'USER \u003cnon root user name\u003e' line to the Dockerfile",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/appshield/ds002",
+          "PrimaryURL": "https://avd.khulnasoft.com/appshield/ds002",
           "References": [
             "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/",
-            "https://avd.aquasec.com/appshield/ds002"
+            "https://avd.khulnasoft.com/appshield/ds002"
           ],
           "Status": "FAIL"
         }

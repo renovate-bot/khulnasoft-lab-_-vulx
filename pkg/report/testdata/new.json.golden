@@ -16,7 +16,7 @@
           "InstalledVersion": "1.2.3",
           "FixedVersion": "3.4.5",
           "Layer": {},
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-0001",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2020-0001",
           "Title": "foobar",
           "Description": "baz",
           "Severity": "HIGH"

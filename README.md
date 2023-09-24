@@ -103,7 +103,7 @@ Total: 1 (HIGH: 1, CRITICAL: 0)
 | httplib2 | CVE-2021-21240   | HIGH     | 0.12.1            | 0.19.0        | python-httplib2: Regular              |
 |          |                  |          |                   |               | expression denial of                  |
 |          |                  |          |                   |               | service via malicious header          |
-|          |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2021-21240 |
+|          |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2021-21240 |
 +----------+------------------+----------+-------------------+---------------+---------------------------------------+
 
 Dockerfile (dockerfile)
@@ -116,7 +116,7 @@ Failures: 1 (HIGH: 1, CRITICAL: 0)
 +---------------------------+------------+----------------------+----------+------------------------------------------+
 | Dockerfile Security Check |   DS002    | Image user is 'root' |   HIGH   | Last USER command in                     |
 |                           |            |                      |          | Dockerfile should not be 'root'          |
-|                           |            |                      |          | -->avd.aquasec.com/appshield/ds002       |
+|                           |            |                      |          | -->avd.khulnasoft.com/appshield/ds002       |
 +---------------------------+------------+----------------------+----------+------------------------------------------+
 ```
 </details>
@@ -155,7 +155,7 @@ Failures: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
 +---------------------------+------------+----------------------+----------+------------------------------------------+
 | Dockerfile Security Check |   DS002    | Image user is 'root' |   HIGH   | Last USER command in                     |
 |                           |            |                      |          | Dockerfile should not be 'root'          |
-|                           |            |                      |          | -->avd.aquasec.com/appshield/ds002       |
+|                           |            |                      |          | -->avd.khulnasoft.com/appshield/ds002       |
 +---------------------------+------------+----------------------+----------+------------------------------------------+
 ```
 
@@ -195,7 +195,7 @@ The official documentation, which provides detailed installation, configuration,
 
 ---
 
-Vul is an [Aqua Security][aquasec] open source project.  
+Vul is an [Khulnasoft Security][khulnasoft] open source project.  
 Learn about our open source work and portfolio [here][oss].  
 Contact us about any matter by opening a GitHub Discussion [here][discussions]
 
@@ -206,7 +206,7 @@ Contact us about any matter by opening a GitHub Discussion [here][discussions]
 [release]: https://github.com/khulnasoft-lab/vul/releases
 [release-img]: https://img.shields.io/github/release/khulnasoft-lab/vul.svg?logo=github
 [github-all-releases-img]: https://img.shields.io/github/downloads/khulnasoft-lab/vul/total?logo=github
-[docker-pulls]: https://img.shields.io/docker/pulls/aquasec/vul?logo=docker&label=docker%20pulls%20%2F%20vul
+[docker-pulls]: https://img.shields.io/docker/pulls/khulnasoft/vul?logo=docker&label=docker%20pulls%20%2F%20vul
 [license]: https://github.com/khulnasoft-lab/vul/blob/main/LICENSE
 [license-img]: https://img.shields.io/badge/License-Apache%202.0-blue.svg
 
@@ -214,6 +214,6 @@ Contact us about any matter by opening a GitHub Discussion [here][discussions]
 [action]: https://github.com/khulnasoft-lab/vul-action
 [vscode]: https://github.com/khulnasoft-lab/vul-vscode-extension
 
-[aquasec]: https://aquasec.com
-[oss]: https://www.aquasec.com/products/open-source-projects/
+[khulnasoft]: https://khulnasoft.com
+[oss]: https://www.khulnasoft.com/products/open-source-projects/
 [discussions]: https://github.com/khulnasoft-lab/vul/discussions

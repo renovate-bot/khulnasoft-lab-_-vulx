@@ -25,7 +25,7 @@ Failures: 2 (HIGH: 1, CRITICAL: 0)
 | Dockerfile Security Check |   DS002    | Image user is 'root' |   HIGH   | Specify at least 1 USER                  |
 |                           |            |                      |          | command in Dockerfile with               |
 |                           |            |                      |          | non-root user as argument                |
-|                           |            |                      |          | -->avd.aquasec.com/appshield/ds002       |
+|                           |            |                      |          | -->avd.khulnasoft.com/appshield/ds002       |
 +---------------------------+------------+----------------------+----------+------------------------------------------+
 
 configs/deployment.yaml (kubernetes)
@@ -39,7 +39,7 @@ Failures: 14 (HIGH: 1, CRITICAL: 0)
 | Kubernetes Security Check |   KSV006   | docker.sock is mounted to container |   HIGH   | Deployment 'hello-kubernetes' should     |
 |                           |            |                                     |          | not specify '/var/run/docker.socker' in  |
 |                           |            |                                     |          | 'spec.template.volumes.hostPath.path'    |
-|                           |            |                                     |          | -->avd.aquasec.com/appshield/ksv006      |
+|                           |            |                                     |          | -->avd.khulnasoft.com/appshield/ksv006      |
 +---------------------------+------------+-------------------------------------+----------+------------------------------------------+
 
 configs/main.tf (terraform)
@@ -124,7 +124,7 @@ Failures: 2 (HIGH: 1, CRITICAL: 0)
 | Dockerfile Security Check |   DS002    | Image user is 'root' |   HIGH   | Specify at least 1 USER                  |
 |                           |            |                      |          | command in Dockerfile with               |
 |                           |            |                      |          | non-root user as argument                |
-|                           |            |                      |          | -->avd.aquasec.com/appshield/ds002       |
+|                           |            |                      |          | -->avd.khulnasoft.com/appshield/ds002       |
 +---------------------------+------------+----------------------+----------+------------------------------------------+
 
 configs/deployment.yaml (kubernetes)
@@ -138,7 +138,7 @@ Failures: 14 (HIGH: 1, CRITICAL: 0)
 | Kubernetes Security Check |   KSV006   | docker.sock is mounted to container |   HIGH   | Deployment 'hello-kubernetes' should     |
 |                           |            |                                     |          | not specify '/var/run/docker.socker' in  |
 |                           |            |                                     |          | 'spec.template.volumes.hostPath.path'    |
-|                           |            |                                     |          | -->avd.aquasec.com/appshield/ksv006      |
+|                           |            |                                     |          | -->avd.khulnasoft.com/appshield/ksv006      |
 +---------------------------+------------+-------------------------------------+----------+------------------------------------------+
 
 configs/main.tf (terraform)

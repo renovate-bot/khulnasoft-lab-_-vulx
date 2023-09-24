@@ -61,7 +61,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5094",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5094",
           "Title": "e2fsprogs: crafted ext4 partition leads to out-of-bounds write",
           "Description": "An exploitable code execution vulnerability exists in the quota file functionality of E2fsprogs 1.45.3. A specially crafted ext4 partition can cause an out-of-bounds write on the heap, resulting in code execution. An attacker can corrupt a partition to trigger this vulnerability.",
           "Severity": "MEDIUM",
@@ -100,7 +100,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5188",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5188",
           "Title": "e2fsprogs: Out-of-bounds write in  e2fsck/rehash.c",
           "Description": "A code execution vulnerability exists in the directory rehashing functionality of E2fsprogs e2fsck 1.45.4. A specially crafted ext4 directory can cause an out-of-bounds write on the stack, resulting in code execution. An attacker can corrupt a partition to trigger this vulnerability.",
           "Severity": "MEDIUM",
@@ -138,7 +138,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5094",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5094",
           "Title": "e2fsprogs: crafted ext4 partition leads to out-of-bounds write",
           "Description": "An exploitable code execution vulnerability exists in the quota file functionality of E2fsprogs 1.45.3. A specially crafted ext4 partition can cause an out-of-bounds write on the heap, resulting in code execution. An attacker can corrupt a partition to trigger this vulnerability.",
           "Severity": "MEDIUM",
@@ -177,7 +177,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5188",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5188",
           "Title": "e2fsprogs: Out-of-bounds write in  e2fsck/rehash.c",
           "Description": "A code execution vulnerability exists in the directory rehashing functionality of E2fsprogs e2fsck 1.45.4. A specially crafted ext4 directory can cause an out-of-bounds write on the stack, resulting in code execution. An attacker can corrupt a partition to trigger this vulnerability.",
           "Severity": "MEDIUM",
@@ -215,7 +215,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5094",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5094",
           "Title": "e2fsprogs: crafted ext4 partition leads to out-of-bounds write",
           "Description": "An exploitable code execution vulnerability exists in the quota file functionality of E2fsprogs 1.45.3. A specially crafted ext4 partition can cause an out-of-bounds write on the heap, resulting in code execution. An attacker can corrupt a partition to trigger this vulnerability.",
           "Severity": "MEDIUM",
@@ -254,7 +254,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5188",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5188",
           "Title": "e2fsprogs: Out-of-bounds write in  e2fsck/rehash.c",
           "Description": "A code execution vulnerability exists in the directory rehashing functionality of E2fsprogs e2fsck 1.45.4. A specially crafted ext4 directory can cause an out-of-bounds write on the stack, resulting in code execution. An attacker can corrupt a partition to trigger this vulnerability.",
           "Severity": "MEDIUM",
@@ -292,7 +292,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-18224",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-18224",
           "Title": "libidn2: heap-based buffer overflow in idn2_to_ascii_4i in lib/lookup.c",
           "Description": "idn2_to_ascii_4i in lib/lookup.c in GNU libidn2 before 2.1.1 has a heap-based buffer overflow via a long domain string.",
           "Severity": "HIGH",
@@ -331,7 +331,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "debian",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17594",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-17594",
           "Title": "ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c",
           "Description": "There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.",
           "Severity": "LOW",
@@ -367,7 +367,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "debian",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17595",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-17595",
           "Title": "ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c",
           "Description": "There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.",
           "Severity": "LOW",
@@ -403,7 +403,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5094",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5094",
           "Title": "e2fsprogs: crafted ext4 partition leads to out-of-bounds write",
           "Description": "An exploitable code execution vulnerability exists in the quota file functionality of E2fsprogs 1.45.3. A specially crafted ext4 partition can cause an out-of-bounds write on the heap, resulting in code execution. An attacker can corrupt a partition to trigger this vulnerability.",
           "Severity": "MEDIUM",
@@ -442,7 +442,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5188",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5188",
           "Title": "e2fsprogs: Out-of-bounds write in  e2fsck/rehash.c",
           "Description": "A code execution vulnerability exists in the directory rehashing functionality of E2fsprogs e2fsck 1.45.4. A specially crafted ext4 directory can cause an out-of-bounds write on the stack, resulting in code execution. An attacker can corrupt a partition to trigger this vulnerability.",
           "Severity": "MEDIUM",
@@ -480,7 +480,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-15718",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-15718",
           "Title": "systemd: systemd-resolved allows unprivileged users to configure DNS",
           "Description": "In systemd 240, bus_open_system_watch_bind_with_description in shared/bus-util.c (as used by systemd-resolved to connect to the system D-Bus instance), calls sd_bus_set_trusted, which disables access controls for incoming D-Bus messages. An unprivileged user can exploit this by executing D-Bus methods that should be restricted to privileged users, in order to change the system's DNS resolver settings.",
           "Severity": "MEDIUM",
@@ -522,7 +522,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "debian",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17594",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-17594",
           "Title": "ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c",
           "Description": "There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.",
           "Severity": "LOW",
@@ -558,7 +558,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "debian",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17595",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-17595",
           "Title": "ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c",
           "Description": "There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.",
           "Severity": "LOW",
@@ -594,7 +594,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-15718",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-15718",
           "Title": "systemd: systemd-resolved allows unprivileged users to configure DNS",
           "Description": "In systemd 240, bus_open_system_watch_bind_with_description in shared/bus-util.c (as used by systemd-resolved to connect to the system D-Bus instance), calls sd_bus_set_trusted, which disables access controls for incoming D-Bus messages. An unprivileged user can exploit this by executing D-Bus methods that should be restricted to privileged users, in order to change the system's DNS resolver settings.",
           "Severity": "MEDIUM",
@@ -636,7 +636,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "debian",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17594",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-17594",
           "Title": "ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c",
           "Description": "There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.",
           "Severity": "LOW",
@@ -672,7 +672,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "debian",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17595",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-17595",
           "Title": "ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c",
           "Description": "There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.",
           "Severity": "LOW",
@@ -708,7 +708,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "debian",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17594",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-17594",
           "Title": "ncurses: heap-based buffer overflow in the _nc_find_entry function in tinfo/comp_hash.c",
           "Description": "There is a heap-based buffer over-read in the _nc_find_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.",
           "Severity": "LOW",
@@ -744,7 +744,7 @@
             "DiffID": "sha256:78c1b9419976227e05be9d243b7fa583bea44a5258e52018b2af4cdfe23d148d"
           },
           "SeveritySource": "debian",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-17595",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-17595",
           "Title": "ncurses: heap-based buffer overflow in the fmt_entry function in tinfo/comp_hash.c",
           "Description": "There is a heap-based buffer over-read in the fmt_entry function in tinfo/comp_hash.c in the terminfo library in ncurses before 6.1-20191012.",
           "Severity": "LOW",

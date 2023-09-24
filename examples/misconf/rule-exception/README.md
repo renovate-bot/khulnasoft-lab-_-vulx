@@ -30,7 +30,7 @@ Failures: 14 (HIGH: 1, CRITICAL: 0)
 | Kubernetes Security Check |   KSV006   | docker.sock is mounted to container |   HIGH   | Deployment 'test-deny' should not        |
 |                           |            |                                     |          | specify '/var/run/docker.socker' in      |
 |                           |            |                                     |          | 'spec.template.volumes.hostPath.path'    |
-|                           |            |                                     |          | -->avd.aquasec.com/appshield/ksv006      |
+|                           |            |                                     |          | -->avd.khulnasoft.com/appshield/ksv006      |
 +---------------------------+------------+-------------------------------------+----------+------------------------------------------+
 ```
 
@@ -60,7 +60,7 @@ Failures: 14 (HIGH: 1, CRITICAL: 0)
 | Kubernetes Security Check |   KSV006   | docker.sock is mounted to container |   HIGH   | Deployment 'test-deny' should not        |
 |                           |            |                                     |          | specify '/var/run/docker.socker' in      |
 |                           |            |                                     |          | 'spec.template.volumes.hostPath.path'    |
-|                           |            |                                     |          | -->avd.aquasec.com/appshield/ksv006      |
+|                           |            |                                     |          | -->avd.khulnasoft.com/appshield/ksv006      |
 +---------------------------+------------+-------------------------------------+----------+------------------------------------------+
 ```
 

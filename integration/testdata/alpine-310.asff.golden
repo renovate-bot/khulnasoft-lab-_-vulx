@@ -16,7 +16,7 @@
         "Remediation": {
             "Recommendation": {
                 "Text": "More information on this vulnerability is provided in the hyperlink",
-                "Url": "https://avd.aquasec.com/nvd/cve-2019-1549"
+                "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1549"
             }
         },
         "ProductFields": { "Product Name": "Vul" },
@@ -61,7 +61,7 @@
         "Remediation": {
             "Recommendation": {
                 "Text": "More information on this vulnerability is provided in the hyperlink",
-                "Url": "https://avd.aquasec.com/nvd/cve-2019-1551"
+                "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1551"
             }
         },
         "ProductFields": { "Product Name": "Vul" },
@@ -106,7 +106,7 @@
         "Remediation": {
             "Recommendation": {
                 "Text": "More information on this vulnerability is provided in the hyperlink",
-                "Url": "https://avd.aquasec.com/nvd/cve-2019-1563"
+                "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1563"
             }
         },
         "ProductFields": { "Product Name": "Vul" },
@@ -151,7 +151,7 @@
         "Remediation": {
             "Recommendation": {
                 "Text": "More information on this vulnerability is provided in the hyperlink",
-                "Url": "https://avd.aquasec.com/nvd/cve-2019-1547"
+                "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1547"
             }
         },
         "ProductFields": { "Product Name": "Vul" },
@@ -196,7 +196,7 @@
         "Remediation": {
             "Recommendation": {
                 "Text": "More information on this vulnerability is provided in the hyperlink",
-                "Url": "https://avd.aquasec.com/nvd/cve-2019-1549"
+                "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1549"
             }
         },
         "ProductFields": { "Product Name": "Vul" },
@@ -241,7 +241,7 @@
         "Remediation": {
             "Recommendation": {
                 "Text": "More information on this vulnerability is provided in the hyperlink",
-                "Url": "https://avd.aquasec.com/nvd/cve-2019-1551"
+                "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1551"
             }
         },
         "ProductFields": { "Product Name": "Vul" },
@@ -286,7 +286,7 @@
         "Remediation": {
             "Recommendation": {
                 "Text": "More information on this vulnerability is provided in the hyperlink",
-                "Url": "https://avd.aquasec.com/nvd/cve-2019-1563"
+                "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1563"
             }
         },
         "ProductFields": { "Product Name": "Vul" },
@@ -331,7 +331,7 @@
         "Remediation": {
             "Recommendation": {
                 "Text": "More information on this vulnerability is provided in the hyperlink",
-                "Url": "https://avd.aquasec.com/nvd/cve-2019-1547"
+                "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1547"
             }
         },
         "ProductFields": { "Product Name": "Vul" },

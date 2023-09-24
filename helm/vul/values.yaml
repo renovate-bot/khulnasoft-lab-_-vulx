@@ -3,7 +3,7 @@ fullnameOverride: ""
 
 image:
   registry: docker.io
-  repository: aquasec/vul
+  repository: khulnasoft/vul
   tag: 0.18.3
   pullPolicy: IfNotPresent
   pullSecret: ""

@@ -742,9 +742,9 @@ func TestScanner_Scan(t *testing.T) {
 							Message:    "No issues found",
 							Namespace:  "appshield.kubernetes.id200",
 							Severity:   "MEDIUM",
-							PrimaryURL: "https://avd.aquasec.com/appshield/id200",
+							PrimaryURL: "https://avd.khulnasoft.com/appshield/id200",
 							References: []string{
-								"https://avd.aquasec.com/appshield/id200",
+								"https://avd.khulnasoft.com/appshield/id200",
 							},
 							Status: types.StatusPassed,
 							Layer: ftypes.Layer{

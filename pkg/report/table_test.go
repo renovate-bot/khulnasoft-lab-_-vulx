@@ -30,7 +30,7 @@ func TestReportWriter_Table(t *testing.T) {
 							PkgName:          "foo",
 							InstalledVersion: "1.2.3",
 							FixedVersion:     "3.4.5",
-							PrimaryURL:       "https://avd.aquasec.com/nvd/cve-2020-0001",
+							PrimaryURL:       "https://avd.khulnasoft.com/nvd/cve-2020-0001",
 							Vulnerability: dbTypes.Vulnerability{
 								Title:       "foobar",
 								Description: "baz",
@@ -44,7 +44,7 @@ func TestReportWriter_Table(t *testing.T) {
 | LIBRARY | VULNERABILITY ID | SEVERITY | INSTALLED VERSION | FIXED VERSION |                TITLE                 |
 +---------+------------------+----------+-------------------+---------------+--------------------------------------+
 | foo     | CVE-2020-0001    | HIGH     | 1.2.3             | 3.4.5         | foobar                               |
-|         |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2020-0001 |
+|         |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2020-0001 |
 +---------+------------------+----------+-------------------+---------------+--------------------------------------+
 `,
 		},
@@ -112,7 +112,7 @@ func TestReportWriter_Table(t *testing.T) {
 							PkgName:          "foo",
 							InstalledVersion: "1.2.3",
 							FixedVersion:     "3.4.5",
-							PrimaryURL:       "https://avd.aquasec.com/nvd/cve-2020-1234",
+							PrimaryURL:       "https://avd.khulnasoft.com/nvd/cve-2020-1234",
 							Vulnerability: dbTypes.Vulnerability{
 								Title:       "a b c d e f g h i j k l m n o p q r s t u v",
 								Description: "foobar",
@@ -126,7 +126,7 @@ func TestReportWriter_Table(t *testing.T) {
 | LIBRARY | VULNERABILITY ID | SEVERITY | INSTALLED VERSION | FIXED VERSION |                TITLE                 |
 +---------+------------------+----------+-------------------+---------------+--------------------------------------+
 | foo     | CVE-2020-1234    | HIGH     | 1.2.3             | 3.4.5         | a b c d e f g h i j k l...           |
-|         |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2020-1234 |
+|         |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2020-1234 |
 +---------+------------------+----------+-------------------+---------------+--------------------------------------+
 `,
 		},
@@ -142,7 +142,7 @@ func TestReportWriter_Table(t *testing.T) {
 							Title:      "Image tag ':latest' used",
 							Message:    "Message",
 							Severity:   "HIGH",
-							PrimaryURL: "https://avd.aquasec.com/appshield/ksv001",
+							PrimaryURL: "https://avd.khulnasoft.com/appshield/ksv001",
 							Status:     types.StatusFailure,
 						},
 						{
@@ -151,7 +151,7 @@ func TestReportWriter_Table(t *testing.T) {
 							Title:      "SYS_ADMIN capability added",
 							Message:    "Message",
 							Severity:   "CRITICAL",
-							PrimaryURL: "https://avd.aquasec.com/appshield/ksv002",
+							PrimaryURL: "https://avd.khulnasoft.com/appshield/ksv002",
 							Status:     types.StatusFailure,
 						},
 					},
@@ -161,10 +161,10 @@ func TestReportWriter_Table(t *testing.T) {
 |           TYPE            | MISCONF ID |           CHECK            | SEVERITY |                 MESSAGE                  |
 +---------------------------+------------+----------------------------+----------+------------------------------------------+
 | Kubernetes Security Check |   KSV001   | Image tag ':latest' used   |   HIGH   | Message                                  |
-|                           |            |                            |          | -->avd.aquasec.com/appshield/ksv001      |
+|                           |            |                            |          | -->avd.khulnasoft.com/appshield/ksv001      |
 +                           +------------+----------------------------+----------+------------------------------------------+
 |                           |   KSV002   | SYS_ADMIN capability added | CRITICAL | Message                                  |
-|                           |            |                            |          | -->avd.aquasec.com/appshield/ksv002      |
+|                           |            |                            |          | -->avd.khulnasoft.com/appshield/ksv002      |
 +---------------------------+------------+----------------------------+----------+------------------------------------------+
 `,
 		},
@@ -181,7 +181,7 @@ func TestReportWriter_Table(t *testing.T) {
 							Title:      "Image tag ':latest' used",
 							Message:    "Message",
 							Severity:   "HIGH",
-							PrimaryURL: "https://avd.aquasec.com/appshield/ksv001",
+							PrimaryURL: "https://avd.khulnasoft.com/appshield/ksv001",
 							Status:     types.StatusFailure,
 						},
 						{
@@ -190,7 +190,7 @@ func TestReportWriter_Table(t *testing.T) {
 							Title:      "SYS_ADMIN capability added",
 							Message:    "Message",
 							Severity:   "CRITICAL",
-							PrimaryURL: "https://avd.aquasec.com/appshield/ksv002",
+							PrimaryURL: "https://avd.khulnasoft.com/appshield/ksv002",
 							Status:     types.StatusPassed,
 						},
 					},
@@ -200,7 +200,7 @@ func TestReportWriter_Table(t *testing.T) {
 |           TYPE            | MISCONF ID |           CHECK            | SEVERITY | STATUS |                 MESSAGE                  |
 +---------------------------+------------+----------------------------+----------+--------+------------------------------------------+
 | Kubernetes Security Check |   KSV001   | Image tag ':latest' used   |   HIGH   |  FAIL  | Message                                  |
-|                           |            |                            |          |        | -->avd.aquasec.com/appshield/ksv001      |
+|                           |            |                            |          |        | -->avd.khulnasoft.com/appshield/ksv001      |
 +                           +------------+----------------------------+----------+--------+------------------------------------------+
 |                           |   KSV002   | SYS_ADMIN capability added | CRITICAL |  PASS  | Message                                  |
 +---------------------------+------------+----------------------------+----------+--------+------------------------------------------+

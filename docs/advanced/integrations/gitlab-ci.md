@@ -62,7 +62,7 @@ with the container image.
 ```yaml
 container_scanning:
   image:
-    name: docker.io/aquasec/vul:latest
+    name: docker.io/khulnasoft/vul:latest
     entrypoint: [""]
   variables:
     # No need to clone the repo, we exclusively work on artifacts.  See

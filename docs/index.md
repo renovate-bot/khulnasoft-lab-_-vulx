@@ -34,7 +34,7 @@ All you need to do for scanning is to specify a target such as an image name of 
 
 ---
 
-Vul is an [Aqua Security][aquasec] open source project.  
+Vul is an [Khulnasoft Security][khulnasoft] open source project.  
 Learn about our open source work and portfolio [here][oss].  
 Contact us about any matter by opening a GitHub Discussion [here][discussions]
 
@@ -44,6 +44,6 @@ Contact us about any matter by opening a GitHub Discussion [here][discussions]
 [lang]: vulnerability/detection/language.md
 [iac]: misconfiguration/iac.md
 
-[aquasec]: https://aquasec.com
-[oss]: https://www.aquasec.com/products/open-source-projects/
+[khulnasoft]: https://khulnasoft.com
+[oss]: https://www.khulnasoft.com/products/open-source-projects/
 [discussions]: https://github.com/khulnasoft-lab/vul/discussions

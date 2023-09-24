@@ -22,7 +22,7 @@
                   "defaultConfiguration": {
                     "level": "warning"
                   },
-                  "helpUri": "https://avd.aquasec.com/nvd/cve-2019-1549",
+                  "helpUri": "https://avd.khulnasoft.com/nvd/cve-2019-1549",
                   "properties": {
                     "tags": [
                       "vulnerability",
@@ -43,7 +43,7 @@
                   "defaultConfiguration": {
                     "level": "warning"
                   },
-                  "helpUri": "https://avd.aquasec.com/nvd/cve-2019-1551",
+                  "helpUri": "https://avd.khulnasoft.com/nvd/cve-2019-1551",
                   "properties": {
                     "tags": [
                       "vulnerability",
@@ -64,7 +64,7 @@
                   "defaultConfiguration": {
                     "level": "warning"
                   },
-                  "helpUri": "https://avd.aquasec.com/nvd/cve-2019-1563",
+                  "helpUri": "https://avd.khulnasoft.com/nvd/cve-2019-1563",
                   "properties": {
                     "tags": [
                       "vulnerability",
@@ -85,7 +85,7 @@
                   "defaultConfiguration": {
                     "level": "note"
                   },
-                  "helpUri": "https://avd.aquasec.com/nvd/cve-2019-1547",
+                  "helpUri": "https://avd.khulnasoft.com/nvd/cve-2019-1547",
                   "properties": {
                     "tags": [
                       "vulnerability",

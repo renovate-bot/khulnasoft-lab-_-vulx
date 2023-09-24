@@ -26,7 +26,7 @@ spec:
   project: default
   source:
     chart: vul-operator
-    repoURL: https://aquasecurity.github.io/helm-charts/
+    repoURL: https://khulnasoft-lab.github.io/helm-charts/
     targetRevision: 0.0.3
     helm:
       values: |
@@ -75,7 +75,7 @@ You can either deploy the Vul Operator through the Flux CLI or by applying a Kub
 Flux command:
 ```
 > kubectl create ns vul-system
-> flux create source helm vul-operator --url https://aquasecurity.github.io/helm-charts --namespace vul-system
+> flux create source helm vul-operator --url https://khulnasoft-lab.github.io/helm-charts --namespace vul-system
 > flux create helmrelease vul-operator --chart vul-operator
   --source HelmRepository/vul-operator
   --chart-version 0.0.3
@@ -91,7 +91,7 @@ metadata:
   namespace: flux-system
 spec:
   interval: 60m
-  url: https://aquasecurity.github.io/helm-charts/
+  url: https://khulnasoft-lab.github.io/helm-charts/
 
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2beta1

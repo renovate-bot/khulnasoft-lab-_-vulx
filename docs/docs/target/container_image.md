@@ -133,7 +133,7 @@ HIGH: Specify at least 1 USER command in Dockerfile with non-root user as argume
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.
 
-See https://avd.aquasec.com/misconfig/ds002
+See https://avd.khulnasoft.com/misconfig/ds002
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -141,7 +141,7 @@ LOW: Consider using 'COPY file:e4d600fc4c9c293efe360be7b30ee96579925d1b4634c9433
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 You should use COPY instead of ADD unless you want to extract a tar file. Note that an ADD command will extract a tar file, which adds the risk of Zip-based vulnerabilities. Accordingly, it is advised to use a COPY command, which does not extract tar files.
 
-See https://avd.aquasec.com/misconfig/ds005
+See https://avd.khulnasoft.com/misconfig/ds005
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  alpine:3.17:1
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -153,7 +153,7 @@ LOW: Add HEALTHCHECK instruction in your Dockerfile
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 You shoud add HEALTHCHECK instruction in your docker container images to perform the health check on running containers.
 
-See https://avd.aquasec.com/misconfig/ds026
+See https://avd.khulnasoft.com/misconfig/ds026
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ```
 </details>
@@ -260,22 +260,22 @@ Specify your image name in containerd running locally.
 ```bash
 $ nerdctl images
 REPOSITORY        TAG       IMAGE ID        CREATED         PLATFORM       SIZE         BLOB SIZE
-aquasec/nginx    latest    2bcabc23b454    3 hours ago     linux/amd64    149.1 MiB    54.1 MiB
-$ vul image aquasec/nginx
+khulnasoft/nginx    latest    2bcabc23b454    3 hours ago     linux/amd64    149.1 MiB    54.1 MiB
+$ vul image khulnasoft/nginx
 ```
 
 If your containerd socket is not the default path (`//run/containerd/containerd.sock`), you can override it via `CONTAINERD_ADDRESS`.
 
 ```bash
 $ export CONTAINERD_ADDRESS=/run/k3s/containerd/containerd.sock
-$ vul image aquasec/nginx
+$ vul image khulnasoft/nginx
 ```
 
 If your scan targets are images in a namespace other than containerd's default namespace (`default`), you can override it via `CONTAINERD_NAMESPACE`.
 
 ```bash
 $ export CONTAINERD_NAMESPACE=k8s.io
-$ vul image aquasec/nginx
+$ vul image khulnasoft/nginx
 ```
 
 ### Podman
@@ -352,7 +352,7 @@ Total: 3 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 3, CRITICAL: 0)
 +----------+------------------+----------+-------------------+---------------+---------------------------------------+
 | gmp      | CVE-2021-43618   | HIGH     | 6.2.1-r0          | 6.2.1-r1      | gmp: Integer overflow and resultant   |
 |          |                  |          |                   |               | buffer overflow via crafted input     |
-|          |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2021-43618 |
+|          |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2021-43618 |
 +----------+                  +          +                   +               +                                       +
 | gmp-dev  |                  |          |                   |               |                                       |
 |          |                  |          |                   |               |                                       |
@@ -450,7 +450,7 @@ The following reports are available out of the box:
 
 | Compliance                             | Version | Name for command | More info                                                                                   |
 |----------------------------------------|---------|------------------|---------------------------------------------------------------------------------------------|
-| CIS Docker Community Edition Benchmark | 1.1.0   | `docker-cis`     | [Link](https://www.aquasec.com/cloud-native-academy/docker-container/docker-cis-benchmark/) |
+| CIS Docker Community Edition Benchmark | 1.1.0   | `docker-cis`     | [Link](https://www.khulnasoft.com/cloud-native-academy/docker-container/docker-cis-benchmark/) |
 
 ### Examples
 
@@ -488,7 +488,7 @@ $ vul image --platform=linux/arm alpine:3.16.1
 2022-10-25T21:00:50.972+0300    INFO    Vulnerability scanning is enabled
 2022-10-25T21:00:50.972+0300    INFO    Secret scanning is enabled
 2022-10-25T21:00:50.972+0300    INFO    If your scanning is slow, please try '--scanners vuln' to disable secret scanning
-2022-10-25T21:00:50.972+0300    INFO    Please see also https://aquasecurity.github.io/vul/dev/docs/secret/scanning/#recommendation for faster secret detection
+2022-10-25T21:00:50.972+0300    INFO    Please see also https://khulnasoft-lab.github.io/vul/dev/docs/secret/scanning/#recommendation for faster secret detection
 2022-10-25T21:00:56.190+0300    INFO    Detected OS: alpine
 2022-10-25T21:00:56.190+0300    INFO    Detecting Alpine vulnerabilities...
 2022-10-25T21:00:56.191+0300    INFO    Number of language-specific files: 0
@@ -502,7 +502,7 @@ Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 1)
 ├─────────┼────────────────┼──────────┼───────────────────┼───────────────┼─────────────────────────────────────────────────────────────┤
 │ zlib    │ CVE-2022-37434 │ CRITICAL │ 1.2.12-r1         │ 1.2.12-r2     │ zlib: heap-based buffer over-read and overflow in inflate() │
 │         │                │          │                   │               │ in inflate.c via a...                                       │
-│         │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-37434                  │
+│         │                │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2022-37434                  │
 └─────────┴────────────────┴──────────┴───────────────────┴───────────────┴─────────────────────────────────────────────────────────────┘
 ```
 

@@ -15,7 +15,7 @@ This blog explains how to scan your Azure Container Registry-based container ima
 
 To set up the scanner, you'll need to enable Microsoft Defender for Containers and the CI/CD integration. When your CI/CD workflows push images to your registries, you can view registry scan results and a summary of CI/CD scan results.
 
-The findings of the CI/CD scans are an enrichment to the existing registry scan findings by Qualys. Defender for Cloud's CI/CD scanning is powered by Aqua Vul
+The findings of the CI/CD scans are an enrichment to the existing registry scan findings by Qualys. Defender for Cloud's CI/CD scanning is powered by Khulnasoft Vul
 
 [action]: https://github.com/khulnasoft-lab/vul-azure-pipelines-task
 [azure]: https://docs.microsoft.com/en-us/azure/defender-for-cloud/defender-for-containers-cicd

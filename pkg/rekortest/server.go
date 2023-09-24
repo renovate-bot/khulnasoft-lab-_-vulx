@@ -56,7 +56,7 @@ var (
 					Timestamp: "2022-09-15T13:53:49+00:00",
 					Tools: &[]cyclonedx.Tool{
 						{
-							Vendor:  "aquasecurity",
+							Vendor:  "khulnasoft-lab",
 							Name:    "vul",
 							Version: "dev",
 						},
@@ -67,11 +67,11 @@ var (
 						Name:       "alpine:3.16",
 						PackageURL: "pkg:oci/alpine@sha256:bc41182d7ef5ffc53a40b044e725193bc10142a1243f395ee852a8d9730fc2ad?repository_url=index.docker.io%2Flibrary%2Falpine\u0026arch=amd64",
 						Properties: &[]cyclonedx.Property{
-							{Name: "aquasecurity:vul:SchemaVersion", Value: "2"},
-							{Name: "aquasecurity:vul:ImageID", Value: "sha256:9c6f0724472873bb50a2ae67a9e7adcb57673a183cea8b06eb778dca859181b5"},
-							{Name: "aquasecurity:vul:RepoDigest", Value: "alpine@sha256:bc41182d7ef5ffc53a40b044e725193bc10142a1243f395ee852a8d9730fc2ad"},
-							{Name: "aquasecurity:vul:DiffID", Value: "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7"},
-							{Name: "aquasecurity:vul:RepoTag", Value: "alpine:3.16"},
+							{Name: "khulnasoft-lab:vul:SchemaVersion", Value: "2"},
+							{Name: "khulnasoft-lab:vul:ImageID", Value: "sha256:9c6f0724472873bb50a2ae67a9e7adcb57673a183cea8b06eb778dca859181b5"},
+							{Name: "khulnasoft-lab:vul:RepoDigest", Value: "alpine@sha256:bc41182d7ef5ffc53a40b044e725193bc10142a1243f395ee852a8d9730fc2ad"},
+							{Name: "khulnasoft-lab:vul:DiffID", Value: "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7"},
+							{Name: "khulnasoft-lab:vul:RepoTag", Value: "alpine:3.16"},
 						},
 					},
 				},
@@ -82,8 +82,8 @@ var (
 						Name:    "alpine",
 						Version: "3.16.2",
 						Properties: &[]cyclonedx.Property{
-							{Name: "aquasecurity:vul:Type", Value: "alpine"},
-							{Name: "aquasecurity:vul:Class", Value: "os-pkgs"},
+							{Name: "khulnasoft-lab:vul:Type", Value: "alpine"},
+							{Name: "khulnasoft-lab:vul:Class", Value: "os-pkgs"},
 						},
 					},
 					{
@@ -96,10 +96,10 @@ var (
 						},
 						PackageURL: "pkg:apk/alpine/musl@1.2.3-r0?distro=3.16.2",
 						Properties: &[]cyclonedx.Property{
-							{Name: "aquasecurity:vul:PkgType", Value: "alpine"},
-							{Name: "aquasecurity:vul:SrcName", Value: "musl"},
-							{Name: "aquasecurity:vul:SrcVersion", Value: "1.2.3-r0"},
-							{Name: "aquasecurity:vul:LayerDiffID", Value: "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7"},
+							{Name: "khulnasoft-lab:vul:PkgType", Value: "alpine"},
+							{Name: "khulnasoft-lab:vul:SrcName", Value: "musl"},
+							{Name: "khulnasoft-lab:vul:SrcVersion", Value: "1.2.3-r0"},
+							{Name: "khulnasoft-lab:vul:LayerDiffID", Value: "sha256:994393dc58e7931862558d06e46aa2bb17487044f670f310dffe1d24e4d1eec7"},
 						},
 					},
 				},
@@ -144,7 +144,7 @@ var (
 					Timestamp: "2022-10-21T09:50:08+00:00",
 					Tools: &[]cyclonedx.Tool{
 						{
-							Vendor:  "aquasecurity",
+							Vendor:  "khulnasoft-lab",
 							Name:    "vul",
 							Version: "dev",
 						},
@@ -154,7 +154,7 @@ var (
 						Type:   cyclonedx.ComponentTypeApplication,
 						Name:   "go.mod",
 						Properties: &[]cyclonedx.Property{
-							{Name: "aquasecurity:vul:SchemaVersion", Value: "2"},
+							{Name: "khulnasoft-lab:vul:SchemaVersion", Value: "2"},
 						},
 					},
 				},
@@ -164,8 +164,8 @@ var (
 						Type:   cyclonedx.ComponentTypeApplication,
 						Name:   "go.mod",
 						Properties: &[]cyclonedx.Property{
-							{Name: "aquasecurity:vul:Type", Value: "gomod"},
-							{Name: "aquasecurity:vul:Class", Value: "lang-pkgs"},
+							{Name: "khulnasoft-lab:vul:Type", Value: "gomod"},
+							{Name: "khulnasoft-lab:vul:Class", Value: "lang-pkgs"},
 						},
 					},
 					{
@@ -175,7 +175,7 @@ var (
 						Version:    "1.5.0",
 						PackageURL: "pkg:golang/github.com/spf13/cobra@1.5.0",
 						Properties: &[]cyclonedx.Property{
-							{Name: "aquasecurity:vul:PkgType", Value: "gomod"},
+							{Name: "khulnasoft-lab:vul:PkgType", Value: "gomod"},
 						},
 					},
 				},

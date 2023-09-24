@@ -52,7 +52,7 @@
           "Status": "fixed",
           "Layer": {},
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-23628",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2022-23628",
           "DataSource": {
             "ID": "ghsa",
             "Name": "GitHub Security Advisory Go",
@@ -91,7 +91,7 @@
           "FixedVersion": "0.3.7",
           "Status": "fixed",
           "Layer": {},
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-38561",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2021-38561",
           "DataSource": {
             "ID": "ghsa",
             "Name": "GitHub Security Advisory Go",

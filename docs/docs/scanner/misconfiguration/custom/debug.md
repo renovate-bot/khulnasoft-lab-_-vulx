@@ -19,7 +19,7 @@ MEDIUM: Specify a tag in the 'FROM' statement for image 'alpine'
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 When using a 'FROM' statement you should use a specific tag to avoid uncontrolled behavior when the image is updated.
 
-See https://avd.aquasec.com/misconfig/ds001
+See https://avd.khulnasoft.com/misconfig/ds001
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  Dockerfile:1
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -31,7 +31,7 @@ HIGH: Last USER command in Dockerfile should not be 'root'
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.
 
-See https://avd.aquasec.com/misconfig/ds002
+See https://avd.khulnasoft.com/misconfig/ds002
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  Dockerfile:3
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

@@ -24,7 +24,7 @@ Vul has an extension for Kubernetes Lens that lets you scan Kubernetes workloads
 
 Vim plugin for Vul to install and run Vul.
 
-👉 Get it at: <https://github.com/aquasecurity/vim-vul>
+👉 Get it at: <https://github.com/khulnasoft-lab/vim-vul>
 
 ## Docker Desktop (Community)
 [Docker Desktop](https://www.docker.com/products/docker-desktop/) is an easy way to install [Docker]() container engine on your development machine, and manage it in a GUI .

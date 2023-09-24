@@ -28,8 +28,8 @@ import (
 
 const (
 	DocumentSPDXIdentifier = "DOCUMENT"
-	DocumentNamespace      = "http://aquasecurity.github.io/vul"
-	CreatorOrganization    = "aquasecurity"
+	DocumentNamespace      = "http://khulnasoft-lab.github.io/vul"
+	CreatorOrganization    = "khulnasoft-lab"
 	CreatorTool            = "vul"
 	noneField              = "NONE"
 )

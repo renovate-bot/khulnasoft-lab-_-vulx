@@ -16,7 +16,7 @@ func TestIsGzip(t *testing.T) {
 		{filepath.Join("testdata", "test.tar.gz"), true},
 		{filepath.Join("testdata", "test.txt"), false},
 		{filepath.Join("testdata", "test.txt.zst"), false},
-		{filepath.Join("testdata", "aqua.png"), false},
+		{filepath.Join("testdata", "khulnasoft.png"), false},
 	}
 	for _, tt := range tests {
 		t.Run(tt.in, func(t *testing.T) {

@@ -7,7 +7,7 @@
     "timestamp": "2023-04-06T05:41:44+00:00",
     "tools": [
       {
-        "vendor": "aquasecurity",
+        "vendor": "khulnasoft-lab",
         "name": "vul",
         "version": "dev"
       }
@@ -19,23 +19,23 @@
       "purl": "pkg:oci/ubuntu@sha256:67211c14fa74f070d27cc59d69a7fa9aeff8e28ea118ef3babc295a0428a6d21?repository_url=index.docker.io%2Flibrary%2Fubuntu\u0026arch=amd64",
       "properties": [
         {
-          "name": "aquasecurity:vul:SchemaVersion",
+          "name": "khulnasoft-lab:vul:SchemaVersion",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:ImageID",
+          "name": "khulnasoft-lab:vul:ImageID",
           "value": "sha256:08d22c0ceb150ddeb2237c5fa3129c0183f3cc6f5eeb2e7aa4016da3ad02140a"
         },
         {
-          "name": "aquasecurity:vul:RepoDigest",
+          "name": "khulnasoft-lab:vul:RepoDigest",
           "value": "ubuntu@sha256:67211c14fa74f070d27cc59d69a7fa9aeff8e28ea118ef3babc295a0428a6d21"
         },
         {
-          "name": "aquasecurity:vul:DiffID",
+          "name": "khulnasoft-lab:vul:DiffID",
           "value": "sha256:b93c1bd012ab8fda60f5b4f5906bf244586e0e3292d84571d3abb56472248466"
         },
         {
-          "name": "aquasecurity:vul:RepoTag",
+          "name": "khulnasoft-lab:vul:RepoTag",
           "value": "ubuntu:latest"
         }
       ]
@@ -61,31 +61,31 @@
       "purl": "pkg:deb/ubuntu/libc6@2.35-0ubuntu3.1?distro=ubuntu-22.04",
       "properties": [
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libc6@2.35-0ubuntu3.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "ubuntu"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "glibc"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.35"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0ubuntu3.1"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:74ac377868f863e123f24c409f79709f7563fa464557c36a09cf6f85c8b92b7f"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:b93c1bd012ab8fda60f5b4f5906bf244586e0e3292d84571d3abb56472248466"
         }
       ]
@@ -98,35 +98,35 @@
       "purl": "pkg:deb/ubuntu/libcrypt1@4.4.27-1?epoch=1\u0026distro=ubuntu-22.04",
       "properties": [
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libcrypt1@1:4.4.27-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "ubuntu"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libxcrypt"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "4.4.27"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:74ac377868f863e123f24c409f79709f7563fa464557c36a09cf6f85c8b92b7f"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:b93c1bd012ab8fda60f5b4f5906bf244586e0e3292d84571d3abb56472248466"
         }
       ]
@@ -138,11 +138,11 @@
       "version": "22.04",
       "properties": [
         {
-          "name": "aquasecurity:vul:Type",
+          "name": "khulnasoft-lab:vul:Type",
           "value": "ubuntu"
         },
         {
-          "name": "aquasecurity:vul:Class",
+          "name": "khulnasoft-lab:vul:Class",
           "value": "os-pkgs"
         }
       ]

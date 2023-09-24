@@ -63,7 +63,7 @@
             "DiffID": "sha256:65dbea0a4b39709e0a2cc8624fd99478e9f302c0a5661d7676d6d3bd3cb6d181"
           },
           "SeveritySource": "rocky",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3712",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2021-3712",
           "DataSource": {
             "ID": "rocky",
             "Name": "Rocky Linux updateinfo",

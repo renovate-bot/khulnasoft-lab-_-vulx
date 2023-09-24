@@ -65,7 +65,7 @@
           "Status": "fixed",
           "Layer": {},
           "SeveritySource": "ghsa",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-14806",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-14806",
           "DataSource": {
             "ID": "ghsa",
             "Name": "GitHub Security Advisory Pip",
@@ -112,7 +112,7 @@
           "Status": "fixed",
           "Layer": {},
           "SeveritySource": "ghsa",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-28724",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2020-28724",
           "DataSource": {
             "ID": "ghsa",
             "Name": "GitHub Security Advisory Pip",

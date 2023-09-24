@@ -10,7 +10,7 @@ body:
         
         **Do not open a GitHub issue, please.** Maintainers triage discussions and then create issues.
         
-        Please also check [our contribution guidelines](https://aquasecurity.github.io/vul/latest/community/contribute/discussion/).
+        Please also check [our contribution guidelines](https://khulnasoft-lab.github.io/vul/latest/community/contribute/discussion/).
   - type: textarea
     attributes:
       label: Description
@@ -117,7 +117,7 @@ body:
       description: Have you tried the following?
       options:
         - label: Run `vul image --reset`
-        - label: Read [the troubleshooting](https://aquasecurity.github.io/vul/latest/docs/references/troubleshooting/)
+        - label: Read [the troubleshooting](https://khulnasoft-lab.github.io/vul/latest/docs/references/troubleshooting/)
   - type: markdown
     attributes:
       value: |

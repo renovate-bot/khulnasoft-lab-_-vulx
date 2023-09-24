@@ -7,7 +7,7 @@
     "timestamp": "2022-05-28T10:20:03.79527Z",
     "tools": [
       {
-        "vendor": "aquasecurity",
+        "vendor": "khulnasoft-lab",
         "name": "vul",
         "version": "dev"
       }

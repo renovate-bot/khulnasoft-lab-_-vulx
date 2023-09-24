@@ -7,7 +7,7 @@
     "timestamp": "2022-06-14T15:08:48+00:00",
     "tools": [
       {
-        "vendor": "aquasecurity",
+        "vendor": "khulnasoft-lab",
         "name": "vul",
         "version": "dev"
       }
@@ -18,15 +18,15 @@
       "name": "integration/testdata/fixtures/images/centos-7.tar.gz",
       "properties": [
         {
-          "name": "aquasecurity:vul:SchemaVersion",
+          "name": "khulnasoft-lab:vul:SchemaVersion",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:ImageID",
+          "name": "khulnasoft-lab:vul:ImageID",
           "value": "sha256:f1cb7c7d58b73eac859c395882eec49d50651244e342cd6c68a5c7809785f427"
         },
         {
-          "name": "aquasecurity:vul:DiffID",
+          "name": "khulnasoft-lab:vul:DiffID",
           "value": "sha256:89169d87dbe2b72ba42bfbb3579c957322baca28e03a1e558076542a1c1b2b4a"
         }
       ]
@@ -46,27 +46,27 @@
       "purl": "pkg:rpm/centos/bash@4.2.46-31.el7?arch=x86_64&distro=centos-7.6.1810",
       "properties": [
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "bash@4.2.46-31.el7.x86_64"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "bash"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "4.2.46"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "31.el7"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:ac9208207adaac3a48e54a4dc6b49c69e78c3072d2b3add7efdabf814db2133b"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:89169d87dbe2b72ba42bfbb3579c957322baca28e03a1e558076542a1c1b2b4a"
         }
       ]
@@ -84,31 +84,31 @@
       "purl": "pkg:rpm/centos/openssl-libs@1.0.2k-16.el7?arch=x86_64&epoch=1&distro=centos-7.6.1810",
       "properties": [
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "openssl-libs@1.0.2k-16.el7.x86_64"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "openssl"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.0.2k"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "16.el7"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:ac9208207adaac3a48e54a4dc6b49c69e78c3072d2b3add7efdabf814db2133b"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:89169d87dbe2b72ba42bfbb3579c957322baca28e03a1e558076542a1c1b2b4a"
         }
       ]
@@ -120,11 +120,11 @@
       "version": "7.6.1810",
       "properties": [
         {
-          "name": "aquasecurity:vul:Type",
+          "name": "khulnasoft-lab:vul:Type",
           "value": "centos"
         },
         {
-          "name": "aquasecurity:vul:Class",
+          "name": "khulnasoft-lab:vul:Class",
           "value": "os-pkgs"
         }
       ]

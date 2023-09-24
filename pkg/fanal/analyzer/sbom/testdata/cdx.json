@@ -7,7 +7,7 @@
     "timestamp": "2023-06-01T13:10:23+00:00",
     "tools": [
       {
-        "vendor": "aquasecurity",
+        "vendor": "khulnasoft-lab",
         "name": "vul",
         "version": "0.41.0-80-g1c03982fe"
       }
@@ -28,11 +28,11 @@
       "purl": "pkg:maven/co.elastic.apm/apm-agent@1.36.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "jar"
         },
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "modules/apm/elastic-apm-agent-1.36.0.jar"
         }
       ]
@@ -45,11 +45,11 @@
       "purl": "pkg:maven/co.elastic.apm/apm-agent-cached-lookup-key@1.36.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "jar"
         },
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "modules/apm/elastic-apm-agent-1.36.0.jar"
         }
       ]

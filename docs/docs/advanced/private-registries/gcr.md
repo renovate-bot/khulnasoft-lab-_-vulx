@@ -36,5 +36,5 @@ You can test credentials in the following manner (assuming they are in `/tmp` on
 ```bash
 docker run -it --rm -v /tmp:/tmp\
   -e GOOGLE_APPLICATION_CREDENTIALS=/tmp/service_account.json\
-  aquasec/vul image gcr.io/your_special_project/your_special_image:your_special_tag
+  khulnasoft/vul image gcr.io/your_special_project/your_special_image:your_special_tag
 ```

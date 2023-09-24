@@ -37,4 +37,4 @@ In the above example, the Java version is 8 which is not affected by CVE-2022-22
 ## Note
 This module is also used for testing in Vul.
 
-[vul-module-spring4shell]: https://github.com/orgs/aquasecurity/packages/container/package/vul-module-spring4shell
+[vul-module-spring4shell]: https://github.com/orgs/khulnasoft-lab/packages/container/package/vul-module-spring4shell

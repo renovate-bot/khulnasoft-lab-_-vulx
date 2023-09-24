@@ -8,7 +8,7 @@
     "timestamp": "2020-09-10T14:20:30+00:00",
     "tools": [
       {
-        "vendor": "aquasecurity",
+        "vendor": "khulnasoft-lab",
         "name": "vul",
         "version": "dev"
       }
@@ -19,7 +19,7 @@
       "name": "testdata/fixtures/repo/conda",
       "properties": [
         {
-          "name": "aquasecurity:vul:SchemaVersion",
+          "name": "khulnasoft-lab:vul:SchemaVersion",
           "value": "2"
         }
       ]
@@ -41,11 +41,11 @@
       "purl": "pkg:conda/openssl@1.1.1q",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "miniconda3/envs/testenv/conda-meta/openssl-1.1.1q-h7f8727e_0.json"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "conda-pkg"
         }
       ]
@@ -65,11 +65,11 @@
       "purl": "pkg:conda/pip@22.2.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "miniconda3/envs/testenv/conda-meta/pip-22.2.2-py38h06a4308_0.json"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "conda-pkg"
         }
       ]

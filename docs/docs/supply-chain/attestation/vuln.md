@@ -98,7 +98,7 @@ $ vul image --format cosign-vuln --output vuln.json alpine:3.10
                 "DiffID": "sha256:9fb3aa2f8b8023a4bebbf92aa567caf88e38e969ada9f0ac12643b2847391635"
               },
               "SeveritySource": "nvd",
-              "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-36159",
+              "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2021-36159",
               "DataSource": {
                 "ID": "alpine",
                 "Name": "Alpine Secdb",

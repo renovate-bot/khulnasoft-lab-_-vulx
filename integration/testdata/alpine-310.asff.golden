@@ -3,7 +3,7 @@
         {
             "SchemaVersion": "2018-10-08",
             "Id": "testdata/fixtures/images/alpine-310.tar.gz (alpine 3.10.2)/CVE-2019-1549",
-            "ProductArn": "arn:aws:securityhub:test-region::product/aquasecurity/aquasecurity",
+            "ProductArn": "arn:aws:securityhub:test-region::product/khulnasoft-lab/khulnasoft-lab",
             "GeneratorId": "Vul/CVE-2019-1549",
             "AwsAccountId": "123456789012",
             "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
@@ -17,7 +17,7 @@
             "Remediation": {
                 "Recommendation": {
                     "Text": "More information on this vulnerability is provided in the hyperlink",
-                    "Url": "https://avd.aquasec.com/nvd/cve-2019-1549"
+                    "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1549"
                 }
             },
             "ProductFields": { "Product Name": "Vul" },
@@ -48,7 +48,7 @@
         {
             "SchemaVersion": "2018-10-08",
             "Id": "testdata/fixtures/images/alpine-310.tar.gz (alpine 3.10.2)/CVE-2019-1551",
-            "ProductArn": "arn:aws:securityhub:test-region::product/aquasecurity/aquasecurity",
+            "ProductArn": "arn:aws:securityhub:test-region::product/khulnasoft-lab/khulnasoft-lab",
             "GeneratorId": "Vul/CVE-2019-1551",
             "AwsAccountId": "123456789012",
             "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
@@ -62,7 +62,7 @@
             "Remediation": {
                 "Recommendation": {
                     "Text": "More information on this vulnerability is provided in the hyperlink",
-                    "Url": "https://avd.aquasec.com/nvd/cve-2019-1551"
+                    "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1551"
                 }
             },
             "ProductFields": { "Product Name": "Vul" },
@@ -93,7 +93,7 @@
         {
             "SchemaVersion": "2018-10-08",
             "Id": "testdata/fixtures/images/alpine-310.tar.gz (alpine 3.10.2)/CVE-2019-1549",
-            "ProductArn": "arn:aws:securityhub:test-region::product/aquasecurity/aquasecurity",
+            "ProductArn": "arn:aws:securityhub:test-region::product/khulnasoft-lab/khulnasoft-lab",
             "GeneratorId": "Vul/CVE-2019-1549",
             "AwsAccountId": "123456789012",
             "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
@@ -107,7 +107,7 @@
             "Remediation": {
                 "Recommendation": {
                     "Text": "More information on this vulnerability is provided in the hyperlink",
-                    "Url": "https://avd.aquasec.com/nvd/cve-2019-1549"
+                    "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1549"
                 }
             },
             "ProductFields": { "Product Name": "Vul" },
@@ -138,7 +138,7 @@
         {
             "SchemaVersion": "2018-10-08",
             "Id": "testdata/fixtures/images/alpine-310.tar.gz (alpine 3.10.2)/CVE-2019-1551",
-            "ProductArn": "arn:aws:securityhub:test-region::product/aquasecurity/aquasecurity",
+            "ProductArn": "arn:aws:securityhub:test-region::product/khulnasoft-lab/khulnasoft-lab",
             "GeneratorId": "Vul/CVE-2019-1551",
             "AwsAccountId": "123456789012",
             "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
@@ -152,7 +152,7 @@
             "Remediation": {
                 "Recommendation": {
                     "Text": "More information on this vulnerability is provided in the hyperlink",
-                    "Url": "https://avd.aquasec.com/nvd/cve-2019-1551"
+                    "Url": "https://avd.khulnasoft.com/nvd/cve-2019-1551"
                 }
             },
             "ProductFields": { "Product Name": "Vul" },

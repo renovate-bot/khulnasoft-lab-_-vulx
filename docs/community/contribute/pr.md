@@ -206,7 +206,7 @@ The PR title should describe what the PR adds or fixes even though it just updat
 Vul is composed of several repositories that work together:
 
 - [Vul](https://github.com/khulnasoft-lab/vul) is the client-side, user-facing, command line tool.
-- [vuln-list](https://github.com/aquasecurity/vuln-list) is a vulnerability database, aggregated from different sources, and normalized for easy consumption. Think of this as the "server" side of the vul command line tool. **There should be no pull requests to this repo**
-- [vuln-list-update](https://github.com/aquasecurity/vuln-list-update) is the code that maintains the vuln-list database.
+- [vuln-list](https://github.com/khulnasoft-lab/vuln-list) is a vulnerability database, aggregated from different sources, and normalized for easy consumption. Think of this as the "server" side of the vul command line tool. **There should be no pull requests to this repo**
+- [vuln-list-update](https://github.com/khulnasoft-lab/vuln-list-update) is the code that maintains the vuln-list database.
 - [vul-db](https://github.com/khulnasoft-lab/vul-db) maintains the vulnerability database pulled by Vul CLI.
 - [go-dep-parser](https://github.com/khulnasoft-lab/go-dep-parser) is a library for parsing lock files such as package-lock.json and Gemfile.lock.

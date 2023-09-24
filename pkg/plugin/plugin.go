@@ -25,8 +25,8 @@ var (
 	pluginsRelativeDir = filepath.Join(".vul", "plugins")
 
 	officialPlugins = map[string]string{
-		"kubectl": "github.com/khulnasoft-lab/vul-plugin-kubectl",
-		"aqua":    "github.com/khulnasoft-lab/vul-plugin-aqua",
+		"kubectl":    "github.com/khulnasoft-lab/vul-plugin-kubectl",
+		"khulnasoft": "github.com/khulnasoft-lab/vul-plugin-khulnasoft",
 	}
 )
 

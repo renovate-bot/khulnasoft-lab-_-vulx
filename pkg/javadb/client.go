@@ -20,7 +20,7 @@ import (
 )
 
 const (
-	mediaType = "application/vnd.aquasec.vul.javadb.layer.v1.tar+gzip"
+	mediaType = "application/vnd.khulnasoft.vul.javadb.layer.v1.tar+gzip"
 )
 
 var updater *Updater

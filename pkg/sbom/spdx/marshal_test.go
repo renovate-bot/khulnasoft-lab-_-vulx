@@ -104,11 +104,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 				DataLicense:       spdx.DataLicense,
 				SPDXIdentifier:    "DOCUMENT",
 				DocumentName:      "rails:latest",
-				DocumentNamespace: "http://aquasecurity.github.io/vul/container_image/rails:latest-3ff14136-e09f-4df9-80ea-000000000001",
+				DocumentNamespace: "http://khulnasoft-lab.github.io/vul/container_image/rails:latest-3ff14136-e09f-4df9-80ea-000000000001",
 				CreationInfo: &spdx.CreationInfo{
 					Creators: []common.Creator{
 						{
-							Creator:     "aquasecurity",
+							Creator:     "khulnasoft-lab",
 							CreatorType: "Organization",
 						},
 						{
@@ -344,11 +344,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 				DataLicense:       spdx.DataLicense,
 				SPDXIdentifier:    "DOCUMENT",
 				DocumentName:      "centos:latest",
-				DocumentNamespace: "http://aquasecurity.github.io/vul/container_image/centos:latest-3ff14136-e09f-4df9-80ea-000000000001",
+				DocumentNamespace: "http://khulnasoft-lab.github.io/vul/container_image/centos:latest-3ff14136-e09f-4df9-80ea-000000000001",
 				CreationInfo: &spdx.CreationInfo{
 					Creators: []common.Creator{
 						{
-							Creator:     "aquasecurity",
+							Creator:     "khulnasoft-lab",
 							CreatorType: "Organization",
 						},
 						{
@@ -545,11 +545,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 				DataLicense:       spdx.DataLicense,
 				SPDXIdentifier:    "DOCUMENT",
 				DocumentName:      "masahiro331/CVE-2021-41098",
-				DocumentNamespace: "http://aquasecurity.github.io/vul/filesystem/masahiro331/CVE-2021-41098-3ff14136-e09f-4df9-80ea-000000000001",
+				DocumentNamespace: "http://khulnasoft-lab.github.io/vul/filesystem/masahiro331/CVE-2021-41098-3ff14136-e09f-4df9-80ea-000000000001",
 				CreationInfo: &spdx.CreationInfo{
 					Creators: []common.Creator{
 						{
-							Creator:     "aquasecurity",
+							Creator:     "khulnasoft-lab",
 							CreatorType: "Organization",
 						},
 						{
@@ -643,11 +643,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 				DataLicense:       spdx.DataLicense,
 				SPDXIdentifier:    "DOCUMENT",
 				DocumentName:      "http://test-aggregate",
-				DocumentNamespace: "http://aquasecurity.github.io/vul/repository/test-aggregate-3ff14136-e09f-4df9-80ea-000000000001",
+				DocumentNamespace: "http://khulnasoft-lab.github.io/vul/repository/test-aggregate-3ff14136-e09f-4df9-80ea-000000000001",
 				CreationInfo: &spdx.CreationInfo{
 					Creators: []common.Creator{
 						{
-							Creator:     "aquasecurity",
+							Creator:     "khulnasoft-lab",
 							CreatorType: "Organization",
 						},
 						{
@@ -738,12 +738,12 @@ func TestMarshaler_Marshal(t *testing.T) {
 				DataLicense:       spdx.DataLicense,
 				SPDXIdentifier:    "DOCUMENT",
 				DocumentName:      "empty/path",
-				DocumentNamespace: "http://aquasecurity.github.io/vul/filesystem/empty/path-3ff14136-e09f-4df9-80ea-000000000001",
+				DocumentNamespace: "http://khulnasoft-lab.github.io/vul/filesystem/empty/path-3ff14136-e09f-4df9-80ea-000000000001",
 
 				CreationInfo: &spdx.CreationInfo{
 					Creators: []common.Creator{
 						{
-							Creator:     "aquasecurity",
+							Creator:     "khulnasoft-lab",
 							CreatorType: "Organization",
 						},
 						{
@@ -801,12 +801,12 @@ func TestMarshaler_Marshal(t *testing.T) {
 				DataLicense:       spdx.DataLicense,
 				SPDXIdentifier:    "DOCUMENT",
 				DocumentName:      "secret",
-				DocumentNamespace: "http://aquasecurity.github.io/vul/filesystem/secret-3ff14136-e09f-4df9-80ea-000000000001",
+				DocumentNamespace: "http://khulnasoft-lab.github.io/vul/filesystem/secret-3ff14136-e09f-4df9-80ea-000000000001",
 
 				CreationInfo: &spdx.CreationInfo{
 					Creators: []common.Creator{
 						{
-							Creator:     "aquasecurity",
+							Creator:     "khulnasoft-lab",
 							CreatorType: "Organization",
 						},
 						{

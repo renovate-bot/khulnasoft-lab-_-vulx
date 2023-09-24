@@ -184,7 +184,7 @@ func TestMarshaler_CoreComponent(t *testing.T) {
 					Tools: &[]cdx.Tool{
 						{
 							Name:    "vul",
-							Vendor:  "aquasecurity",
+							Vendor:  "khulnasoft-lab",
 							Version: "dev",
 						},
 					},
@@ -203,7 +203,7 @@ func TestMarshaler_CoreComponent(t *testing.T) {
 						Name:   "kube-apiserver-kind-control-plane",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:control_plane_components",
+								Name:  "khulnasoft-lab:vul:control_plane_components",
 								Value: "kube-apiserver",
 							},
 						},
@@ -214,23 +214,23 @@ func TestMarshaler_CoreComponent(t *testing.T) {
 						Name:   "kind-control-plane",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:architecture",
+								Name:  "khulnasoft-lab:vul:architecture",
 								Value: "arm64",
 							},
 							{
-								Name:  "aquasecurity:vul:host_name",
+								Name:  "khulnasoft-lab:vul:host_name",
 								Value: "kind-control-plane",
 							},
 							{
-								Name:  "aquasecurity:vul:kernel_version",
+								Name:  "khulnasoft-lab:vul:kernel_version",
 								Value: "6.2.13-300.fc38.aarch64",
 							},
 							{
-								Name:  "aquasecurity:vul:node_role",
+								Name:  "khulnasoft-lab:vul:node_role",
 								Value: "master",
 							},
 							{
-								Name:  "aquasecurity:vul:operating_system",
+								Name:  "khulnasoft-lab:vul:operating_system",
 								Value: "linux",
 							},
 						},
@@ -242,11 +242,11 @@ func TestMarshaler_CoreComponent(t *testing.T) {
 						Version: "21.04",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:Class",
+								Name:  "khulnasoft-lab:vul:Class",
 								Value: "os-pkgs",
 							},
 							{
-								Name:  "aquasecurity:vul:Type",
+								Name:  "khulnasoft-lab:vul:Type",
 								Value: "ubuntu",
 							},
 						},
@@ -257,11 +257,11 @@ func TestMarshaler_CoreComponent(t *testing.T) {
 						Name:   "node-core-components",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:Class",
+								Name:  "khulnasoft-lab:vul:Class",
 								Value: "lang-pkgs",
 							},
 							{
-								Name:  "aquasecurity:vul:Type",
+								Name:  "khulnasoft-lab:vul:Type",
 								Value: "golang",
 							},
 						},
@@ -274,7 +274,7 @@ func TestMarshaler_CoreComponent(t *testing.T) {
 						PackageURL: "pkg:golang/containerd@1.5.2",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "golang",
 							},
 						},
@@ -287,7 +287,7 @@ func TestMarshaler_CoreComponent(t *testing.T) {
 						PackageURL: "pkg:golang/kubelet@1.21.1",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "golang",
 							},
 						},
@@ -306,11 +306,11 @@ func TestMarshaler_CoreComponent(t *testing.T) {
 						PackageURL: "pkg:oci/kube-apiserver@sha256:18e61c783b41758dd391ab901366ec3546b26fae00eef7e223d1f94da808e02f?repository_url=k8s.gcr.io%2Fkube-apiserver&arch=",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:PkgID",
+								Name:  "khulnasoft-lab:vul:PkgID",
 								Value: "k8s.gcr.io/kube-apiserver:1.21.1",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "oci",
 							},
 						},

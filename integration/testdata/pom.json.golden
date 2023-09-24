@@ -28,7 +28,7 @@
           "Status": "fixed",
           "Layer": {},
           "SeveritySource": "ghsa",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-9548",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2020-9548",
           "DataSource": {
             "ID": "ghsa",
             "Name": "GitHub Security Advisory Maven",
@@ -84,7 +84,7 @@
           "Status": "fixed",
           "Layer": {},
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-20190",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2021-20190",
           "DataSource": {
             "ID": "glad",
             "Name": "GitLab Advisory Database Community",

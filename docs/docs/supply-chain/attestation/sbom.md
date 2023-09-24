@@ -78,7 +78,7 @@ Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 2)
 ├────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────┤
 │ musl       │ CVE-2019-14697 │ CRITICAL │ 1.1.18-r3         │ 1.1.18-r4     │ musl libc through 1.1.23 has an x87 floating-point stack │
 │            │                │          │                   │               │ adjustment im ......                                     │
-│            │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2019-14697               │
+│            │                │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2019-14697               │
 ├────────────┤                │          │                   │               │                                                          │
 │ musl-utils │                │          │                   │               │                                                          │
 │            │                │          │                   │               │                                                          │

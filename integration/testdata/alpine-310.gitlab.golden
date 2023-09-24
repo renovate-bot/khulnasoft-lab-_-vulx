@@ -28,7 +28,7 @@
           "type": "cve",
           "name": "CVE-2019-1549",
           "value": "CVE-2019-1549",
-          "url": "https://avd.aquasec.com/nvd/cve-2019-1549"
+          "url": "https://avd.khulnasoft.com/nvd/cve-2019-1549"
         }
       ],
       "links": [{
@@ -101,7 +101,7 @@
           "type": "cve",
           "name": "CVE-2019-1551",
           "value": "CVE-2019-1551",
-          "url": "https://avd.aquasec.com/nvd/cve-2019-1551"
+          "url": "https://avd.khulnasoft.com/nvd/cve-2019-1551"
         }
       ],
       "links": [{
@@ -194,7 +194,7 @@
           "type": "cve",
           "name": "CVE-2019-1549",
           "value": "CVE-2019-1549",
-          "url": "https://avd.aquasec.com/nvd/cve-2019-1549"
+          "url": "https://avd.khulnasoft.com/nvd/cve-2019-1549"
         }
       ],
       "links": [{
@@ -267,7 +267,7 @@
           "type": "cve",
           "name": "CVE-2019-1551",
           "value": "CVE-2019-1551",
-          "url": "https://avd.aquasec.com/nvd/cve-2019-1551"
+          "url": "https://avd.khulnasoft.com/nvd/cve-2019-1551"
         }
       ],
       "links": [{

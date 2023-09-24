@@ -51,9 +51,9 @@ const expectedS3ScanResult = `{
           "Message": "No public access block so not blocking public acls",
           "Resolution": "Enable blocking any PUT calls with a public ACL specified",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0086",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0086",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0086"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0086"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -75,9 +75,9 @@ const expectedS3ScanResult = `{
           "Message": "No public access block so not blocking public policies",
           "Resolution": "Prevent policies that allow public access being PUT",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0087",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0087",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0087"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0087"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -99,9 +99,9 @@ const expectedS3ScanResult = `{
           "Message": "Bucket does not have encryption enabled",
           "Resolution": "Configure bucket encryption",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0088",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0088",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0088"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0088"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -123,9 +123,9 @@ const expectedS3ScanResult = `{
           "Message": "Bucket does not have logging enabled",
           "Resolution": "Add a logging block to the resource to enable access logging",
           "Severity": "MEDIUM",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0089",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0089",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0089"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0089"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -147,9 +147,9 @@ const expectedS3ScanResult = `{
           "Message": "Bucket does not have versioning enabled",
           "Resolution": "Enable versioning to protect against accidental/malicious removal or modification",
           "Severity": "MEDIUM",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0090",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0090",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0090"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0090"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -171,9 +171,9 @@ const expectedS3ScanResult = `{
           "Message": "Bucket does not encrypt data with a customer managed key.",
           "Resolution": "Enable encryption using customer managed keys",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0132",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0132",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0132"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0132"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -195,9 +195,9 @@ const expectedS3ScanResult = `{
           "Message": "No public access block so not ignoring public acls",
           "Resolution": "Enable ignoring the application of public ACLs in PUT calls",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0091",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0091",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0091"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0091"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -218,9 +218,9 @@ const expectedS3ScanResult = `{
           "Description": "Buckets should not have ACLs that allow public access",
           "Resolution": "Don't use canned ACLs or switch to private acl",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0092",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0092",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0092"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0092"
           ],
           "Status": "PASS",
           "Layer": {},
@@ -242,9 +242,9 @@ const expectedS3ScanResult = `{
           "Message": "No public access block so not restricting public buckets",
           "Resolution": "Limit the access to public buckets to only the owner or AWS Services (eg; CloudFront)",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0093",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0093",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0093"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0093"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -266,9 +266,9 @@ const expectedS3ScanResult = `{
           "Message": "Bucket does not have a corresponding public access block.",
           "Resolution": "Define a aws_s3_bucket_public_access_block for the given bucket to control public access policies",
           "Severity": "LOW",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0094",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0094",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0094"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0094"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -355,9 +355,9 @@ const expectedCustomScanResult = `{
           "Message": "No public access block so not blocking public acls",
           "Resolution": "Enable blocking any PUT calls with a public ACL specified",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0086",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0086",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0086"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0086"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -379,9 +379,9 @@ const expectedCustomScanResult = `{
           "Message": "No public access block so not blocking public policies",
           "Resolution": "Prevent policies that allow public access being PUT",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0087",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0087",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0087"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0087"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -403,9 +403,9 @@ const expectedCustomScanResult = `{
           "Message": "Bucket does not have encryption enabled",
           "Resolution": "Configure bucket encryption",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0088",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0088",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0088"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0088"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -427,9 +427,9 @@ const expectedCustomScanResult = `{
           "Message": "Bucket does not have logging enabled",
           "Resolution": "Add a logging block to the resource to enable access logging",
           "Severity": "MEDIUM",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0089",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0089",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0089"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0089"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -451,9 +451,9 @@ const expectedCustomScanResult = `{
           "Message": "Bucket does not have versioning enabled",
           "Resolution": "Enable versioning to protect against accidental/malicious removal or modification",
           "Severity": "MEDIUM",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0090",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0090",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0090"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0090"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -475,9 +475,9 @@ const expectedCustomScanResult = `{
           "Message": "Bucket does not encrypt data with a customer managed key.",
           "Resolution": "Enable encryption using customer managed keys",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0132",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0132",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0132"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0132"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -499,9 +499,9 @@ const expectedCustomScanResult = `{
           "Message": "No public access block so not ignoring public acls",
           "Resolution": "Enable ignoring the application of public ACLs in PUT calls",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0091",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0091",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0091"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0091"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -522,9 +522,9 @@ const expectedCustomScanResult = `{
           "Description": "Buckets should not have ACLs that allow public access",
           "Resolution": "Don't use canned ACLs or switch to private acl",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0092",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0092",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0092"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0092"
           ],
           "Status": "PASS",
           "Layer": {},
@@ -546,9 +546,9 @@ const expectedCustomScanResult = `{
           "Message": "No public access block so not restricting public buckets",
           "Resolution": "Limit the access to public buckets to only the owner or AWS Services (eg; CloudFront)",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0093",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0093",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0093"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0093"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -570,9 +570,9 @@ const expectedCustomScanResult = `{
           "Message": "Bucket does not have a corresponding public access block.",
           "Resolution": "Define a aws_s3_bucket_public_access_block for the given bucket to control public access policies",
           "Severity": "LOW",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0094",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0094",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0094"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0094"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -625,9 +625,9 @@ const expectedS3AndCloudTrailResult = `{
           "Description": "When creating Cloudtrail in the AWS Management Console the trail is configured by default to be multi-region, this isn't the case with the Terraform resource. Cloudtrail should cover the full AWS account to ensure you can track changes in regions you are not actively operting in.",
           "Resolution": "Enable Cloudtrail in all regions",
           "Severity": "MEDIUM",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0014",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0014",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0014"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0014"
           ],
           "Status": "PASS",
           "Layer": {},
@@ -649,9 +649,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "Trail is not encrypted.",
           "Resolution": "Enable encryption at rest",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0015",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0015",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0015"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0015"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -673,9 +673,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "Trail does not have log validation enabled.",
           "Resolution": "Turn on log validation for Cloudtrail",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0016",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0016",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0016"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0016"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -697,9 +697,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "Trail does not have CloudWatch logging configured",
           "Resolution": "Enable logging to CloudWatch",
           "Severity": "LOW",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0162",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0162",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0162"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0162"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -733,9 +733,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "No public access block so not blocking public acls",
           "Resolution": "Enable blocking any PUT calls with a public ACL specified",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0086",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0086",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0086"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0086"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -757,9 +757,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "No public access block so not blocking public policies",
           "Resolution": "Prevent policies that allow public access being PUT",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0087",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0087",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0087"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0087"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -781,9 +781,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "Bucket does not have encryption enabled",
           "Resolution": "Configure bucket encryption",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0088",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0088",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0088"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0088"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -805,9 +805,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "Bucket does not have logging enabled",
           "Resolution": "Add a logging block to the resource to enable access logging",
           "Severity": "MEDIUM",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0089",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0089",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0089"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0089"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -829,9 +829,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "Bucket does not have versioning enabled",
           "Resolution": "Enable versioning to protect against accidental/malicious removal or modification",
           "Severity": "MEDIUM",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0090",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0090",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0090"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0090"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -853,9 +853,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "Bucket does not encrypt data with a customer managed key.",
           "Resolution": "Enable encryption using customer managed keys",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0132",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0132",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0132"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0132"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -877,9 +877,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "No public access block so not ignoring public acls",
           "Resolution": "Enable ignoring the application of public ACLs in PUT calls",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0091",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0091",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0091"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0091"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -900,9 +900,9 @@ const expectedS3AndCloudTrailResult = `{
           "Description": "Buckets should not have ACLs that allow public access",
           "Resolution": "Don't use canned ACLs or switch to private acl",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0092",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0092",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0092"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0092"
           ],
           "Status": "PASS",
           "Layer": {},
@@ -924,9 +924,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "No public access block so not restricting public buckets",
           "Resolution": "Limit the access to public buckets to only the owner or AWS Services (eg; CloudFront)",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0093",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0093",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0093"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0093"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -948,9 +948,9 @@ const expectedS3AndCloudTrailResult = `{
           "Message": "Bucket does not have a corresponding public access block.",
           "Resolution": "Define a aws_s3_bucket_public_access_block for the given bucket to control public access policies",
           "Severity": "LOW",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-0094",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-0094",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-0094"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-0094"
           ],
           "Status": "FAIL",
           "Layer": {},

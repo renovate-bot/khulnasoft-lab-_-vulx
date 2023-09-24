@@ -73,7 +73,7 @@
             "DiffID": "sha256:91bac58a9ffae0dc2031e3f90d7bf04f66ccf019f180372152b0916d6e8a796f"
           },
           "SeveritySource": "oracle-oval",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-3823",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-3823",
           "DataSource": {
             "ID": "oracle-oval",
             "Name": "Oracle Linux OVAL definitions",
@@ -131,7 +131,7 @@
             "DiffID": "sha256:91bac58a9ffae0dc2031e3f90d7bf04f66ccf019f180372152b0916d6e8a796f"
           },
           "SeveritySource": "oracle-oval",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5436",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5436",
           "DataSource": {
             "ID": "oracle-oval",
             "Name": "Oracle Linux OVAL definitions",

@@ -380,7 +380,7 @@ End of functions from https://github.com/client9/shlib
 EOF
 
 PROJECT_NAME="vul"
-OWNER=aquasecurity
+OWNER=khulnasoft-lab
 REPO="vul"
 BINARY=vul
 FORMAT=tar.gz

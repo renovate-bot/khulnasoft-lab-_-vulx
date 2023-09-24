@@ -58,7 +58,7 @@ func ConvertResults(results scan.Results, provider string, scoped []string) map[
 				// empty namespace implies a go rule from defsec, "builtin" refers to a built-in rego rule
 				// this ensures we don't generate bad links for custom policies
 				if result.RegoNamespace() == "" || strings.HasPrefix(result.RegoNamespace(), "builtin.") {
-					primaryURL = fmt.Sprintf("https://avd.aquasec.com/misconfig/%s", strings.ToLower(result.Rule().AVDID))
+					primaryURL = fmt.Sprintf("https://avd.khulnasoft.com/misconfig/%s", strings.ToLower(result.Rule().AVDID))
 				}
 
 				status := types.StatusFailure

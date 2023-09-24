@@ -7,7 +7,7 @@
     "timestamp": "2022-05-28T10:20:03.79527Z",
     "tools": [
       {
-        "vendor": "aquasecurity",
+        "vendor": "khulnasoft-lab",
         "name": "vul",
         "version": "dev"
       }
@@ -18,23 +18,23 @@
       "name": "maven-test-project",
       "properties": [
         {
-          "name": "aquasecurity:vul:SchemaVersion",
+          "name": "khulnasoft-lab:vul:SchemaVersion",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:ImageID",
+          "name": "khulnasoft-lab:vul:ImageID",
           "value": "sha256:49193a2310dbad4c02382da87ac624a80a92387a4f7536235f9ba590e5bcd7b5"
         },
         {
-          "name": "aquasecurity:vul:DiffID",
+          "name": "khulnasoft-lab:vul:DiffID",
           "value": "sha256:dd565ff850e7003356e2b252758f9bdc1ff2803f61e995e24c7844f6297f8fc3"
         },
         {
-          "name": "aquasecurity:vul:DiffID",
+          "name": "khulnasoft-lab:vul:DiffID",
           "value": "sha256:3c79e832b1b4891a1cb4a326ef8524e0bd14a2537150ac0e203a5677176c1ca1"
         },
         {
-          "name": "aquasecurity:vul:RepoTag",
+          "name": "khulnasoft-lab:vul:RepoTag",
           "value": "maven-test-project:latest"
         }
       ]
@@ -54,15 +54,15 @@
       "purl": "pkg:apk/alpine/musl@1.2.3-r0?distro=3.16.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "musl"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.2.3-r0"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:dd565ff850e7003356e2b252758f9bdc1ff2803f61e995e24c7844f6297f8fc3"
         }
       ]
@@ -74,11 +74,11 @@
       "version": "3.16.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:Type",
+          "name": "khulnasoft-lab:vul:Type",
           "value": "alpine"
         },
         {
-          "name": "aquasecurity:vul:Class",
+          "name": "khulnasoft-lab:vul:Class",
           "value": "os-pkgs"
         }
       ]
@@ -91,15 +91,15 @@
       "purl": "pkg:maven/org.codehaus.mojo/child-project@1.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "app/maven/target/child-project-1.0.jar"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:3c79e832b1b4891a1cb4a326ef8524e0bd14a2537150ac0e203a5677176c1ca1"
         },
         {
-          "name": "aquasecurity:vul:Type",
+          "name": "khulnasoft-lab:vul:Type",
           "value": "jar"
         }
       ]
@@ -117,15 +117,15 @@
       "purl": "pkg:npm/bootstrap@5.0.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "app/app/package.json"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:3c79e832b1b4891a1cb4a326ef8524e0bd14a2537150ac0e203a5677176c1ca1"
         },
         {
-          "name": "aquasecurity:vul:Type",
+          "name": "khulnasoft-lab:vul:Type",
           "value": "node-pkg"
         }
       ]
@@ -138,7 +138,7 @@
       "purl": "pkg:composer/pear/log@1.13.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:3c79e832b1b4891a1cb4a326ef8524e0bd14a2537150ac0e203a5677176c1ca1"
         }
       ]
@@ -151,7 +151,7 @@
       "purl": "pkg:composer/pear/pear_exception@v1.0.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:3c79e832b1b4891a1cb4a326ef8524e0bd14a2537150ac0e203a5677176c1ca1"
         }
       ]
@@ -162,11 +162,11 @@
       "name": "app/composer/composer.lock",
       "properties": [
         {
-          "name": "aquasecurity:vul:Type",
+          "name": "khulnasoft-lab:vul:Type",
           "value": "composer"
         },
         {
-          "name": "aquasecurity:vul:Class",
+          "name": "khulnasoft-lab:vul:Class",
           "value": "lang-pkgs"
         }
       ]
@@ -179,7 +179,7 @@
       "purl": "pkg:golang/github.com/package-url/packageurl-go@v0.1.1-0.20220203205134-d70459300c8a",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:3c79e832b1b4891a1cb4a326ef8524e0bd14a2537150ac0e203a5677176c1ca1"
         }
       ]
@@ -190,11 +190,11 @@
       "name": "app/gobinary/gobinary",
       "properties": [
         {
-          "name": "aquasecurity:vul:Type",
+          "name": "khulnasoft-lab:vul:Type",
           "value": "gobinary"
         },
         {
-          "name": "aquasecurity:vul:Class",
+          "name": "khulnasoft-lab:vul:Class",
           "value": "lang-pkgs"
         }
       ]

@@ -13,7 +13,7 @@ on:
       - "v*"
 env:
   HELM_REP: helm-charts
-  GH_OWNER: aquasecurity
+  GH_OWNER: khulnasoft-lab
   CHART_DIR: helm/vul
   KIND_VERSION: "v0.14.0"
   KIND_IMAGE: "kindest/node:v1.23.6@sha256:b1fa224cc6c7ff32455e0b1fd9cbfd3d3bc87ecaa8fcb06961ed1afb3db0f9ae"
@@ -83,5 +83,5 @@ jobs:
           destination_repo: '${{ env.GH_OWNER }}/${{ env.HELM_REP }}'
           destination_folder: '.'
           destination_branch: 'gh-pages'
-          user_email: aqua-bot@users.noreply.github.com
-          user_name: 'aqua-bot'
+          user_email: khulnasoft-bot@users.noreply.github.com
+          user_name: 'khulnasoft-bot'

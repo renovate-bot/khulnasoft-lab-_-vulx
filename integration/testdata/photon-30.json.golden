@@ -74,7 +74,7 @@
             "DiffID": "sha256:0f379947a276b7b051643960392fa66c2f0cb493bc1dcd471abb5545005949fd"
           },
           "SeveritySource": "photon",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-18276",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-18276",
           "DataSource": {
             "ID": "photon",
             "Name": "Photon OS CVE metadata",
@@ -126,7 +126,7 @@
             "DiffID": "sha256:0f379947a276b7b051643960392fa66c2f0cb493bc1dcd471abb5545005949fd"
           },
           "SeveritySource": "photon",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5481",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5481",
           "DataSource": {
             "ID": "photon",
             "Name": "Photon OS CVE metadata",
@@ -185,7 +185,7 @@
             "DiffID": "sha256:0f379947a276b7b051643960392fa66c2f0cb493bc1dcd471abb5545005949fd"
           },
           "SeveritySource": "photon",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5481",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5481",
           "DataSource": {
             "ID": "photon",
             "Name": "Photon OS CVE metadata",

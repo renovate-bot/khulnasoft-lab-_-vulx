@@ -109,7 +109,7 @@ Total: 1 (UNKNOWN: 0, LOW: 1, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 ├───────────────────────────┼───────────────┼──────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
 │ github.com/aws/aws-sdk-go │ CVE-2020-8912 │ LOW      │ 1.44.234          │               │ aws-sdk-go: In-band key negotiation issue in AWS S3 Crypto │
 │                           │               │          │                   │               │ SDK for golang...                                          │
-│                           │               │          │                   │               │ https://avd.aquasec.com/nvd/cve-2020-8912                  │
+│                           │               │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2020-8912                  │
 └───────────────────────────┴───────────────┴──────────┴───────────────────┴───────────────┴────────────────────────────────────────────────────────────┘
 ```
 
@@ -144,7 +144,7 @@ $ cat <<EOF > vul.openvex
 {
   "@context": "https://openvex.dev/ns",
   "@id": "https://openvex.dev/docs/public/vex-2e67563e128250cbcb3e98930df948dd053e43271d70dc50cfa22d57e03fe96f",
-  "author": "Aqua Security",
+  "author": "Khulnasoft Security",
   "timestamp": "2023-01-16T19:07:16.853479631-06:00",
   "version": "1",
   "statements": [

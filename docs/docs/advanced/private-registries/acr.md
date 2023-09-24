@@ -23,5 +23,5 @@ You can test credentials in the following manner.
 ```bash
 docker run -it --rm -v /tmp:/tmp\
   -e AZURE_CLIENT_ID=${AZURE_CLIENT_ID} -e AZURE_CLIENT_SECRET=${AZURE_CLIENT_SECRET} \
-  -e AZURE_TENANT_ID=${AZURE_TENANT_ID} aquasec/vul image your_special_project.azurecr.io/your_special_image:your_special_tag
+  -e AZURE_TENANT_ID=${AZURE_TENANT_ID} khulnasoft/vul image your_special_project.azurecr.io/your_special_image:your_special_tag
 ```

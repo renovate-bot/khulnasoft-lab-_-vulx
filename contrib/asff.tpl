@@ -24,7 +24,7 @@
         {
             "SchemaVersion": "2018-10-08",
             "Id": "{{ $target }}/{{ .VulnerabilityID }}",
-            "ProductArn": "arn:aws:securityhub:{{ env "AWS_REGION" }}::product/aquasecurity/aquasecurity",
+            "ProductArn": "arn:aws:securityhub:{{ env "AWS_REGION" }}::product/khulnasoft-lab/khulnasoft-lab",
             "GeneratorId": "Vul/{{ .VulnerabilityID }}",
             "AwsAccountId": "{{ env "AWS_ACCOUNT_ID" }}",
             "Types": [ "Software and Configuration Checks/Vulnerabilities/CVE" ],
@@ -82,7 +82,7 @@
         {
             "SchemaVersion": "2018-10-08",
             "Id": "{{ $target }}/{{ .ID }}",
-            "ProductArn": "arn:aws:securityhub:{{ env "AWS_REGION" }}::product/aquasecurity/aquasecurity",
+            "ProductArn": "arn:aws:securityhub:{{ env "AWS_REGION" }}::product/khulnasoft-lab/khulnasoft-lab",
             "GeneratorId": "Vul/{{ .ID }}",
             "AwsAccountId": "{{ env "AWS_ACCOUNT_ID" }}",
             "Types": [ "Software and Configuration Checks" ],
@@ -128,7 +128,7 @@
         {
             "SchemaVersion": "2018-10-08",
             "Id": "{{ $target }}",
-            "ProductArn": "arn:aws:securityhub:{{ env "AWS_DEFAULT_REGION" }}::product/aquasecurity/aquasecurity",
+            "ProductArn": "arn:aws:securityhub:{{ env "AWS_DEFAULT_REGION" }}::product/khulnasoft-lab/khulnasoft-lab",
             "GeneratorId": "Vul",
             "AwsAccountId": "{{ env "AWS_ACCOUNT_ID" }}",
             "Types": [ "Sensitive Data Identifications" ],

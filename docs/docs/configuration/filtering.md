@@ -55,11 +55,11 @@ Total: 527 (UNKNOWN: 0, LOW: 276, MEDIUM: 83, HIGH: 158, CRITICAL: 10)
 │           Library           │  Vulnerability   │ Severity │    Status    │     Installed Version      │ Fixed Version │                            Title                             │
 ├─────────────────────────────┼──────────────────┼──────────┼──────────────┼────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
 │ binutils                    │ CVE-2014-9939    │ CRITICAL │ will_not_fix │ 2.25-5                     │               │ binutils: buffer overflow in ihex.c                          │
-│                             │                  │          │              │                            │               │ https://avd.aquasec.com/nvd/cve-2014-9939                    │
+│                             │                  │          │              │                            │               │ https://avd.khulnasoft.com/nvd/cve-2014-9939                    │
 │                             ├──────────────────┤          │              │                            ├───────────────┼──────────────────────────────────────────────────────────────┤
 │                             │ CVE-2017-6969    │          │              │                            │               │ binutils: Heap-based buffer over-read in readelf when        │
 │                             │                  │          │              │                            │               │ processing corrupt RL78 binaries                             │
-│                             │                  │          │              │                            │               │ https://avd.aquasec.com/nvd/cve-2017-6969                    │
+│                             │                  │          │              │                            │               │ https://avd.khulnasoft.com/nvd/cve-2017-6969                    │
 │                             ├──────────────────┤          │              │                            ├───────────────┼──────────────────────────────────────────────────────────────┤
 ...
 ```
@@ -166,7 +166,7 @@ HIGH: Last USER command in Dockerfile should not be 'root'
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.
 
-See https://avd.aquasec.com/misconfig/ds002
+See https://avd.khulnasoft.com/misconfig/ds002
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  Dockerfile:3
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -191,7 +191,7 @@ CRITICAL: Classic resources should not be used.
 AWS Classic resources run in a shared environment with infrastructure owned by other AWS customers. You should run
 resources in a VPC instead.
 
-See https://avd.aquasec.com/misconfig/avd-aws-0081
+See https://avd.khulnasoft.com/misconfig/avd-aws-0081
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  main.tf:2-4
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -357,20 +357,20 @@ Total: 9 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 4, CRITICAL: 5)
 | glib2        | CVE-2015-8385    | HIGH     | 2.56.1-7.el7      |                   | pcre: buffer overflow caused            |
 |              |                  |          |                   |                   | by named forward reference              |
 |              |                  |          |                   |                   | to duplicate group number...            |
-|              |                  |          |                   |                   | -->avd.aquasec.com/nvd/cve-2015-8385    |
+|              |                  |          |                   |                   | -->avd.khulnasoft.com/nvd/cve-2015-8385    |
 +              +------------------+          +                   +-------------------+-----------------------------------------+
 |              | CVE-2016-3191    |          |                   |                   | pcre: workspace overflow for            |
 |              |                  |          |                   |                   | (*ACCEPT) with deeply nested            |
 |              |                  |          |                   |                   | parentheses (8.39/13, 10.22/12)         |
-|              |                  |          |                   |                   | -->avd.aquasec.com/nvd/cve-2016-3191    |
+|              |                  |          |                   |                   | -->avd.khulnasoft.com/nvd/cve-2016-3191    |
 +              +------------------+          +                   +-------------------+-----------------------------------------+
 |              | CVE-2021-27219   |          |                   | 2.56.1-9.el7_9    | glib: integer overflow in               |
 |              |                  |          |                   |                   | g_bytes_new function on                 |
 |              |                  |          |                   |                   | 64-bit platforms due to an...           |
-|              |                  |          |                   |                   | -->avd.aquasec.com/nvd/cve-2021-27219   |
+|              |                  |          |                   |                   | -->avd.khulnasoft.com/nvd/cve-2021-27219   |
 +--------------+------------------+----------+-------------------+-------------------+-----------------------------------------+
 | glibc        | CVE-2019-1010022 | CRITICAL | 2.17-317.el7      |                   | glibc: stack guard protection bypass    |
-|              |                  |          |                   |                   | -->avd.aquasec.com/nvd/cve-2019-1010022 |
+|              |                  |          |                   |                   | -->avd.khulnasoft.com/nvd/cve-2019-1010022 |
 +--------------+                  +          +                   +-------------------+                                         +
 | glibc-common |                  |          |                   |                   |                                         |
 |              |                  |          |                   |                   |                                         |
@@ -378,7 +378,7 @@ Total: 9 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 4, CRITICAL: 5)
 | nss          | CVE-2021-43527   |          | 3.53.1-3.el7_9    | 3.67.0-4.el7_9    | nss: Memory corruption in               |
 |              |                  |          |                   |                   | decodeECorDsaSignature with             |
 |              |                  |          |                   |                   | DSA signatures (and RSA-PSS)            |
-|              |                  |          |                   |                   | -->avd.aquasec.com/nvd/cve-2021-43527   |
+|              |                  |          |                   |                   | -->avd.khulnasoft.com/nvd/cve-2021-43527   |
 +--------------+                  +          +                   +                   +                                         +
 | nss-sysinit  |                  |          |                   |                   |                                         |
 |              |                  |          |                   |                   |                                         |
@@ -392,7 +392,7 @@ Total: 9 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 4, CRITICAL: 5)
 +--------------+------------------+----------+-------------------+-------------------+-----------------------------------------+
 | openssl-libs | CVE-2020-1971    | HIGH     | 1:1.0.2k-19.el7   | 1:1.0.2k-21.el7_9 | openssl: EDIPARTYNAME                   |
 |              |                  |          |                   |                   | NULL pointer de-reference               |
-|              |                  |          |                   |                   | -->avd.aquasec.com/nvd/cve-2020-1971    |
+|              |                  |          |                   |                   | -->avd.khulnasoft.com/nvd/cve-2020-1971    |
 +--------------+------------------+----------+-------------------+-------------------+-----------------------------------------+
 ```
 

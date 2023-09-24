@@ -46,7 +46,7 @@ To learn more, go to the [Vul homepage][homepage] for feature highlights, or to 
 Vul is available in most common distribution channels. The complete list of installation options is available in the [Installation] page. Here are a few popular examples:
 
 - `brew install vul`
-- `docker run aquasec/vul`
+- `docker run khulnasoft/vul`
 - Download binary from <https://github.com/khulnasoft-lab/vul/releases/latest/>
 - See [Installation] for more
 
@@ -111,16 +111,16 @@ vul k8s --report summary cluster
 
 </details>
 
-# Want more? Check out Aqua
+# Want more? Check out Khulnasoft
 
-If you liked Vul, you will love Aqua which builds on top of Vul to provide even more enhanced capabilities for a complete security management offering.  
-You can find a high level comparison table specific to Vul users [here](https://github.com/aquasecurity/resources/blob/main/vul-aqua.md).  
-In addition check out the <https://aquasec.com> website for more information about our products and services.
-If you'd like to contact Aqua or request a demo, please use this form: <https://www.aquasec.com/demo>
+If you liked Vul, you will love Khulnasoft which builds on top of Vul to provide even more enhanced capabilities for a complete security management offering.  
+You can find a high level comparison table specific to Vul users [here](https://github.com/khulnasoft-lab/resources/blob/main/vul-khulnasoft.md).  
+In addition check out the <https://khulnasoft.com> website for more information about our products and services.
+If you'd like to contact Khulnasoft or request a demo, please use this form: <https://www.khulnasoft.com/demo>
 
 ---
 
-Vul is an [Aqua Security][aquasec] open source project.  
+Vul is an [Khulnasoft Security][khulnasoft] open source project.  
 Learn about our open source work and portfolio [here][oss].  
 Contact us about any matter by opening a GitHub Discussion [here][discussions]
 
@@ -129,8 +129,8 @@ Contact us about any matter by opening a GitHub Discussion [here][discussions]
 [pronunciation]: #how-to-pronounce-the-name-vul
 [Scanning Coverage]: ./docs/coverage/index.md
 
-[aquasec]: https://aquasec.com
-[oss]: https://www.aquasec.com/products/open-source-projects/
+[khulnasoft]: https://khulnasoft.com
+[oss]: https://www.khulnasoft.com/products/open-source-projects/
 [discussions]: https://github.com/khulnasoft-lab/vul/discussions
 
 [homepage]: https://vul.dev

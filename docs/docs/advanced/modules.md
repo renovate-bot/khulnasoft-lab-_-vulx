@@ -79,7 +79,7 @@ Total: 9 (UNKNOWN: 1, LOW: 3, MEDIUM: 2, HIGH: 3, CRITICAL: 0)
 │                           Library                            │    Vulnerability    │ Severity │ Installed Version │     Fixed Version      │                           Title                            │
 ├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┼───────────────────┼────────────────────────┼────────────────────────────────────────────────────────────┤
 │ org.springframework.boot:spring-boot (helloworld.war)        │ CVE-2022-22965      │ LOW      │ 2.6.3             │ 2.5.12, 2.6.6          │ spring-framework: RCE via Data Binding on JDK 9+           │
-│                                                              │                     │          │                   │                        │ https://avd.aquasec.com/nvd/cve-2022-22965                 │
+│                                                              │                     │          │                   │                        │ https://avd.khulnasoft.com/nvd/cve-2022-22965                 │
 ├──────────────────────────────────────────────────────────────┼─────────────────────┼──────────┼───────────────────┼────────────────────────┼────────────────────────────────────────────────────────────┤
 ...(snip)...
 ```
@@ -348,7 +348,7 @@ Digest: sha256:6416d0199d66ce52ced19f01d75454b22692ff3aa7737e45f7a189880840424f
 [regexp]: https://github.com/google/re2/wiki/Syntax
 
 [tinygo]: https://tinygo.org/
-[spring4shell]: https://blog.aquasec.com/zero-day-rce-vulnerability-spring4shell
+[spring4shell]: https://blog.khulnasoft.com/zero-day-rce-vulnerability-spring4shell
 [wazero]: https://github.com/tetratelabs/wazero
 
 [vul-module-spring4shell]: https://github.com/khulnasoft-lab/vul/tree/main/examples/module/spring4shell

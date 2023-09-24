@@ -14,10 +14,10 @@ In this section you will find an aggregation of the different ways to install Vu
     cat << EOF | sudo tee -a /etc/yum.repos.d/vul.repo
     [vul]
     name=Vul repository
-    baseurl=https://aquasecurity.github.io/vul-repo/rpm/releases/$RELEASE_VERSION/\$basearch/
+    baseurl=https://khulnasoft-lab.github.io/vul-repo/rpm/releases/$RELEASE_VERSION/\$basearch/
     gpgcheck=1
     enabled=1
-    gpgkey=https://aquasecurity.github.io/vul-repo/rpm/public.key
+    gpgkey=https://khulnasoft-lab.github.io/vul-repo/rpm/public.key
     EOF
     sudo yum -y update
     sudo yum -y install vul
@@ -36,8 +36,8 @@ In this section you will find an aggregation of the different ways to install Vu
 
     ``` bash
     sudo apt-get install wget apt-transport-https gnupg lsb-release
-    wget -qO - https://aquasecurity.github.io/vul-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/vul.gpg > /dev/null
-    echo "deb [signed-by=/usr/share/keyrings/vul.gpg] https://aquasecurity.github.io/vul-repo/deb $(lsb_release -sc) main" | sudo tee -a /etc/apt/sources.list.d/vul.list
+    wget -qO - https://khulnasoft-lab.github.io/vul-repo/deb/public.key | gpg --dearmor | sudo tee /usr/share/keyrings/vul.gpg > /dev/null
+    echo "deb [signed-by=/usr/share/keyrings/vul.gpg] https://khulnasoft-lab.github.io/vul-repo/deb $(lsb_release -sc) main" | sudo tee -a /etc/apt/sources.list.d/vul.list
     sudo apt-get update
     sudo apt-get install vul
     ```
@@ -139,19 +139,19 @@ go install ./cmd/vul
 
 ## Use container image
 
-1. Pull Vul image (`docker pull aquasec/vul:{{ git.tag[1:] }}`)
+1. Pull Vul image (`docker pull khulnasoft/vul:{{ git.tag[1:] }}`)
    2. It is advisable to mount a consistent [cache dir](../docs/configuration/cache.md) on the host into the Vul container.
 3. For scanning container images with Vul, mount `docker.sock` from the host into the Vul container.
 
 Example:
 
 ``` bash
-docker run -v /var/run/docker.sock:/var/run/docker.sock -v $HOME/Library/Caches:/root/.cache/ aquasec/vul:{{ git.tag[1:] }} image python:3.4-alpine
+docker run -v /var/run/docker.sock:/var/run/docker.sock -v $HOME/Library/Caches:/root/.cache/ khulnasoft/vul:{{ git.tag[1:] }} image python:3.4-alpine
 ```
 
 Registry | Repository | Link | Supportability
-Docker Hub | `docker.io/aquasec/vul` | https://hub.docker.com/r/aquasec/vul | Official
-GitHub Container Registry (GHCR) | `ghcr.io/khulnasoft-lab/vul` | https://github.com/orgs/aquasecurity/packages/container/package/vul | Official
+Docker Hub | `docker.io/khulnasoft/vul` | https://hub.docker.com/r/khulnasoft/vul | Official
+GitHub Container Registry (GHCR) | `ghcr.io/khulnasoft-lab/vul` | https://github.com/orgs/khulnasoft-lab/packages/container/package/vul | Official
 AWS Elastic Container Registry (ECR) | `public.ecr.aws/khulnasoft-lab/vul` | https://gallery.ecr.aws/khulnasoft-lab/vul | Official
 
 ## Other Tools to use and deploy Vul

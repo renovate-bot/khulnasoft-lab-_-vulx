@@ -112,7 +112,7 @@ func DeregisterAnalyzer(t Type) {
 }
 
 // CustomGroup returns a group name for custom analyzers
-// This is mainly intended to be used in Aqua products.
+// This is mainly intended to be used in Khulnasoft products.
 type CustomGroup interface {
 	Group() Group
 }

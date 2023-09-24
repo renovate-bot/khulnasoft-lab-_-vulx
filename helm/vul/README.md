@@ -18,10 +18,10 @@ This chart bootstraps a Vul deployment on a [Kubernetes](http://kubernetes.io) c
 - Kubernetes 1.12+
 - Helm 3+
 
-## Installing from the Aqua Chart Repository
+## Installing from the Khulnasoft Chart Repository
 
 ```
-helm repo add aquasecurity https://aquasecurity.github.io/helm-charts/
+helm repo add khulnasoft-lab https://khulnasoft-lab.github.io/helm-charts/
 helm repo update
 helm search repo vul
 helm install my-vul khulnasoft-lab/vul
@@ -57,15 +57,15 @@ The following table lists the configurable parameters of the Vul chart and their
 |                 Parameter             |                                Description                              |    Default     |
 |---------------------------------------|-------------------------------------------------------------------------|----------------|
 | `image.registry`                      | Image registry                                                          | `docker.io`    |
-| `image.repository`                    | Image name                                                              | `aquasec/vul` |
+| `image.repository`                    | Image name                                                              | `khulnasoft/vul` |
 | `image.tag`                           | Image tag                                                               | `{TAG_NAME}`   |
 | `image.pullPolicy`                    | Image pull policy                                                       | `IfNotPresent` |
 | `image.pullSecret`                    | The name of an imagePullSecret used to pull vul image from e.g. Docker Hub or a private registry  | |
 | `replicaCount`                        | Number of Vul Pods to run                                   | `1`            |
 | `vul.debugMode`                     | The flag to enable or disable Vul debug mode                          | `false` |
 | `vul.gitHubToken`                   | The GitHub access token to download Vul DB. More info: https://github.com/khulnasoft-lab/vul#github-rate-limiting                          |      |
-| `vul.registryUsername`              | The username used to log in at dockerhub. More info: https://aquasecurity.github.io/vul/dev/advanced/private-registries/docker-hub/ |      |
-| `vul.registryPassword`              | The password used to log in at dockerhub. More info: https://aquasecurity.github.io/vul/dev/advanced/private-registries/docker-hub/ |      |
+| `vul.registryUsername`              | The username used to log in at dockerhub. More info: https://khulnasoft-lab.github.io/vul/dev/advanced/private-registries/docker-hub/ |      |
+| `vul.registryPassword`              | The password used to log in at dockerhub. More info: https://khulnasoft-lab.github.io/vul/dev/advanced/private-registries/docker-hub/ |      |
 | `vul.registryCredentialsExistingSecret` | Name of Secret containing dockerhub credentials. Alternative to the 2 parameters above, has precedence if set.                    |      |
 | `vul.serviceAccount.annotations`        | Additional annotations to add to the Kubernetes service account resource |     |
 | `vul.skipDBUpdate`                    | The flag to enable or disable Vul DB downloads from GitHub            | `false`        |

@@ -21,7 +21,7 @@ import (
 )
 
 const (
-	ToolVendor = "aquasecurity"
+	ToolVendor = "khulnasoft-lab"
 	ToolName   = "vul"
 	Namespace  = ToolVendor + ":" + ToolName + ":"
 

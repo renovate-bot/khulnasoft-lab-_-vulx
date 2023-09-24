@@ -179,7 +179,7 @@ func (Spring4Shell) PostScanSpec() serialize.PostScanSpec {
 //	        "DiffID": "sha256:eb769943b91f10a0418f2fc3b4a4fde6c6293be60c37293fcc0fa319edaf27a5"
 //	      },
 //	      "SeveritySource": "nvd",
-//	      "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22965",
+//	      "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2022-22965",
 //	      "DataSource": {
 //	        "ID": "glad",
 //	        "Name": "GitLab Advisory Database Community",

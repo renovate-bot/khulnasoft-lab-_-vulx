@@ -65,7 +65,7 @@
             "DiffID": "sha256:03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1549",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-1549",
           "DataSource": {
             "ID": "alpine",
             "Name": "Alpine Secdb",
@@ -126,7 +126,7 @@
             "DiffID": "sha256:03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1551",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-1551",
           "DataSource": {
             "ID": "alpine",
             "Name": "Alpine Secdb",
@@ -197,7 +197,7 @@
             "DiffID": "sha256:03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1549",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-1549",
           "DataSource": {
             "ID": "alpine",
             "Name": "Alpine Secdb",
@@ -258,7 +258,7 @@
             "DiffID": "sha256:03901b4a2ea88eeaad62dbe59b072b28b6efa00491962b8741081c5df50c65e0"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-1551",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-1551",
           "DataSource": {
             "ID": "alpine",
             "Name": "Alpine Secdb",

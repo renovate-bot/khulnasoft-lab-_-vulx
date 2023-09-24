@@ -7,7 +7,7 @@
     "timestamp": "2023-03-22T11:35:38+00:00",
     "tools": [
       {
-        "vendor": "aquasecurity",
+        "vendor": "khulnasoft-lab",
         "name": "vul",
         "version": "0.39.0"
       }
@@ -19,7 +19,7 @@
       "purl": "pkg:oci/demo-referrers-2023@sha256:e76a13475c6b4a713a0e4a7a8574ce450274d340357a2c40b8221cfcfedf8b19?repository_url=localhost:5001%2Fdemo-referrers-2023\u0026arch=arm64",
       "properties": [
         {
-          "name": "aquasecurity:vul:SchemaVersion",
+          "name": "khulnasoft-lab:vul:SchemaVersion",
           "value": "2"
         }
       ]
@@ -34,7 +34,7 @@
       "purl": "pkg:golang/github.com/opencontainers/go-digest@v1.0.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gobinary"
         }
       ]
@@ -47,7 +47,7 @@
       "purl": "pkg:golang/golang.org/x/sync@v0.1.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gobinary"
         }
       ]

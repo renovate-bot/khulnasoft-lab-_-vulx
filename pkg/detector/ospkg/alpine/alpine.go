@@ -143,7 +143,7 @@ func (s *Scanner) Detect(osVer string, repo *ftypes.Repository, pkgs []ftypes.Pa
 func (s *Scanner) isVulnerable(installedVersion version.Version, adv dbTypes.Advisory) bool {
 	// This logic is for unfixed vulnerabilities, but Vul DB doesn't have advisories for unfixed vulnerabilities for now
 	// because Alpine just provides potentially vulnerable packages. It will cause a lot of false positives.
-	// This is for Aqua commercial products.
+	// This is for Khulnasoft commercial products.
 	if adv.AffectedVersion != "" {
 		// AffectedVersion means which version introduced this vulnerability.
 		affectedVersion, err := version.NewVersion(adv.AffectedVersion)

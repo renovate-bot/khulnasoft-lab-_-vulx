@@ -44,7 +44,7 @@
           "Status": "fixed",
           "Layer": {},
           "SeveritySource": "ghsa",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-35669",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2020-35669",
           "DataSource": {
             "ID": "ghsa",
             "Name": "GitHub Security Advisory Pub",

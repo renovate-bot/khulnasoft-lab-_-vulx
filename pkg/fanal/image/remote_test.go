@@ -16,12 +16,12 @@ func Test_implicitReference_TagName(t *testing.T) {
 	}{
 		{
 			name:  "explicit tag",
-			image: "aquasec/vul:0.15.0",
+			image: "khulnasoft/vul:0.15.0",
 			want:  "0.15.0",
 		},
 		{
 			name:  "implicit tag",
-			image: "aquasec/vul",
+			image: "khulnasoft/vul",
 			want:  "latest",
 		},
 	}
@@ -46,8 +46,8 @@ func Test_implicitReference_RepositoryName(t *testing.T) {
 	}{
 		{
 			name:  "explicit default registry",
-			image: "index.docker.io/aquasec/vul:0.15.0",
-			want:  "aquasec/vul",
+			image: "index.docker.io/khulnasoft/vul:0.15.0",
+			want:  "khulnasoft/vul",
 		},
 		{
 			name:  "explicit default namespace",
@@ -56,8 +56,8 @@ func Test_implicitReference_RepositoryName(t *testing.T) {
 		},
 		{
 			name:  "implicit registry",
-			image: "aquasec/vul:latest",
-			want:  "aquasec/vul",
+			image: "khulnasoft/vul:latest",
+			want:  "khulnasoft/vul",
 		},
 		{
 			name:  "implicit namespace",

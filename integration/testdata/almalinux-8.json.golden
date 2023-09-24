@@ -63,7 +63,7 @@
             "DiffID": "sha256:124d41c237c5e823577dda97e87cebaecce62d585c725d07e709ce410681de4d"
           },
           "SeveritySource": "alma",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-3712",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2021-3712",
           "DataSource": {
             "ID": "alma",
             "Name": "AlmaLinux Product Errata",

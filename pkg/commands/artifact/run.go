@@ -597,7 +597,7 @@ func initScannerConfig(opts flag.Options, cacheClient cache.Cache) (ScannerConfi
 		ver := canonicalVersion(opts.AppVersion)
 		log.Logger.Info("Secret scanning is enabled")
 		log.Logger.Info("If your scanning is slow, please try '--scanners vuln' to disable secret scanning")
-		log.Logger.Infof("Please see also https://aquasecurity.github.io/vul/%s/docs/scanner/secret/#recommendation for faster secret detection", ver)
+		log.Logger.Infof("Please see also https://khulnasoft-lab.github.io/vul/%s/docs/scanner/secret/#recommendation for faster secret detection", ver)
 	} else {
 		opts.SecretConfigPath = ""
 	}

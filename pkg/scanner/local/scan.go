@@ -216,7 +216,7 @@ func (s Scanner) fillPkgsInVulns(pkgResults, vulnResults types.Results) types.Re
 	return results
 }
 
-// MisconfsToResults is exported for vul-plugin-aqua purposes only
+// MisconfsToResults is exported for vul-plugin-khulnasoft purposes only
 func (s Scanner) MisconfsToResults(misconfs []ftypes.Misconfiguration) types.Results {
 	log.Logger.Infof("Detected config files: %d", len(misconfs))
 	var results types.Results
@@ -368,7 +368,7 @@ func toDetectedMisconfiguration(res ftypes.MisconfResult, defaultSeverity dbType
 	// empty namespace implies a go rule from defsec, "builtin" refers to a built-in rego rule
 	// this ensures we don't generate bad links for custom policies
 	if res.Namespace == "" || strings.HasPrefix(res.Namespace, "builtin.") {
-		primaryURL = fmt.Sprintf("https://avd.aquasec.com/misconfig/%s", strings.ToLower(res.ID))
+		primaryURL = fmt.Sprintf("https://avd.khulnasoft.com/misconfig/%s", strings.ToLower(res.ID))
 		res.References = append(res.References, primaryURL)
 	}
 

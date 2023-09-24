@@ -32,7 +32,7 @@
           "Status": "affected",
           "Layer": {},
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-3715",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2022-3715",
           "Title": "a heap-buffer-overflow in valid_parameter_transform",
           "Description": "A flaw was found in the bash package, where a heap-buffer overflow can occur in valid parameter_transform. This issue may lead to memory problems.",
           "Severity": "HIGH",

@@ -32,7 +32,7 @@ $ vul fs --format cyclonedx --output result.json /app/myproject
     "timestamp": "2022-02-22T15:11:40.270597Z",
     "tools": [
       {
-        "vendor": "aquasecurity",
+        "vendor": "khulnasoft-lab",
         "name": "vul",
         "version": "dev"
       }
@@ -45,23 +45,23 @@ $ vul fs --format cyclonedx --output result.json /app/myproject
       "purl": "pkg:oci/alpine@sha256:21a3deaa0d32a8057914f36584b5288d2e5ecc984380bc0118285c70fa8c9300?repository_url=index.docker.io%2Flibrary%2Falpine&arch=amd64",
       "properties": [
         {
-          "name": "aquasecurity:vul:SchemaVersion",
+          "name": "khulnasoft-lab:vul:SchemaVersion",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:ImageID",
+          "name": "khulnasoft-lab:vul:ImageID",
           "value": "sha256:c059bfaa849c4d8e4aecaeb3a10c2d9b3d85f5165c66ad3a4d937758128c4d18"
         },
         {
-          "name": "aquasecurity:vul:RepoDigest",
+          "name": "khulnasoft-lab:vul:RepoDigest",
           "value": "alpine@sha256:21a3deaa0d32a8057914f36584b5288d2e5ecc984380bc0118285c70fa8c9300"
         },
         {
-          "name": "aquasecurity:vul:DiffID",
+          "name": "khulnasoft-lab:vul:DiffID",
           "value": "sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759"
         },
         {
-          "name": "aquasecurity:vul:RepoTag",
+          "name": "khulnasoft-lab:vul:RepoTag",
           "value": "alpine:3.15"
         }
       ]
@@ -81,19 +81,19 @@ $ vul fs --format cyclonedx --output result.json /app/myproject
       "purl": "pkg:apk/alpine/alpine-baselayout@3.2.0-r18?distro=3.15.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "alpine-baselayout"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.2.0-r18"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:59bf1c3509f33515622619af21ed55bbe26d24913cedbca106468a5fb37a50c3"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759"
         }
       ]
@@ -112,19 +112,19 @@ $ vul fs --format cyclonedx --output result.json /app/myproject
       "purl": "pkg:apk/alpine/zlib@1.2.11-r3?distro=3.15.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "zlib"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.2.11-r3"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:59bf1c3509f33515622619af21ed55bbe26d24913cedbca106468a5fb37a50c3"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759"
         }
       ]
@@ -136,11 +136,11 @@ $ vul fs --format cyclonedx --output result.json /app/myproject
       "version": "3.15.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:Type",
+          "name": "khulnasoft-lab:vul:Type",
           "value": "alpine"
         },
         {
-          "name": "aquasecurity:vul:Class",
+          "name": "khulnasoft-lab:vul:Class",
           "value": "os-pkgs"
         }
       ]
@@ -219,7 +219,7 @@ $ cat result.json | jq .
     "timestamp": "2022-02-22T15:11:40.270597Z",
     "tools": [
       {
-        "vendor": "aquasecurity",
+        "vendor": "khulnasoft-lab",
         "name": "vul",
         "version": "dev"
       }
@@ -232,23 +232,23 @@ $ cat result.json | jq .
       "purl": "pkg:oci/alpine@sha256:21a3deaa0d32a8057914f36584b5288d2e5ecc984380bc0118285c70fa8c9300?repository_url=index.docker.io%2Flibrary%2Falpine&arch=amd64",
       "properties": [
         {
-          "name": "aquasecurity:vul:SchemaVersion",
+          "name": "khulnasoft-lab:vul:SchemaVersion",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:ImageID",
+          "name": "khulnasoft-lab:vul:ImageID",
           "value": "sha256:c059bfaa849c4d8e4aecaeb3a10c2d9b3d85f5165c66ad3a4d937758128c4d18"
         },
         {
-          "name": "aquasecurity:vul:RepoDigest",
+          "name": "khulnasoft-lab:vul:RepoDigest",
           "value": "alpine@sha256:21a3deaa0d32a8057914f36584b5288d2e5ecc984380bc0118285c70fa8c9300"
         },
         {
-          "name": "aquasecurity:vul:DiffID",
+          "name": "khulnasoft-lab:vul:DiffID",
           "value": "sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759"
         },
         {
-          "name": "aquasecurity:vul:RepoTag",
+          "name": "khulnasoft-lab:vul:RepoTag",
           "value": "alpine:3.15"
         }
       ]
@@ -268,19 +268,19 @@ $ cat result.json | jq .
       "purl": "pkg:apk/alpine/alpine-baselayout@3.2.0-r18?distro=3.15.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "alpine-baselayout"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.2.0-r18"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:59bf1c3509f33515622619af21ed55bbe26d24913cedbca106468a5fb37a50c3"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759"
         }
       ]
@@ -299,19 +299,19 @@ $ cat result.json | jq .
       "purl": "pkg:apk/alpine/zlib@1.2.11-r3?distro=3.15.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "zlib"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.2.11-r3"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:59bf1c3509f33515622619af21ed55bbe26d24913cedbca106468a5fb37a50c3"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759"
         }
       ]
@@ -323,11 +323,11 @@ $ cat result.json | jq .
       "version": "3.15.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:Type",
+          "name": "khulnasoft-lab:vul:Type",
           "value": "alpine"
         },
         {
-          "name": "aquasecurity:vul:Class",
+          "name": "khulnasoft-lab:vul:Class",
           "value": "os-pkgs"
         }
       ]
@@ -450,8 +450,8 @@ SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: alpine:3.15
-DocumentNamespace: https://aquasecurity.github.io/vul/container_image/alpine:3.15-bebf6b19-a94c-4e2c-af44-065f63923f48
-Creator: Organization: aquasecurity
+DocumentNamespace: https://khulnasoft-lab.github.io/vul/container_image/alpine:3.15-bebf6b19-a94c-4e2c-af44-065f63923f48
+Creator: Organization: khulnasoft-lab
 Creator: Tool: vul-0.38.1
 Created: 2022-04-28T07:32:57.142806Z
 
@@ -601,11 +601,11 @@ $ cat result.spdx.json | jq .
 		"created": "2022-04-28T08:16:55.328255Z",
 		"creators": [
 			"Tool: vul-0.38.1",
-			"Organization: aquasecurity"
+			"Organization: khulnasoft-lab"
 		]
 	},
 	"dataLicense": "CC0-1.0",
-	"documentNamespace": "http://aquasecurity.github.io/vul/container_image/alpine:3.15-d9549e3a-a4c5-4ee3-8bde-8c78d451fbe7",
+	"documentNamespace": "http://khulnasoft-lab.github.io/vul/container_image/alpine:3.15-d9549e3a-a4c5-4ee3-8bde-8c78d451fbe7",
 	"name": "alpine:3.15",
 	"packages": [
 		{

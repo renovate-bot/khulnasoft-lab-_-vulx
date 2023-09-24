@@ -2,8 +2,8 @@ SPDXVersion: SPDX-2.2
 DataLicense: CC0-1.0
 SPDXID: SPDXRef-DOCUMENT
 DocumentName: integration/testdata/fixtures/images/centos-7.tar.gz
-DocumentNamespace: http://aquasecurity.github.io/vul/container_image/integration/testdata/fixtures/images/centos-7.tar.gz-6a2c050f-bc12-46dc-b2df-1f4e3e0b5e1d
-Creator: Organization: aquasecurity
+DocumentNamespace: http://khulnasoft-lab.github.io/vul/container_image/integration/testdata/fixtures/images/centos-7.tar.gz-6a2c050f-bc12-46dc-b2df-1f4e3e0b5e1d
+Creator: Organization: khulnasoft-lab
 Creator: Tool: vul-dev
 Created: 2022-09-13T13:24:58.796907Z
 

@@ -8,7 +8,7 @@
     "timestamp": "2020-09-10T14:20:30+00:00",
     "tools": [
       {
-        "vendor": "aquasecurity",
+        "vendor": "khulnasoft-lab",
         "name": "vul",
         "version": "dev"
       }
@@ -19,15 +19,15 @@
       "name": "testdata/fixtures/images/fluentd-multiple-lockfiles.tar.gz",
       "properties": [
         {
-          "name": "aquasecurity:vul:DiffID",
+          "name": "khulnasoft-lab:vul:DiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f,sha256:02874b2b269dea8dde0f7edb4c9906904dfe38a09de1a214f20c650cfb15c60e,sha256:3752e1f6fd759c795c13aff2c93c081529366e27635ba6621e849b0f9cfc77f0,sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9,sha256:788c00e2cfc8f2a018ae4344ccf0b2c226ebd756d7effd1ce50eea1a4252cd89,sha256:25165eb51d15842f870f97873e0a58409d5e860e6108e3dd829bd10e484c0065"
         },
         {
-          "name": "aquasecurity:vul:ImageID",
+          "name": "khulnasoft-lab:vul:ImageID",
           "value": "sha256:5a992077baba51b97f27591a10d54d2f2723dc9c81a3fe419e261023f2554933"
         },
         {
-          "name": "aquasecurity:vul:SchemaVersion",
+          "name": "khulnasoft-lab:vul:SchemaVersion",
           "value": "2"
         }
       ]
@@ -41,11 +41,11 @@
       "version": "10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:Class",
+          "name": "khulnasoft-lab:vul:Class",
           "value": "os-pkgs"
         },
         {
-          "name": "aquasecurity:vul:Type",
+          "name": "khulnasoft-lab:vul:Type",
           "value": "debian"
         }
       ]
@@ -58,27 +58,27 @@
       "purl": "pkg:deb/debian/adduser@3.118?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "adduser@3.118"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "adduser"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.118"
         }
       ]
@@ -91,27 +91,27 @@
       "purl": "pkg:deb/debian/apt@1.8.2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "apt@1.8.2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "apt"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.8.2"
         }
       ]
@@ -124,27 +124,27 @@
       "purl": "pkg:deb/debian/base-files@10.3+deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "base-files@10.3+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "base-files"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "10.3+deb10u2"
         }
       ]
@@ -157,27 +157,27 @@
       "purl": "pkg:deb/debian/base-passwd@3.5.46?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "base-passwd@3.5.46"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "base-passwd"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.5.46"
         }
       ]
@@ -190,31 +190,31 @@
       "purl": "pkg:deb/debian/bash@5.0-4?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "bash@5.0-4"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "bash"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "4"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "5.0"
         }
       ]
@@ -227,31 +227,31 @@
       "purl": "pkg:deb/debian/bsdutils@2.33.1-0.1?arch=amd64\u0026epoch=1\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "bsdutils@1:2.33.1-0.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "util-linux"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0.1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.33.1"
         }
       ]
@@ -264,27 +264,27 @@
       "purl": "pkg:deb/debian/ca-certificates@20190110?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "ca-certificates@20190110"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ca-certificates"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "20190110"
         }
       ]
@@ -297,31 +297,31 @@
       "purl": "pkg:deb/debian/coreutils@8.30-3?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "coreutils@8.30-3"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "coreutils"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "3"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "8.30"
         }
       ]
@@ -334,31 +334,31 @@
       "purl": "pkg:deb/debian/dash@0.5.10.2-5?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "dash@0.5.10.2-5"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "dash"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "5"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "0.5.10.2"
         }
       ]
@@ -371,27 +371,27 @@
       "purl": "pkg:deb/debian/debconf@1.5.71?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "debconf@1.5.71"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "debconf"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.5.71"
         }
       ]
@@ -404,27 +404,27 @@
       "purl": "pkg:deb/debian/debian-archive-keyring@2019.1?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "debian-archive-keyring@2019.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "debian-archive-keyring"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2019.1"
         }
       ]
@@ -437,27 +437,27 @@
       "purl": "pkg:deb/debian/debianutils@4.8.6.1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "debianutils@4.8.6.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "debianutils"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "4.8.6.1"
         }
       ]
@@ -470,35 +470,35 @@
       "purl": "pkg:deb/debian/diffutils@3.7-3?arch=amd64\u0026epoch=1\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "diffutils@1:3.7-3"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "diffutils"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "3"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.7"
         }
       ]
@@ -511,27 +511,27 @@
       "purl": "pkg:deb/debian/dpkg@1.19.7?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "dpkg@1.19.7"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "dpkg"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.19.7"
         }
       ]
@@ -544,31 +544,31 @@
       "purl": "pkg:deb/debian/e2fsprogs@1.44.5-1+deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "e2fsprogs@1.44.5-1+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "e2fsprogs"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.44.5"
         }
       ]
@@ -581,31 +581,31 @@
       "purl": "pkg:deb/debian/fdisk@2.33.1-0.1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "fdisk@2.33.1-0.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "util-linux"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0.1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.33.1"
         }
       ]
@@ -618,31 +618,31 @@
       "purl": "pkg:deb/debian/findutils@4.6.0+git+20190209-2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "findutils@4.6.0+git+20190209-2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "findutils"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "4.6.0+git+20190209"
         }
       ]
@@ -655,31 +655,31 @@
       "purl": "pkg:deb/debian/gcc-8-base@8.3.0-6?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "gcc-8-base@8.3.0-6"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "gcc-8"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "6"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "8.3.0"
         }
       ]
@@ -692,31 +692,31 @@
       "purl": "pkg:deb/debian/gpgv@2.2.12-1+deb10u1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "gpgv@2.2.12-1+deb10u1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "gnupg2"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1+deb10u1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.2.12"
         }
       ]
@@ -729,31 +729,31 @@
       "purl": "pkg:deb/debian/grep@3.3-1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "grep@3.3-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "grep"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.3"
         }
       ]
@@ -766,31 +766,31 @@
       "purl": "pkg:deb/debian/gzip@1.9-3?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "gzip@1.9-3"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "gzip"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "3"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.9"
         }
       ]
@@ -803,27 +803,27 @@
       "purl": "pkg:deb/debian/hostname@3.21?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "hostname@3.21"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "hostname"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.21"
         }
       ]
@@ -836,27 +836,27 @@
       "purl": "pkg:deb/debian/init-system-helpers@1.56+nmu1?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "init-system-helpers@1.56+nmu1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "init-system-helpers"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.56+nmu1"
         }
       ]
@@ -869,31 +869,31 @@
       "purl": "pkg:deb/debian/libacl1@2.2.53-4?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libacl1@2.2.53-4"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "acl"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "4"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.2.53"
         }
       ]
@@ -906,27 +906,27 @@
       "purl": "pkg:deb/debian/libapt-pkg5.0@1.8.2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libapt-pkg5.0@1.8.2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "apt"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.8.2"
         }
       ]
@@ -939,35 +939,35 @@
       "purl": "pkg:deb/debian/libattr1@2.4.48-4?arch=amd64\u0026epoch=1\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libattr1@1:2.4.48-4"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "attr"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "4"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.4.48"
         }
       ]
@@ -980,35 +980,35 @@
       "purl": "pkg:deb/debian/libaudit-common@2.8.4-3?arch=all\u0026epoch=1\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libaudit-common@1:2.8.4-3"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "audit"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "3"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.8.4"
         }
       ]
@@ -1021,35 +1021,35 @@
       "purl": "pkg:deb/debian/libaudit1@2.8.4-3?arch=amd64\u0026epoch=1\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libaudit1@1:2.8.4-3"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "audit"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "3"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.8.4"
         }
       ]
@@ -1062,31 +1062,31 @@
       "purl": "pkg:deb/debian/libblkid1@2.33.1-0.1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libblkid1@2.33.1-0.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "util-linux"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0.1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.33.1"
         }
       ]
@@ -1099,31 +1099,31 @@
       "purl": "pkg:deb/debian/libbz2-1.0@1.0.6-9.2~deb10u1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libbz2-1.0@1.0.6-9.2~deb10u1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "bzip2"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "9.2~deb10u1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.0.6"
         }
       ]
@@ -1136,31 +1136,31 @@
       "purl": "pkg:deb/debian/libc-bin@2.28-10?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libc-bin@2.28-10"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "glibc"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "10"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.28"
         }
       ]
@@ -1173,31 +1173,31 @@
       "purl": "pkg:deb/debian/libc6@2.28-10?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libc6@2.28-10"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "glibc"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "10"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.28"
         }
       ]
@@ -1210,31 +1210,31 @@
       "purl": "pkg:deb/debian/libcap-ng0@0.7.9-2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libcap-ng0@0.7.9-2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libcap-ng"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "0.7.9"
         }
       ]
@@ -1247,31 +1247,31 @@
       "purl": "pkg:deb/debian/libcom-err2@1.44.5-1+deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libcom-err2@1.44.5-1+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "e2fsprogs"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.44.5"
         }
       ]
@@ -1284,31 +1284,31 @@
       "purl": "pkg:deb/debian/libdb5.3@5.3.28+dfsg1-0.5?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libdb5.3@5.3.28+dfsg1-0.5"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "db5.3"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0.5"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "5.3.28+dfsg1"
         }
       ]
@@ -1321,27 +1321,27 @@
       "purl": "pkg:deb/debian/libdebconfclient0@0.249?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libdebconfclient0@0.249"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "cdebconf"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "0.249"
         }
       ]
@@ -1354,31 +1354,31 @@
       "purl": "pkg:deb/debian/libext2fs2@1.44.5-1+deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libext2fs2@1.44.5-1+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "e2fsprogs"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.44.5"
         }
       ]
@@ -1391,31 +1391,31 @@
       "purl": "pkg:deb/debian/libfdisk1@2.33.1-0.1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libfdisk1@2.33.1-0.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "util-linux"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0.1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.33.1"
         }
       ]
@@ -1428,31 +1428,31 @@
       "purl": "pkg:deb/debian/libffi6@3.2.1-9?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libffi6@3.2.1-9"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libffi"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "9"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.2.1"
         }
       ]
@@ -1465,31 +1465,31 @@
       "purl": "pkg:deb/debian/libgcc1@8.3.0-6?arch=amd64\u0026epoch=1\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libgcc1@1:8.3.0-6"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "gcc-8"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "6"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "8.3.0"
         }
       ]
@@ -1502,31 +1502,31 @@
       "purl": "pkg:deb/debian/libgcrypt20@1.8.4-5?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libgcrypt20@1.8.4-5"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libgcrypt20"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "5"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.8.4"
         }
       ]
@@ -1539,31 +1539,31 @@
       "purl": "pkg:deb/debian/libgdbm-compat4@1.18.1-4?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libgdbm-compat4@1.18.1-4"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "gdbm"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "4"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.18.1"
         }
       ]
@@ -1576,31 +1576,31 @@
       "purl": "pkg:deb/debian/libgdbm6@1.18.1-4?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libgdbm6@1.18.1-4"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "gdbm"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "4"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.18.1"
         }
       ]
@@ -1613,35 +1613,35 @@
       "purl": "pkg:deb/debian/libgmp10@6.1.2+dfsg-4?arch=amd64\u0026epoch=2\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libgmp10@2:6.1.2+dfsg-4"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "gmp"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "4"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "6.1.2+dfsg"
         }
       ]
@@ -1654,31 +1654,31 @@
       "purl": "pkg:deb/debian/libgnutls30@3.6.7-4?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libgnutls30@3.6.7-4"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "gnutls28"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "4"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.6.7"
         }
       ]
@@ -1691,31 +1691,31 @@
       "purl": "pkg:deb/debian/libgpg-error0@1.35-1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libgpg-error0@1.35-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libgpg-error"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.35"
         }
       ]
@@ -1728,31 +1728,31 @@
       "purl": "pkg:deb/debian/libhogweed4@3.4.1-1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libhogweed4@3.4.1-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "nettle"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.4.1"
         }
       ]
@@ -1765,31 +1765,31 @@
       "purl": "pkg:deb/debian/libidn2-0@2.0.5-1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libidn2-0@2.0.5-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libidn2"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.0.5"
         }
       ]
@@ -1802,31 +1802,31 @@
       "purl": "pkg:deb/debian/libjemalloc2@5.1.0-3?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libjemalloc2@5.1.0-3"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "jemalloc"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "3"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "5.1.0"
         }
       ]
@@ -1839,31 +1839,31 @@
       "purl": "pkg:deb/debian/liblz4-1@1.8.3-1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "liblz4-1@1.8.3-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "lz4"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.8.3"
         }
       ]
@@ -1876,31 +1876,31 @@
       "purl": "pkg:deb/debian/liblzma5@5.2.4-1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "liblzma5@5.2.4-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "xz-utils"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "5.2.4"
         }
       ]
@@ -1913,31 +1913,31 @@
       "purl": "pkg:deb/debian/libmount1@2.33.1-0.1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libmount1@2.33.1-0.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "util-linux"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0.1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.33.1"
         }
       ]
@@ -1950,31 +1950,31 @@
       "purl": "pkg:deb/debian/libncurses6@6.1+20181013-2+deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libncurses6@6.1+20181013-2+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ncurses"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "6.1+20181013"
         }
       ]
@@ -1987,31 +1987,31 @@
       "purl": "pkg:deb/debian/libncursesw6@6.1+20181013-2+deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libncursesw6@6.1+20181013-2+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ncurses"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "6.1+20181013"
         }
       ]
@@ -2024,31 +2024,31 @@
       "purl": "pkg:deb/debian/libnettle6@3.4.1-1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libnettle6@3.4.1-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "nettle"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.4.1"
         }
       ]
@@ -2061,31 +2061,31 @@
       "purl": "pkg:deb/debian/libp11-kit0@0.23.15-2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libp11-kit0@0.23.15-2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "p11-kit"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "0.23.15"
         }
       ]
@@ -2098,31 +2098,31 @@
       "purl": "pkg:deb/debian/libpam-modules-bin@1.3.1-5?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libpam-modules-bin@1.3.1-5"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "pam"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "5"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.3.1"
         }
       ]
@@ -2135,31 +2135,31 @@
       "purl": "pkg:deb/debian/libpam-modules@1.3.1-5?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libpam-modules@1.3.1-5"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "pam"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "5"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.3.1"
         }
       ]
@@ -2172,31 +2172,31 @@
       "purl": "pkg:deb/debian/libpam-runtime@1.3.1-5?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libpam-runtime@1.3.1-5"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "pam"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "5"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.3.1"
         }
       ]
@@ -2209,31 +2209,31 @@
       "purl": "pkg:deb/debian/libpam0g@1.3.1-5?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libpam0g@1.3.1-5"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "pam"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "5"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.3.1"
         }
       ]
@@ -2246,35 +2246,35 @@
       "purl": "pkg:deb/debian/libpcre3@8.39-12?arch=amd64\u0026epoch=2\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libpcre3@2:8.39-12"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "pcre3"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "12"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "8.39"
         }
       ]
@@ -2287,31 +2287,31 @@
       "purl": "pkg:deb/debian/libreadline7@7.0-5?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libreadline7@7.0-5"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "readline"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "5"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "7.0"
         }
       ]
@@ -2324,31 +2324,31 @@
       "purl": "pkg:deb/debian/libruby2.5@2.5.5-3+deb10u1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libruby2.5@2.5.5-3+deb10u1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ruby2.5"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "3+deb10u1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.5.5"
         }
       ]
@@ -2361,31 +2361,31 @@
       "purl": "pkg:deb/debian/libseccomp2@2.3.3-4?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libseccomp2@2.3.3-4"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libseccomp"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "4"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.3.3"
         }
       ]
@@ -2398,31 +2398,31 @@
       "purl": "pkg:deb/debian/libselinux1@2.8-1+b1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libselinux1@2.8-1+b1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libselinux"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.8"
         }
       ]
@@ -2435,31 +2435,31 @@
       "purl": "pkg:deb/debian/libsemanage-common@2.8-2?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libsemanage-common@2.8-2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libsemanage"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.8"
         }
       ]
@@ -2472,31 +2472,31 @@
       "purl": "pkg:deb/debian/libsemanage1@2.8-2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libsemanage1@2.8-2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libsemanage"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.8"
         }
       ]
@@ -2509,31 +2509,31 @@
       "purl": "pkg:deb/debian/libsepol1@2.8-1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libsepol1@2.8-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libsepol"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.8"
         }
       ]
@@ -2546,31 +2546,31 @@
       "purl": "pkg:deb/debian/libsmartcols1@2.33.1-0.1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libsmartcols1@2.33.1-0.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "util-linux"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0.1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.33.1"
         }
       ]
@@ -2583,31 +2583,31 @@
       "purl": "pkg:deb/debian/libss2@1.44.5-1+deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libss2@1.44.5-1+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "e2fsprogs"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.44.5"
         }
       ]
@@ -2620,31 +2620,31 @@
       "purl": "pkg:deb/debian/libssl1.1@1.1.1d-0+deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libssl1.1@1.1.1d-0+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "openssl"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.1.1d"
         }
       ]
@@ -2657,31 +2657,31 @@
       "purl": "pkg:deb/debian/libstdc%2B%2B6@8.3.0-6?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libstdc++6@8.3.0-6"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "gcc-8"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "6"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "8.3.0"
         }
       ]
@@ -2694,31 +2694,31 @@
       "purl": "pkg:deb/debian/libsystemd0@241-7~deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libsystemd0@241-7~deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "systemd"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "7~deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "241"
         }
       ]
@@ -2731,31 +2731,31 @@
       "purl": "pkg:deb/debian/libtasn1-6@4.13-3?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libtasn1-6@4.13-3"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libtasn1-6"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "3"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "4.13"
         }
       ]
@@ -2768,31 +2768,31 @@
       "purl": "pkg:deb/debian/libtinfo6@6.1+20181013-2+deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libtinfo6@6.1+20181013-2+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ncurses"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "6.1+20181013"
         }
       ]
@@ -2805,31 +2805,31 @@
       "purl": "pkg:deb/debian/libudev1@241-7~deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libudev1@241-7~deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "systemd"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "7~deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "241"
         }
       ]
@@ -2842,31 +2842,31 @@
       "purl": "pkg:deb/debian/libunistring2@0.9.10-1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libunistring2@0.9.10-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libunistring"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "0.9.10"
         }
       ]
@@ -2879,31 +2879,31 @@
       "purl": "pkg:deb/debian/libuuid1@2.33.1-0.1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libuuid1@2.33.1-0.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "util-linux"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0.1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.33.1"
         }
       ]
@@ -2916,31 +2916,31 @@
       "purl": "pkg:deb/debian/libyaml-0-2@0.2.1-1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libyaml-0-2@0.2.1-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libyaml"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "0.2.1"
         }
       ]
@@ -2953,31 +2953,31 @@
       "purl": "pkg:deb/debian/libzstd1@1.3.8+dfsg-3?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "libzstd1@1.3.8+dfsg-3"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "libzstd"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "3"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.3.8+dfsg"
         }
       ]
@@ -2990,35 +2990,35 @@
       "purl": "pkg:deb/debian/login@4.5-1.1?arch=amd64\u0026epoch=1\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "login@1:4.5-1.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "shadow"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1.1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "4.5"
         }
       ]
@@ -3031,31 +3031,31 @@
       "purl": "pkg:deb/debian/mawk@1.3.3-17+b3?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "mawk@1.3.3-17+b3"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "mawk"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "17"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.3.3"
         }
       ]
@@ -3068,31 +3068,31 @@
       "purl": "pkg:deb/debian/mount@2.33.1-0.1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "mount@2.33.1-0.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "util-linux"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0.1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.33.1"
         }
       ]
@@ -3105,31 +3105,31 @@
       "purl": "pkg:deb/debian/ncurses-base@6.1+20181013-2+deb10u2?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "ncurses-base@6.1+20181013-2+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ncurses"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "6.1+20181013"
         }
       ]
@@ -3142,31 +3142,31 @@
       "purl": "pkg:deb/debian/ncurses-bin@6.1+20181013-2+deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "ncurses-bin@6.1+20181013-2+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ncurses"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "6.1+20181013"
         }
       ]
@@ -3179,31 +3179,31 @@
       "purl": "pkg:deb/debian/openssl@1.1.1d-0+deb10u2?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "openssl@1.1.1d-0+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "openssl"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0+deb10u2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.1.1d"
         }
       ]
@@ -3216,35 +3216,35 @@
       "purl": "pkg:deb/debian/passwd@4.5-1.1?arch=amd64\u0026epoch=1\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "passwd@1:4.5-1.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "shadow"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1.1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "4.5"
         }
       ]
@@ -3257,31 +3257,31 @@
       "purl": "pkg:deb/debian/perl-base@5.28.1-6?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "perl-base@5.28.1-6"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "perl"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "6"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "5.28.1"
         }
       ]
@@ -3294,31 +3294,31 @@
       "purl": "pkg:deb/debian/rake@12.3.1-3?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "rake@12.3.1-3"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "rake"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "3"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "12.3.1"
         }
       ]
@@ -3331,31 +3331,31 @@
       "purl": "pkg:deb/debian/readline-common@7.0-5?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "readline-common@7.0-5"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "readline"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "5"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "7.0"
         }
       ]
@@ -3368,31 +3368,31 @@
       "purl": "pkg:deb/debian/ruby-did-you-mean@1.2.1-1?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "ruby-did-you-mean@1.2.1-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ruby-did-you-mean"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.2.1"
         }
       ]
@@ -3405,31 +3405,31 @@
       "purl": "pkg:deb/debian/ruby-minitest@5.11.3-1?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "ruby-minitest@5.11.3-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ruby-minitest"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "5.11.3"
         }
       ]
@@ -3442,31 +3442,31 @@
       "purl": "pkg:deb/debian/ruby-net-telnet@0.1.1-2?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "ruby-net-telnet@0.1.1-2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ruby-net-telnet"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "0.1.1"
         }
       ]
@@ -3479,31 +3479,31 @@
       "purl": "pkg:deb/debian/ruby-power-assert@1.1.1-1?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "ruby-power-assert@1.1.1-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ruby-power-assert"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.1.1"
         }
       ]
@@ -3516,31 +3516,31 @@
       "purl": "pkg:deb/debian/ruby-test-unit@3.2.8-1?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "ruby-test-unit@3.2.8-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ruby-test-unit"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "3.2.8"
         }
       ]
@@ -3553,31 +3553,31 @@
       "purl": "pkg:deb/debian/ruby-xmlrpc@0.3.0-2?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "ruby-xmlrpc@0.3.0-2"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ruby-xmlrpc"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "2"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "0.3.0"
         }
       ]
@@ -3590,31 +3590,31 @@
       "purl": "pkg:deb/debian/ruby2.5@2.5.5-3+deb10u1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "ruby2.5@2.5.5-3+deb10u1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ruby2.5"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "3+deb10u1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.5.5"
         }
       ]
@@ -3627,31 +3627,31 @@
       "purl": "pkg:deb/debian/ruby@2.5.1?arch=amd64\u0026epoch=1\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "ruby@1:2.5.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "ruby-defaults"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.5.1"
         }
       ]
@@ -3664,27 +3664,27 @@
       "purl": "pkg:deb/debian/rubygems-integration@1.11?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "rubygems-integration@1.11"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "rubygems-integration"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.11"
         }
       ]
@@ -3697,31 +3697,31 @@
       "purl": "pkg:deb/debian/sed@4.7-1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "sed@4.7-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "sed"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "4.7"
         }
       ]
@@ -3734,31 +3734,31 @@
       "purl": "pkg:deb/debian/sysvinit-utils@2.93-8?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "sysvinit-utils@2.93-8"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "sysvinit"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "8"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.93"
         }
       ]
@@ -3771,31 +3771,31 @@
       "purl": "pkg:deb/debian/tar@1.30+dfsg-6?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "tar@1.30+dfsg-6"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "tar"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "6"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.30+dfsg"
         }
       ]
@@ -3808,31 +3808,31 @@
       "purl": "pkg:deb/debian/tzdata@2019c-0+deb10u1?arch=all\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "tzdata@2019c-0+deb10u1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "tzdata"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0+deb10u1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2019c"
         }
       ]
@@ -3845,31 +3845,31 @@
       "purl": "pkg:deb/debian/util-linux@2.33.1-0.1?arch=amd64\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "util-linux@2.33.1-0.1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "util-linux"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "0.1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "2.33.1"
         }
       ]
@@ -3882,35 +3882,35 @@
       "purl": "pkg:deb/debian/zlib1g@1.2.11.dfsg-1?arch=amd64\u0026epoch=1\u0026distro=debian-10.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:831c5620387fb9efec59fc82a42b948546c6be601e3ab34a87108ecf852aa15f"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c"
         },
         {
-          "name": "aquasecurity:vul:PkgID",
+          "name": "khulnasoft-lab:vul:PkgID",
           "value": "zlib1g@1:1.2.11.dfsg-1"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "debian"
         },
         {
-          "name": "aquasecurity:vul:SrcEpoch",
+          "name": "khulnasoft-lab:vul:SrcEpoch",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcName",
+          "name": "khulnasoft-lab:vul:SrcName",
           "value": "zlib"
         },
         {
-          "name": "aquasecurity:vul:SrcRelease",
+          "name": "khulnasoft-lab:vul:SrcRelease",
           "value": "1"
         },
         {
-          "name": "aquasecurity:vul:SrcVersion",
+          "name": "khulnasoft-lab:vul:SrcVersion",
           "value": "1.2.11.dfsg"
         }
       ]
@@ -3930,19 +3930,19 @@
       "purl": "pkg:gem/activesupport@6.0.2.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/activesupport-6.0.2.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -3962,19 +3962,19 @@
       "purl": "pkg:gem/addressable@2.7.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/addressable-2.7.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -3994,19 +3994,19 @@
       "purl": "pkg:gem/concurrent-ruby@1.1.6",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/concurrent-ruby-1.1.6.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4019,19 +4019,19 @@
       "purl": "pkg:gem/cool.io@1.6.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/cool.io-1.6.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4051,19 +4051,19 @@
       "purl": "pkg:gem/dig_rb@1.0.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/dig_rb-1.0.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4093,19 +4093,19 @@
       "purl": "pkg:gem/domain_name@0.5.20190701",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/domain_name-0.5.20190701.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4125,19 +4125,19 @@
       "purl": "pkg:gem/elasticsearch-api@7.5.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/elasticsearch-api-7.5.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4157,19 +4157,19 @@
       "purl": "pkg:gem/elasticsearch-transport@7.5.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/elasticsearch-transport-7.5.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4189,19 +4189,19 @@
       "purl": "pkg:gem/elasticsearch@7.5.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/elasticsearch-7.5.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4221,19 +4221,19 @@
       "purl": "pkg:gem/excon@0.72.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/excon-0.72.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4253,19 +4253,19 @@
       "purl": "pkg:gem/faraday@0.17.3",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/faraday-0.17.3.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4285,19 +4285,19 @@
       "purl": "pkg:gem/ffi-compiler@1.0.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/ffi-compiler-1.0.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4317,19 +4317,19 @@
       "purl": "pkg:gem/ffi@1.12.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/ffi-1.12.2.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4349,19 +4349,19 @@
       "purl": "pkg:gem/fluent-plugin-concat@2.4.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/fluent-plugin-concat-2.4.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4381,19 +4381,19 @@
       "purl": "pkg:gem/fluent-plugin-detect-exceptions@0.0.13",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/fluent-plugin-detect-exceptions-0.0.13.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4413,19 +4413,19 @@
       "purl": "pkg:gem/fluent-plugin-elasticsearch@3.8.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/fluent-plugin-elasticsearch-3.8.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4445,19 +4445,19 @@
       "purl": "pkg:gem/fluent-plugin-kubernetes_metadata_filter@2.4.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/fluent-plugin-kubernetes_metadata_filter-2.4.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4477,19 +4477,19 @@
       "purl": "pkg:gem/fluent-plugin-multi-format-parser@1.0.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/fluent-plugin-multi-format-parser-1.0.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4509,19 +4509,19 @@
       "purl": "pkg:gem/fluent-plugin-prometheus@1.7.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/fluent-plugin-prometheus-1.7.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4541,19 +4541,19 @@
       "purl": "pkg:gem/fluent-plugin-systemd@1.0.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/fluent-plugin-systemd-1.0.2.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4573,19 +4573,19 @@
       "purl": "pkg:gem/fluentd@1.8.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/fluentd-1.8.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4598,19 +4598,19 @@
       "purl": "pkg:gem/http-accept@1.7.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/http-accept-1.7.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4630,19 +4630,19 @@
       "purl": "pkg:gem/http-cookie@1.0.3",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/http-cookie-1.0.3.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4662,19 +4662,19 @@
       "purl": "pkg:gem/http-form_data@2.2.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/http-form_data-2.2.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4694,19 +4694,19 @@
       "purl": "pkg:gem/http-parser@1.2.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/http-parser-1.2.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4726,19 +4726,19 @@
       "purl": "pkg:gem/http@4.3.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/http-4.3.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4758,19 +4758,19 @@
       "purl": "pkg:gem/http_parser.rb@0.6.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/http_parser.rb-0.6.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4790,19 +4790,19 @@
       "purl": "pkg:gem/i18n@1.8.2",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/i18n-1.8.2.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4822,19 +4822,19 @@
       "purl": "pkg:gem/kubeclient@4.6.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/kubeclient-4.6.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4854,19 +4854,19 @@
       "purl": "pkg:gem/lru_redux@1.1.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/lru_redux-1.1.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4886,19 +4886,19 @@
       "purl": "pkg:gem/mime-types-data@3.2019.1009",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/mime-types-data-3.2019.1009.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4918,19 +4918,19 @@
       "purl": "pkg:gem/mime-types@3.3.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/mime-types-3.3.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4950,19 +4950,19 @@
       "purl": "pkg:gem/minitest@5.14.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/minitest-5.14.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -4982,19 +4982,19 @@
       "purl": "pkg:gem/msgpack@1.3.3",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/msgpack-1.3.3.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5014,19 +5014,19 @@
       "purl": "pkg:gem/multi_json@1.14.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/multi_json-1.14.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5046,19 +5046,19 @@
       "purl": "pkg:gem/multipart-post@2.1.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/multipart-post-2.1.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5078,19 +5078,19 @@
       "purl": "pkg:gem/netrc@0.11.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/netrc-0.11.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5110,19 +5110,19 @@
       "purl": "pkg:gem/oj@3.10.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/oj-3.10.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5142,19 +5142,19 @@
       "purl": "pkg:gem/prometheus-client@0.9.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/prometheus-client-0.9.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5174,19 +5174,19 @@
       "purl": "pkg:gem/public_suffix@4.0.3",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/public_suffix-4.0.3.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5206,19 +5206,19 @@
       "purl": "pkg:gem/quantile@0.2.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/quantile-0.2.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5238,19 +5238,19 @@
       "purl": "pkg:gem/rake@13.0.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/rake-13.0.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5270,19 +5270,19 @@
       "purl": "pkg:gem/recursive-open-struct@1.1.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/recursive-open-struct-1.1.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5302,19 +5302,19 @@
       "purl": "pkg:gem/rest-client@2.1.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/rest-client-2.1.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5334,19 +5334,19 @@
       "purl": "pkg:gem/serverengine@2.2.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/serverengine-2.2.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5366,19 +5366,19 @@
       "purl": "pkg:gem/sigdump@0.2.4",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/sigdump-0.2.4.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5398,19 +5398,19 @@
       "purl": "pkg:gem/strptime@0.2.3",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/strptime-0.2.3.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5430,19 +5430,19 @@
       "purl": "pkg:gem/systemd-journal@1.3.3",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/systemd-journal-1.3.3.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5462,19 +5462,19 @@
       "purl": "pkg:gem/thread_safe@0.3.6",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/thread_safe-0.3.6.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5494,19 +5494,19 @@
       "purl": "pkg:gem/tzinfo-data@1.2019.3",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/tzinfo-data-1.2019.3.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5526,19 +5526,19 @@
       "purl": "pkg:gem/tzinfo@1.2.6",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/tzinfo-1.2.6.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5558,19 +5558,19 @@
       "purl": "pkg:gem/unf@0.1.4",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/unf-0.1.4.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5590,19 +5590,19 @@
       "purl": "pkg:gem/unf_ext@0.0.7.6",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/unf_ext-0.0.7.6.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5622,19 +5622,19 @@
       "purl": "pkg:gem/yajl-ruby@1.4.1",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/yajl-ruby-1.4.1.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]
@@ -5654,19 +5654,19 @@
       "purl": "pkg:gem/zeitwerk@2.3.0",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "var/lib/gems/2.5.0/specifications/zeitwerk-2.3.0.gemspec"
         },
         {
-          "name": "aquasecurity:vul:LayerDiffID",
+          "name": "khulnasoft-lab:vul:LayerDiffID",
           "value": "sha256:75e43d55939745950bc3f8fad56c5834617c4339f0f54755e69a0dd5372624e9"
         },
         {
-          "name": "aquasecurity:vul:LayerDigest",
+          "name": "khulnasoft-lab:vul:LayerDigest",
           "value": "sha256:a8877cad19f14a7044524a145ce33170085441a7922458017db1631dcd5f7602"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "gemspec"
         }
       ]

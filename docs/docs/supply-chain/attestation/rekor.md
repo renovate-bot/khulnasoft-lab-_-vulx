@@ -22,7 +22,7 @@ $ vul image --sbom-sources rekor otms61/alpine:3.7.3                            
 2022-09-16T17:37:13.258+0900	INFO	Vulnerability scanning is enabled
 2022-09-16T17:37:13.258+0900	INFO	Secret scanning is enabled
 2022-09-16T17:37:13.258+0900	INFO	If your scanning is slow, please try '--scanners vuln' to disable secret scanning
-2022-09-16T17:37:13.258+0900	INFO	Please see also https://aquasecurity.github.io/vul/dev/docs/secret/scanning/#recommendation for faster secret detection
+2022-09-16T17:37:13.258+0900	INFO	Please see also https://khulnasoft-lab.github.io/vul/dev/docs/secret/scanning/#recommendation for faster secret detection
 2022-09-16T17:37:14.827+0900	INFO	Detected SBOM format: cyclonedx-json
 2022-09-16T17:37:14.901+0900	INFO	Found SBOM (cyclonedx) attestation in Rekor
 2022-09-16T17:37:14.903+0900	INFO	Detected OS: alpine
@@ -40,7 +40,7 @@ Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 2)
 ├────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────┤
 │ musl       │ CVE-2019-14697 │ CRITICAL │ 1.1.18-r3         │ 1.1.18-r4     │ musl libc through 1.1.23 has an x87 floating-point stack │
 │            │                │          │                   │               │ adjustment im ......                                     │
-│            │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2019-14697               │
+│            │                │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2019-14697               │
 ├────────────┤                │          │                   │               │                                                          │
 │ musl-utils │                │          │                   │               │                                                          │
 │            │                │          │                   │               │                                                          │
@@ -103,7 +103,7 @@ Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
 │  Library  │   Vulnerability   │ Severity │ Installed Version │ Fixed Version │                           Title                            │
 ├───────────┼───────────────────┼──────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
 │ regex     │ CVE-2022-24713    │ HIGH     │ 1.5.4             │ 1.5.5         │ Mozilla: Denial of Service via complex regular expressions │
-│           │                   │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-24713                 │
+│           │                   │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2022-24713                 │
 └───────────┴───────────────────┴──────────┴───────────────────┴───────────────┴────────────────────────────────────────────────────────────┘
 ```
 
@@ -131,7 +131,7 @@ Total: 4 (UNKNOWN: 3, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
 │  Library  │   Vulnerability   │ Severity │ Installed Version │ Fixed Version │                           Title                            │
 ├───────────┼───────────────────┼──────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
 │ regex     │ CVE-2022-24713    │ HIGH     │ 1.5.4             │ 1.5.5         │ Mozilla: Denial of Service via complex regular expressions │
-│           │                   │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-24713                 │
+│           │                   │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2022-24713                 │
 └───────────┴───────────────────┴──────────┴───────────────────┴───────────────┴────────────────────────────────────────────────────────────┘
 ```
 

@@ -64,7 +64,7 @@
             "DiffID": "sha256:ea6f6933da66090da8bfe233d68f083792a68f944cd2d8f9fbb52da795813a4f"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-15542",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-15542",
           "DataSource": {
             "Name": "RustSec Advisory Database",
             "URL": "https://github.com/RustSec/advisory-db"
@@ -103,7 +103,7 @@
             "DiffID": "sha256:ea6f6933da66090da8bfe233d68f083792a68f944cd2d8f9fbb52da795813a4f"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2021-38193",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2021-38193",
           "DataSource": {
             "Name": "RustSec Advisory Database",
             "URL": "https://github.com/RustSec/advisory-db"

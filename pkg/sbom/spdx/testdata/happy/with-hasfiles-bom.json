@@ -4,14 +4,14 @@
     "created": "2023-05-31T04:56:43Z",
     "creators": [
       "Tool: vul-dev",
-      "Organization: aquasecurity"
+      "Organization: khulnasoft-lab"
     ]
   },
   "dataLicense": "CC0-1.0",
   "documentDescribes": [
     "SPDXRef-Filesystem-13b142ca391a006e"
   ],
-  "documentNamespace": "http://aquasecurity.github.io/vul/filesystem/app-ab9e166e-7229-4d03-947e-8ffc9c60cf6f",
+  "documentNamespace": "http://khulnasoft-lab.github.io/vul/filesystem/app-ab9e166e-7229-4d03-947e-8ffc9c60cf6f",
   "files": [
     {
       "SPDXID": "SPDXRef-File-51bb5f929ef68877",

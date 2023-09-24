@@ -65,6 +65,6 @@ spec:
       severity: "LOW"
 ```
 
-The check id field (`controls[].checks[].id`) is referring to existing check by it's "AVD ID". This AVD ID is easily located in the check's source code metadata header, or by browsing [Aqua vulnerability DB](https://avd.aquasec.com/), specifically in the [Misconfigurations](https://avd.aquasec.com/misconfig/) and [Vulnerabilities](https://avd.aquasec.com/nvd) sections.
+The check id field (`controls[].checks[].id`) is referring to existing check by it's "AVD ID". This AVD ID is easily located in the check's source code metadata header, or by browsing [Khulnasoft vulnerability DB](https://avd.khulnasoft.com/), specifically in the [Misconfigurations](https://avd.khulnasoft.com/misconfig/) and [Vulnerabilities](https://avd.khulnasoft.com/nvd) sections.
 
 Once you have a compliance spec, you can select it by file path: `vul --compliance @</path/to/compliance.yaml>` (note the `@` indicating file path instead of report id).

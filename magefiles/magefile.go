@@ -42,12 +42,12 @@ func buildLdflags() (string, error) {
 
 type Tool mg.Namespace
 
-// Aqua installs aqua if not installed
-func (Tool) Aqua() error {
-	if exists(filepath.Join(GOBIN, "aqua")) {
+// Khulnasoft installs khulnasoft if not installed
+func (Tool) Khulnasoft() error {
+	if exists(filepath.Join(GOBIN, "khulnasoft")) {
 		return nil
 	}
-	return sh.Run("go", "install", "github.com/aquaproj/aqua/v2/cmd/aqua@v2.2.1")
+	return sh.Run("go", "install", "github.com/khulnasoftproj/khulnasoft/v2/cmd/khulnasoft@v2.2.1")
 }
 
 // Wire installs wire if not installed
@@ -362,7 +362,7 @@ type Docs mg.Namespace
 // Serve launches MkDocs development server to preview the documentation page
 func (Docs) Serve() error {
 	const (
-		mkdocsImage = "aquasec/mkdocs-material:dev"
+		mkdocsImage = "khulnasoft/mkdocs-material:dev"
 		mkdocsPort  = "8000"
 	)
 	if err := sh.Run("docker", "build", "-t", mkdocsImage, "-f", "docs/build/Dockerfile", "docs/build"); err != nil {

@@ -184,9 +184,9 @@ Scan Overview for AWS Account
           "Message": "instance is bad",
           "Resolution": "Remove bad stuff",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-9999",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-9999",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-9999"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-9999"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -220,9 +220,9 @@ Scan Overview for AWS Account
           "Message": "something failed",
           "Resolution": "Remove bad stuff",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-9999",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-9999",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-9999"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-9999"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -256,9 +256,9 @@ Scan Overview for AWS Account
           "Message": "something else failed",
           "Resolution": "Remove bad stuff",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-9999",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-9999",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-9999"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-9999"
           ],
           "Status": "FAIL",
           "Layer": {},
@@ -280,9 +280,9 @@ Scan Overview for AWS Account
           "Message": "something else failed again",
           "Resolution": "Remove bad stuff",
           "Severity": "HIGH",
-          "PrimaryURL": "https://avd.aquasec.com/misconfig/avd-aws-9999",
+          "PrimaryURL": "https://avd.khulnasoft.com/misconfig/avd-aws-9999",
           "References": [
-            "https://avd.aquasec.com/misconfig/avd-aws-9999"
+            "https://avd.khulnasoft.com/misconfig/avd-aws-9999"
           ],
           "Status": "FAIL",
           "Layer": {},

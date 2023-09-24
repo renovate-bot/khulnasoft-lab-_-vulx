@@ -28,83 +28,83 @@ Total: 20 (UNKNOWN: 0, LOW: 2, MEDIUM: 10, HIGH: 8, CRITICAL: 0)
 | libcrypto1.1 | CVE-2020-1967    | HIGH     | 1.1.1c-r0         | 1.1.1g-r0     | openssl: Segmentation                 |
 |              |                  |          |                   |               | fault in SSL_check_chain              |
 |              |                  |          |                   |               | causes denial of service              |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2020-1967  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2020-1967  |
 +              +------------------+          +                   +---------------+---------------------------------------+
 |              | CVE-2021-23839   |          |                   | 1.1.1j-r0     | openssl: incorrect SSLv2              |
 |              |                  |          |                   |               | rollback protection                   |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2021-23839 |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2021-23839 |
 +              +------------------+          +                   +               +---------------------------------------+
 |              | CVE-2021-23840   |          |                   |               | openssl: integer                      |
 |              |                  |          |                   |               | overflow in CipherUpdate              |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2021-23840 |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2021-23840 |
 +              +------------------+          +                   +               +---------------------------------------+
 |              | CVE-2021-23841   |          |                   |               | openssl: NULL pointer dereference     |
 |              |                  |          |                   |               | in X509_issuer_and_serial_hash()      |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2021-23841 |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2021-23841 |
 +              +------------------+----------+                   +---------------+---------------------------------------+
 |              | CVE-2019-1547    | MEDIUM   |                   | 1.1.1d-r0     | openssl: side-channel weak            |
 |              |                  |          |                   |               | encryption vulnerability              |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2019-1547  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2019-1547  |
 +              +------------------+          +                   +               +---------------------------------------+
 |              | CVE-2019-1549    |          |                   |               | openssl: information                  |
 |              |                  |          |                   |               | disclosure in fork()                  |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2019-1549  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2019-1549  |
 +              +------------------+          +                   +---------------+---------------------------------------+
 |              | CVE-2019-1551    |          |                   | 1.1.1d-r2     | openssl: Integer overflow in RSAZ     |
 |              |                  |          |                   |               | modular exponentiation on x86_64      |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2019-1551  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2019-1551  |
 +              +------------------+          +                   +---------------+---------------------------------------+
 |              | CVE-2020-1971    |          |                   | 1.1.1i-r0     | openssl: EDIPARTYNAME                 |
 |              |                  |          |                   |               | NULL pointer de-reference             |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2020-1971  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2020-1971  |
 +              +------------------+----------+                   +---------------+---------------------------------------+
 |              | CVE-2019-1563    | LOW      |                   | 1.1.1d-r0     | openssl: information                  |
 |              |                  |          |                   |               | disclosure in PKCS7_dataDecode        |
 |              |                  |          |                   |               | and CMS_decrypt_set1_pkey             |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2019-1563  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2019-1563  |
 +--------------+------------------+----------+                   +---------------+---------------------------------------+
 | libssl1.1    | CVE-2020-1967    | HIGH     |                   | 1.1.1g-r0     | openssl: Segmentation                 |
 |              |                  |          |                   |               | fault in SSL_check_chain              |
 |              |                  |          |                   |               | causes denial of service              |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2020-1967  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2020-1967  |
 +              +------------------+          +                   +---------------+---------------------------------------+
 |              | CVE-2021-23839   |          |                   | 1.1.1j-r0     | openssl: incorrect SSLv2              |
 |              |                  |          |                   |               | rollback protection                   |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2021-23839 |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2021-23839 |
 +              +------------------+          +                   +               +---------------------------------------+
 |              | CVE-2021-23840   |          |                   |               | openssl: integer                      |
 |              |                  |          |                   |               | overflow in CipherUpdate              |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2021-23840 |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2021-23840 |
 +              +------------------+          +                   +               +---------------------------------------+
 |              | CVE-2021-23841   |          |                   |               | openssl: NULL pointer dereference     |
 |              |                  |          |                   |               | in X509_issuer_and_serial_hash()      |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2021-23841 |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2021-23841 |
 +              +------------------+----------+                   +---------------+---------------------------------------+
 |              | CVE-2019-1547    | MEDIUM   |                   | 1.1.1d-r0     | openssl: side-channel weak            |
 |              |                  |          |                   |               | encryption vulnerability              |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2019-1547  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2019-1547  |
 +              +------------------+          +                   +               +---------------------------------------+
 |              | CVE-2019-1549    |          |                   |               | openssl: information                  |
 |              |                  |          |                   |               | disclosure in fork()                  |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2019-1549  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2019-1549  |
 +              +------------------+          +                   +---------------+---------------------------------------+
 |              | CVE-2019-1551    |          |                   | 1.1.1d-r2     | openssl: Integer overflow in RSAZ     |
 |              |                  |          |                   |               | modular exponentiation on x86_64      |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2019-1551  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2019-1551  |
 +              +------------------+          +                   +---------------+---------------------------------------+
 |              | CVE-2020-1971    |          |                   | 1.1.1i-r0     | openssl: EDIPARTYNAME                 |
 |              |                  |          |                   |               | NULL pointer de-reference             |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2020-1971  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2020-1971  |
 +              +------------------+----------+                   +---------------+---------------------------------------+
 |              | CVE-2019-1563    | LOW      |                   | 1.1.1d-r0     | openssl: information                  |
 |              |                  |          |                   |               | disclosure in PKCS7_dataDecode        |
 |              |                  |          |                   |               | and CMS_decrypt_set1_pkey             |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2019-1563  |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2019-1563  |
 +--------------+------------------+----------+-------------------+---------------+---------------------------------------+
 | musl         | CVE-2020-28928   | MEDIUM   | 1.1.22-r3         | 1.1.22-r4     | In musl libc through 1.2.1,           |
 |              |                  |          |                   |               | wcsnrtombs mishandles particular      |
 |              |                  |          |                   |               | combinations of destination buffer... |
-|              |                  |          |                   |               | -->avd.aquasec.com/nvd/cve-2020-28928 |
+|              |                  |          |                   |               | -->avd.khulnasoft.com/nvd/cve-2020-28928 |
 +--------------+                  +          +                   +               +                                       +
 | musl-utils   |                  |          |                   |               |                                       |
 |              |                  |          |                   |               |                                       |

@@ -1,21 +1,21 @@
 # Additional Resources and Tutorials
-Below is a list of additional resources from Aqua Security.
+Below is a list of additional resources from Khulnasoft Security.
 
 ## Announcements
 
-- [Vul Vulnerability Scanner Joins the Aqua Open-source Family](https://blog.aquasec.com/vul-vulnerability-scanner-joins-aqua-family)
-- [Vul Image Vulnerability Scanner Now Under Apache 2.0 License](https://blog.aquasec.com/vul-open-source-vulnerability-scanner-apache2.0-license)
+- [Vul Vulnerability Scanner Joins the Khulnasoft Open-source Family](https://blog.khulnasoft.com/vul-vulnerability-scanner-joins-khulnasoft-family)
+- [Vul Image Vulnerability Scanner Now Under Apache 2.0 License](https://blog.khulnasoft.com/vul-open-source-vulnerability-scanner-apache2.0-license)
 
 ## Vulnerability Scanning
 
-- [Using Vul to Discover Vulnerabilities in VS Code Projects](https://blog.aquasec.com/vul-open-source-vulnerability-scanner-vs-code)
+- [Using Vul to Discover Vulnerabilities in VS Code Projects](https://blog.khulnasoft.com/vul-open-source-vulnerability-scanner-vs-code)
 - [How does a vulnerability scanner identify packages?](https://youtu.be/PaMnzeHBa8M)
-- [Handling Container Vulnerabilities with Open Policy Agent - Teppei Fukuda, Aqua Security](https://youtu.be/WKE2XNZ2zr4)
+- [Handling Container Vulnerabilities with Open Policy Agent - Teppei Fukuda, Khulnasoft Security](https://youtu.be/WKE2XNZ2zr4)
 
 ## CI/CD Pipelines
 
-- [DevSecOps with Vul and GitHub Actions](https://blog.aquasec.com/devsecops-with-vul-github-actions)
-- [Find Image Vulnerabilities Using GitHub and Aqua Security Vul Action](https://blog.aquasec.com/github-vulnerability-scanner-vul)
+- [DevSecOps with Vul and GitHub Actions](https://blog.khulnasoft.com/devsecops-with-vul-github-actions)
+- [Find Image Vulnerabilities Using GitHub and Khulnasoft Security Vul Action](https://blog.khulnasoft.com/github-vulnerability-scanner-vul)
 
 ## Misconfiguration Scanning
 

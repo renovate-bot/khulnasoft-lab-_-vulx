@@ -109,7 +109,7 @@ $ vul k8s --format json -o results.json cluster
                 "DiffID": "sha256:e59fc94956120a6c7629f085027578e6357b48061d45714107e79f04a81a6f0c"
               },
               "SeveritySource": "ubuntu",
-              "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2016-2781",
+              "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2016-2781",
               "DataSource": {
                 "ID": "ubuntu",
                 "Name": "Ubuntu CVE Tracker",
@@ -185,10 +185,10 @@ $ vul k8s --format json -o results.json cluster
               "Query": "data.builtin.kubernetes.KSV001.deny",
               "Resolution": "Set 'set containers[].securityContext.allowPrivilegeEscalation' to 'false'.",
               "Severity": "MEDIUM",
-              "PrimaryURL": "https://avd.aquasec.com/misconfig/ksv001",
+              "PrimaryURL": "https://avd.khulnasoft.com/misconfig/ksv001",
               "References": [
                 "https://kubernetes.io/docs/concepts/security/pod-security-standards/#restricted",
-                "https://avd.aquasec.com/misconfig/ksv001"
+                "https://avd.khulnasoft.com/misconfig/ksv001"
               ],
               "Status": "FAIL",
               "Layer": {},
@@ -209,10 +209,10 @@ $ vul k8s --format json -o results.json cluster
               "Query": "data.builtin.kubernetes.KSV003.deny",
               "Resolution": "Add 'ALL' to containers[].securityContext.capabilities.drop.",
               "Severity": "LOW",
-              "PrimaryURL": "https://avd.aquasec.com/misconfig/ksv003",
+              "PrimaryURL": "https://avd.khulnasoft.com/misconfig/ksv003",
               "References": [
                 "https://kubesec.io/basics/containers-securitycontext-capabilities-drop-index-all/",
-                "https://avd.aquasec.com/misconfig/ksv003"
+                "https://avd.khulnasoft.com/misconfig/ksv003"
               ],
               "Status": "FAIL",
               "Layer": {},
@@ -342,7 +342,7 @@ Vul has a native [Kubernetes Operator][operator] which continuously scans your K
 
 [operator]: https://kubernetes.io/docs/concepts/extend-kubernetes/operator/
 [crd]: https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/
-[vul-operator]: https://aquasecurity.github.io/vul-operator/latest
+[vul-operator]: https://khulnasoft-lab.github.io/vul-operator/latest
 
 ## SBOM
 

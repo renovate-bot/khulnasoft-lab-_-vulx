@@ -47,7 +47,7 @@
             "DiffID": "sha256:4266328c97a194b2ca52ec83bc05496596303f5e9b244ffa99cf84763a487804"
           },
           "SeveritySource": "cbl-mariner",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0261",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2022-0261",
           "DataSource": {
             "ID": "cbl-mariner",
             "Name": "CBL-Mariner Vulnerability Data",
@@ -78,7 +78,7 @@
             "DiffID": "sha256:4266328c97a194b2ca52ec83bc05496596303f5e9b244ffa99cf84763a487804"
           },
           "SeveritySource": "cbl-mariner",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-0158",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2022-0158",
           "DataSource": {
             "ID": "cbl-mariner",
             "Name": "CBL-Mariner Vulnerability Data",

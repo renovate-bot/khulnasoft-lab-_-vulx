@@ -31,7 +31,7 @@
           "Status": "affected",
           "Layer": {},
           "SeveritySource": "debian",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-18276",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-18276",
           "PkgRef": "pkg:deb/debian/bash@5.0-4?distro=debian-10.2",
           "DataSource": {
             "ID": "debian",
@@ -83,7 +83,7 @@
           "Status": "fixed",
           "Layer": {},
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-18224",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-18224",
           "PkgRef": "pkg:deb/debian/libidn2-0@2.0.5-1?distro=debian-10.2",
           "DataSource": {
             "ID": "debian",
@@ -143,7 +143,7 @@
           "Status": "fixed",
           "Layer": {},
           "SeveritySource": "ghsa",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2020-8165",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2020-8165",
           "PkgRef": "pkg:gem/activesupport@6.0.2.1?file_path=var%2Flib%2Fgems%2F2.5.0%2Fspecifications%2Factivesupport-6.0.2.1.gemspec",
           "DataSource": {
             "ID": "ghsa",

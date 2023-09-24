@@ -7,7 +7,7 @@
     "timestamp": "2023-06-20T04:32:10+00:00",
     "tools": [
       {
-        "vendor": "aquasecurity",
+        "vendor": "khulnasoft-lab",
         "name": "vul",
         "version": "0.42.1"
       }
@@ -18,7 +18,7 @@
       "name": "spring-web-5.3.22.jar",
       "properties": [
         {
-          "name": "aquasecurity:vul:SchemaVersion",
+          "name": "khulnasoft-lab:vul:SchemaVersion",
           "value": "2"
         }
       ]
@@ -33,11 +33,11 @@
       "purl": "pkg:maven/org.springframework/spring-web@5.3.22",
       "properties": [
         {
-          "name": "aquasecurity:vul:FilePath",
+          "name": "khulnasoft-lab:vul:FilePath",
           "value": "spring-web-5.3.22.jar"
         },
         {
-          "name": "aquasecurity:vul:PkgType",
+          "name": "khulnasoft-lab:vul:PkgType",
           "value": "jar"
         }
       ]

@@ -80,10 +80,10 @@ Total: 2 (HIGH: 1, CRITICAL: 1)
 ├──────────────────┼────────────────┼──────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
 │ follow-redirects │ CVE-2022-0155  │ HIGH     │ 1.14.6            │ 1.14.7        │ follow-redirects: Exposure of Private Personal Information │
 │                  │                │          │                   │               │ to an Unauthorized Actor                                   │
-│                  │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-0155                  │
+│                  │                │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2022-0155                  │
 ├──────────────────┼────────────────┼──────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
 │ glob-parent      │ CVE-2020-28469 │ CRITICAL │ 3.1.0             │ 5.1.2         │ nodejs-glob-parent: Regular expression denial of service   │
-│                  │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2020-28469                 │
+│                  │                │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2020-28469                 │
 └──────────────────┴────────────────┴──────────┴───────────────────┴───────────────┴────────────────────────────────────────────────────────────┘
 
 Dependency Origin Tree (Reversed)

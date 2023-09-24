@@ -1,5 +1,5 @@
 site_name: Vul
-site_url: https://aquasecurity.github.io/vul/
+site_url: https://khulnasoft-lab.github.io/vul/
 site_description: A Simple and Comprehensive Vulnerability Scanner for Containers and other Artifacts, Suitable for CI
 docs_dir: docs/
 repo_name: GitHub
@@ -217,7 +217,7 @@ extra:
     default: latest
   social:
     - icon: fontawesome/brands/twitter
-      link: https://twitter.com/AquaVul
+      link: https://twitter.com/KhulnasoftVul
     - icon: fontawesome/brands/github
       link: https://github.com/khulnasoft-lab/vul
     - icon: fontawesome/brands/slack

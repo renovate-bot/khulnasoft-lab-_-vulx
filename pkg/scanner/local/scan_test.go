@@ -105,7 +105,7 @@ func TestScanner_Scan(t *testing.T) {
 							Layer: ftypes.Layer{
 								DiffID: "sha256:ebf12965380b39889c99a9c02e82ba465f887b45975b6e389d42e9e6a3857888",
 							},
-							PrimaryURL: "https://avd.aquasec.com/nvd/cve-2020-9999",
+							PrimaryURL: "https://avd.khulnasoft.com/nvd/cve-2020-9999",
 							Vulnerability: dbTypes.Vulnerability{
 								Title:       "dos",
 								Description: "dos vulnerability",
@@ -128,7 +128,7 @@ func TestScanner_Scan(t *testing.T) {
 							Layer: ftypes.Layer{
 								DiffID: "sha256:0ea33a93585cf1917ba522b2304634c3073654062d5282c1346322967790ef33",
 							},
-							PrimaryURL: "https://avd.aquasec.com/nvd/cve-2014-0081",
+							PrimaryURL: "https://avd.khulnasoft.com/nvd/cve-2014-0081",
 							Vulnerability: dbTypes.Vulnerability{
 								Title:       "xss",
 								Description: "xss vulnerability",
@@ -248,7 +248,7 @@ func TestScanner_Scan(t *testing.T) {
 							Layer: ftypes.Layer{
 								DiffID: "sha256:ebf12965380b39889c99a9c02e82ba465f887b45975b6e389d42e9e6a3857888",
 							},
-							PrimaryURL: "https://avd.aquasec.com/nvd/cve-2020-9999",
+							PrimaryURL: "https://avd.khulnasoft.com/nvd/cve-2020-9999",
 							Vulnerability: dbTypes.Vulnerability{
 								Title:       "dos",
 								Description: "dos vulnerability",
@@ -281,7 +281,7 @@ func TestScanner_Scan(t *testing.T) {
 							Layer: ftypes.Layer{
 								DiffID: "sha256:0ea33a93585cf1917ba522b2304634c3073654062d5282c1346322967790ef33",
 							},
-							PrimaryURL: "https://avd.aquasec.com/nvd/cve-2014-0081",
+							PrimaryURL: "https://avd.khulnasoft.com/nvd/cve-2014-0081",
 							Vulnerability: dbTypes.Vulnerability{
 								Title:       "xss",
 								Description: "xss vulnerability",
@@ -478,7 +478,7 @@ func TestScanner_Scan(t *testing.T) {
 							Layer: ftypes.Layer{
 								DiffID: "sha256:9922bc15eeefe1637b803ef2106f178152ce19a391f24aec838cbe2e48e73303",
 							},
-							PrimaryURL: "https://avd.aquasec.com/nvd/cve-2014-0081",
+							PrimaryURL: "https://avd.khulnasoft.com/nvd/cve-2014-0081",
 							Vulnerability: dbTypes.Vulnerability{
 								Title:       "xss",
 								Description: "xss vulnerability",
@@ -556,7 +556,7 @@ func TestScanner_Scan(t *testing.T) {
 							InstalledVersion: "4.0.2",
 							FixedVersion:     "4.0.3, 3.2.17",
 							Status:           dbTypes.StatusFixed,
-							PrimaryURL:       "https://avd.aquasec.com/nvd/cve-2014-0081",
+							PrimaryURL:       "https://avd.khulnasoft.com/nvd/cve-2014-0081",
 							Vulnerability: dbTypes.Vulnerability{
 								Title:       "xss",
 								Description: "xss vulnerability",
@@ -655,7 +655,7 @@ func TestScanner_Scan(t *testing.T) {
 							Layer: ftypes.Layer{
 								DiffID: "sha256:0ea33a93585cf1917ba522b2304634c3073654062d5282c1346322967790ef33",
 							},
-							PrimaryURL: "https://avd.aquasec.com/nvd/cve-2014-0081",
+							PrimaryURL: "https://avd.khulnasoft.com/nvd/cve-2014-0081",
 							Vulnerability: dbTypes.Vulnerability{
 								Title:       "xss",
 								Description: "xss vulnerability",
@@ -733,7 +733,7 @@ func TestScanner_Scan(t *testing.T) {
 							Layer: ftypes.Layer{
 								DiffID: "sha256:9922bc15eeefe1637b803ef2106f178152ce19a391f24aec838cbe2e48e73303",
 							},
-							PrimaryURL: "https://avd.aquasec.com/nvd/cve-2014-0081",
+							PrimaryURL: "https://avd.khulnasoft.com/nvd/cve-2014-0081",
 							Vulnerability: dbTypes.Vulnerability{
 								Title:       "xss",
 								Description: "xss vulnerability",
@@ -852,7 +852,7 @@ func TestScanner_Scan(t *testing.T) {
 							Layer: ftypes.Layer{
 								DiffID: "sha256:5cb2a5009179b1e78ecfef81a19756328bb266456cf9a9dbbcf9af8b83b735f0",
 							},
-							PrimaryURL: "https://avd.aquasec.com/nvd/cve-2014-0081",
+							PrimaryURL: "https://avd.khulnasoft.com/nvd/cve-2014-0081",
 							Vulnerability: dbTypes.Vulnerability{
 								Title:       "xss",
 								Description: "xss vulnerability",
@@ -994,9 +994,9 @@ func TestScanner_Scan(t *testing.T) {
 							Message:    "No issues found",
 							Namespace:  "builtin.kubernetes.id200",
 							Severity:   "MEDIUM",
-							PrimaryURL: "https://avd.aquasec.com/misconfig/id200",
+							PrimaryURL: "https://avd.khulnasoft.com/misconfig/id200",
 							References: []string{
-								"https://avd.aquasec.com/misconfig/id200",
+								"https://avd.khulnasoft.com/misconfig/id200",
 							},
 							Status: types.StatusPassed,
 							Layer: ftypes.Layer{

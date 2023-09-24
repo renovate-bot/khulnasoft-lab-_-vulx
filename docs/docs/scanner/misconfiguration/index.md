@@ -27,7 +27,7 @@ $ vul config [YOUR_IaC_DIRECTORY]
     ══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
     When using a 'FROM' statement you should use a specific tag to avoid uncontrolled behavior when the image is updated.
     
-    See https://avd.aquasec.com/misconfig/ds001
+    See https://avd.khulnasoft.com/misconfig/ds001
     ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
     Dockerfile:1
     ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -70,7 +70,7 @@ You can specify `--scanners vuln,config,secret` to enable vulnerability and secr
     ├──────────┼────────────────┼──────────┼───────────────────┼───────────────┼───────────────────────────────────────────────────────────┤
     │ httplib2 │ CVE-2021-21240 │ HIGH     │ 0.12.1            │ 0.19.0        │ python-httplib2: Regular expression denial of service via │
     │          │                │          │                   │               │ malicious header                                          │
-    │          │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2021-21240                │
+    │          │                │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2021-21240                │
     └──────────┴────────────────┴──────────┴───────────────────┴───────────────┴───────────────────────────────────────────────────────────┘
     
     Dockerfile (dockerfile)
@@ -82,7 +82,7 @@ You can specify `--scanners vuln,config,secret` to enable vulnerability and secr
     ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
     Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.
     
-    See https://avd.aquasec.com/misconfig/ds002
+    See https://avd.khulnasoft.com/misconfig/ds002
     ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
     Dockerfile:3
     ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -119,7 +119,7 @@ HIGH: Specify at least 1 USER command in Dockerfile with non-root user as argume
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 Running containers with 'root' user can lead to a container escape situation. It is a best practice to run containers as non-root users, which can be done by adding a 'USER' statement to the Dockerfile.
 
-See https://avd.aquasec.com/misconfig/ds002
+See https://avd.khulnasoft.com/misconfig/ds002
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 
@@ -133,7 +133,7 @@ MEDIUM: Container 'hello-kubernetes' of Deployment 'hello-kubernetes' should set
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.
 
-See https://avd.aquasec.com/misconfig/ksv001
+See https://avd.khulnasoft.com/misconfig/ksv001
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  deployment.yaml:16-19
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -148,7 +148,7 @@ HIGH: Deployment 'hello-kubernetes' should not specify '/var/run/docker.socker' 
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 Mounting docker.sock from the host can give the container full root access to the host.
 
-See https://avd.aquasec.com/misconfig/ksv006
+See https://avd.khulnasoft.com/misconfig/ksv006
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  deployment.yaml:6-29
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -169,7 +169,7 @@ MEDIUM: Container 'hello-kubernetes' of Deployment 'hello-kubernetes' should set
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges.
 
-See https://avd.aquasec.com/misconfig/ksv012
+See https://avd.khulnasoft.com/misconfig/ksv012
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  deployment.yaml:16-19
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -184,7 +184,7 @@ MEDIUM: Deployment 'hello-kubernetes' should not set 'spec.template.volumes.host
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 HostPath volumes must be forbidden.
 
-See https://avd.aquasec.com/misconfig/ksv023
+See https://avd.khulnasoft.com/misconfig/ksv023
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  deployment.yaml:6-29
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -205,7 +205,7 @@ MEDIUM: Deployment 'hello-kubernetes' should set 'securityContext.sysctl' to the
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 Sysctls can disable security mechanisms or affect all containers on a host, and should be disallowed except for an allowed 'safe' subset. A sysctl is considered safe if it is namespaced in the container or the Pod, and it is isolated from other Pods or processes on the same Node.
 
-See https://avd.aquasec.com/misconfig/ksv026
+See https://avd.khulnasoft.com/misconfig/ksv026
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  deployment.yaml:6-29
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -232,7 +232,7 @@ MEDIUM: Container 'mysql' of StatefulSet 'mysql' should set 'securityContext.all
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 A program inside the container can elevate its own privileges and run as root, which might give the program control over the container and node.
 
-See https://avd.aquasec.com/misconfig/ksv001
+See https://avd.khulnasoft.com/misconfig/ksv001
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  mysql-8.8.26.tar:templates/primary/statefulset.yaml:56-130
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -253,7 +253,7 @@ MEDIUM: Container 'mysql' of StatefulSet 'mysql' should set 'securityContext.run
 ═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 'runAsNonRoot' forces the running image to run as a non-root user to ensure least privileges.
 
-See https://avd.aquasec.com/misconfig/ksv012
+See https://avd.khulnasoft.com/misconfig/ksv012
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
  mysql-8.8.26.tar:templates/primary/statefulset.yaml:56-130
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

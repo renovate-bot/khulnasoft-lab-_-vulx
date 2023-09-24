@@ -205,7 +205,7 @@
             "DiffID": "sha256:192960b65b1579403b36581de471fd2bd75a043b4743552f27ba16623f02c68f"
           },
           "SeveritySource": "ghsa",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-22965",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2022-22965",
           "DataSource": {
             "ID": "ghsa",
             "Name": "GitHub Security Advisory Maven",

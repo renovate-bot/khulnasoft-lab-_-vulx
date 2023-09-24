@@ -64,7 +64,7 @@
             "DiffID": "sha256:984fe1509738f6f00f34d9be7398b07ebeb8b98dda077ff6be2cdb87111b73cf"
           },
           "SeveritySource": "amazon",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5481",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5481",
           "DataSource": {
             "ID": "amazon",
             "Name": "Amazon Linux Security Center",

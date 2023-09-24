@@ -33,7 +33,7 @@
           "Status": "fixed",
           "Layer": {},
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-38177",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2022-38177",
           "DataSource": {
             "ID": "amazon",
             "Name": "Amazon Linux Security Center",

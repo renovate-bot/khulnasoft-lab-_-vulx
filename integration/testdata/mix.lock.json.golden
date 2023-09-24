@@ -151,7 +151,7 @@
           "Status": "fixed",
           "Layer": {},
           "SeveritySource": "ghsa",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-42975",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2022-42975",
           "DataSource": {
             "ID": "ghsa",
             "Name": "GitHub Security Advisory Erlang",

@@ -79,7 +79,7 @@ const (
 	aws = `(aws)?_?`
 )
 
-// This function is exported for vul-plugin-aqua purposes only
+// This function is exported for vul-plugin-khulnasoft purposes only
 func GetSecretRulesMetadata() []defsecRules.Check {
 	return lo.Map(builtinRules, func(rule Rule, i int) defsecRules.Check {
 		return defsecRules.Check{

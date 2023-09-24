@@ -220,10 +220,10 @@ See https://google.com/search?q=bad%20config
 						Query:       "data..",
 						Resolution:  "Set a more restrictive cidr range",
 						Severity:    "CRITICAL",
-						PrimaryURL:  "https://avd.aquasec.com/misconfig/avd-aws-0107",
+						PrimaryURL:  "https://avd.khulnasoft.com/misconfig/avd-aws-0107",
 						References: []string{
 							"https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html",
-							"https://avd.aquasec.com/misconfig/avd-aws-0107",
+							"https://avd.khulnasoft.com/misconfig/avd-aws-0107",
 						},
 						Status: "FAIL",
 						CauseMetadata: ftypes.CauseMetadata{
@@ -316,7 +316,7 @@ CRITICAL: Security group rule allows ingress from public internet.
 ════════════════════════════════════════
 Opening up ports to the public internet is generally to be avoided. You should restrict access to IP addresses or ranges that explicitly require it where possible.
 
-See https://avd.aquasec.com/misconfig/avd-aws-0107
+See https://avd.khulnasoft.com/misconfig/avd-aws-0107
 ────────────────────────────────────────
  terraform-aws-modules/security-group/aws/main.tf:197-204
    via terraform-aws-modules/security-group/aws/main.tf:191-227 (aws_security_group_rule.ingress_with_cidr_blocks[0])

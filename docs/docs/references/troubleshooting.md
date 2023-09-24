@@ -128,7 +128,7 @@ If vul is running behind corporate firewall, you have to add the following urls 
 ### Denied
 
 !!! error
-    GET https://ghcr.io/token?scope=repository%3Aaquasecurity%2Fvul-db%3Apull&service=ghcr.io: DENIED: denied
+    GET https://ghcr.io/token?scope=repository%3Akhulnasoft-lab%2Fvul-db%3Apull&service=ghcr.io: DENIED: denied
 
 Your local GHCR (GitHub Container Registry) token might be expired.
 Please remove the token and try downloading the DB again.

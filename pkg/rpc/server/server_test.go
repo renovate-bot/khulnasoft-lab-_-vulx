@@ -82,7 +82,7 @@ func TestScanServer_Scan(t *testing.T) {
 										LastModifiedDate: utils.MustTimeParse("2020-01-01T01:01:00Z"),
 										PublishedDate:    utils.MustTimeParse("2001-01-01T01:01:00Z"),
 									},
-									PrimaryURL: "https://avd.aquasec.com/nvd/cve-2019-0001",
+									PrimaryURL: "https://avd.khulnasoft.com/nvd/cve-2019-0001",
 									DataSource: &dbTypes.DataSource{
 										Name: "DOS vulnerabilities",
 										URL:  "https://vuld-db-example.com/",
@@ -121,7 +121,7 @@ func TestScanServer_Scan(t *testing.T) {
 								VendorSeverity: map[string]common.Severity{
 									string(vulnerability.NVD): common.Severity_MEDIUM,
 								},
-								PrimaryUrl:  "https://avd.aquasec.com/nvd/cve-2019-0001",
+								PrimaryUrl:  "https://avd.khulnasoft.com/nvd/cve-2019-0001",
 								Title:       "dos",
 								Description: "dos vulnerability",
 								References:  []string{"http://example.com"},

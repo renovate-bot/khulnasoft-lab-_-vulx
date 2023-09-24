@@ -64,7 +64,7 @@
             "DiffID": "sha256:f73e7e79899a33b4b9b78da62efb71520844f8dd518f3c390e27bc3063bce307"
           },
           "SeveritySource": "debian",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-18276",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-18276",
           "DataSource": {
             "ID": "debian",
             "Name": "Debian Security Tracker",
@@ -119,7 +119,7 @@
             "DiffID": "sha256:f73e7e79899a33b4b9b78da62efb71520844f8dd518f3c390e27bc3063bce307"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5094",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5094",
           "DataSource": {
             "ID": "debian",
             "Name": "Debian Security Tracker",
@@ -180,7 +180,7 @@
             "DiffID": "sha256:f73e7e79899a33b4b9b78da62efb71520844f8dd518f3c390e27bc3063bce307"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5094",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5094",
           "DataSource": {
             "ID": "debian",
             "Name": "Debian Security Tracker",
@@ -241,7 +241,7 @@
             "DiffID": "sha256:f73e7e79899a33b4b9b78da62efb71520844f8dd518f3c390e27bc3063bce307"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5094",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5094",
           "DataSource": {
             "ID": "debian",
             "Name": "Debian Security Tracker",
@@ -302,7 +302,7 @@
             "DiffID": "sha256:f73e7e79899a33b4b9b78da62efb71520844f8dd518f3c390e27bc3063bce307"
           },
           "SeveritySource": "nvd",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5094",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5094",
           "DataSource": {
             "ID": "debian",
             "Name": "Debian Security Tracker",

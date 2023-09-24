@@ -18,7 +18,7 @@ linters-settings:
   misspell:
     locale: US
   goimports:
-    local-prefixes: github.com/aquasecurity
+    local-prefixes: github.com/khulnasoft-lab
   gosec:
     excludes:
       - G101

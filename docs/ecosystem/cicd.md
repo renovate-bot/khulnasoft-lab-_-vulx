@@ -50,7 +50,7 @@ Example Vul step in pipeline
 ```yml
 pipeline:
   securitycheck:
-    image: aquasec/vul:latest
+    image: khulnasoft/vul:latest
     commands:
       # use any vul command, if exit code is 0 woodpecker marks it as passed, else it assumes it failed
       - vul fs --exit-code 1 --skip-dirs web/ --skip-dirs docs/ --severity MEDIUM,HIGH,CRITICAL .

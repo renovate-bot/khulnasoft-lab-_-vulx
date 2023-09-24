@@ -81,7 +81,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 									DiffID: "sha256:d871dadfb37b53ef1ca45be04fc527562b91989991a8f545345ae3be0b93f92a",
 								},
 								SeveritySource: vulnerability.RedHatOVAL,
-								PrimaryURL:     "https://avd.aquasec.com/nvd/cve-2018-20623",
+								PrimaryURL:     "https://avd.khulnasoft.com/nvd/cve-2018-20623",
 								DataSource: &dtypes.DataSource{
 									ID:   vulnerability.RedHatOVAL,
 									Name: "Red Hat OVAL v2",
@@ -189,7 +189,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 					Tools: &[]cdx.Tool{
 						{
 							Name:    "vul",
-							Vendor:  "aquasecurity",
+							Vendor:  "khulnasoft-lab",
 							Version: "dev",
 						},
 					},
@@ -200,27 +200,27 @@ func TestMarshaler_Marshal(t *testing.T) {
 						Name:       "rails:latest",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:DiffID",
+								Name:  "khulnasoft-lab:vul:DiffID",
 								Value: "sha256:d871dadfb37b53ef1ca45be04fc527562b91989991a8f545345ae3be0b93f92a",
 							},
 							{
-								Name:  "aquasecurity:vul:ImageID",
+								Name:  "khulnasoft-lab:vul:ImageID",
 								Value: "sha256:5d0da3dc976460b72c77d94c8a1ad043720b0416bfc16c52c45d4847e53fadb6",
 							},
 							{
-								Name:  "aquasecurity:vul:RepoDigest",
+								Name:  "khulnasoft-lab:vul:RepoDigest",
 								Value: "rails@sha256:a27fd8080b517143cbbbab9dfb7c8571c40d67d534bbdee55bd6c473f432b177",
 							},
 							{
-								Name:  "aquasecurity:vul:RepoTag",
+								Name:  "khulnasoft-lab:vul:RepoTag",
 								Value: "rails:latest",
 							},
 							{
-								Name:  "aquasecurity:vul:SchemaVersion",
+								Name:  "khulnasoft-lab:vul:SchemaVersion",
 								Value: "2",
 							},
 							{
-								Name:  "aquasecurity:vul:Size",
+								Name:  "khulnasoft-lab:vul:Size",
 								Value: "1024",
 							},
 						},
@@ -234,11 +234,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						Version: "8.3.2011",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:Class",
+								Name:  "khulnasoft-lab:vul:Class",
 								Value: "os-pkgs",
 							},
 							{
-								Name:  "aquasecurity:vul:Type",
+								Name:  "khulnasoft-lab:vul:Type",
 								Value: "centos",
 							},
 						},
@@ -250,11 +250,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						Version: "",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:Class",
+								Name:  "khulnasoft-lab:vul:Class",
 								Value: "lang-pkgs",
 							},
 							{
-								Name:  "aquasecurity:vul:Type",
+								Name:  "khulnasoft-lab:vul:Type",
 								Value: "bundler",
 							},
 						},
@@ -266,11 +266,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						Version: "",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:Class",
+								Name:  "khulnasoft-lab:vul:Class",
 								Value: "lang-pkgs",
 							},
 							{
-								Name:  "aquasecurity:vul:Type",
+								Name:  "khulnasoft-lab:vul:Type",
 								Value: "bundler",
 							},
 						},
@@ -282,11 +282,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						Version: "",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:Class",
+								Name:  "khulnasoft-lab:vul:Class",
 								Value: "lang-pkgs",
 							},
 							{
-								Name:  "aquasecurity:vul:Type",
+								Name:  "khulnasoft-lab:vul:Type",
 								Value: "dotnet-core",
 							},
 						},
@@ -298,11 +298,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						Version: "",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:Class",
+								Name:  "khulnasoft-lab:vul:Class",
 								Value: "lang-pkgs",
 							},
 							{
-								Name:  "aquasecurity:vul:Type",
+								Name:  "khulnasoft-lab:vul:Type",
 								Value: "gobinary",
 							},
 						},
@@ -315,11 +315,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:gem/actioncontroller@7.0.0",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:PkgID",
+								Name:  "khulnasoft-lab:vul:PkgID",
 								Value: "actioncontroller@7.0.0",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "bundler",
 							},
 						},
@@ -332,11 +332,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:gem/actionpack@7.0.0",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:PkgID",
+								Name:  "khulnasoft-lab:vul:PkgID",
 								Value: "actionpack@7.0.0",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "bundler",
 							},
 						},
@@ -349,7 +349,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:golang/golang.org/x/crypto@v0.0.0-20210421170649-83a5a9bb288b",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "gobinary",
 							},
 						},
@@ -362,11 +362,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:nuget/Newtonsoft.Json@9.0.1",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:PkgID",
+								Name:  "khulnasoft-lab:vul:PkgID",
 								Value: "Newtonsoft.Json@9.0.1",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "dotnet-core",
 							},
 						},
@@ -389,23 +389,23 @@ func TestMarshaler_Marshal(t *testing.T) {
 						},
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:PkgID",
+								Name:  "khulnasoft-lab:vul:PkgID",
 								Value: "binutils@2.30-93.el8",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "centos",
 							},
 							{
-								Name:  "aquasecurity:vul:SrcName",
+								Name:  "khulnasoft-lab:vul:SrcName",
 								Value: "binutils",
 							},
 							{
-								Name:  "aquasecurity:vul:SrcRelease",
+								Name:  "khulnasoft-lab:vul:SrcRelease",
 								Value: "93.el8",
 							},
 							{
-								Name:  "aquasecurity:vul:SrcVersion",
+								Name:  "khulnasoft-lab:vul:SrcVersion",
 								Value: "2.30",
 							},
 						},
@@ -644,7 +644,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 								InstalledVersion: "7.0.0",
 								FixedVersion:     "~> 5.2.6, >= 5.2.6.2, ~> 6.0.4, >= 6.0.4.6, ~> 6.1.4, >= 6.1.4.6, >= 7.0.2.2",
 								SeveritySource:   vulnerability.RubySec,
-								PrimaryURL:       "https://avd.aquasec.com/nvd/cve-2022-23633",
+								PrimaryURL:       "https://avd.khulnasoft.com/nvd/cve-2022-23633",
 								DataSource: &dtypes.DataSource{
 									ID:   vulnerability.RubySec,
 									Name: "Ruby Advisory Database",
@@ -687,7 +687,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 								InstalledVersion: "7.0.1",
 								FixedVersion:     "~> 5.2.6, >= 5.2.6.2, ~> 6.0.4, >= 6.0.4.6, ~> 6.1.4, >= 6.1.4.6, >= 7.0.2.2",
 								SeveritySource:   vulnerability.RubySec,
-								PrimaryURL:       "https://avd.aquasec.com/nvd/cve-2022-23633",
+								PrimaryURL:       "https://avd.khulnasoft.com/nvd/cve-2022-23633",
 								DataSource: &dtypes.DataSource{
 									ID:   vulnerability.RubySec,
 									Name: "Ruby Advisory Database",
@@ -738,7 +738,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 					Tools: &[]cdx.Tool{
 						{
 							Name:    "vul",
-							Vendor:  "aquasecurity",
+							Vendor:  "khulnasoft-lab",
 							Version: "dev",
 						},
 					},
@@ -749,19 +749,19 @@ func TestMarshaler_Marshal(t *testing.T) {
 						Name:       "centos:latest",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:ImageID",
+								Name:  "khulnasoft-lab:vul:ImageID",
 								Value: "sha256:5d0da3dc976460b72c77d94c8a1ad043720b0416bfc16c52c45d4847e53fadb6",
 							},
 							{
-								Name:  "aquasecurity:vul:RepoTag",
+								Name:  "khulnasoft-lab:vul:RepoTag",
 								Value: "centos:latest",
 							},
 							{
-								Name:  "aquasecurity:vul:SchemaVersion",
+								Name:  "khulnasoft-lab:vul:SchemaVersion",
 								Value: "2",
 							},
 							{
-								Name:  "aquasecurity:vul:Size",
+								Name:  "khulnasoft-lab:vul:Size",
 								Value: "1024",
 							},
 						},
@@ -775,11 +775,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						Version: "8.3.2011",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:Class",
+								Name:  "khulnasoft-lab:vul:Class",
 								Value: "os-pkgs",
 							},
 							{
-								Name:  "aquasecurity:vul:Type",
+								Name:  "khulnasoft-lab:vul:Type",
 								Value: "centos",
 							},
 						},
@@ -792,19 +792,19 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:gem/actionpack@7.0.0",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:FilePath",
+								Name:  "khulnasoft-lab:vul:FilePath",
 								Value: "tools/project-john/specifications/actionpack.gemspec",
 							},
 							{
-								Name:  "aquasecurity:vul:LayerDiffID",
+								Name:  "khulnasoft-lab:vul:LayerDiffID",
 								Value: "sha256:ccb64cf0b7ba2e50741d0b64cae324eb5de3b1e2f580bbf177e721b67df38488",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgID",
+								Name:  "khulnasoft-lab:vul:PkgID",
 								Value: "actionpack@7.0.0",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "gemspec",
 							},
 						},
@@ -817,19 +817,19 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:gem/actionpack@7.0.1",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:FilePath",
+								Name:  "khulnasoft-lab:vul:FilePath",
 								Value: "tools/project-doe/specifications/actionpack.gemspec",
 							},
 							{
-								Name:  "aquasecurity:vul:LayerDiffID",
+								Name:  "khulnasoft-lab:vul:LayerDiffID",
 								Value: "sha256:ccb64cf0b7ba2e50741d0b64cae324eb5de3b1e2f580bbf177e721b67df38488",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgID",
+								Name:  "khulnasoft-lab:vul:PkgID",
 								Value: "actionpack@7.0.1",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "gemspec",
 							},
 						},
@@ -849,27 +849,27 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:rpm/centos/acl@2.2.53-1.el8?arch=aarch64&epoch=1&distro=centos-8.3.2011",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:PkgID",
+								Name:  "khulnasoft-lab:vul:PkgID",
 								Value: "acl@2.2.53-1.el8",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "centos",
 							},
 							{
-								Name:  "aquasecurity:vul:SrcEpoch",
+								Name:  "khulnasoft-lab:vul:SrcEpoch",
 								Value: "1",
 							},
 							{
-								Name:  "aquasecurity:vul:SrcName",
+								Name:  "khulnasoft-lab:vul:SrcName",
 								Value: "acl",
 							},
 							{
-								Name:  "aquasecurity:vul:SrcRelease",
+								Name:  "khulnasoft-lab:vul:SrcRelease",
 								Value: "1.el8",
 							},
 							{
-								Name:  "aquasecurity:vul:SrcVersion",
+								Name:  "khulnasoft-lab:vul:SrcVersion",
 								Value: "2.2.53",
 							},
 						},
@@ -895,23 +895,23 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:rpm/centos/glibc@2.28-151.el8?arch=aarch64&distro=centos-8.3.2011",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:PkgID",
+								Name:  "khulnasoft-lab:vul:PkgID",
 								Value: "glibc@2.28-151.el8",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "centos",
 							},
 							{
-								Name:  "aquasecurity:vul:SrcName",
+								Name:  "khulnasoft-lab:vul:SrcName",
 								Value: "glibc",
 							},
 							{
-								Name:  "aquasecurity:vul:SrcRelease",
+								Name:  "khulnasoft-lab:vul:SrcRelease",
 								Value: "151.el8",
 							},
 							{
-								Name:  "aquasecurity:vul:SrcVersion",
+								Name:  "khulnasoft-lab:vul:SrcVersion",
 								Value: "2.28",
 							},
 						},
@@ -1081,7 +1081,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 					Tools: &[]cdx.Tool{
 						{
 							Name:    "vul",
-							Vendor:  "aquasecurity",
+							Vendor:  "khulnasoft-lab",
 							Version: "dev",
 						},
 					},
@@ -1091,7 +1091,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 						Name:   "masahiro331/CVE-2021-41098",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:SchemaVersion",
+								Name:  "khulnasoft-lab:vul:SchemaVersion",
 								Value: "2",
 							},
 						},
@@ -1104,11 +1104,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						Name:   "Gemfile.lock",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:Class",
+								Name:  "khulnasoft-lab:vul:Class",
 								Value: "lang-pkgs",
 							},
 							{
-								Name:  "aquasecurity:vul:Type",
+								Name:  "khulnasoft-lab:vul:Type",
 								Value: "bundler",
 							},
 						},
@@ -1121,7 +1121,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:gem/actioncable@6.1.4.1",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "bundler",
 							},
 						},
@@ -1135,11 +1135,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:maven/org.springframework/spring-web@5.3.22",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:FilePath",
+								Name:  "khulnasoft-lab:vul:FilePath",
 								Value: "spring-web-5.3.22.jar",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "jar",
 							},
 						},
@@ -1202,7 +1202,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 								InstalledVersion: "1.20.0",
 								FixedVersion:     "1.22.0",
 								SeveritySource:   vulnerability.GHSA,
-								PrimaryURL:       "https://avd.aquasec.com/nvd/cve-2023-34468",
+								PrimaryURL:       "https://avd.khulnasoft.com/nvd/cve-2023-34468",
 								DataSource: &dtypes.DataSource{
 									ID:   vulnerability.GHSA,
 									Name: "GitHub Security Advisory Maven",
@@ -1244,7 +1244,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 								InstalledVersion: "1.20.0",
 								FixedVersion:     "1.22.0",
 								SeveritySource:   vulnerability.GHSA,
-								PrimaryURL:       "https://avd.aquasec.com/nvd/cve-2023-34468",
+								PrimaryURL:       "https://avd.khulnasoft.com/nvd/cve-2023-34468",
 								DataSource: &dtypes.DataSource{
 									ID:   vulnerability.GHSA,
 									Name: "GitHub Security Advisory Maven",
@@ -1295,7 +1295,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 					Tools: &[]cdx.Tool{
 						{
 							Name:    "vul",
-							Vendor:  "aquasecurity",
+							Vendor:  "khulnasoft-lab",
 							Version: "dev",
 						},
 					},
@@ -1305,7 +1305,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 						Name:   "CVE-2023-34468",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:SchemaVersion",
+								Name:  "khulnasoft-lab:vul:SchemaVersion",
 								Value: "2",
 							},
 						},
@@ -1321,11 +1321,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:maven/org.apache.nifi/nifi-dbcp-base@1.20.0",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:FilePath",
+								Name:  "khulnasoft-lab:vul:FilePath",
 								Value: "nifi-dbcp-base-1.20.0.jar",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "jar",
 							},
 						},
@@ -1339,11 +1339,11 @@ func TestMarshaler_Marshal(t *testing.T) {
 						PackageURL: "pkg:maven/org.apache.nifi/nifi-hikari-dbcp-service@1.20.0",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:FilePath",
+								Name:  "khulnasoft-lab:vul:FilePath",
 								Value: "nifi-hikari-dbcp-service-1.20.0.jar",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "jar",
 							},
 						},
@@ -1468,7 +1468,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 					Tools: &[]cdx.Tool{
 						{
 							Name:    "vul",
-							Vendor:  "aquasecurity",
+							Vendor:  "khulnasoft-lab",
 							Version: "dev",
 						},
 					},
@@ -1478,7 +1478,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 						BOMRef: "3ff14136-e09f-4df9-80ea-000000000002",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:SchemaVersion",
+								Name:  "khulnasoft-lab:vul:SchemaVersion",
 								Value: "2",
 							},
 						},
@@ -1500,19 +1500,19 @@ func TestMarshaler_Marshal(t *testing.T) {
 						},
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:FilePath",
+								Name:  "khulnasoft-lab:vul:FilePath",
 								Value: "usr/local/lib/ruby/gems/3.1.0/gems/typeprof-0.21.1/vscode/package.json",
 							},
 							{
-								Name:  "aquasecurity:vul:LayerDiffID",
+								Name:  "khulnasoft-lab:vul:LayerDiffID",
 								Value: "sha256:661c3fd3cc16b34c070f3620ca6b03b6adac150f9a7e5d0e3c707a159990f88e",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgID",
+								Name:  "khulnasoft-lab:vul:PkgID",
 								Value: "ruby-typeprof@0.20.1",
 							},
 							{
-								Name:  "aquasecurity:vul:PkgType",
+								Name:  "khulnasoft-lab:vul:PkgType",
 								Value: "node-pkg",
 							},
 						},
@@ -1553,7 +1553,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 					Tools: &[]cdx.Tool{
 						{
 							Name:    "vul",
-							Vendor:  "aquasecurity",
+							Vendor:  "khulnasoft-lab",
 							Version: "dev",
 						},
 					},
@@ -1563,7 +1563,7 @@ func TestMarshaler_Marshal(t *testing.T) {
 						BOMRef: "3ff14136-e09f-4df9-80ea-000000000002",
 						Properties: &[]cdx.Property{
 							{
-								Name:  "aquasecurity:vul:SchemaVersion",
+								Name:  "khulnasoft-lab:vul:SchemaVersion",
 								Value: "2",
 							},
 						},

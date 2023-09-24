@@ -71,8 +71,8 @@ There are several ways that you can install the Vul Operator in your cluster. In
 
 Please follow the Vul Operator documentation for further information on:
 
-- [Installation of the Vul Operator](https://aquasecurity.github.io/vul-operator/latest/getting-started/installation/)
-- [Getting started guide](https://aquasecurity.github.io/vul-operator/latest/getting-started/quick-start/)
+- [Installation of the Vul Operator](https://khulnasoft-lab.github.io/vul-operator/latest/getting-started/installation/)
+- [Getting started guide](https://khulnasoft-lab.github.io/vul-operator/latest/getting-started/quick-start/)
 
 
 

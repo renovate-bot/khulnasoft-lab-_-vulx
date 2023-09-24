@@ -23,7 +23,7 @@ var (
 	_ easyjson.Marshaler
 )
 
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize(in *jlexer.Lexer, out *StringSlice) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize(in *jlexer.Lexer, out *StringSlice) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		in.Skip()
@@ -51,7 +51,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize(in *jlexer
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize(out *jwriter.Writer, in StringSlice) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize(out *jwriter.Writer, in StringSlice) {
 	if in == nil && (out.Flags&jwriter.NilSliceAsEmpty) == 0 {
 		out.RawString("null")
 	} else {
@@ -69,27 +69,27 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize(out *jwrit
 // MarshalJSON supports json.Marshaler interface
 func (v StringSlice) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize(&w, v)
+	easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
 func (v StringSlice) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize(w, v)
+	easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
 func (v *StringSlice) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize(&r, v)
+	easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
 func (v *StringSlice) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize(l, v)
+	easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize(l, v)
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize1(in *jlexer.Lexer, out *Results) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize1(in *jlexer.Lexer, out *Results) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		in.Skip()
@@ -117,7 +117,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize1(in *jlexe
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize1(out *jwriter.Writer, in Results) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize1(out *jwriter.Writer, in Results) {
 	if in == nil && (out.Flags&jwriter.NilSliceAsEmpty) == 0 {
 		out.RawString("null")
 	} else {
@@ -135,27 +135,27 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize1(out *jwri
 // MarshalJSON supports json.Marshaler interface
 func (v Results) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize1(&w, v)
+	easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize1(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
 func (v Results) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize1(w, v)
+	easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize1(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
 func (v *Results) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize1(&r, v)
+	easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize1(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
 func (v *Results) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize1(l, v)
+	easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize1(l, v)
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize2(in *jlexer.Lexer, out *Result) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize2(in *jlexer.Lexer, out *Result) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -197,7 +197,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize2(in *jlexe
 				}
 				for !in.IsDelim(']') {
 					var v7 types1.Package
-					easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes(in, &v7)
+					easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes(in, &v7)
 					out.Packages = append(out.Packages, v7)
 					in.WantComma()
 				}
@@ -220,7 +220,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize2(in *jlexe
 				}
 				for !in.IsDelim(']') {
 					var v8 types.DetectedVulnerability
-					easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes(in, &v8)
+					easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgTypes(in, &v8)
 					out.Vulnerabilities = append(out.Vulnerabilities, v8)
 					in.WantComma()
 				}
@@ -234,7 +234,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize2(in *jlexe
 				if out.MisconfSummary == nil {
 					out.MisconfSummary = new(types.MisconfSummary)
 				}
-				easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes1(in, out.MisconfSummary)
+				easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgTypes1(in, out.MisconfSummary)
 			}
 		case "Misconfigurations":
 			if in.IsNull() {
@@ -253,7 +253,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize2(in *jlexe
 				}
 				for !in.IsDelim(']') {
 					var v9 types.DetectedMisconfiguration
-					easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes2(in, &v9)
+					easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgTypes2(in, &v9)
 					out.Misconfigurations = append(out.Misconfigurations, v9)
 					in.WantComma()
 				}
@@ -276,7 +276,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize2(in *jlexe
 				}
 				for !in.IsDelim(']') {
 					var v10 types1.SecretFinding
-					easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes1(in, &v10)
+					easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes1(in, &v10)
 					out.Secrets = append(out.Secrets, v10)
 					in.WantComma()
 				}
@@ -299,7 +299,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize2(in *jlexe
 				}
 				for !in.IsDelim(']') {
 					var v11 types1.CustomResource
-					easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes2(in, &v11)
+					easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes2(in, &v11)
 					out.CustomResources = append(out.CustomResources, v11)
 					in.WantComma()
 				}
@@ -315,7 +315,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize2(in *jlexe
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize2(out *jwriter.Writer, in Result) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize2(out *jwriter.Writer, in Result) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -343,7 +343,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize2(out *jwri
 				if v12 > 0 {
 					out.RawByte(',')
 				}
-				easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes(out, v13)
+				easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes(out, v13)
 			}
 			out.RawByte(']')
 		}
@@ -357,7 +357,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize2(out *jwri
 				if v14 > 0 {
 					out.RawByte(',')
 				}
-				easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes(out, v15)
+				easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgTypes(out, v15)
 			}
 			out.RawByte(']')
 		}
@@ -365,7 +365,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize2(out *jwri
 	if in.MisconfSummary != nil {
 		const prefix string = ",\"MisconfSummary\":"
 		out.RawString(prefix)
-		easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes1(out, *in.MisconfSummary)
+		easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgTypes1(out, *in.MisconfSummary)
 	}
 	if len(in.Misconfigurations) != 0 {
 		const prefix string = ",\"Misconfigurations\":"
@@ -376,7 +376,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize2(out *jwri
 				if v16 > 0 {
 					out.RawByte(',')
 				}
-				easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes2(out, v17)
+				easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgTypes2(out, v17)
 			}
 			out.RawByte(']')
 		}
@@ -390,7 +390,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize2(out *jwri
 				if v18 > 0 {
 					out.RawByte(',')
 				}
-				easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes1(out, v19)
+				easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes1(out, v19)
 			}
 			out.RawByte(']')
 		}
@@ -404,7 +404,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize2(out *jwri
 				if v20 > 0 {
 					out.RawByte(',')
 				}
-				easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes2(out, v21)
+				easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes2(out, v21)
 			}
 			out.RawByte(']')
 		}
@@ -415,27 +415,27 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize2(out *jwri
 // MarshalJSON supports json.Marshaler interface
 func (v Result) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize2(&w, v)
+	easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize2(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
 func (v Result) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize2(w, v)
+	easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize2(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
 func (v *Result) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize2(&r, v)
+	easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize2(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
 func (v *Result) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize2(l, v)
+	easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize2(l, v)
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes2(in *jlexer.Lexer, out *types1.CustomResource) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes2(in *jlexer.Lexer, out *types1.CustomResource) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -459,7 +459,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes2(in *jlexer.Lex
 		case "FilePath":
 			out.FilePath = string(in.String())
 		case "Layer":
-			easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes3(in, &out.Layer)
+			easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes3(in, &out.Layer)
 		case "Data":
 			if m, ok := out.Data.(easyjson.Unmarshaler); ok {
 				m.UnmarshalEasyJSON(in)
@@ -478,7 +478,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes2(in *jlexer.Lex
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes2(out *jwriter.Writer, in types1.CustomResource) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes2(out *jwriter.Writer, in types1.CustomResource) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -495,7 +495,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes2(out *jwriter.W
 	{
 		const prefix string = ",\"Layer\":"
 		out.RawString(prefix)
-		easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes3(out, in.Layer)
+		easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes3(out, in.Layer)
 	}
 	{
 		const prefix string = ",\"Data\":"
@@ -510,7 +510,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes2(out *jwriter.W
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes3(in *jlexer.Lexer, out *types1.Layer) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes3(in *jlexer.Lexer, out *types1.Layer) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -543,7 +543,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes3(in *jlexer.Lex
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes3(out *jwriter.Writer, in types1.Layer) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes3(out *jwriter.Writer, in types1.Layer) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -565,7 +565,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes3(out *jwriter.W
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes1(in *jlexer.Lexer, out *types1.SecretFinding) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes1(in *jlexer.Lexer, out *types1.SecretFinding) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -608,7 +608,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes1(in *jlexer.Lex
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes1(out *jwriter.Writer, in types1.SecretFinding) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes1(out *jwriter.Writer, in types1.SecretFinding) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -649,7 +649,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes1(out *jwriter.W
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes2(in *jlexer.Lexer, out *types.DetectedMisconfiguration) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgTypes2(in *jlexer.Lexer, out *types.DetectedMisconfiguration) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -714,9 +714,9 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes2(in *jlexer.Lexer, o
 		case "Status":
 			out.Status = types.MisconfStatus(in.String())
 		case "Layer":
-			easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes3(in, &out.Layer)
+			easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes3(in, &out.Layer)
 		case "CauseMetadata":
-			easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes4(in, &out.CauseMetadata)
+			easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes4(in, &out.CauseMetadata)
 		case "Traces":
 			if in.IsNull() {
 				in.Skip()
@@ -750,7 +750,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes2(in *jlexer.Lexer, o
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes2(out *jwriter.Writer, in types.DetectedMisconfiguration) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgTypes2(out *jwriter.Writer, in types.DetectedMisconfiguration) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -887,7 +887,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes2(out *jwriter.Writer
 		} else {
 			out.RawString(prefix)
 		}
-		easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes3(out, in.Layer)
+		easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes3(out, in.Layer)
 	}
 	if true {
 		const prefix string = ",\"CauseMetadata\":"
@@ -897,7 +897,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes2(out *jwriter.Writer
 		} else {
 			out.RawString(prefix)
 		}
-		easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes4(out, in.CauseMetadata)
+		easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes4(out, in.CauseMetadata)
 	}
 	if len(in.Traces) != 0 {
 		const prefix string = ",\"Traces\":"
@@ -920,7 +920,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes2(out *jwriter.Writer
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes4(in *jlexer.Lexer, out *types1.CauseMetadata) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes4(in *jlexer.Lexer, out *types1.CauseMetadata) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -950,7 +950,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes4(in *jlexer.Lex
 		case "EndLine":
 			out.EndLine = int(in.Int())
 		case "Code":
-			easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes5(in, &out.Code)
+			easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes5(in, &out.Code)
 		default:
 			in.SkipRecursive()
 		}
@@ -961,7 +961,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes4(in *jlexer.Lex
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes4(out *jwriter.Writer, in types1.CauseMetadata) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes4(out *jwriter.Writer, in types1.CauseMetadata) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -1019,11 +1019,11 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes4(out *jwriter.W
 		} else {
 			out.RawString(prefix)
 		}
-		easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes5(out, in.Code)
+		easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes5(out, in.Code)
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes5(in *jlexer.Lexer, out *types1.Code) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes5(in *jlexer.Lexer, out *types1.Code) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -1059,7 +1059,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes5(in *jlexer.Lex
 				}
 				for !in.IsDelim(']') {
 					var v28 types1.Line
-					easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes6(in, &v28)
+					easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes6(in, &v28)
 					out.Lines = append(out.Lines, v28)
 					in.WantComma()
 				}
@@ -1075,7 +1075,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes5(in *jlexer.Lex
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes5(out *jwriter.Writer, in types1.Code) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes5(out *jwriter.Writer, in types1.Code) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -1090,14 +1090,14 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes5(out *jwriter.W
 				if v29 > 0 {
 					out.RawByte(',')
 				}
-				easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes6(out, v30)
+				easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes6(out, v30)
 			}
 			out.RawByte(']')
 		}
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes6(in *jlexer.Lexer, out *types1.Line) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes6(in *jlexer.Lexer, out *types1.Line) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -1142,7 +1142,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes6(in *jlexer.Lex
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes6(out *jwriter.Writer, in types1.Line) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes6(out *jwriter.Writer, in types1.Line) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -1188,7 +1188,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes6(out *jwriter.W
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes1(in *jlexer.Lexer, out *types.MisconfSummary) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgTypes1(in *jlexer.Lexer, out *types.MisconfSummary) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -1223,7 +1223,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes1(in *jlexer.Lexer, o
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes1(out *jwriter.Writer, in types.MisconfSummary) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgTypes1(out *jwriter.Writer, in types.MisconfSummary) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -1244,7 +1244,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes1(out *jwriter.Writer
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes(in *jlexer.Lexer, out *types.DetectedVulnerability) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgTypes(in *jlexer.Lexer, out *types.DetectedVulnerability) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -1299,7 +1299,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes(in *jlexer.Lexer, ou
 		case "FixedVersion":
 			out.FixedVersion = string(in.String())
 		case "Layer":
-			easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes3(in, &out.Layer)
+			easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes3(in, &out.Layer)
 		case "SeveritySource":
 			out.SeveritySource = types2.SourceID(in.String())
 		case "PrimaryURL":
@@ -1314,7 +1314,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes(in *jlexer.Lexer, ou
 				if out.DataSource == nil {
 					out.DataSource = new(types2.DataSource)
 				}
-				easyjson6601e8cdDecodeGithubComAquasecurityVulDbPkgTypes(in, out.DataSource)
+				easyjson6601e8cdDecodeGithubComkhulnasoft-labVulDbPkgTypes(in, out.DataSource)
 			}
 		case "Custom":
 			if m, ok := out.Custom.(easyjson.Unmarshaler); ok {
@@ -1387,7 +1387,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes(in *jlexer.Lexer, ou
 					key := types2.SourceID(in.String())
 					in.WantColon()
 					var v34 types2.CVSS
-					easyjson6601e8cdDecodeGithubComAquasecurityVulDbPkgTypes1(in, &v34)
+					easyjson6601e8cdDecodeGithubComkhulnasoft-labVulDbPkgTypes1(in, &v34)
 					(out.CVSS)[key] = v34
 					in.WantComma()
 				}
@@ -1450,7 +1450,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgTypes(in *jlexer.Lexer, ou
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes(out *jwriter.Writer, in types.DetectedVulnerability) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgTypes(out *jwriter.Writer, in types.DetectedVulnerability) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -1537,7 +1537,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes(out *jwriter.Writer,
 		} else {
 			out.RawString(prefix)
 		}
-		easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes3(out, in.Layer)
+		easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes3(out, in.Layer)
 	}
 	if in.SeveritySource != "" {
 		const prefix string = ",\"SeveritySource\":"
@@ -1577,7 +1577,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes(out *jwriter.Writer,
 		} else {
 			out.RawString(prefix)
 		}
-		easyjson6601e8cdEncodeGithubComAquasecurityVulDbPkgTypes(out, *in.DataSource)
+		easyjson6601e8cdEncodeGithubComkhulnasoft-labVulDbPkgTypes(out, *in.DataSource)
 	}
 	if in.Custom != nil {
 		const prefix string = ",\"Custom\":"
@@ -1687,7 +1687,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes(out *jwriter.Writer,
 				}
 				out.String(string(v41Name))
 				out.RawByte(':')
-				easyjson6601e8cdEncodeGithubComAquasecurityVulDbPkgTypes1(out, v41Value)
+				easyjson6601e8cdEncodeGithubComkhulnasoft-labVulDbPkgTypes1(out, v41Value)
 			}
 			out.RawByte('}')
 		}
@@ -1733,7 +1733,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgTypes(out *jwriter.Writer,
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulDbPkgTypes1(in *jlexer.Lexer, out *types2.CVSS) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulDbPkgTypes1(in *jlexer.Lexer, out *types2.CVSS) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -1770,7 +1770,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulDbPkgTypes1(in *jlexer.Lexer,
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulDbPkgTypes1(out *jwriter.Writer, in types2.CVSS) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulDbPkgTypes1(out *jwriter.Writer, in types2.CVSS) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -1812,7 +1812,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulDbPkgTypes1(out *jwriter.Writ
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulDbPkgTypes(in *jlexer.Lexer, out *types2.DataSource) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulDbPkgTypes(in *jlexer.Lexer, out *types2.DataSource) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -1847,7 +1847,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulDbPkgTypes(in *jlexer.Lexer, 
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulDbPkgTypes(out *jwriter.Writer, in types2.DataSource) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulDbPkgTypes(out *jwriter.Writer, in types2.DataSource) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -1879,7 +1879,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulDbPkgTypes(out *jwriter.Write
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes(in *jlexer.Lexer, out *types1.Package) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes(in *jlexer.Lexer, out *types1.Package) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -1951,7 +1951,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes(in *jlexer.Lexe
 				if out.BuildInfo == nil {
 					out.BuildInfo = new(types1.BuildInfo)
 				}
-				easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes7(in, out.BuildInfo)
+				easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes7(in, out.BuildInfo)
 			}
 		case "PkgRef":
 			out.Ref = string(in.String())
@@ -1981,7 +1981,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes(in *jlexer.Lexe
 				in.Delim(']')
 			}
 		case "Layer":
-			easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes3(in, &out.Layer)
+			easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes3(in, &out.Layer)
 		case "FilePath":
 			out.FilePath = string(in.String())
 		default:
@@ -1994,7 +1994,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes(in *jlexer.Lexe
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes(out *jwriter.Writer, in types1.Package) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes(out *jwriter.Writer, in types1.Package) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -2131,7 +2131,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes(out *jwriter.Wr
 		} else {
 			out.RawString(prefix)
 		}
-		easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes7(out, *in.BuildInfo)
+		easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes7(out, *in.BuildInfo)
 	}
 	if in.Ref != "" {
 		const prefix string = ",\"PkgRef\":"
@@ -2180,7 +2180,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes(out *jwriter.Wr
 		} else {
 			out.RawString(prefix)
 		}
-		easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes3(out, in.Layer)
+		easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes3(out, in.Layer)
 	}
 	if in.FilePath != "" {
 		const prefix string = ",\"FilePath\":"
@@ -2194,7 +2194,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes(out *jwriter.Wr
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes7(in *jlexer.Lexer, out *types1.BuildInfo) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgFanalTypes7(in *jlexer.Lexer, out *types1.BuildInfo) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -2250,7 +2250,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgFanalTypes7(in *jlexer.Lex
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes7(out *jwriter.Writer, in types1.BuildInfo) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgFanalTypes7(out *jwriter.Writer, in types1.BuildInfo) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -2291,7 +2291,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgFanalTypes7(out *jwriter.W
 	}
 	out.RawByte('}')
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize3(in *jlexer.Lexer, out *PostScanSpec) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize3(in *jlexer.Lexer, out *PostScanSpec) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -2345,7 +2345,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize3(in *jlexe
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize3(out *jwriter.Writer, in PostScanSpec) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize3(out *jwriter.Writer, in PostScanSpec) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -2376,27 +2376,27 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize3(out *jwri
 // MarshalJSON supports json.Marshaler interface
 func (v PostScanSpec) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize3(&w, v)
+	easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize3(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
 func (v PostScanSpec) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize3(w, v)
+	easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize3(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
 func (v *PostScanSpec) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize3(&r, v)
+	easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize3(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
 func (v *PostScanSpec) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize3(l, v)
+	easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize3(l, v)
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize4(in *jlexer.Lexer, out *AnalysisResult) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize4(in *jlexer.Lexer, out *AnalysisResult) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -2432,7 +2432,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize4(in *jlexe
 				}
 				for !in.IsDelim(']') {
 					var v56 CustomResource
-					easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize5(in, &v56)
+					easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize5(in, &v56)
 					out.CustomResources = append(out.CustomResources, v56)
 					in.WantComma()
 				}
@@ -2448,7 +2448,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize4(in *jlexe
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize4(out *jwriter.Writer, in AnalysisResult) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize4(out *jwriter.Writer, in AnalysisResult) {
 	out.RawByte('{')
 	first := true
 	_ = first
@@ -2463,7 +2463,7 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize4(out *jwri
 				if v57 > 0 {
 					out.RawByte(',')
 				}
-				easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize5(out, v58)
+				easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize5(out, v58)
 			}
 			out.RawByte(']')
 		}
@@ -2474,27 +2474,27 @@ func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize4(out *jwri
 // MarshalJSON supports json.Marshaler interface
 func (v AnalysisResult) MarshalJSON() ([]byte, error) {
 	w := jwriter.Writer{}
-	easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize4(&w, v)
+	easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize4(&w, v)
 	return w.Buffer.BuildBytes(), w.Error
 }
 
 // MarshalEasyJSON supports easyjson.Marshaler interface
 func (v AnalysisResult) MarshalEasyJSON(w *jwriter.Writer) {
-	easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize4(w, v)
+	easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize4(w, v)
 }
 
 // UnmarshalJSON supports json.Unmarshaler interface
 func (v *AnalysisResult) UnmarshalJSON(data []byte) error {
 	r := jlexer.Lexer{Data: data}
-	easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize4(&r, v)
+	easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize4(&r, v)
 	return r.Error()
 }
 
 // UnmarshalEasyJSON supports easyjson.Unmarshaler interface
 func (v *AnalysisResult) UnmarshalEasyJSON(l *jlexer.Lexer) {
-	easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize4(l, v)
+	easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize4(l, v)
 }
-func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize5(in *jlexer.Lexer, out *CustomResource) {
+func easyjson6601e8cdDecodeGithubComkhulnasoft-labVulPkgModuleSerialize5(in *jlexer.Lexer, out *CustomResource) {
 	isTopLevel := in.IsStart()
 	if in.IsNull() {
 		if isTopLevel {
@@ -2535,7 +2535,7 @@ func easyjson6601e8cdDecodeGithubComAquasecurityVulPkgModuleSerialize5(in *jlexe
 		in.Consumed()
 	}
 }
-func easyjson6601e8cdEncodeGithubComAquasecurityVulPkgModuleSerialize5(out *jwriter.Writer, in CustomResource) {
+func easyjson6601e8cdEncodeGithubComkhulnasoft-labVulPkgModuleSerialize5(out *jwriter.Writer, in CustomResource) {
 	out.RawByte('{')
 	first := true
 	_ = first

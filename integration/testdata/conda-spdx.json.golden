@@ -3,11 +3,11 @@
   "dataLicense": "CC0-1.0",
   "SPDXID": "SPDXRef-DOCUMENT",
   "name": "testdata/fixtures/repo/conda",
-  "documentNamespace": "http://aquasecurity.github.io/vul/filesystem/testdata/fixtures/repo/conda-08df146c-0996-4718-8648-b2a45769ab79",
+  "documentNamespace": "http://khulnasoft-lab.github.io/vul/filesystem/testdata/fixtures/repo/conda-08df146c-0996-4718-8648-b2a45769ab79",
   "creationInfo": {
     "licenseListVersion": "",
     "creators": [
-      "Organization: aquasecurity",
+      "Organization: khulnasoft-lab",
       "Tool: vul-dev"
     ],
     "created": "2023-06-27T05:37:40Z"

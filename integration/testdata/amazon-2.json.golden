@@ -64,7 +64,7 @@
             "DiffID": "sha256:f387c8b346c85cae37abd1f1a63015acb69f593dc425d0269f57d1012c3a81f6"
           },
           "SeveritySource": "amazon",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5481",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5481",
           "DataSource": {
             "ID": "amazon",
             "Name": "Amazon Linux Security Center",
@@ -123,7 +123,7 @@
             "DiffID": "sha256:f387c8b346c85cae37abd1f1a63015acb69f593dc425d0269f57d1012c3a81f6"
           },
           "SeveritySource": "amazon",
-          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2019-5436",
+          "PrimaryURL": "https://avd.khulnasoft.com/nvd/cve-2019-5436",
           "DataSource": {
             "ID": "amazon",
             "Name": "Amazon Linux Security Center",

@@ -3,7 +3,7 @@ fullnameOverride: ""
 
 image:
   registry: docker.io
-  repository: aquasec/vul
+  repository: khulnasoft/vul
   # tag is an override of the image tag, which is by default set by the
   # appVersion field in Chart.yaml.
   tag: ""
@@ -77,7 +77,7 @@ vul:
   gitHubToken: ""
 
   # Docker registry credentials
-  # See also: https://aquasecurity.github.io/vul/dev/advanced/private-registries/docker-hub/
+  # See also: https://khulnasoft-lab.github.io/vul/dev/advanced/private-registries/docker-hub/
   #
   # Either
   # Directly in this file

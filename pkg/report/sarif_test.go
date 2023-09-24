@@ -61,7 +61,7 @@ func TestReportWriter_Sarif(t *testing.T) {
 								PkgName:          "foo",
 								InstalledVersion: "1.2.3",
 								FixedVersion:     "3.4.5",
-								PrimaryURL:       "https://avd.aquasec.com/nvd/cve-2020-0001",
+								PrimaryURL:       "https://avd.khulnasoft.com/nvd/cve-2020-0001",
 								SeveritySource:   "redhat",
 								Vulnerability: dbTypes.Vulnerability{
 									Title:       "foobar",
@@ -107,7 +107,7 @@ func TestReportWriter_Sarif(t *testing.T) {
 										DefaultConfiguration: &sarif.ReportingConfiguration{
 											Level: "error",
 										},
-										HelpURI: lo.ToPtr("https://avd.aquasec.com/nvd/cve-2020-0001"),
+										HelpURI: lo.ToPtr("https://avd.khulnasoft.com/nvd/cve-2020-0001"),
 										Properties: map[string]interface{}{
 											"tags": []interface{}{
 												"vulnerability",
@@ -118,8 +118,8 @@ func TestReportWriter_Sarif(t *testing.T) {
 											"security-severity": "7.5",
 										},
 										Help: &sarif.MultiformatMessageString{
-											Text:     lo.ToPtr("Vulnerability CVE-2020-0001\nSeverity: HIGH\nPackage: foo\nFixed Version: 3.4.5\nLink: [CVE-2020-0001](https://avd.aquasec.com/nvd/cve-2020-0001)\nbaz"),
-											Markdown: lo.ToPtr("**Vulnerability CVE-2020-0001**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|foo|3.4.5|[CVE-2020-0001](https://avd.aquasec.com/nvd/cve-2020-0001)|\n\nbaz"),
+											Text:     lo.ToPtr("Vulnerability CVE-2020-0001\nSeverity: HIGH\nPackage: foo\nFixed Version: 3.4.5\nLink: [CVE-2020-0001](https://avd.khulnasoft.com/nvd/cve-2020-0001)\nbaz"),
+											Markdown: lo.ToPtr("**Vulnerability CVE-2020-0001**\n| Severity | Package | Fixed Version | Link |\n| --- | --- | --- | --- |\n|HIGH|foo|3.4.5|[CVE-2020-0001](https://avd.khulnasoft.com/nvd/cve-2020-0001)|\n\nbaz"),
 										},
 									},
 								},
@@ -130,7 +130,7 @@ func TestReportWriter_Sarif(t *testing.T) {
 								RuleID:    lo.ToPtr("CVE-2020-0001"),
 								RuleIndex: lo.ToPtr[uint](0),
 								Level:     lo.ToPtr("error"),
-								Message:   sarif.Message{Text: lo.ToPtr("Package: foo\nInstalled Version: 1.2.3\nVulnerability CVE-2020-0001\nSeverity: HIGH\nFixed Version: 3.4.5\nLink: [CVE-2020-0001](https://avd.aquasec.com/nvd/cve-2020-0001)")},
+								Message:   sarif.Message{Text: lo.ToPtr("Package: foo\nInstalled Version: 1.2.3\nVulnerability CVE-2020-0001\nSeverity: HIGH\nFixed Version: 3.4.5\nLink: [CVE-2020-0001](https://avd.khulnasoft.com/nvd/cve-2020-0001)")},
 								Locations: []*sarif.Location{
 									{
 										Message: &sarif.Message{Text: lo.ToPtr("library/test: foo@1.2.3")},
@@ -196,7 +196,7 @@ func TestReportWriter_Sarif(t *testing.T) {
 								Title:      "Image tag ':latest' used",
 								Message:    "Message",
 								Severity:   "HIGH",
-								PrimaryURL: "https://avd.aquasec.com/appshield/ksv001",
+								PrimaryURL: "https://avd.khulnasoft.com/appshield/ksv001",
 								Status:     types.StatusFailure,
 							},
 							{
@@ -205,7 +205,7 @@ func TestReportWriter_Sarif(t *testing.T) {
 								Title:      "SYS_ADMIN capability added",
 								Message:    "Message",
 								Severity:   "CRITICAL",
-								PrimaryURL: "https://avd.aquasec.com/appshield/ksv002",
+								PrimaryURL: "https://avd.khulnasoft.com/appshield/ksv002",
 								Status:     types.StatusPassed,
 							},
 						},
@@ -232,7 +232,7 @@ func TestReportWriter_Sarif(t *testing.T) {
 										DefaultConfiguration: &sarif.ReportingConfiguration{
 											Level: "error",
 										},
-										HelpURI: lo.ToPtr("https://avd.aquasec.com/appshield/ksv001"),
+										HelpURI: lo.ToPtr("https://avd.khulnasoft.com/appshield/ksv001"),
 										Properties: map[string]interface{}{
 											"tags": []interface{}{
 												"misconfiguration",
@@ -243,8 +243,8 @@ func TestReportWriter_Sarif(t *testing.T) {
 											"security-severity": "8.0",
 										},
 										Help: &sarif.MultiformatMessageString{
-											Text:     lo.ToPtr("Misconfiguration KSV001\nType: Kubernetes Security Check\nSeverity: HIGH\nCheck: Image tag ':latest' used\nMessage: Message\nLink: [KSV001](https://avd.aquasec.com/appshield/ksv001)\n"),
-											Markdown: lo.ToPtr("**Misconfiguration KSV001**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Kubernetes Security Check|HIGH|Image tag ':latest' used|Message|[KSV001](https://avd.aquasec.com/appshield/ksv001)|\n\n"),
+											Text:     lo.ToPtr("Misconfiguration KSV001\nType: Kubernetes Security Check\nSeverity: HIGH\nCheck: Image tag ':latest' used\nMessage: Message\nLink: [KSV001](https://avd.khulnasoft.com/appshield/ksv001)\n"),
+											Markdown: lo.ToPtr("**Misconfiguration KSV001**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Kubernetes Security Check|HIGH|Image tag ':latest' used|Message|[KSV001](https://avd.khulnasoft.com/appshield/ksv001)|\n\n"),
 										},
 									},
 									{
@@ -255,7 +255,7 @@ func TestReportWriter_Sarif(t *testing.T) {
 										DefaultConfiguration: &sarif.ReportingConfiguration{
 											Level: "error",
 										},
-										HelpURI: lo.ToPtr("https://avd.aquasec.com/appshield/ksv002"),
+										HelpURI: lo.ToPtr("https://avd.khulnasoft.com/appshield/ksv002"),
 										Properties: map[string]interface{}{
 											"tags": []interface{}{
 												"misconfiguration",
@@ -266,8 +266,8 @@ func TestReportWriter_Sarif(t *testing.T) {
 											"security-severity": "9.5",
 										},
 										Help: &sarif.MultiformatMessageString{
-											Text:     lo.ToPtr("Misconfiguration KSV002\nType: Kubernetes Security Check\nSeverity: CRITICAL\nCheck: SYS_ADMIN capability added\nMessage: Message\nLink: [KSV002](https://avd.aquasec.com/appshield/ksv002)\n"),
-											Markdown: lo.ToPtr("**Misconfiguration KSV002**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Kubernetes Security Check|CRITICAL|SYS_ADMIN capability added|Message|[KSV002](https://avd.aquasec.com/appshield/ksv002)|\n\n"),
+											Text:     lo.ToPtr("Misconfiguration KSV002\nType: Kubernetes Security Check\nSeverity: CRITICAL\nCheck: SYS_ADMIN capability added\nMessage: Message\nLink: [KSV002](https://avd.khulnasoft.com/appshield/ksv002)\n"),
+											Markdown: lo.ToPtr("**Misconfiguration KSV002**\n| Type | Severity | Check | Message | Link |\n| --- | --- | --- | --- | --- |\n|Kubernetes Security Check|CRITICAL|SYS_ADMIN capability added|Message|[KSV002](https://avd.khulnasoft.com/appshield/ksv002)|\n\n"),
 										},
 									},
 								},
@@ -278,7 +278,7 @@ func TestReportWriter_Sarif(t *testing.T) {
 								RuleID:    lo.ToPtr("KSV001"),
 								RuleIndex: lo.ToPtr[uint](0),
 								Level:     lo.ToPtr("error"),
-								Message:   sarif.Message{Text: lo.ToPtr("Artifact: library/test\nType: \nVulnerability KSV001\nSeverity: HIGH\nMessage: Message\nLink: [KSV001](https://avd.aquasec.com/appshield/ksv001)")},
+								Message:   sarif.Message{Text: lo.ToPtr("Artifact: library/test\nType: \nVulnerability KSV001\nSeverity: HIGH\nMessage: Message\nLink: [KSV001](https://avd.khulnasoft.com/appshield/ksv001)")},
 								Locations: []*sarif.Location{
 									{
 										Message: &sarif.Message{Text: lo.ToPtr("library/test")},
@@ -301,7 +301,7 @@ func TestReportWriter_Sarif(t *testing.T) {
 								RuleID:    lo.ToPtr("KSV002"),
 								RuleIndex: lo.ToPtr[uint](1),
 								Level:     lo.ToPtr("error"),
-								Message:   sarif.Message{Text: lo.ToPtr("Artifact: library/test\nType: \nVulnerability KSV002\nSeverity: CRITICAL\nMessage: Message\nLink: [KSV002](https://avd.aquasec.com/appshield/ksv002)")},
+								Message:   sarif.Message{Text: lo.ToPtr("Artifact: library/test\nType: \nVulnerability KSV002\nSeverity: CRITICAL\nMessage: Message\nLink: [KSV002](https://avd.khulnasoft.com/appshield/ksv002)")},
 								Locations: []*sarif.Location{
 									{
 										Message: &sarif.Message{Text: lo.ToPtr("library/test")},

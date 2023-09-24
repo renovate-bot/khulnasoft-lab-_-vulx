@@ -1,1 +1,1 @@
-See [Issues](https://aquasecurity.github.io/vul/latest/community/contribute/issue/) and [Pull Requests](https://aquasecurity.github.io/vul/latest/community/contribute/pr/)
+See [Issues](https://khulnasoft-lab.github.io/vul/latest/community/contribute/issue/) and [Pull Requests](https://khulnasoft-lab.github.io/vul/latest/community/contribute/pr/)

@@ -178,7 +178,7 @@ func gitAuth() *http.BasicAuth {
 	var auth *http.BasicAuth
 
 	// The username can be anything for HTTPS Git operations
-	gitUsername := "fanal-aquasecurity-scan"
+	gitUsername := "fanal-khulnasoft-lab-scan"
 
 	// We first check if a GitHub token was provided
 	githubToken := os.Getenv("GITHUB_TOKEN")

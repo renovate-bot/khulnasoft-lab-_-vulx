@@ -355,7 +355,7 @@ func CreateDataFS(dataPaths []string, options ...string) (fs.FS, []string, error
 	return fsys, dataPaths, nil
 }
 
-// ResultsToMisconf is exported for vul-plugin-aqua purposes only
+// ResultsToMisconf is exported for vul-plugin-khulnasoft purposes only
 func ResultsToMisconf(configType string, scannerName string, results scan.Results) []types.Misconfiguration {
 	misconfs := map[string]types.Misconfiguration{}
 

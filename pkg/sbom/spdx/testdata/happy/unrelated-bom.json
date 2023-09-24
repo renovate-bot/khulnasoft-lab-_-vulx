@@ -4,11 +4,11 @@
 		"created": "2022-09-12T17:04:28.43059Z",
 		"creators": [
 			"Tool: vul-dev",
-			"Organization: aquasecurity"
+			"Organization: khulnasoft-lab"
 		]
 	},
 	"dataLicense": "CC0-1.0",
-	"documentNamespace": "http://aquasecurity.github.io/vul/application/maven-test-project-8aa3b6db-bae7-4755-b43e-00b4bcf46410",
+	"documentNamespace": "http://khulnasoft-lab.github.io/vul/application/maven-test-project-8aa3b6db-bae7-4755-b43e-00b4bcf46410",
 	"name": "maven-test-project",
 	"packages": [
 		{

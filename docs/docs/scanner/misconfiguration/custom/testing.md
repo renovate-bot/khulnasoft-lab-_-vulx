@@ -87,4 +87,4 @@ The following example stores allowed and denied configuration files in a directo
 [opa-testing]: https://www.openpolicyagent.org/docs/latest/policy-testing/
 [defsec]: https://github.com/khulnasoft-lab/defsec
 [table]: https://github.com/golang/go/wiki/TableDrivenTests
-[fanal]: https://github.com/aquasecurity/fanal
+[fanal]: https://github.com/khulnasoft-lab/fanal

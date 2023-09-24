@@ -60,21 +60,21 @@ Total: 5 (UNKNOWN: 0, LOW: 0, MEDIUM: 2, HIGH: 2, CRITICAL: 1)
 ├──────────────┼────────────────┼──────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
 │ busybox      │ CVE-2022-30065 │ HIGH     │ 1.35.0-r13        │ 1.35.0-r15    │ busybox: A use-after-free in Busybox's awk applet leads to │
 │              │                │          │                   │               │ denial of service...                                       │
-│              │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-30065                 │
+│              │                │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2022-30065                 │
 ├──────────────┼────────────────┼──────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
 │ libcrypto1.1 │ CVE-2022-2097  │ MEDIUM   │ 1.1.1o-r0         │ 1.1.1q-r0     │ openssl: AES OCB fails to encrypt some bytes               │
-│              │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-2097                  │
+│              │                │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2022-2097                  │
 ├──────────────┤                │          │                   │               │                                                            │
 │ libssl1.1    │                │          │                   │               │                                                            │
 │              │                │          │                   │               │                                                            │
 ├──────────────┼────────────────┼──────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
 │ ssl_client   │ CVE-2022-30065 │ HIGH     │ 1.35.0-r13        │ 1.35.0-r15    │ busybox: A use-after-free in Busybox's awk applet leads to │
 │              │                │          │                   │               │ denial of service...                                       │
-│              │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-30065                 │
+│              │                │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2022-30065                 │
 ├──────────────┼────────────────┼──────────┼───────────────────┼───────────────┼────────────────────────────────────────────────────────────┤
 │ zlib         │ CVE-2022-37434 │ CRITICAL │ 1.2.12-r1         │ 1.2.12-r2     │ zlib: a heap-based buffer over-read or buffer overflow in  │
 │              │                │          │                   │               │ inflate in inflate.c...                                    │
-│              │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-37434                 │
+│              │                │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2022-37434                 │
 └──────────────┴────────────────┴──────────┴───────────────────┴───────────────┴────────────────────────────────────────────────────────────┘
 ```
 
@@ -100,7 +100,7 @@ Total: 2 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 2)
 ├────────────┼────────────────┼──────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────┤
 │ musl       │ CVE-2019-14697 │ CRITICAL │ 1.1.18-r3         │ 1.1.18-r4     │ musl libc through 1.1.23 has an x87 floating-point stack │
 │            │                │          │                   │               │ adjustment im ......                                     │
-│            │                │          │                   │               │ https://avd.aquasec.com/nvd/cve-2019-14697               │
+│            │                │          │                   │               │ https://avd.khulnasoft.com/nvd/cve-2019-14697               │
 ├────────────┤                │          │                   │               │                                                          │
 │ musl-utils │                │          │                   │               │                                                          │
 │            │                │          │                   │               │                                                          │

@@ -4,6 +4,10 @@
 *.dll
 *.so
 *.dylib
+vul
+
+## chart release
+.cr-release-packages
 
 # Test binary, build with `go test -c`
 *.test
@@ -18,4 +22,8 @@
 thumbs.db
 
 # test fixtures
-integration/testdata/fixtures/
+coverage.txt
+integration/testdata/fixtures/images
+
+# SBOMs generated during CI
+/bom.json

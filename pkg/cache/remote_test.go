@@ -8,77 +8,67 @@ import (
 	"testing"
 	"time"
 
-	rpcScanner "github.com/khulnasoft-lab/vul/rpc/scanner"
-
 	google_protobuf "github.com/golang/protobuf/ptypes/empty"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/twitchtv/twirp"
 	"golang.org/x/xerrors"
 
+	fcache "github.com/khulnasoft-lab/fanal/cache"
+	"github.com/khulnasoft-lab/fanal/types"
 	"github.com/khulnasoft-lab/vul/pkg/cache"
-	fcache "github.com/khulnasoft-lab/vul/pkg/fanal/cache"
-	"github.com/khulnasoft-lab/vul/pkg/fanal/types"
 	rpcCache "github.com/khulnasoft-lab/vul/rpc/cache"
+	"github.com/khulnasoft-lab/vul/rpc/detector"
 )
 
 type mockCacheServer struct {
 	cache fcache.Cache
 }
 
-func (s *mockCacheServer) PutArtifact(_ context.Context, in *rpcCache.PutArtifactRequest) (*google_protobuf.Empty, error) {
-	if strings.Contains(in.ArtifactId, "invalid") {
+func (s *mockCacheServer) PutImage(_ context.Context, in *rpcCache.PutImageRequest) (*google_protobuf.Empty, error) {
+	if strings.Contains(in.ImageId, "invalid") {
 		return &google_protobuf.Empty{}, xerrors.New("invalid image ID")
 	}
 	return &google_protobuf.Empty{}, nil
 }
 
-func (s *mockCacheServer) PutBlob(_ context.Context, in *rpcCache.PutBlobRequest) (*google_protobuf.Empty, error) {
-	if strings.Contains(in.DiffId, "invalid") {
+func (s *mockCacheServer) PutLayer(_ context.Context, in *rpcCache.PutLayerRequest) (*google_protobuf.Empty, error) {
+	if strings.Contains(in.LayerId, "invalid") {
 		return &google_protobuf.Empty{}, xerrors.New("invalid layer ID")
 	}
 	return &google_protobuf.Empty{}, nil
 }
 
-func (s *mockCacheServer) MissingBlobs(_ context.Context, in *rpcCache.MissingBlobsRequest) (*rpcCache.MissingBlobsResponse, error) {
+func (s *mockCacheServer) MissingLayers(_ context.Context, in *rpcCache.MissingLayersRequest) (*rpcCache.MissingLayersResponse, error) {
 	var layerIDs []string
-	for _, layerID := range in.BlobIds[:len(in.BlobIds)-1] {
+	for _, layerID := range in.LayerIds[:len(in.LayerIds)-1] {
 		if strings.Contains(layerID, "invalid") {
 			return nil, xerrors.New("invalid layer ID")
 		}
 		layerIDs = append(layerIDs, layerID)
 	}
-	return &rpcCache.MissingBlobsResponse{MissingArtifact: true, MissingBlobIds: layerIDs}, nil
-}
-
-func (s *mockCacheServer) DeleteBlobs(_ context.Context, in *rpcCache.DeleteBlobsRequest) (*google_protobuf.Empty, error) {
-	for _, blobId := range in.GetBlobIds() {
-		if strings.Contains(blobId, "invalid") {
-			return &google_protobuf.Empty{}, xerrors.New("invalid layer ID")
-		}
-	}
-	return &google_protobuf.Empty{}, nil
+	return &rpcCache.MissingLayersResponse{MissingImage: true, MissingLayerIds: layerIDs}, nil
 }
 
 func withToken(base http.Handler, token, tokenHeader string) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		if token != "" && token != r.Header.Get(tokenHeader) {
-			rpcScanner.WriteError(w, twirp.NewError(twirp.Unauthenticated, "invalid token"))
+			detector.WriteError(w, twirp.NewError(twirp.Unauthenticated, "invalid token"))
 			return
 		}
 		base.ServeHTTP(w, r)
 	})
 }
 
-func TestRemoteCache_PutArtifact(t *testing.T) {
+func TestRemoteCache_PutImage(t *testing.T) {
 	mux := http.NewServeMux()
 	layerHandler := rpcCache.NewCacheServer(new(mockCacheServer), nil)
-	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Vul-Token"))
+	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Trivy-Token"))
 	ts := httptest.NewServer(mux)
 
 	type args struct {
 		imageID       string
-		imageInfo     types.ArtifactInfo
+		imageInfo     types.ImageInfo
 		customHeaders http.Header
 	}
 	tests := []struct {
@@ -90,7 +80,7 @@ func TestRemoteCache_PutArtifact(t *testing.T) {
 			name: "happy path",
 			args: args{
 				imageID: "sha256:e7d92cdc71feacf90708cb59182d0df1b911f8ae022d29e8e95d75ca6a99776a",
-				imageInfo: types.ArtifactInfo{
+				imageInfo: types.ImageInfo{
 					SchemaVersion: 1,
 					Architecture:  "amd64",
 					Created:       time.Time{},
@@ -104,7 +94,7 @@ func TestRemoteCache_PutArtifact(t *testing.T) {
 					},
 				},
 				customHeaders: http.Header{
-					"Vul-Token": []string{"valid-token"},
+					"Trivy-Token": []string{"valid-token"},
 				},
 			},
 		},
@@ -112,7 +102,7 @@ func TestRemoteCache_PutArtifact(t *testing.T) {
 			name: "sad path",
 			args: args{
 				imageID: "sha256:invalid",
-				imageInfo: types.ArtifactInfo{
+				imageInfo: types.ImageInfo{
 					SchemaVersion: 1,
 					Architecture:  "amd64",
 					Created:       time.Time{},
@@ -126,7 +116,7 @@ func TestRemoteCache_PutArtifact(t *testing.T) {
 					},
 				},
 				customHeaders: http.Header{
-					"Vul-Token": []string{"valid-token"},
+					"Trivy-Token": []string{"valid-token"},
 				},
 			},
 			wantErr: "twirp error internal",
@@ -136,7 +126,7 @@ func TestRemoteCache_PutArtifact(t *testing.T) {
 			args: args{
 				imageID: "sha256:invalid",
 				customHeaders: http.Header{
-					"Vul-Token": []string{"invalid-token"},
+					"Trivy-Token": []string{"invalid-token"},
 				},
 			},
 			wantErr: "twirp error unauthenticated",
@@ -144,8 +134,8 @@ func TestRemoteCache_PutArtifact(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			c := cache.NewRemoteCache(ts.URL, tt.args.customHeaders, false)
-			err := c.PutArtifact(tt.args.imageID, tt.args.imageInfo)
+			c := cache.NewRemoteCache(cache.RemoteURL(ts.URL), tt.args.customHeaders)
+			err := c.PutImage(tt.args.imageID, tt.args.imageInfo)
 			if tt.wantErr != "" {
 				require.NotNil(t, err, tt.name)
 				assert.Contains(t, err.Error(), tt.wantErr, tt.name)
@@ -157,16 +147,17 @@ func TestRemoteCache_PutArtifact(t *testing.T) {
 	}
 }
 
-func TestRemoteCache_PutBlob(t *testing.T) {
+func TestRemoteCache_PutLayer(t *testing.T) {
 	mux := http.NewServeMux()
 	layerHandler := rpcCache.NewCacheServer(new(mockCacheServer), nil)
-	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Vul-Token"))
+	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Trivy-Token"))
 	ts := httptest.NewServer(mux)
 
 	type args struct {
-		diffID        string
-		layerInfo     types.BlobInfo
-		customHeaders http.Header
+		layerID             string
+		decompressedLayerID string
+		layerInfo           types.LayerInfo
+		customHeaders       http.Header
 	}
 	tests := []struct {
 		name    string
@@ -176,18 +167,20 @@ func TestRemoteCache_PutBlob(t *testing.T) {
 		{
 			name: "happy path",
 			args: args{
-				diffID: "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
+				layerID:             "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
+				decompressedLayerID: "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				customHeaders: http.Header{
-					"Vul-Token": []string{"valid-token"},
+					"Trivy-Token": []string{"valid-token"},
 				},
 			},
 		},
 		{
 			name: "sad path",
 			args: args{
-				diffID: "sha256:invalid",
+				layerID:             "sha256:invalid",
+				decompressedLayerID: "sha256:invalid",
 				customHeaders: http.Header{
-					"Vul-Token": []string{"valid-token"},
+					"Trivy-Token": []string{"valid-token"},
 				},
 			},
 			wantErr: "twirp error internal",
@@ -195,9 +188,10 @@ func TestRemoteCache_PutBlob(t *testing.T) {
 		{
 			name: "sad path: invalid token",
 			args: args{
-				diffID: "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
+				layerID:             "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
+				decompressedLayerID: "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				customHeaders: http.Header{
-					"Vul-Token": []string{"invalid-token"},
+					"Trivy-Token": []string{"invalid-token"},
 				},
 			},
 			wantErr: "twirp error unauthenticated",
@@ -205,8 +199,8 @@ func TestRemoteCache_PutBlob(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			c := cache.NewRemoteCache(ts.URL, tt.args.customHeaders, false)
-			err := c.PutBlob(tt.args.diffID, tt.args.layerInfo)
+			c := cache.NewRemoteCache(cache.RemoteURL(ts.URL), tt.args.customHeaders)
+			err := c.PutLayer(tt.args.layerID, tt.args.decompressedLayerID, tt.args.layerInfo)
 			if tt.wantErr != "" {
 				require.NotNil(t, err, tt.name)
 				assert.Contains(t, err.Error(), tt.wantErr, tt.name)
@@ -218,10 +212,10 @@ func TestRemoteCache_PutBlob(t *testing.T) {
 	}
 }
 
-func TestRemoteCache_MissingBlobs(t *testing.T) {
+func TestRemoteCache_MissingLayers(t *testing.T) {
 	mux := http.NewServeMux()
 	layerHandler := rpcCache.NewCacheServer(new(mockCacheServer), nil)
-	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Vul-Token"))
+	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Trivy-Token"))
 	ts := httptest.NewServer(mux)
 
 	type args struct {
@@ -245,7 +239,7 @@ func TestRemoteCache_MissingBlobs(t *testing.T) {
 					"sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				},
 				customHeaders: http.Header{
-					"Vul-Token": []string{"valid-token"},
+					"Trivy-Token": []string{"valid-token"},
 				},
 			},
 			wantMissingImage: true,
@@ -262,7 +256,7 @@ func TestRemoteCache_MissingBlobs(t *testing.T) {
 					"sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				},
 				customHeaders: http.Header{
-					"Vul-Token": []string{"valid-token"},
+					"Trivy-Token": []string{"valid-token"},
 				},
 			},
 			wantErr: "twirp error internal",
@@ -275,7 +269,7 @@ func TestRemoteCache_MissingBlobs(t *testing.T) {
 					"sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				},
 				customHeaders: http.Header{
-					"Vul-Token": []string{"invalid-token"},
+					"Trivy-Token": []string{"invalid-token"},
 				},
 			},
 			wantErr: "twirp error unauthenticated",
@@ -283,8 +277,8 @@ func TestRemoteCache_MissingBlobs(t *testing.T) {
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			c := cache.NewRemoteCache(ts.URL, tt.args.customHeaders, false)
-			gotMissingImage, gotMissingLayerIDs, err := c.MissingBlobs(tt.args.imageID, tt.args.layerIDs)
+			c := cache.NewRemoteCache(cache.RemoteURL(ts.URL), tt.args.customHeaders)
+			gotMissingImage, gotMissingLayerIDs, err := c.MissingLayers(tt.args.imageID, tt.args.layerIDs)
 			if tt.wantErr != "" {
 				require.NotNil(t, err, tt.name)
 				assert.Contains(t, err.Error(), tt.wantErr, tt.name)
@@ -295,52 +289,6 @@ func TestRemoteCache_MissingBlobs(t *testing.T) {
 
 			assert.Equal(t, tt.wantMissingImage, gotMissingImage)
 			assert.Equal(t, tt.wantMissingLayerIDs, gotMissingLayerIDs)
-		})
-	}
-}
-
-func TestRemoteCache_PutArtifactInsecure(t *testing.T) {
-	ts := httptest.NewTLSServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {}))
-	defer ts.Close()
-
-	type args struct {
-		imageID   string
-		imageInfo types.ArtifactInfo
-		insecure  bool
-	}
-	tests := []struct {
-		name    string
-		args    args
-		wantErr string
-	}{
-		{
-			name: "happy path",
-			args: args{
-				imageID:   "sha256:e7d92cdc71feacf90708cb59182d0df1b911f8ae022d29e8e95d75ca6a99776a",
-				imageInfo: types.ArtifactInfo{},
-				insecure:  true,
-			},
-		},
-		{
-			name: "sad path",
-			args: args{
-				imageID:   "sha256:e7d92cdc71feacf90708cb59182d0df1b911f8ae022d29e8e95d75ca6a99776a",
-				imageInfo: types.ArtifactInfo{},
-				insecure:  false,
-			},
-			wantErr: "failed to do request",
-		},
-	}
-	for _, tt := range tests {
-		t.Run(tt.name, func(t *testing.T) {
-			c := cache.NewRemoteCache(ts.URL, nil, tt.args.insecure)
-			err := c.PutArtifact(tt.args.imageID, tt.args.imageInfo)
-			if tt.wantErr != "" {
-				require.Error(t, err)
-				assert.Contains(t, err.Error(), tt.wantErr)
-				return
-			}
-			assert.NoError(t, err, tt.name)
 		})
 	}
 }

@@ -1,1 +1,0 @@
-See [Issues](https://khulnasoft-lab.github.io/vul/latest/community/contribute/issue/) and [Pull Requests](https://khulnasoft-lab.github.io/vul/latest/community/contribute/pr/)

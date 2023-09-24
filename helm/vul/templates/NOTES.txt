@@ -1,2 +1,0 @@
-You should be able to access Vul server installation within
-the cluster at http://{{ include "vul.fullname" . }}.{{ .Release.Namespace }}:{{ .Values.service.port }}

@@ -1,110 +1,145 @@
 package report
 
 import (
+	"encoding/json"
+	"fmt"
 	"io"
+	"os"
 	"strings"
-	"sync"
+	"text/template"
 
 	"golang.org/x/xerrors"
 
-	cr "github.com/khulnasoft-lab/vul/pkg/compliance/report"
-	"github.com/khulnasoft-lab/vul/pkg/flag"
-	"github.com/khulnasoft-lab/vul/pkg/log"
-	"github.com/khulnasoft-lab/vul/pkg/report/cyclonedx"
-	"github.com/khulnasoft-lab/vul/pkg/report/github"
-	"github.com/khulnasoft-lab/vul/pkg/report/predicate"
-	"github.com/khulnasoft-lab/vul/pkg/report/spdx"
-	"github.com/khulnasoft-lab/vul/pkg/report/table"
+	dbTypes "github.com/khulnasoft-lab/vul-db/pkg/types"
 	"github.com/khulnasoft-lab/vul/pkg/types"
+
+	"github.com/olekukonko/tablewriter"
 )
 
-const (
-	SchemaVersion = 2
-)
+type Results []Result
 
-// Write writes the result to output, format as passed in argument
-func Write(report types.Report, option flag.Options) error {
-	output, err := option.OutputWriter()
-	if err != nil {
-		return xerrors.Errorf("failed to create a file: %w", err)
-	}
-	defer output.Close()
+type Result struct {
+	Target          string                        `json:"Target"`
+	Vulnerabilities []types.DetectedVulnerability `json:"Vulnerabilities"`
+}
 
-	// Compliance report
-	if option.Compliance.Spec.ID != "" {
-		return complianceWrite(report, option, output)
-	}
-
+func WriteResults(format string, output io.Writer, results Results, outputTemplate string, light bool) error {
 	var writer Writer
-	switch option.Format {
-	case types.FormatTable:
-		writer = &table.Writer{
-			Output:               output,
-			Severities:           option.Severities,
-			Tree:                 option.DependencyTree,
-			ShowMessageOnce:      &sync.Once{},
-			IncludeNonFailures:   option.IncludeNonFailures,
-			Trace:                option.Trace,
-			LicenseRiskThreshold: option.LicenseRiskThreshold,
-			IgnoredLicenses:      option.IgnoredLicenses,
+	switch format {
+	case "table":
+		writer = &TableWriter{Output: output, Light: light}
+	case "json":
+		writer = &JsonWriter{Output: output}
+	case "template":
+		tmpl, err := template.New("output template").Parse(outputTemplate)
+		if err != nil {
+			return xerrors.Errorf("error parsing template: %w", err)
 		}
-	case types.FormatJSON:
-		writer = &JSONWriter{Output: output}
-	case types.FormatGitHub:
-		writer = &github.Writer{
-			Output:  output,
-			Version: option.AppVersion,
-		}
-	case types.FormatCycloneDX:
-		// TODO: support xml format option with cyclonedx writer
-		writer = cyclonedx.NewWriter(output, option.AppVersion)
-	case types.FormatSPDX, types.FormatSPDXJSON:
-		writer = spdx.NewWriter(output, option.AppVersion, option.Format)
-	case types.FormatTemplate:
-		// We keep `sarif.tpl` template working for backward compatibility for a while.
-		if strings.HasPrefix(option.Template, "@") && strings.HasSuffix(option.Template, "sarif.tpl") {
-			log.Logger.Warn("Using `--template sarif.tpl` is deprecated. Please migrate to `--format sarif`. See https://github.com/khulnasoft-lab/vul/discussions/1571")
-			writer = &SarifWriter{
-				Output:  output,
-				Version: option.AppVersion,
-			}
-			break
-		}
-		var err error
-		if writer, err = NewTemplateWriter(output, option.Template); err != nil {
-			return xerrors.Errorf("failed to initialize template writer: %w", err)
-		}
-	case types.FormatSarif:
-		writer = &SarifWriter{
-			Output:  output,
-			Version: option.AppVersion,
-		}
-	case types.FormatCosignVuln:
-		writer = predicate.NewVulnWriter(output, option.AppVersion)
+		writer = &TemplateWriter{Output: output, Template: tmpl}
 	default:
-		return xerrors.Errorf("unknown format: %v", option.Format)
+		return xerrors.Errorf("unknown format: %v", format)
 	}
 
-	if err := writer.Write(report); err != nil {
+	if err := writer.Write(results); err != nil {
 		return xerrors.Errorf("failed to write results: %w", err)
 	}
 	return nil
 }
 
-func complianceWrite(report types.Report, opt flag.Options, output io.Writer) error {
-	complianceReport, err := cr.BuildComplianceReport([]types.Results{report.Results}, opt.Compliance)
-	if err != nil {
-		return xerrors.Errorf("compliance report build error: %w", err)
-	}
-	return cr.Write(complianceReport, cr.Option{
-		Format:     opt.Format,
-		Report:     opt.ReportFormat,
-		Output:     output,
-		Severities: opt.Severities,
-	})
+type Writer interface {
+	Write(Results) error
 }
 
-// Writer defines the result write operation
-type Writer interface {
-	Write(types.Report) error
+type TableWriter struct {
+	Output io.Writer
+	Light  bool
+}
+
+func (tw TableWriter) Write(results Results) error {
+	for _, result := range results {
+		tw.write(result)
+	}
+	return nil
+}
+func (tw TableWriter) write(result Result) {
+	table := tablewriter.NewWriter(tw.Output)
+	header := []string{"Library", "Vulnerability ID", "Severity", "Installed Version", "Fixed Version"}
+	if !tw.Light {
+		header = append(header, "Title")
+	}
+	table.SetHeader(header)
+
+	severityCount := map[string]int{}
+	for _, v := range result.Vulnerabilities {
+		severityCount[v.Severity]++
+
+		title := v.Title
+		if title == "" {
+			title = v.Description
+		}
+		splittedTitle := strings.Split(title, " ")
+		if len(splittedTitle) >= 12 {
+			title = strings.Join(splittedTitle[:12], " ") + "..."
+		}
+		var row []string
+		if tw.Output == os.Stdout {
+			row = []string{v.PkgName, v.VulnerabilityID, dbTypes.ColorizeSeverity(v.Severity),
+				v.InstalledVersion, v.FixedVersion}
+		} else {
+			row = []string{v.PkgName, v.VulnerabilityID, v.Severity, v.InstalledVersion, v.FixedVersion}
+		}
+
+		if !tw.Light {
+			row = append(row, title)
+		}
+		table.Append(row)
+	}
+
+	var results []string
+	for _, severity := range dbTypes.SeverityNames {
+		r := fmt.Sprintf("%s: %d", severity, severityCount[severity])
+		results = append(results, r)
+	}
+
+	fmt.Printf("\n%s\n", result.Target)
+	fmt.Println(strings.Repeat("=", len(result.Target)))
+	fmt.Printf("Total: %d (%s)\n\n", len(result.Vulnerabilities), strings.Join(results, ", "))
+
+	if len(result.Vulnerabilities) == 0 {
+		return
+	}
+
+	table.SetAutoMergeCells(true)
+	table.SetRowLine(true)
+	table.Render()
+	return
+}
+
+type JsonWriter struct {
+	Output io.Writer
+}
+
+func (jw JsonWriter) Write(results Results) error {
+	output, err := json.MarshalIndent(results, "", "  ")
+	if err != nil {
+		return xerrors.Errorf("failed to marshal json: %w", err)
+	}
+
+	if _, err = fmt.Fprint(jw.Output, string(output)); err != nil {
+		return xerrors.Errorf("failed to write json: %w", err)
+	}
+	return nil
+}
+
+type TemplateWriter struct {
+	Output   io.Writer
+	Template *template.Template
+}
+
+func (tw TemplateWriter) Write(results Results) error {
+	err := tw.Template.Execute(tw.Output, results)
+	if err != nil {
+		return xerrors.Errorf("failed to write with template: %w", err)
+	}
+	return nil
 }

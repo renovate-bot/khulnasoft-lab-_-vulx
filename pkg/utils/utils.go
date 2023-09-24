@@ -7,12 +7,14 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/khulnasoft-lab/vul/pkg/log"
 	"golang.org/x/xerrors"
+
+	"github.com/khulnasoft-lab/vul/pkg/log"
 )
 
 var cacheDir string
 
+// DefaultCacheDir returns/creates the cache-dir to be used for vul operations
 func DefaultCacheDir() string {
 	tmpDir, err := os.UserCacheDir()
 	if err != nil {
@@ -21,14 +23,17 @@ func DefaultCacheDir() string {
 	return filepath.Join(tmpDir, "vul")
 }
 
+// CacheDir returns the directory used for caching
 func CacheDir() string {
 	return cacheDir
 }
 
+// SetCacheDir sets the vul cacheDir
 func SetCacheDir(dir string) {
 	cacheDir = dir
 }
 
+// FileWalk walks the directory and performs operations on files defined by walkFn
 func FileWalk(root string, targetFiles map[string]struct{}, walkFn func(r io.Reader, path string) error) error {
 	err := filepath.Walk(root, func(path string, info os.FileInfo, err error) error {
 		if err != nil {
@@ -69,6 +74,7 @@ func FileWalk(root string, targetFiles map[string]struct{}, walkFn func(r io.Rea
 	return nil
 }
 
+// StringInSlice checks if strings exist in list of strings
 func StringInSlice(a string, list []string) bool {
 	for _, b := range list {
 		if b == a {
@@ -78,6 +84,7 @@ func StringInSlice(a string, list []string) bool {
 	return false
 }
 
+// FilterTargets filters the target based on prefixPath
 func FilterTargets(prefixPath string, targets map[string]struct{}) (map[string]struct{}, error) {
 	filtered := map[string]struct{}{}
 	for filename := range targets {
@@ -86,7 +93,7 @@ func FilterTargets(prefixPath string, targets map[string]struct{}) (map[string]s
 			if err != nil {
 				return nil, xerrors.Errorf("error in filepath rel: %w", err)
 			}
-			if strings.HasPrefix(rel, "../") {
+			if strings.HasPrefix(rel, ".."+string(filepath.Separator)) {
 				continue
 			}
 			filtered[rel] = struct{}{}
@@ -95,6 +102,7 @@ func FilterTargets(prefixPath string, targets map[string]struct{}) (map[string]s
 	return filtered, nil
 }
 
+// CopyFile copies the file content from scr to dst
 func CopyFile(src, dst string) (int64, error) {
 	sourceFileStat, err := os.Stat(src)
 	if err != nil {

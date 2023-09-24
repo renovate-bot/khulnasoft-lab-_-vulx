@@ -2,18 +2,15 @@ package utils
 
 import (
 	"io"
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"reflect"
 	"strings"
 	"testing"
 
+	"github.com/kylelemons/godebug/pretty"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
-	"github.com/khulnasoft-lab/vul/pkg/log"
-	"github.com/kylelemons/godebug/pretty"
 )
 
 func touch(t *testing.T, name string) {
@@ -27,17 +24,14 @@ func touch(t *testing.T, name string) {
 }
 
 func write(t *testing.T, name string, content string) {
-	err := ioutil.WriteFile(name, []byte(content), 0666)
+	err := os.WriteFile(name, []byte(content), 0666)
 	if err != nil {
 		t.Fatal(err)
 	}
 }
 
 func TestFileWalk(t *testing.T) {
-	if err := log.InitLogger(false, false); err != nil {
-		t.Fatal(err)
-	}
-	td, err := ioutil.TempDir("", "walktest")
+	td, err := os.MkdirTemp("", "walktest")
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -67,7 +61,7 @@ func TestFileWalk(t *testing.T) {
 			sawFoo2 = true
 		}
 		if strings.HasSuffix(path, "foo3") {
-			contentFoo3, err = ioutil.ReadAll(r)
+			contentFoo3, err = io.ReadAll(r)
 			if err != nil {
 				t.Fatal(err)
 			}
@@ -79,8 +73,8 @@ func TestFileWalk(t *testing.T) {
 	}
 
 	targetFiles := map[string]struct{}{
-		"dir/foo2": {},
-		"dir/foo3": {},
+		filepath.Join("dir", "foo2"): {},
+		filepath.Join("dir", "foo3"): {},
 	}
 	err = FileWalk(td, targetFiles, walker)
 	if err != nil {
@@ -109,9 +103,9 @@ func TestFilterTargets(t *testing.T) {
 		"normal": {
 			prefix: "dir",
 			targets: map[string]struct{}{
-				"dir/file1": {},
-				"dir/file2": {},
-				"foo/bar":   {},
+				filepath.Join("dir", "file1"): {},
+				filepath.Join("dir", "file2"): {},
+				filepath.Join("foo", "bar"):   {},
 			},
 			expected: map[string]struct{}{
 				"file1": {},
@@ -122,8 +116,8 @@ func TestFilterTargets(t *testing.T) {
 		"other directory with the same prefix": {
 			prefix: "dir",
 			targets: map[string]struct{}{
-				"dir/file1":  {},
-				"dir2/file2": {},
+				filepath.Join("dir", "file1"):  {},
+				filepath.Join("dir2", "file2"): {},
 			},
 			expected: map[string]struct{}{
 				"file1": {},
@@ -168,7 +162,7 @@ func TestCopyFile(t *testing.T) {
 		t.Run(tt.name, func(t *testing.T) {
 			src := tt.args.src
 			if tt.args.src == "" {
-				s, err := ioutil.TempFile("", "src")
+				s, err := os.CreateTemp("", "src")
 				require.NoError(t, err, tt.name)
 				_, err = s.Write(tt.content)
 				require.NoError(t, err, tt.name)
@@ -177,7 +171,7 @@ func TestCopyFile(t *testing.T) {
 
 			dst := tt.args.dst
 			if tt.args.dst == "" {
-				d, err := ioutil.TempFile("", "dst")
+				d, err := os.CreateTemp("", "dst")
 				require.NoError(t, err, tt.name)
 				dst = d.Name()
 				require.NoError(t, d.Close(), tt.name)

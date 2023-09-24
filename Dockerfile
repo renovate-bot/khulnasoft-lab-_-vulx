@@ -1,5 +1,5 @@
-FROM alpine:3.11
-RUN apk --no-cache add ca-certificates git rpm
+FROM alpine:3.14
+RUN apk --no-cache add ca-certificates git
 COPY vul /usr/local/bin/vul
-COPY contrib/gitlab.tpl contrib/gitlab.tpl
+COPY contrib/*.tpl contrib/
 ENTRYPOINT ["vul"]

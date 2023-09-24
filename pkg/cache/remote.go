@@ -13,39 +13,45 @@ import (
 	rpcCache "github.com/khulnasoft-lab/vul/rpc/cache"
 )
 
+// RemoteCache implements remote cache
 type RemoteCache struct {
 	ctx    context.Context // for custom header
 	client rpcCache.Cache
 }
 
+// RemoteURL to hold remote host
 type RemoteURL string
 
-func NewRemoteCache(url RemoteURL, customHeaders http.Header) cache.ImageCache {
+// NewRemoteCache is the factory method for RemoteCache
+func NewRemoteCache(url RemoteURL, customHeaders http.Header) cache.ArtifactCache {
 	ctx := client.WithCustomHeaders(context.Background(), customHeaders)
 	c := rpcCache.NewCacheProtobufClient(string(url), &http.Client{})
 	return &RemoteCache{ctx: ctx, client: c}
 }
 
-func (c RemoteCache) PutImage(imageID string, imageInfo types.ImageInfo) error {
-	_, err := c.client.PutImage(c.ctx, rpc.ConvertToRpcImageInfo(imageID, imageInfo))
+// PutArtifact sends artifact to remote client
+func (c RemoteCache) PutArtifact(imageID string, artifactInfo types.ArtifactInfo) error {
+	_, err := c.client.PutArtifact(c.ctx, rpc.ConvertToRPCArtifactInfo(imageID, artifactInfo))
 	if err != nil {
 		return xerrors.Errorf("unable to store cache on the server: %w", err)
 	}
 	return nil
 }
 
-func (c RemoteCache) PutLayer(layerID, decompressedLayerID string, layerInfo types.LayerInfo) error {
-	_, err := c.client.PutLayer(c.ctx, rpc.ConvertToRpcLayerInfo(layerID, decompressedLayerID, layerInfo))
+// PutBlob sends blobInfo to remote client
+func (c RemoteCache) PutBlob(diffID string, blobInfo types.BlobInfo) error {
+	_, err := c.client.PutBlob(c.ctx, rpc.ConvertToRPCBlobInfo(diffID, blobInfo))
 	if err != nil {
 		return xerrors.Errorf("unable to store cache on the server: %w", err)
 	}
 	return nil
 }
 
-func (c RemoteCache) MissingLayers(imageID string, layerIDs []string) (bool, []string, error) {
-	layers, err := c.client.MissingLayers(c.ctx, rpc.ConvertToMissingLayersRequest(imageID, layerIDs))
+// MissingBlobs fetches missing blobs from RemoteCache
+func (c RemoteCache) MissingBlobs(imageID string, layerIDs []string) (bool, []string, error) {
+	layers, err := c.client.MissingBlobs(c.ctx, rpc.ConvertToMissingBlobsRequest(imageID, layerIDs))
 	if err != nil {
 		return false, nil, xerrors.Errorf("unable to fetch missing layers: %w", err)
 	}
-	return layers.MissingImage, layers.MissingLayerIds, nil
+	return layers.MissingArtifact, layers.MissingBlobIds, nil
 }

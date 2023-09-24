@@ -2,13 +2,16 @@ package db
 
 import (
 	"context"
+	"encoding/json"
 	"errors"
-	"io/ioutil"
 	"os"
 	"testing"
 	"time"
 
+	"github.com/khulnasoft-lab/vul/pkg/github"
 	"github.com/khulnasoft-lab/vul/pkg/indicator"
+
+	"github.com/spf13/afero"
 
 	"github.com/stretchr/testify/require"
 
@@ -18,41 +21,19 @@ import (
 	clocktesting "k8s.io/utils/clock/testing"
 
 	"github.com/khulnasoft-lab/vul-db/pkg/db"
-	"github.com/khulnasoft-lab/vul/pkg/github"
-	"github.com/khulnasoft-lab/vul/pkg/log"
 	"github.com/stretchr/testify/assert"
-	"github.com/stretchr/testify/mock"
 )
 
-type MockConfig struct {
-	mock.Mock
-}
-
-func (_m *MockConfig) GetMetadata() (db.Metadata, error) {
-	ret := _m.Called()
-	ret0 := ret.Get(0)
-	if ret0 == nil {
-		return db.Metadata{}, ret.Error(1)
-	}
-	metadata, ok := ret0.(db.Metadata)
-	if !ok {
-		return db.Metadata{}, ret.Error(1)
-	}
-	return metadata, ret.Error(1)
-}
-
 func TestClient_NeedsUpdate(t *testing.T) {
-	type getMetadataOutput struct {
-		metadata db.Metadata
-		err      error
-	}
+	timeNextUpdateDay1 := time.Date(2019, 9, 1, 0, 0, 0, 0, time.UTC)
+	timeNextUpdateDay2 := time.Date(2019, 10, 2, 0, 0, 0, 0, time.UTC)
 
 	testCases := []struct {
 		name          string
 		light         bool
 		skip          bool
 		clock         clock.Clock
-		getMetadata   getMetadataOutput
+		metadata      db.Metadata
 		expected      bool
 		expectedError error
 	}{
@@ -60,35 +41,28 @@ func TestClient_NeedsUpdate(t *testing.T) {
 			name:  "happy path",
 			light: false,
 			clock: clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
-			getMetadata: getMetadataOutput{
-				metadata: db.Metadata{
-					Version:    1,
-					Type:       db.TypeFull,
-					NextUpdate: time.Date(2019, 9, 1, 0, 0, 0, 0, time.UTC),
-				},
+			metadata: db.Metadata{
+				Version:    1,
+				Type:       db.TypeFull,
+				NextUpdate: timeNextUpdateDay1,
 			},
 			expected: true,
 		},
 		{
-			name:  "happy path for first run",
-			light: false,
-			clock: clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
-			getMetadata: getMetadataOutput{
-				metadata: db.Metadata{},
-				err:      errors.New("get metadata failed"),
-			},
+			name:     "happy path for first run",
+			light:    false,
+			clock:    clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
+			metadata: db.Metadata{},
 			expected: true,
 		},
 		{
 			name:  "happy path with different type",
 			light: true,
 			clock: clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
-			getMetadata: getMetadataOutput{
-				metadata: db.Metadata{
-					Version:    1,
-					Type:       db.TypeFull,
-					NextUpdate: time.Date(2019, 9, 1, 0, 0, 0, 0, time.UTC),
-				},
+			metadata: db.Metadata{
+				Version:    1,
+				Type:       db.TypeFull,
+				NextUpdate: timeNextUpdateDay1,
 			},
 			expected: true,
 		},
@@ -96,12 +70,10 @@ func TestClient_NeedsUpdate(t *testing.T) {
 			name:  "happy path with old schema version",
 			light: true,
 			clock: clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
-			getMetadata: getMetadataOutput{
-				metadata: db.Metadata{
-					Version:    0,
-					Type:       db.TypeFull,
-					NextUpdate: time.Date(2020, 9, 1, 0, 0, 0, 0, time.UTC),
-				},
+			metadata: db.Metadata{
+				Version:    0,
+				Type:       db.TypeFull,
+				NextUpdate: timeNextUpdateDay1,
 			},
 			expected: true,
 		},
@@ -109,12 +81,10 @@ func TestClient_NeedsUpdate(t *testing.T) {
 			name:  "happy path with --skip-update",
 			light: false,
 			clock: clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
-			getMetadata: getMetadataOutput{
-				metadata: db.Metadata{
-					Version:    1,
-					Type:       db.TypeFull,
-					NextUpdate: time.Date(2019, 9, 1, 0, 0, 0, 0, time.UTC),
-				},
+			metadata: db.Metadata{
+				Version:    1,
+				Type:       db.TypeFull,
+				NextUpdate: timeNextUpdateDay1,
 			},
 			skip:     true,
 			expected: false,
@@ -123,12 +93,10 @@ func TestClient_NeedsUpdate(t *testing.T) {
 			name:  "skip downloading DB",
 			light: false,
 			clock: clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
-			getMetadata: getMetadataOutput{
-				metadata: db.Metadata{
-					Version:    1,
-					Type:       db.TypeFull,
-					NextUpdate: time.Date(2019, 10, 2, 0, 0, 0, 0, time.UTC),
-				},
+			metadata: db.Metadata{
+				Version:    1,
+				Type:       db.TypeFull,
+				NextUpdate: timeNextUpdateDay2,
 			},
 			expected: false,
 		},
@@ -136,22 +104,18 @@ func TestClient_NeedsUpdate(t *testing.T) {
 			name:  "newer schema version",
 			light: false,
 			clock: clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
-			getMetadata: getMetadataOutput{
-				metadata: db.Metadata{
-					Version:    2,
-					Type:       db.TypeFull,
-					NextUpdate: time.Date(2019, 10, 2, 0, 0, 0, 0, time.UTC),
-				},
+			metadata: db.Metadata{
+				Version:    2,
+				Type:       db.TypeFull,
+				NextUpdate: timeNextUpdateDay2,
 			},
 			expectedError: xerrors.New("the version of DB schema doesn't match. Local DB: 2, Expected: 1"),
 		},
 		{
-			name:  "--skip-update on the first run",
-			light: false,
-			clock: clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
-			getMetadata: getMetadataOutput{
-				err: xerrors.New("this is the first run"),
-			},
+			name:          "--skip-update on the first run",
+			light:         false,
+			clock:         clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
+			metadata:      db.Metadata{},
 			skip:          true,
 			expectedError: xerrors.New("--skip-update cannot be specified on the first run"),
 		},
@@ -159,41 +123,57 @@ func TestClient_NeedsUpdate(t *testing.T) {
 			name:  "--skip-update with different schema version",
 			light: false,
 			clock: clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
-			getMetadata: getMetadataOutput{
-				metadata: db.Metadata{
-					Version:    0,
-					Type:       db.TypeFull,
-					NextUpdate: time.Date(2019, 9, 1, 0, 0, 0, 0, time.UTC),
-				},
+			metadata: db.Metadata{
+				Version:    0,
+				Type:       db.TypeFull,
+				NextUpdate: timeNextUpdateDay1,
 			},
 			skip:          true,
 			expectedError: xerrors.New("--skip-update cannot be specified with the old DB"),
 		},
-	}
-
-	if err := log.InitLogger(false, true); err != nil {
-		require.NoError(t, err, "failed to init logger")
+		{
+			name:  "happy with old DownloadedAt",
+			light: false,
+			clock: clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
+			metadata: db.Metadata{
+				Version:      1,
+				Type:         db.TypeFull,
+				NextUpdate:   timeNextUpdateDay1,
+				DownloadedAt: time.Date(2019, 9, 30, 22, 30, 0, 0, time.UTC),
+			},
+			expected: true,
+		},
+		{
+			name:  "skip downloading DB with recent DownloadedAt",
+			light: false,
+			clock: clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC)),
+			metadata: db.Metadata{
+				Version:      1,
+				Type:         db.TypeFull,
+				NextUpdate:   timeNextUpdateDay1,
+				DownloadedAt: time.Date(2019, 9, 30, 23, 30, 0, 0, time.UTC),
+			},
+			expected: false,
+		},
 	}
 
 	for _, tc := range testCases {
 		t.Run(tc.name, func(t *testing.T) {
-			mockConfig := new(MockConfig)
-			mockConfig.On("GetMetadata").Return(
-				tc.getMetadata.metadata, tc.getMetadata.err)
-
-			dir, err := ioutil.TempDir("", "db")
-			require.NoError(t, err, tc.name)
-			defer os.RemoveAll(dir)
-
-			err = db.Init(dir)
-			require.NoError(t, err, tc.name)
-
-			client := Client{
-				dbc:   mockConfig,
-				clock: tc.clock,
+			fs := afero.NewMemMapFs()
+			metadata := NewMetadata(fs, "/cache")
+			if tc.metadata != (db.Metadata{}) {
+				b, err := json.Marshal(tc.metadata)
+				require.NoError(t, err)
+				err = afero.WriteFile(fs, metadata.filePath, b, 0600)
+				require.NoError(t, err)
 			}
 
-			needsUpdate, err := client.NeedsUpdate(context.Background(), "test", tc.light, tc.skip)
+			client := Client{
+				clock:    tc.clock,
+				metadata: metadata,
+			}
+
+			needsUpdate, err := client.NeedsUpdate("test", tc.light, tc.skip)
 
 			switch {
 			case tc.expectedError != nil:
@@ -203,7 +183,6 @@ func TestClient_NeedsUpdate(t *testing.T) {
 			}
 
 			assert.Equal(t, tc.expected, needsUpdate)
-			mockConfig.AssertExpectations(t)
 		})
 	}
 }
@@ -256,23 +235,22 @@ func TestClient_Download(t *testing.T) {
 		},
 	}
 
-	err := log.InitLogger(false, true)
-	require.NoError(t, err, "failed to init logger")
-
 	for _, tc := range testCases {
 		t.Run(tc.name, func(t *testing.T) {
+			mockConfig := new(mockDbOperation)
+
 			mockGitHubClient, err := github.NewMockClient(tc.downloadDB)
 			require.NoError(t, err, tc.name)
 
-			dir, err := ioutil.TempDir("", "db")
+			fs := afero.NewMemMapFs()
+			metadata := NewMetadata(fs, "/cache")
+
+			dir, err := os.MkdirTemp("", "db")
 			require.NoError(t, err, tc.name)
 			defer os.RemoveAll(dir)
 
-			err = db.Init(dir)
-			require.NoError(t, err, tc.name)
-
 			pb := indicator.NewProgressBar(true)
-			client := NewClient(db.Config{}, mockGitHubClient, pb, nil)
+			client := NewClient(mockConfig, mockGitHubClient, pb, nil, metadata)
 			ctx := context.Background()
 			err = client.Download(ctx, dir, tc.light)
 
@@ -284,6 +262,106 @@ func TestClient_Download(t *testing.T) {
 			}
 
 			mockGitHubClient.AssertExpectations(t)
+		})
+	}
+}
+
+func TestClient_UpdateMetadata(t *testing.T) {
+	timeDownloadedAt := clocktesting.NewFakeClock(time.Date(2019, 10, 1, 0, 0, 0, 0, time.UTC))
+	testCases := []struct {
+		name                     string
+		clock                    clock.Clock
+		getMetadataExpectation   dbOperationGetMetadataExpectation
+		storeMetadataExpectation dbOperationStoreMetadataExpectation
+		expectedError            error
+	}{
+		{
+			name:  "happy path",
+			clock: timeDownloadedAt,
+			getMetadataExpectation: dbOperationGetMetadataExpectation{
+				Returns: dbOperationGetMetadataReturns{
+					Metadata: db.Metadata{
+						Version:    1,
+						Type:       1,
+						NextUpdate: time.Date(2020, 4, 30, 23, 59, 59, 0, time.UTC),
+						UpdatedAt:  time.Date(2006, 4, 30, 23, 59, 59, 0, time.UTC),
+					},
+					Err: nil,
+				},
+			},
+			storeMetadataExpectation: dbOperationStoreMetadataExpectation{
+				Metadata: db.Metadata{
+					Version:      1,
+					Type:         1,
+					NextUpdate:   time.Date(2020, 4, 30, 23, 59, 59, 0, time.UTC),
+					UpdatedAt:    time.Date(2006, 4, 30, 23, 59, 59, 0, time.UTC),
+					DownloadedAt: timeDownloadedAt.Now(),
+				},
+			},
+		},
+		{
+			name:  "sad path, get metadata fails",
+			clock: timeDownloadedAt,
+			getMetadataExpectation: dbOperationGetMetadataExpectation{
+				Returns: dbOperationGetMetadataReturns{
+					Err: errors.New("get metadata failed"),
+				},
+			},
+			expectedError: errors.New("unable to get metadata: get metadata failed"),
+		},
+		{
+			name:  "sad path, store metadata fails",
+			clock: timeDownloadedAt,
+			getMetadataExpectation: dbOperationGetMetadataExpectation{
+				Returns: dbOperationGetMetadataReturns{
+					Metadata: db.Metadata{
+						Version:    1,
+						Type:       1,
+						NextUpdate: time.Date(2020, 4, 30, 23, 59, 59, 0, time.UTC),
+						UpdatedAt:  time.Date(2006, 4, 30, 23, 59, 59, 0, time.UTC),
+					},
+					Err: nil,
+				},
+			},
+			storeMetadataExpectation: dbOperationStoreMetadataExpectation{
+				Metadata: db.Metadata{
+					Version:      1,
+					Type:         1,
+					NextUpdate:   time.Date(2020, 4, 30, 23, 59, 59, 0, time.UTC),
+					UpdatedAt:    time.Date(2006, 4, 30, 23, 59, 59, 0, time.UTC),
+					DownloadedAt: timeDownloadedAt.Now(),
+				},
+				Returns: dbOperationStoreMetadataReturns{
+					Err: errors.New("store metadata failed"),
+				},
+			},
+			expectedError: errors.New("failed to store metadata: store metadata failed"),
+		},
+	}
+
+	for _, tc := range testCases {
+		t.Run(tc.name, func(t *testing.T) {
+			mockConfig := new(mockDbOperation)
+			mockConfig.ApplyGetMetadataExpectation(tc.getMetadataExpectation)
+			mockConfig.ApplyStoreMetadataExpectation(tc.storeMetadataExpectation)
+
+			fs := afero.NewMemMapFs()
+			metadata := NewMetadata(fs, "/cache")
+
+			dir, err := os.MkdirTemp("", "db")
+			require.NoError(t, err, tc.name)
+			defer os.RemoveAll(dir)
+
+			pb := indicator.NewProgressBar(true)
+			client := NewClient(mockConfig, nil, pb, tc.clock, metadata)
+
+			err = client.UpdateMetadata(dir)
+			switch {
+			case tc.expectedError != nil:
+				assert.EqualError(t, err, tc.expectedError.Error(), tc.name)
+			default:
+				assert.NoError(t, err, tc.name)
+			}
 		})
 	}
 }

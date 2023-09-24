@@ -63,7 +63,7 @@ func withToken(base http.Handler, token, tokenHeader string) http.Handler {
 func TestRemoteCache_PutImage(t *testing.T) {
 	mux := http.NewServeMux()
 	layerHandler := rpcCache.NewCacheServer(new(mockCacheServer), nil)
-	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Trivy-Token"))
+	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Vul-Token"))
 	ts := httptest.NewServer(mux)
 
 	type args struct {
@@ -94,7 +94,7 @@ func TestRemoteCache_PutImage(t *testing.T) {
 					},
 				},
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 		},
@@ -116,7 +116,7 @@ func TestRemoteCache_PutImage(t *testing.T) {
 					},
 				},
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 			wantErr: "twirp error internal",
@@ -126,7 +126,7 @@ func TestRemoteCache_PutImage(t *testing.T) {
 			args: args{
 				imageID: "sha256:invalid",
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"invalid-token"},
+					"Vul-Token": []string{"invalid-token"},
 				},
 			},
 			wantErr: "twirp error unauthenticated",
@@ -150,7 +150,7 @@ func TestRemoteCache_PutImage(t *testing.T) {
 func TestRemoteCache_PutLayer(t *testing.T) {
 	mux := http.NewServeMux()
 	layerHandler := rpcCache.NewCacheServer(new(mockCacheServer), nil)
-	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Trivy-Token"))
+	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Vul-Token"))
 	ts := httptest.NewServer(mux)
 
 	type args struct {
@@ -170,7 +170,7 @@ func TestRemoteCache_PutLayer(t *testing.T) {
 				layerID:             "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				decompressedLayerID: "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 		},
@@ -180,7 +180,7 @@ func TestRemoteCache_PutLayer(t *testing.T) {
 				layerID:             "sha256:invalid",
 				decompressedLayerID: "sha256:invalid",
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 			wantErr: "twirp error internal",
@@ -191,7 +191,7 @@ func TestRemoteCache_PutLayer(t *testing.T) {
 				layerID:             "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				decompressedLayerID: "sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"invalid-token"},
+					"Vul-Token": []string{"invalid-token"},
 				},
 			},
 			wantErr: "twirp error unauthenticated",
@@ -215,7 +215,7 @@ func TestRemoteCache_PutLayer(t *testing.T) {
 func TestRemoteCache_MissingLayers(t *testing.T) {
 	mux := http.NewServeMux()
 	layerHandler := rpcCache.NewCacheServer(new(mockCacheServer), nil)
-	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Trivy-Token"))
+	mux.Handle(rpcCache.CachePathPrefix, withToken(layerHandler, "valid-token", "Vul-Token"))
 	ts := httptest.NewServer(mux)
 
 	type args struct {
@@ -239,7 +239,7 @@ func TestRemoteCache_MissingLayers(t *testing.T) {
 					"sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				},
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 			wantMissingImage: true,
@@ -256,7 +256,7 @@ func TestRemoteCache_MissingLayers(t *testing.T) {
 					"sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				},
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"valid-token"},
+					"Vul-Token": []string{"valid-token"},
 				},
 			},
 			wantErr: "twirp error internal",
@@ -269,7 +269,7 @@ func TestRemoteCache_MissingLayers(t *testing.T) {
 					"sha256:dffd9992ca398466a663c87c92cfea2a2db0ae0cf33fcb99da60eec52addbfc5",
 				},
 				customHeaders: http.Header{
-					"Trivy-Token": []string{"invalid-token"},
+					"Vul-Token": []string{"invalid-token"},
 				},
 			},
 			wantErr: "twirp error unauthenticated",

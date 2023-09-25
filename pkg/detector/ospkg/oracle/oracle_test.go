@@ -9,7 +9,7 @@ import (
 	"k8s.io/utils/clock"
 	clocktesting "k8s.io/utils/clock/testing"
 
-	ftypes "github.com/khulnasoft-lab/fanal/types"
+	ftypes "github.com/aquasecurity/fanal/types"
 	"github.com/khulnasoft-lab/vul-db/pkg/db"
 	oracleoval "github.com/khulnasoft-lab/vul-db/pkg/vulnsrc/oracle-oval"
 	"github.com/khulnasoft-lab/vul/pkg/dbtest"

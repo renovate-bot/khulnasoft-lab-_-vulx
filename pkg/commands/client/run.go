@@ -7,9 +7,9 @@ import (
 	"github.com/urfave/cli/v2"
 	"golang.org/x/xerrors"
 
-	"github.com/khulnasoft-lab/fanal/analyzer"
-	"github.com/khulnasoft-lab/fanal/analyzer/config"
-	"github.com/khulnasoft-lab/fanal/artifact"
+	"github.com/aquasecurity/fanal/analyzer"
+	"github.com/aquasecurity/fanal/analyzer/config"
+	"github.com/aquasecurity/fanal/artifact"
 	"github.com/khulnasoft-lab/vul/pkg/cache"
 	"github.com/khulnasoft-lab/vul/pkg/commands/operation"
 	"github.com/khulnasoft-lab/vul/pkg/log"

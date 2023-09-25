@@ -8,7 +8,7 @@ import (
 	"golang.org/x/xerrors"
 	"k8s.io/utils/clock"
 
-	ftypes "github.com/khulnasoft-lab/fanal/types"
+	ftypes "github.com/aquasecurity/fanal/types"
 	oracleoval "github.com/khulnasoft-lab/vul-db/pkg/vulnsrc/oracle-oval"
 	"github.com/khulnasoft-lab/vul/pkg/log"
 	"github.com/khulnasoft-lab/vul/pkg/scanner/utils"

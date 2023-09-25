@@ -1,7 +1,7 @@
 package server
 
 import (
-	"github.com/khulnasoft-lab/fanal/cache"
+	"github.com/aquasecurity/fanal/cache"
 	"github.com/urfave/cli"
 	"golang.org/x/xerrors"
 

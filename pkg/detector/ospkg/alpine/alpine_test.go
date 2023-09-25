@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/require"
 	fake "k8s.io/utils/clock/testing"
 
-	ftypes "github.com/khulnasoft-lab/fanal/types"
+	ftypes "github.com/aquasecurity/fanal/types"
 	"github.com/khulnasoft-lab/vul-db/pkg/db"
 	"github.com/khulnasoft-lab/vul/pkg/dbtest"
 	"github.com/khulnasoft-lab/vul/pkg/detector/ospkg/alpine"

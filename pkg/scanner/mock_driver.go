@@ -3,7 +3,7 @@
 package scanner
 
 import (
-	fanaltypes "github.com/khulnasoft-lab/fanal/types"
+	fanaltypes "github.com/aquasecurity/fanal/types"
 	mock "github.com/stretchr/testify/mock"
 
 	report "github.com/khulnasoft-lab/vul/pkg/report"

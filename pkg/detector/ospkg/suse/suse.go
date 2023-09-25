@@ -8,8 +8,8 @@ import (
 
 	version "github.com/knqyf263/go-rpm-version"
 
-	fos "github.com/khulnasoft-lab/fanal/analyzer/os"
-	ftypes "github.com/khulnasoft-lab/fanal/types"
+	fos "github.com/aquasecurity/fanal/analyzer/os"
+	ftypes "github.com/aquasecurity/fanal/types"
 	susecvrf "github.com/khulnasoft-lab/vul-db/pkg/vulnsrc/suse-cvrf"
 	"github.com/khulnasoft-lab/vul/pkg/log"
 	"github.com/khulnasoft-lab/vul/pkg/scanner/utils"

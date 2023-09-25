@@ -3,7 +3,7 @@
 package local
 
 import (
-	types "github.com/khulnasoft-lab/fanal/types"
+	types "github.com/aquasecurity/fanal/types"
 	mock "github.com/stretchr/testify/mock"
 )
 

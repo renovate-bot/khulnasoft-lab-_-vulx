@@ -12,7 +12,7 @@ import (
 	"github.com/twitchtv/twirp"
 	"golang.org/x/xerrors"
 
-	"github.com/khulnasoft-lab/fanal/cache"
+	"github.com/aquasecurity/fanal/cache"
 	"github.com/khulnasoft-lab/vul-db/pkg/db"
 	dbFile "github.com/khulnasoft-lab/vul/pkg/db"
 	"github.com/khulnasoft-lab/vul/pkg/log"

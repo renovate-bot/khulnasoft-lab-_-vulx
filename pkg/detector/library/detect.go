@@ -3,7 +3,7 @@ package library
 import (
 	"golang.org/x/xerrors"
 
-	ftypes "github.com/khulnasoft-lab/fanal/types"
+	ftypes "github.com/aquasecurity/fanal/types"
 	"github.com/khulnasoft-lab/vul/pkg/types"
 )
 

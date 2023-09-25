@@ -7,11 +7,11 @@ package client
 
 import (
 	"context"
-	"github.com/khulnasoft-lab/fanal/analyzer/config"
-	"github.com/khulnasoft-lab/fanal/artifact"
-	image2 "github.com/khulnasoft-lab/fanal/artifact/image"
-	"github.com/khulnasoft-lab/fanal/cache"
-	"github.com/khulnasoft-lab/fanal/image"
+	"github.com/aquasecurity/fanal/analyzer/config"
+	"github.com/aquasecurity/fanal/artifact"
+	image2 "github.com/aquasecurity/fanal/artifact/image"
+	"github.com/aquasecurity/fanal/cache"
+	"github.com/aquasecurity/fanal/image"
 	"github.com/khulnasoft-lab/vul-db/pkg/db"
 	"github.com/khulnasoft-lab/vul/pkg/result"
 	"github.com/khulnasoft-lab/vul/pkg/rpc/client"

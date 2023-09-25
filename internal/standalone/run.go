@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/khulnasoft-lab/fanal/cache"
+	"github.com/aquasecurity/fanal/cache"
 	"github.com/khulnasoft-lab/vul-db/pkg/db"
 	"github.com/khulnasoft-lab/vul/internal/operation"
 	"github.com/khulnasoft-lab/vul/internal/standalone/config"

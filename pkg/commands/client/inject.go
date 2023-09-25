@@ -9,9 +9,9 @@ import (
 
 	"github.com/google/wire"
 
-	"github.com/khulnasoft-lab/fanal/analyzer/config"
-	"github.com/khulnasoft-lab/fanal/artifact"
-	"github.com/khulnasoft-lab/fanal/cache"
+	"github.com/aquasecurity/fanal/analyzer/config"
+	"github.com/aquasecurity/fanal/artifact"
+	"github.com/aquasecurity/fanal/cache"
 	"github.com/khulnasoft-lab/vul/pkg/result"
 	"github.com/khulnasoft-lab/vul/pkg/rpc/client"
 	"github.com/khulnasoft-lab/vul/pkg/scanner"

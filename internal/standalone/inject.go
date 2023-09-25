@@ -1,3 +1,4 @@
+//go:build wireinject
 // +build wireinject
 
 package standalone
@@ -6,10 +7,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/khulnasoft-lab/fanal/cache"
+	"github.com/aquasecurity/fanal/cache"
+	"github.com/google/wire"
 	"github.com/khulnasoft-lab/vul/pkg/scanner"
 	"github.com/khulnasoft-lab/vul/pkg/vulnerability"
-	"github.com/google/wire"
 )
 
 func initializeDockerScanner(ctx context.Context, imageName string, layerCache cache.ImageCache, localImageCache cache.LocalImageCache,

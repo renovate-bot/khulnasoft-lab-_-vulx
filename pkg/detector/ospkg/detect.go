@@ -6,8 +6,8 @@ import (
 	"github.com/google/wire"
 	"golang.org/x/xerrors"
 
-	fos "github.com/khulnasoft-lab/fanal/analyzer/os"
-	ftypes "github.com/khulnasoft-lab/fanal/types"
+	fos "github.com/aquasecurity/fanal/analyzer/os"
+	ftypes "github.com/aquasecurity/fanal/types"
 	"github.com/khulnasoft-lab/vul/pkg/detector/ospkg/alpine"
 	"github.com/khulnasoft-lab/vul/pkg/detector/ospkg/amazon"
 	"github.com/khulnasoft-lab/vul/pkg/detector/ospkg/debian"

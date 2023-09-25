@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/khulnasoft-lab/fanal/external"
-	"github.com/khulnasoft-lab/fanal/types"
+	"github.com/aquasecurity/fanal/external"
+	"github.com/aquasecurity/fanal/types"
 )
 
 func TestPolicy(t *testing.T) {

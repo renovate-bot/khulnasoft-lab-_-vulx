@@ -6,8 +6,8 @@
 package server
 
 import (
-	"github.com/khulnasoft-lab/fanal/applier"
-	"github.com/khulnasoft-lab/fanal/cache"
+	"github.com/aquasecurity/fanal/applier"
+	"github.com/aquasecurity/fanal/cache"
 	"github.com/khulnasoft-lab/vul-db/pkg/db"
 	db2 "github.com/khulnasoft-lab/vul/pkg/db"
 	"github.com/khulnasoft-lab/vul/pkg/detector/ospkg"

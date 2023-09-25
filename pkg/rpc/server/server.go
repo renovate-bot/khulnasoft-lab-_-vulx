@@ -7,7 +7,7 @@ import (
 	"github.com/google/wire"
 	"golang.org/x/xerrors"
 
-	"github.com/khulnasoft-lab/fanal/cache"
+	"github.com/aquasecurity/fanal/cache"
 	"github.com/khulnasoft-lab/vul/pkg/result"
 	"github.com/khulnasoft-lab/vul/pkg/rpc"
 	"github.com/khulnasoft-lab/vul/pkg/scanner"

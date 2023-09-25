@@ -1,6 +1,6 @@
 package types
 
-import ftypes "github.com/khulnasoft-lab/fanal/types"
+import ftypes "github.com/aquasecurity/fanal/types"
 
 // DetectedMisconfiguration holds detected misconfigurations
 type DetectedMisconfiguration struct {

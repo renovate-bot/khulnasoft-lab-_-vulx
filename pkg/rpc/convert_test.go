@@ -7,8 +7,8 @@ import (
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/types/known/timestamppb"
 
-	ftypes "github.com/khulnasoft-lab/fanal/types"
-	ptypes "github.com/khulnasoft-lab/go-dep-parser/pkg/types"
+	ftypes "github.com/aquasecurity/fanal/types"
+	ptypes "github.com/aquasecurity/go-dep-parser/pkg/types"
 	dbTypes "github.com/khulnasoft-lab/vul-db/pkg/types"
 	"github.com/khulnasoft-lab/vul-db/pkg/vulnsrc/vulnerability"
 	"github.com/khulnasoft-lab/vul/pkg/report"

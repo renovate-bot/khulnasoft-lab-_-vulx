@@ -6,8 +6,8 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/khulnasoft-lab/fanal/cache"
-	"github.com/khulnasoft-lab/fanal/types"
+	"github.com/aquasecurity/fanal/cache"
+	"github.com/aquasecurity/fanal/types"
 	"github.com/khulnasoft-lab/vul/pkg/rpc"
 	"github.com/khulnasoft-lab/vul/pkg/rpc/client"
 	rpcCache "github.com/khulnasoft-lab/vul/rpc/cache"

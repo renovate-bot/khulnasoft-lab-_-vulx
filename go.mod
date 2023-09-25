@@ -28,7 +28,7 @@ require (
 	github.com/open-policy-agent/opa v0.56.0
 	github.com/spf13/afero v1.10.0
 	github.com/stretchr/testify v1.8.4
-	github.com/testcontainers/testcontainers-go v0.11.1
+	github.com/testcontainers/testcontainers-go v0.13.0
 	github.com/twitchtv/twirp v8.1.0+incompatible
 	github.com/urfave/cli/v2 v2.25.7
 	go.uber.org/zap v1.26.0
@@ -182,7 +182,7 @@ require (
 	github.com/AkihiroSuda/containerd-fuse-overlayfs v1.0.0 // indirect
 	github.com/Azure/azure-amqp-common-go/v2 v2.1.0 // indirect
 	github.com/Azure/azure-pipeline-go v0.2.2 // indirect
-	github.com/Azure/azure-sdk-for-go v56.3.0+incompatible // indirect
+	github.com/Azure/azure-sdk-for-go v65.0.0+incompatible // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.1.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/azidentity v1.1.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/internal v1.0.0 // indirect
@@ -193,8 +193,8 @@ require (
 	github.com/Azure/go-autorest v14.2.0+incompatible // indirect
 	github.com/Azure/go-autorest/autorest v0.11.27 // indirect
 	github.com/Azure/go-autorest/autorest/adal v0.9.20 // indirect
-	github.com/Azure/go-autorest/autorest/azure/auth v0.4.2 // indirect
-	github.com/Azure/go-autorest/autorest/azure/cli v0.3.1 // indirect
+	github.com/Azure/go-autorest/autorest/azure/auth v0.5.11 // indirect
+	github.com/Azure/go-autorest/autorest/azure/cli v0.4.5 // indirect
 	github.com/Azure/go-autorest/autorest/date v0.3.0 // indirect
 	github.com/Azure/go-autorest/autorest/mocks v0.4.2 // indirect
 	github.com/Azure/go-autorest/autorest/to v0.4.0 // indirect
@@ -266,6 +266,7 @@ require (
 	github.com/apparentlymart/go-dump v0.0.0-20180507223929-23540a00eaa3 // indirect
 	github.com/apparentlymart/go-textseg v1.0.0 // indirect
 	github.com/apparentlymart/go-textseg/v13 v13.0.0 // indirect
+	github.com/aquasecurity/fanal v0.0.0-20220621143759-7f9185d5d01d // indirect
 	github.com/arbovm/levenshtein v0.0.0-20160628152529-48b4e1c0c4d0 // indirect
 	github.com/armon/circbuf v0.0.0-20190214190532-5111143e8da2 // indirect
 	github.com/armon/consul-api v0.0.0-20180202201655-eb2c6b5be1b6 // indirect
@@ -542,7 +543,7 @@ require (
 	github.com/gofrs/uuid v4.0.0+incompatible // indirect
 	github.com/gogo/googleapis v1.4.1 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
-	github.com/golang-jwt/jwt v3.2.1+incompatible // indirect
+	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/golang-jwt/jwt/v4 v4.4.2 // indirect
 	github.com/golang-sql/civil v0.0.0-20190719163853-cb61b32ac6fe // indirect
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0 // indirect
@@ -677,15 +678,12 @@ require (
 	github.com/kballard/go-shellquote v0.0.0-20180428030007-95032a82bc51 // indirect
 	github.com/kevinburke/ssh_config v1.2.0 // indirect
 	github.com/khulnasoft-lab/boltdb-fixtures v1.0.0 // indirect
-	github.com/khulnasoft-lab/fanal v0.0.0-20230825071646-ce81e837ff9d // indirect
-	github.com/khulnasoft-lab/go-dep-parser v1.0.1 // indirect
 	github.com/khulnasoft-lab/go-gem-version v1.0.0 // indirect
 	github.com/khulnasoft-lab/go-mock-aws v1.0.0 // indirect
 	github.com/khulnasoft-lab/go-pep440-version v1.0.0 // indirect
 	github.com/khulnasoft-lab/goversion v1.0.1 // indirect
 	github.com/khulnasoft-lab/testdocker v1.0.0 // indirect
 	github.com/khulnasoft-lab/vul-db v0.0.0-20230910013604-d969cb0055ac // indirect
-	github.com/khulnasoft/defsec v1.0.3 // indirect
 	github.com/kisielk/errcheck v1.5.0 // indirect
 	github.com/kisielk/gotool v1.0.0 // indirect
 	github.com/klauspost/asmfmt v1.3.2 // indirect

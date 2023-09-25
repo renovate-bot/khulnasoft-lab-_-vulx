@@ -3,7 +3,7 @@ package library
 import (
 	"golang.org/x/xerrors"
 
-	ftypes "github.com/khulnasoft-lab/fanal/types"
+	ftypes "github.com/aquasecurity/fanal/types"
 	ecosystem "github.com/khulnasoft-lab/vul-db/pkg/vulnsrc/ghsa"
 	"github.com/khulnasoft-lab/vul-db/pkg/vulnsrc/vulnerability"
 	"github.com/khulnasoft-lab/vul/pkg/detector/library/bundler"

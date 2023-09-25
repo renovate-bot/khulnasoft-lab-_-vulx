@@ -23,7 +23,7 @@ import (
 	testcontainers "github.com/testcontainers/testcontainers-go"
 	"github.com/testcontainers/testcontainers-go/wait"
 
-	_ "github.com/khulnasoft-lab/fanal/analyzer"
+	_ "github.com/aquasecurity/fanal/analyzer"
 	testdocker "github.com/khulnasoft-lab/vul/integration/docker"
 	"github.com/khulnasoft-lab/vul/pkg/commands"
 )

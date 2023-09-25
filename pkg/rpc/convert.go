@@ -7,8 +7,8 @@ import (
 	"github.com/golang/protobuf/ptypes/timestamp"
 	"google.golang.org/protobuf/types/known/structpb"
 
-	ftypes "github.com/khulnasoft-lab/fanal/types"
-	deptypes "github.com/khulnasoft-lab/go-dep-parser/pkg/types"
+	ftypes "github.com/aquasecurity/fanal/types"
+	deptypes "github.com/aquasecurity/go-dep-parser/pkg/types"
 	dbTypes "github.com/khulnasoft-lab/vul-db/pkg/types"
 	"github.com/khulnasoft-lab/vul/pkg/log"
 	"github.com/khulnasoft-lab/vul/pkg/report"

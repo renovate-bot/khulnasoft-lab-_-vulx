@@ -7,8 +7,8 @@ import (
 	"go.uber.org/zap/zapcore"
 	"golang.org/x/xerrors"
 
-	flog "github.com/khulnasoft-lab/fanal/log"
-	dlog "github.com/khulnasoft-lab/go-dep-parser/pkg/log"
+	flog "github.com/aquasecurity/fanal/log"
+	dlog "github.com/aquasecurity/go-dep-parser/pkg/log"
 )
 
 var (

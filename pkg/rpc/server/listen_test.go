@@ -16,7 +16,7 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/xerrors"
 
-	"github.com/khulnasoft-lab/fanal/cache"
+	"github.com/aquasecurity/fanal/cache"
 	"github.com/khulnasoft-lab/vul-db/pkg/db"
 	dbFile "github.com/khulnasoft-lab/vul/pkg/db"
 	rpcCache "github.com/khulnasoft-lab/vul/rpc/cache"

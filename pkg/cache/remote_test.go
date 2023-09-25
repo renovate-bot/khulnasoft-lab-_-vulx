@@ -16,8 +16,8 @@ import (
 	"github.com/twitchtv/twirp"
 	"golang.org/x/xerrors"
 
-	fcache "github.com/khulnasoft-lab/fanal/cache"
-	"github.com/khulnasoft-lab/fanal/types"
+	fcache "github.com/aquasecurity/fanal/cache"
+	"github.com/aquasecurity/fanal/types"
 	"github.com/khulnasoft-lab/vul/pkg/cache"
 	rpcCache "github.com/khulnasoft-lab/vul/rpc/cache"
 )

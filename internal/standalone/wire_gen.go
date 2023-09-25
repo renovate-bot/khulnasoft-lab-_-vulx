@@ -7,9 +7,9 @@ package standalone
 
 import (
 	"context"
-	"github.com/khulnasoft-lab/fanal/analyzer"
-	"github.com/khulnasoft-lab/fanal/cache"
-	"github.com/khulnasoft-lab/fanal/extractor/docker"
+	"github.com/aquasecurity/fanal/analyzer"
+	"github.com/aquasecurity/fanal/cache"
+	"github.com/aquasecurity/fanal/extractor/docker"
 	"github.com/khulnasoft-lab/vul-db/pkg/db"
 	"github.com/khulnasoft-lab/vul/pkg/detector/library"
 	"github.com/khulnasoft-lab/vul/pkg/detector/ospkg"

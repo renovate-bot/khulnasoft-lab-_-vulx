@@ -18,7 +18,7 @@ require (
 	github.com/google/go-containerregistry v0.16.1
 	github.com/google/go-github/v33 v33.0.0
 	github.com/google/wire v0.4.0
-	github.com/hashicorp/go-getter v1.7.2
+	github.com/hashicorp/go-getter v1.7.3
 	github.com/knqyf263/go-apk-version v0.0.0-20200609155635-041fdbb8563f
 	github.com/knqyf263/go-deb-version v0.0.0-20190517075300-09fca494f03d
 	github.com/knqyf263/go-rpm-version v0.0.0-20170716094938-74609b86c936

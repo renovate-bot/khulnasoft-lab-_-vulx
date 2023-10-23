@@ -1,2 +1,2 @@
-FROM alpine:3.13
+FROM alpine:3.18
 LABEL user.root="allow"
